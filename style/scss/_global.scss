@@ -109,7 +109,6 @@ $bgColor: #cccccc;
 
 .panel {
 	position: relative;
-	overflow: hidden;
 }
 
 h4 {
@@ -132,6 +131,7 @@ h3 {
 }
 
 .panel-body {
+	overflow: hidden;
 	h4 {
 		margin-top: 0px;
 	}

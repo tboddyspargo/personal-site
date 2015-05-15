@@ -37,8 +37,7 @@
   top: 2px !important; }
 
 .panel {
-  position: relative;
-  overflow: hidden; }
+  position: relative; }
 
 h4.panel-heading {
   margin-top: 0px;
@@ -52,10 +51,12 @@ h3.panel-heading {
   margin-top: 0px;
   padding-right: 35px; }
 
-.panel-body h4 {
-  margin-top: 0px; }
-.panel-body h3 {
-  margin-top: 0px; }
+.panel-body {
+  overflow: hidden; }
+  .panel-body h4 {
+    margin-top: 0px; }
+  .panel-body h3 {
+    margin-top: 0px; }
 
 .back-to-top {
   z-index: 3;
@@ -385,9 +386,6 @@ footer {
 .all-thumbs {
   overflow-x: scroll;
   padding: 20px 0px 0px 0px; }
-
-.thumbnail-grid {
-  margin-bottom: -15px; }
 
 .thumbnail-grid-item {
   display: inline-block;

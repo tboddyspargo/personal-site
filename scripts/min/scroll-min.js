@@ -1,0 +1,1 @@
+define(["ScrollMagic"],function(e){var n=new e.Controller({globalSceneOptions:{triggerHook:"onCenter"}}),o=new e.Scene({duration:300,offset:100}).addTo(n)});
