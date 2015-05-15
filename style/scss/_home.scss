@@ -1,0 +1,59 @@
+
+.all-thumbs {
+	overflow-x:scroll;
+	padding: 20px 0px 0px 0px;
+}
+
+.thumbnail-grid {
+	margin-bottom: -15px;
+}
+
+.thumbnail-grid-item {
+	display: inline-block;
+	max-width: 220px;
+	height:250px;
+	position: relative;
+}
+
+.thumbnail {
+	position: relative;
+	height:92%;
+	.title {
+		text-align: center;
+		vertical-align: middle;
+		overflow:hidden;
+		margin:5px 0px 5px 0px;
+		max-height: 40px;
+	}
+	&:hover {
+		cursor: pointer;
+	}
+	.caption {
+		height: 58px;
+		overflow: hidden;
+		padding:0px;
+		line-height: 14px;
+		margin: 0px 5px 5px 5px;
+	}
+}
+
+.thumb-container {
+	padding:0px;
+	overflow:hidden;
+	img {
+		max-height: 100px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.thumb-wrapper {
+	position: relative;
+	text-align: center;
+	span {
+		position: absolute;
+		@include transform(rotateZ(-20deg));
+		margin-top: -2px;
+		left:-10px;
+	}
+}

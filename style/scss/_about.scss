@@ -1,0 +1,65 @@
+
+.school-title-main {
+	display: inline-block;
+	vertical-align: top;
+	margin-right:0px;
+	width: 100%;
+	overflow:visible;
+}
+
+
+.school-name {
+	float:left;
+	white-space: pre-wrap;
+	text-decoration: underline;
+	width: 59%;
+	margin-bottom:0px;
+}
+
+.school-location {
+	width: 100%;
+	float:right;
+	text-align: right;
+	font-size: 14px;
+	.label {
+		font-size:11px;
+	}
+}
+
+.school-logo {
+	background: {size: 50px;
+		position: center center;
+		repeat: no-repeat;
+	}
+	vertical-align: top;
+	display: inline-block;
+	margin: -10px 0px 0px 0px;
+	width: 50px;
+	min-height: 50px;
+	opacity: 0.7;
+	@include transition(all, 0.3s, ease);
+	&:hover {
+		opacity:1;
+	}
+}
+
+.school-heading {
+	display: inline-block;
+	width: calc(100% - 65px);
+	margin-left: 10px;
+}
+
+.right-degree {
+	float:right;
+	vertical-align: top;
+	margin-top: 0px;
+	margin-right: -10px;
+	width: 39%;
+	text-align: right;
+	margin:0px;
+	overflow:visible;
+}
+
+.responsibilities > li {
+	margin: 0px 0px 0px 25px;
+}

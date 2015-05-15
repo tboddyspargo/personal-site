@@ -1,0 +1,649 @@
+.noselect, img {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  pointer-events: none; }
+
+.facebook-round {
+  background-image: url(../assets/round-icons/Facebook-round.png); }
+
+.linkedin-round {
+  background-image: url(../assets/round-icons/Linkedin-round.png); }
+
+.google-round {
+  background-image: url(../assets/round-icons/Google-plus-round.png); }
+
+.ty-round {
+  background-image: url(../assets/round-icons/life-of-ty-sm.png); }
+
+.ph-round {
+  background-image: url(../assets/round-icons/pond-hopping-sm.png); }
+
+.email-round {
+  background-image: url(../assets/round-icons/email-2-icon.png); }
+
+.me-round {
+  background-image: url(../assets/round-icons/me-round.png); }
+
+.pdf-round {
+  background-image: url(../assets/round-icons/pdf-round.png); }
+
+.bullet-ok {
+  margin-right: 3px;
+  top: 2px !important; }
+
+.panel {
+  position: relative;
+  overflow: hidden; }
+
+h4.panel-heading {
+  margin-top: 0px;
+  margin-bottom: 0px; }
+h4 span.label {
+  font-size: 10px;
+  float: right;
+  margin-top: 25px; }
+
+h3.panel-heading {
+  margin-top: 0px;
+  padding-right: 35px; }
+
+.panel-body h4 {
+  margin-top: 0px; }
+.panel-body h3 {
+  margin-top: 0px; }
+
+.back-to-top {
+  z-index: 3;
+  display: none;
+  position: fixed;
+  right: 10px;
+  bottom: 10px; }
+
+.right-toggle {
+  float: right;
+  opacity: 0.3; }
+  .right-toggle:hover {
+    cursor: pointer; }
+
+/* After the transition this will be the only class remaining */
+.image-slide-left-in,
+.image-slide-left-out,
+.image-slide-right-in,
+.image-slide-right-out {
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  left: 0px;
+  /* Default value but added for clarity */ }
+
+/* Initial state when showing */
+.image-slide-left-in.ng-hide-remove {
+  -webkit-transform: rotateY(90deg);
+  left: calc(100%); }
+
+/* Will transition towards this state */
+.image-slide-left-in.ng-hide-remove.ng-hide-remove-active {
+  -webkit-transform: rotateY(0deg);
+  left: 0px; }
+
+/* Initial state when showing */
+.image-slide-left-out.ng-hide-add {
+  -webkit-transform: rotateY(0deg);
+  left: 0px; }
+
+/* Will transition towards this state */
+.image-slide-left-out.ng-hide-add.ng-hide-add-active {
+  -webkit-transform: rotateY(-90deg);
+  left: calc(-1 * 100%); }
+
+/* Initial state when showing */
+.image-slide-right-in.ng-hide-remove {
+  left: calc(100%); }
+
+/* Will transition towards this state */
+.image-slide-right-in.ng-hide-remove.ng-hide-remove-active {
+  left: 0px; }
+
+/* Initial state when showing */
+.image-slide-right-out.ng-hide-add {
+  left: 0px; }
+
+/* Will transition towards this state */
+.image-slide-right-out.ng-hide-add.ng-hide-add-active {
+  left: calc(-1 * 100%); }
+
+/* After the transition this will be the only class remaining */
+.fade-in {
+  -webkit-transition: all cubic-bezier(0.1, 0.2, 0.3, 0.94) 1s;
+  -moz-transition: all cubic-bezier(0.1, 0.2, 0.3, 0.94) 1s;
+  -o-transition: all cubic-bezier(0.1, 0.2, 0.3, 0.94) 1s;
+  transition: all cubic-bezier(0.1, 0.2, 0.3, 0.94) 1s;
+  /* Default value but added for clarity */ }
+
+/* Initial state when showing */
+.fade-in.ng-hide-remove {
+  opacity: 0; }
+
+/* Will transition towards this state */
+.fade-in.ng-hide-remove.ng-hide-remove-active {
+  opacity: 1; }
+
+.me-slide-down,
+.me-slide-up {
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+  /* Default value but added for clarity */ }
+
+/* Initial state when showing */
+.me-slide-down.ng-hide-remove {
+  max-height: 0px;
+  -webkit-transform: scaleY(1);
+  -o-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  transform: scaleY(1); }
+
+/* Will transition towards this state */
+.me-slide-down.ng-hide-remove.ng-hide-remove-active {
+  max-height: 150px;
+  -webkit-transform: scaleY(1);
+  -o-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  transform: scaleY(1); }
+
+/* Initial state when showing */
+.me-slide-up.ng-hide-add {
+  max-height: 150px;
+  -webkit-transform: scaleY(1);
+  -o-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  transform: scaleY(1); }
+
+/* Will transition towards this state */
+.me-slide-up.ng-hide-add.ng-hide-add-active {
+  max-height: 0px;
+  -webkit-transform: scaleY(1);
+  -o-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  transform: scaleY(1); }
+
+body {
+  position: relative;
+  background: url(../assets/pattern.jpg) 640px 480px repeat fixed; }
+
+.banner {
+  position: absolute;
+  top: -60px;
+  width: 100%;
+  height: 300px;
+  overflow: hidden; }
+
+#banner-image {
+  background: url(../assets/banner1.jpg) calc(-750px + ((100% - 1280px) / 2)) -100px repeat fixed;
+  height: 400px; }
+
+#name {
+  color: white;
+  font-family: Bradley Hand;
+  font-size: 50px;
+  margin-top: 150px;
+  margin-right: 20px;
+  float: right;
+  text-shadow: 2px 3px rgba(50, 50, 50, 0.7); }
+
+#tab-content {
+  position: absolute;
+  margin-top: 270px; }
+
+.sidebar-container {
+  height: 0px;
+  overflow: visible;
+  position: absolute; }
+
+#sidebar .panel-body {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+#sidebar ul {
+  list-style: none;
+  padding: 0px;
+  margin-bottom: 0px; }
+#sidebar .panel {
+  margin-top: 0px;
+  margin-bottom: 10px; }
+#sidebar .contents li {
+  cursor: pointer; }
+#sidebar .icon {
+  display: inline-block;
+  background-size: 18px 18px;
+  width: 18px;
+  height: 18px;
+  margin-bottom: -4px;
+  margin-right: 5px; }
+#sidebar .content-item {
+  display: block;
+  margin-bottom: 2px; }
+#sidebar .link-item {
+  white-space: nowrap;
+  display: block; }
+#sidebar .text-link {
+  display: inline-block;
+  margin-top: -3px; }
+
+.sidebar-fixed {
+  position: fixed;
+  top: 70px; }
+
+footer {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  bottom: 0px;
+  width: 100%; }
+
+#brand {
+  margin-bottom: 5px;
+  height: 40px;
+  -webkit-transition: margin-left 0.3s ease-out;
+  -moz-transition: margin-left 0.3s ease-out;
+  -o-transition: margin-left 0.3s ease-out;
+  transition: margin-left 0.3s ease-out; }
+
+.hidden-left {
+  margin-left: -170px; }
+
+#navbar-container {
+  height: 42px;
+  width: 100%;
+  z-index: 5; }
+
+#navbar {
+  position: relative; }
+
+.nav-not-fixed {
+  position: absolute;
+  top: 198px;
+  background-color: transparent; }
+
+.nav-fixed {
+  position: fixed;
+  background-color: black;
+  top: 0px;
+  left: 0px; }
+
+.left-nav {
+  position: absolute;
+  height: 46px;
+  left: 0px;
+  top: -4px;
+  width: 100%; }
+
+.right-nav {
+  position: absolute;
+  right: 0px; }
+
+#navbar-links-wrapper {
+  margin-left: 0px;
+  float: left;
+  overflow: visible;
+  -webkit-transition: margin-left 0.5s ease-out;
+  -moz-transition: margin-left 0.5s ease-out;
+  -o-transition: margin-left 0.5s ease-out;
+  transition: margin-left 0.5s ease-out; }
+
+.navbar-round-link {
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  float: right;
+  margin-top: 10px;
+  margin-left: 5px;
+  border-radius: 20px;
+  -webkit-transition: margin-left 0.5s ease-out;
+  -moz-transition: margin-left 0.5s ease-out;
+  -o-transition: margin-left 0.5s ease-out;
+  transition: margin-left 0.5s ease-out; }
+  .navbar-round-link:hover {
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.4); }
+
+.slide-out {
+  margin-left: -30px; }
+
+#navbar-hover-space {
+  width: 50%;
+  height: 100%;
+  min-width: 450px;
+  overflow: visible; }
+  #navbar-hover-space:hover .navbar-round-link.slide-out {
+    margin-left: 5px; }
+
+.school-title-main {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 0px;
+  width: 100%;
+  overflow: visible; }
+
+.school-name {
+  float: left;
+  white-space: pre-wrap;
+  text-decoration: underline;
+  width: 59%;
+  margin-bottom: 0px; }
+
+.school-location {
+  width: 100%;
+  float: right;
+  text-align: right;
+  font-size: 14px; }
+  .school-location .label {
+    font-size: 11px; }
+
+.school-logo {
+  background-size: 50px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  display: inline-block;
+  margin: -10px 0px 0px 0px;
+  width: 50px;
+  min-height: 50px;
+  opacity: 0.7;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .school-logo:hover {
+    opacity: 1; }
+
+.school-heading {
+  display: inline-block;
+  width: calc(100% - 65px);
+  margin-left: 10px; }
+
+.right-degree {
+  float: right;
+  vertical-align: top;
+  margin-top: 0px;
+  margin-right: -10px;
+  width: 39%;
+  text-align: right;
+  margin: 0px;
+  overflow: visible; }
+
+.responsibilities > li {
+  margin: 0px 0px 0px 25px; }
+
+.all-thumbs {
+  overflow-x: scroll;
+  padding: 20px 0px 0px 0px; }
+
+.thumbnail-grid {
+  margin-bottom: -15px; }
+
+.thumbnail-grid-item {
+  display: inline-block;
+  max-width: 220px;
+  height: 250px;
+  position: relative; }
+
+.thumbnail {
+  position: relative;
+  height: 92%; }
+  .thumbnail .title {
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    margin: 5px 0px 5px 0px;
+    max-height: 40px; }
+  .thumbnail:hover {
+    cursor: pointer; }
+  .thumbnail .caption {
+    height: 58px;
+    overflow: hidden;
+    padding: 0px;
+    line-height: 14px;
+    margin: 0px 5px 5px 5px; }
+
+.thumb-container {
+  padding: 0px;
+  overflow: hidden; }
+  .thumb-container img {
+    max-height: 100px;
+    margin-left: auto;
+    margin-right: auto; }
+
+.thumb-wrapper {
+  position: relative;
+  text-align: center; }
+  .thumb-wrapper span {
+    position: absolute;
+    -webkit-transform: rotateZ(-20deg);
+    -moz-transform: rotateZ(-20deg);
+    -o-transform: rotateZ(-20deg);
+    transform: rotateZ(-20deg);
+    margin-top: -2px;
+    left: -10px; }
+
+.image-carousel {
+  margin: -26px -15px 20px -15px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+  position: relative;
+  height: 325px;
+  overflow: hidden; }
+  .image-carousel ul {
+    width: 100%;
+    height: 100%; }
+
+.close-image-slider {
+  position: absolute;
+  right: 10px;
+  top: 10px; }
+
+.image-container {
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  float: left;
+  line-height: 325px;
+  vertical-align: middle;
+  text-align: center; }
+  .image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+.rn-carousel-control {
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgba(50, 50, 50, 0.5);
+  -webkit-transition: all 0.3s ;
+  -moz-transition: all 0.3s ;
+  -o-transition: all 0.3s ;
+  transition: all 0.3s ;
+  border: 2px solid rgba(50, 50, 50, 0.5); }
+  .rn-carousel-control:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #23527c;
+    border: 2px solid rgba(35, 82, 124, 0.8); }
+
+.rn-carousel-control-next {
+  padding: 0px 3px 2px 5px; }
+
+.rn-carousel-control-prev {
+  padding: 0px 5px 2px 3px; }
+
+.image-caption-wrapper {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 15px;
+  text-align: center; }
+
+.image-caption {
+  border-radius: 20px;
+  font-size: 15px;
+  color: white;
+  border: 3px solid rgba(50, 50, 50, 0.3);
+  background-clip: padding-box;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 3px 10px 3px 10px; }
+
+.zoom {
+  -webkit-transform: translate3DZ(0px);
+  -moz-transform: translate3DZ(0px);
+  -o-transform: translate3DZ(0px);
+  transform: translate3DZ(0px); }
+
+.zoom:hover {
+  -webkit-transform: translate3DZ(50%);
+  -moz-transform: translate3DZ(50%);
+  -o-transform: translate3DZ(50%);
+  transform: translate3DZ(50%); }
+
+/* Custom Image Slider CSS */
+@media (min-width: 767) {
+  .sidebar-container {
+    display: inherit; } }
+@media only screen and (max-width: 768px) {
+  #brand {
+    margin-left: -170px; }
+
+  .slide-out {
+    margin-left: 5px; }
+
+  .col-xs-6 {
+    width: 33%; }
+
+  .sidebar-container {
+    display: none; }
+
+  .right-degree, .school-name {
+    width: 100%;
+    text-align: left; }
+
+  #navbar-hover-space {
+    min-width: 300px; } }
+@media only screen and (max-width: 480px) {
+  #name {
+    font-size: 30px; }
+
+  .thumbnail-slider {
+    padding-left: 5px;
+    padding-right: 5px; }
+
+  .thumbnail-slider-image {
+    padding-left: 4%;
+    padding-right: 4%; }
+
+  .main-content {
+    padding-left: 0px;
+    padding-right: 0px; }
+
+  .sidebar-container {
+    display: none; }
+
+  .slide-out {
+    margin-left: 0px; }
+
+  .navbar-round-link:not(.slide-out) {
+    display: none; }
+
+  #navbar-links-wrapper {
+    margin-left: -15px; }
+
+  #navbar-hover-space:hover .navbar-round-link.slide-out {
+    margin-left: 0px; }
+
+  .col-xs-6 {
+    width: 50%; }
+
+  #navbar li > a {
+    margin: 0px;
+    padding-left: 5px;
+    padding-right: 5px; }
+
+  .nav-fixed .right-nav {
+    background-color: black; }
+
+  .nav-fixed li > a.active {
+    background-color: white; }
+
+  .nav-fixed li > a:hover {
+    background-color: white; }
+
+  .navbar-round-link:last-child {
+    visibility: hidden; } }
+.statbox {
+  border-radius: 20px;
+  max-width: 250px;
+  border: 4px ridge rgba(60, 90, 150, 0.6);
+  float: left;
+  margin: 0px 15px 5px 5px;
+  padding: 15px 0px 0px 10px;
+  -webkit-transform: rotateZ(-5deg);
+  -moz-transform: rotateZ(-5deg);
+  -o-transform: rotateZ(-5deg);
+  transform: rotateZ(-5deg); }
+
+.statbox > ul {
+  list-style: none; }
+
+.statbox li {
+  margin-left: -35px; }
+
+.statbox h5 {
+  margin-left: 5px;
+  text-decoration: underline;
+  margin-top: -5px;
+  margin-bottom: 5px; }
+
+.profile {
+  float: left;
+  min-width: 150px;
+  min-height: 150px;
+  margin: 0px 15px 5px 0px;
+  border: 1px solid gray;
+  border-radius: 5px; }
+  .profile.my-photo {
+    background: url(../assets/tyler-sitting.jpg) no-repeat;
+    background-size: cover;
+    -webkit-transform: rotateZ(-5deg);
+    -moz-transform: rotateZ(-5deg);
+    -o-transform: rotateZ(-5deg);
+    transform: rotateZ(-5deg); }
+
+.school-desc {
+  margin: 10px 0px 5px 25px;
+  word-wrap: break-word;
+  overflow: hidden;
+  -webkit-transform-origin: top;
+  -o-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top; }
+
+.document-wrapper {
+  width: 100%;
+  height: 25px;
+  margin: 0px 0px -20px 0px;
+  text-align: right;
+  text-decoration: underline; }
+
+.document {
+  float: right;
+  margin-right: 5px;
+  margin-left: 10px; }
