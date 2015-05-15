@@ -1,0 +1,60 @@
+<div class="about">
+	<div id='bio' class="panel panel-info">
+		<h3 class="panel-heading">My Bio</h3>
+		<div class="panel-body">
+		<div class="statbox">
+			<h5>Fun Facts:</h5>
+			<ul>
+				<li ng-repeat='fact in main_facts'><span class="glyphicon glyphicon-ok-circle bullet-ok"></span><a ng-if='fact.link.length' href='{{fact.link}}' target='_blank'>{{fact.text}}</a><span ng-if='!fact.link.length'>{{fact.text}}</span></li>
+				
+			</ul>
+			</div>
+			<p ng-repeat='paragraph in bio.split("\n")' ng-bind-html='deliberatelyTrustDangerousSnippet(paragraph)'></p>
+		</div>
+	</div>
+	<div ng-repeat='section in about' id='{{section.id}}' class="panel" ng-class='{"panel-success":section.id==="education", "panel-primary": section.id==="employment"}'>
+		<h3 class="panel-heading">{{section.heading}}<span class='glyphicon glyphicon-picture close-image-slider' ng-if='section.images.length' ng-click='section.showImages = !section.showImages' ng-style='{opacity:(section.showImages ? 1 : 0.25)}'></span></h3>
+		<div class="panel-body">
+			<div class="image-carousel enable_touchmove"  ng-if='section.images.length' ng-show='section.showImages'>
+				<ul rn-carousel rn-carousel-controls rn-carousel-buffered rn-carousel-index='section.activeImage' class=' enable_touchmove' style='width:100%; height:325px;'>
+					<li class='image-carousel-li enable_touchmove' ng-repeat="image in section.images" style='display: inline-block;max-width:100%; max-height:325px'>
+						<div class="image-container">
+							<img ng-src="{{image.path}}" alt="" class="image enable_touchmove"/>
+						</div>
+						<div class='image-caption-wrapper'>
+							<span class='image-caption'>{{image.caption}}</span>
+						</div>
+                    </li>
+				</ul>
+			</div>
+			<div class="schools" ng-repeat='entry in section.entries'>
+				<hr ng-show='$index!=0'>
+					<a href='{{entry.website}}' target='_blank' ng-show='entry.logo.length+ entry.website.length' alt='Website' class='school-logo' ng-style="{'background-image': 'url('+entry.logo+')'}"></a>
+
+				<div class="school-heading">
+					<div class="school-title-main">
+						<h4 class='school-name'>{{entry.name}}</h4>
+						<h5 class="right-degree">{{entry.title}}</h5>
+					</div>
+					<div class="school-location">
+						<span>{{entry.location}}</span>
+						<span class='label label-success'>{{entry.duration}}</span>
+					</div>
+				</div>
+				<p class='school-desc' ng-if='entry.description' ng-repeat='paragraph in entry.description.split("\n")'>{{paragraph}}</p>
+				<ui class='responsibilities' ng-if='entry.list'>
+					<li ng-repeat='item in entry.list'>{{item}}</li>
+				</ui>
+				<div class="document-wrapper" ng-show='entry.documents.length'>{{entry.docIntro}}
+					<div class="document" ng-repeat='doc in entry.documents'>
+						<span><a href='{{doc.address}}' target="_blank">{{doc.name}}</a></span>
+					</div>
+				</div>
+			</div>
+			<div ng-show='section.bottom.length'>
+				<hr>
+				<div ng-bind-html='deliberatelyTrustDangerousSnippet(section.bottom)'></div>
+			</div>
+		</div>
+	</div>
+</div>

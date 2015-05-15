@@ -1,0 +1,30 @@
+
+<div class="home">
+	<div class="panel panel-success">
+		<h3 class="panel-heading">Who am I?</h3>
+		<div class="panel-body blurb">
+		<div class="profile my-photo"></div><p ng-repeat='paragraph in blurb.split("\n")' ng-bind-html='deliberatelyTrustDangerousSnippet(paragraph)'></p>
+		</div>
+	</div>
+	<div class="panel panel-primary">
+		<h3 class="panel-heading">What have I done?</h3>
+		<div class="panel-body all-thumbs">
+			<div class="thumbnail-slider col-xs-12">
+				<div class="thumbnail-slider-image hvr-grow col-xs-6 col-sm-4 col-md-3" ng-repeat='short in short_desc|orderBy:"-desc"' ng-click='makeActive(short.page); goTo(short.loc);'>
+					<div class="thumbnail">
+						<div class="thumb-wrapper">
+							<div class="thumb-container col-xs-12"><img class='' ng-src="{{short.thumbnail}}" alt=""></div>
+							<span class='tag label' ng-class='{"label-info": short.label=="Project", "label-success": short.label=="School", "label-primary":short.label=="Job"}'>{{short.label}}</span>
+						</div>
+						<div class="title col-xs-12">
+							<h4>{{short.name}}</h4>
+						</div>
+						<div class="caption col-xs-12">
+							<p>{{short.desc}}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

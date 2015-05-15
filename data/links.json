@@ -1,0 +1,36 @@
+{
+	"heading": "Links",
+	"text":"",
+	"links":[
+		{
+			"address":"assets/cv.pdf",
+			"name": "CV",
+			"icon":"assets/round-icons/pdf-round.png"
+		},
+		{
+			"address":"http://be.linkedin.com/in/tylerboddyspargo",
+			"name": "LinkedIn",
+			"icon":"assets/round-icons/Linkedin-round.png"
+		},
+		{
+			"address":"http://google.com/+TylerBoddySpargo",
+			"name": "Google+",
+			"icon":"assets/round-icons/Google-plus-round.png"
+		},
+		{
+			"address":"http://www.facebook.com/tboddyspargo",
+			"name":"Facebook",
+			"icon":"assets/round-icons/Facebook-round.png"
+		},
+		{
+			"address":"http://about.me/tylerboddyspargo",
+			"name": "About.me",
+			"icon":"assets/round-icons/me-round.png"
+		},
+		{
+			"address":"mailto:muyleche@gmail.com",
+			"name": "Email",
+			"icon":"assets/round-icons/email-2-icon.png"
+		}
+	]
+}
