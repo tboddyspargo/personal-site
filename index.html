@@ -16,25 +16,32 @@
 
 
 	<link rel="stylesheet" type='text/css' href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-	<link rel='stylesheet' type='text/css' href='bower_components/hover/css/hover-min.css' media='all'></link>
-	<link rel='stylesheet' type='text/css' href="bower_components/angular-carousel/dist/angular-carousel.min.css"></link>
-	<link rel='stylesheet' type='text/css' href="style/ng-animation.css"></link>
-	
 	<link rel="stylesheet" type='text/css' href="style/main.css">
+	<link rel='stylesheet' type='text/css' href='bower_components/hover/css/hover-min.css' media='all' async></link>
+	<link rel='stylesheet' type='text/css' href="bower_components/angular-carousel/dist/angular-carousel.min.css" async></link>
+	<link rel='stylesheet' type='text/css' href="style/ng-animation.css" async></link>
+	
 	<script data-main="scripts/main" src="./bower_components/requirejs/require.js"></script>
 </head>
 
 
 
 <body class='' ng-controller='TabCtrl'>
-
 	<div id='top' class="banner">
+		<div id="banner-cover"></div>
 		<h1 id='name' class='noselect'>Tyler BoddySpargo</h1>
 		<div id="banner-image"></div>
 	</div>
+	
 	<nav-bar id='navbar-container' class='nav-not-fixed'></nav-bar>
 
 	<tab-content id='tab-content'></tab-content>
+	
+	<sidebar id='sidebar-container' class="sidebar-not-fixed col-xs-12 col-lg-10 col-lg-push-1"></sidebar>
+
+	
+	
+
 
 </body>
 </html>

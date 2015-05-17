@@ -1,0 +1,1 @@
+define(["angular"],function(e){e.module("application.dataService",[]).service("dataService",function(e){var a=[];e.get("/data/projects.json",{}).success(function(e){for(var n=0;n<e.length;n++)a.push({name:e[n].name,desc:e[n].goal,thumbnail:e[n].thumbnail,label:"Project",page:3,loc:"project"+n})})})});

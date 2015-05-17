@@ -8644,6 +8644,292 @@
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
 		},
+	"\/bower_components\/scrollmagic\/minified\/greensock\/easing\/EasePack.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/easing\/EasePack.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/easing\/min\/EasePack.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/minified\/greensock\/jquery.gsap.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/jquery.gsap.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/min\/jquery.gsap.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/minified\/greensock\/min\/jquery.gsap.min-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/min\/jquery.gsap.min-min.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/min\/min\/jquery.gsap.min-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/AttrPlugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/AttrPlugin.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/min\/AttrPlugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/BezierPlugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/BezierPlugin.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/min\/BezierPlugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/ColorPropsPlugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/ColorPropsPlugin.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/min\/ColorPropsPlugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/CSSPlugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/CSSPlugin.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/min\/CSSPlugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/CSSRulePlugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/CSSRulePlugin.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/min\/CSSRulePlugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/DirectionalRotationPlugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/DirectionalRotationPlugin.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/min\/DirectionalRotationPlugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/EaselPlugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/EaselPlugin.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/min\/EaselPlugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/EndArrayPlugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/EndArrayPlugin.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/min\/EndArrayPlugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/KineticPlugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/KineticPlugin.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/min\/KineticPlugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/RaphaelPlugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/RaphaelPlugin.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/min\/RaphaelPlugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/RoundPropsPlugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/RoundPropsPlugin.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/min\/RoundPropsPlugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/ScrollToPlugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/ScrollToPlugin.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/min\/ScrollToPlugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/TextPlugin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/TextPlugin.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/plugins\/min\/TextPlugin.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/minified\/greensock\/TimelineLite.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/TimelineLite.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/min\/TimelineLite.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/minified\/greensock\/TimelineMax.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/TimelineMax.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/min\/TimelineMax.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/minified\/greensock\/TweenLite.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/TweenLite.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/min\/TweenLite.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/minified\/greensock\/TweenMax.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/TweenMax.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/min\/TweenMax.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/minified\/greensock\/utils\/Draggable.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/utils\/Draggable.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/greensock\/utils\/min\/Draggable.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/minified\/plugins\/animation.gsap.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/plugins\/animation.gsap.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/plugins\/min\/animation.gsap.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/minified\/plugins\/animation.velocity.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/plugins\/animation.velocity.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/plugins\/min\/animation.velocity.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/minified\/plugins\/debug.addIndicators.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/plugins\/debug.addIndicators.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/plugins\/min\/debug.addIndicators.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/minified\/plugins\/jquery.ScrollMagic.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/plugins\/jquery.ScrollMagic.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/plugins\/min\/jquery.ScrollMagic.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/minified\/ScrollMagic.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/ScrollMagic.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/minified\/min\/ScrollMagic.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/bower_components\/scrollmagic\/README.md": {
 		"criticStyle": 0,
 		"enableFootnotes": 1,
@@ -8665,111 +8951,342 @@
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
 		},
-	"\/bower_components\/scrollmagic\/scrollmagic\/minified\/plugins\/animation.gsap.min.js": {
+	"\/bower_components\/scrollmagic\/uncompressed\/greensock\/easing\/EasePack.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/scrollmagic\/minified\/plugins\/animation.gsap.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/scrollmagic\/minified\/plugins\/min\/animation.gsap.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/easing\/EasePack.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/easing\/min\/EasePack-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/scrollmagic\/scrollmagic\/minified\/plugins\/animation.velocity.min.js": {
+	"\/bower_components\/scrollmagic\/uncompressed\/greensock\/jquery.gsap.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/scrollmagic\/minified\/plugins\/animation.velocity.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/scrollmagic\/minified\/plugins\/min\/animation.velocity.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/jquery.gsap.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/min\/jquery.gsap-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/scrollmagic\/scrollmagic\/minified\/plugins\/debug.addIndicators.min.js": {
+	"\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/animation.gsap.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/scrollmagic\/minified\/plugins\/debug.addIndicators.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/scrollmagic\/minified\/plugins\/min\/debug.addIndicators.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/animation.gsap.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/min\/animation.gsap-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/scrollmagic\/scrollmagic\/minified\/plugins\/jquery.ScrollMagic.min.js": {
+	"\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/AttrPlugin.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/scrollmagic\/minified\/plugins\/jquery.ScrollMagic.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/scrollmagic\/minified\/plugins\/min\/jquery.ScrollMagic.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/AttrPlugin.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/min\/AttrPlugin-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/scrollmagic\/scrollmagic\/minified\/ScrollMagic.min.js": {
+	"\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/BezierPlugin.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/scrollmagic\/minified\/ScrollMagic.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/scrollmagic\/minified\/min\/ScrollMagic.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/BezierPlugin.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/min\/BezierPlugin-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/scrollmagic\/scrollmagic\/uncompressed\/plugins\/animation.gsap.js": {
+	"\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/ColorPropsPlugin.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/scrollmagic\/uncompressed\/plugins\/animation.gsap.js",
-		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/scrollmagic\/uncompressed\/plugins\/min\/animation.gsap-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/ColorPropsPlugin.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/min\/ColorPropsPlugin-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/scrollmagic\/scrollmagic\/uncompressed\/plugins\/animation.velocity.js": {
+	"\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/CSSPlugin.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/scrollmagic\/uncompressed\/plugins\/animation.velocity.js",
-		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/scrollmagic\/uncompressed\/plugins\/min\/animation.velocity-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/CSSPlugin.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/min\/CSSPlugin-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/scrollmagic\/scrollmagic\/uncompressed\/plugins\/debug.addIndicators.js": {
+	"\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/CSSRulePlugin.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/scrollmagic\/uncompressed\/plugins\/debug.addIndicators.js",
-		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/scrollmagic\/uncompressed\/plugins\/min\/debug.addIndicators-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/CSSRulePlugin.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/min\/CSSRulePlugin-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/scrollmagic\/scrollmagic\/uncompressed\/plugins\/jquery.ScrollMagic.js": {
+	"\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/DirectionalRotationPlugin.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/scrollmagic\/uncompressed\/plugins\/jquery.ScrollMagic.js",
-		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/scrollmagic\/uncompressed\/plugins\/min\/jquery.ScrollMagic-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/DirectionalRotationPlugin.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/min\/DirectionalRotationPlugin-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/scrollmagic\/scrollmagic\/uncompressed\/ScrollMagic.js": {
+	"\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/EaselPlugin.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/scrollmagic\/uncompressed\/ScrollMagic.js",
-		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/scrollmagic\/uncompressed\/min\/ScrollMagic-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/EaselPlugin.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/min\/EaselPlugin-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/EndArrayPlugin.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/EndArrayPlugin.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/min\/EndArrayPlugin-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/KineticPlugin.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/KineticPlugin.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/min\/KineticPlugin-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/min\/animation.gsap-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/min\/animation.gsap-min.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/min\/min\/animation.gsap-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/RaphaelPlugin.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/RaphaelPlugin.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/min\/RaphaelPlugin-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/RoundPropsPlugin.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/RoundPropsPlugin.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/min\/RoundPropsPlugin-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/ScrollToPlugin.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/ScrollToPlugin.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/min\/ScrollToPlugin-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/TEMPLATE_Plugin.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/TEMPLATE_Plugin.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/min\/TEMPLATE_Plugin-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/TextPlugin.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/TextPlugin.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/plugins\/min\/TextPlugin-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/uncompressed\/greensock\/TimelineLite.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/TimelineLite.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/min\/TimelineLite-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/uncompressed\/greensock\/TimelineMax.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/TimelineMax.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/min\/TimelineMax-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/uncompressed\/greensock\/TweenLite.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/TweenLite.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/min\/TweenLite-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/uncompressed\/greensock\/TweenMax.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/TweenMax.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/min\/TweenMax-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/uncompressed\/greensock\/utils\/Draggable.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/utils\/Draggable.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/greensock\/utils\/min\/Draggable-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/uncompressed\/plugins\/animation.gsap.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/plugins\/animation.gsap.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/plugins\/min\/animation.gsap-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/uncompressed\/plugins\/animation.velocity.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/plugins\/animation.velocity.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/plugins\/min\/animation.velocity-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/uncompressed\/plugins\/debug.addIndicators.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/plugins\/debug.addIndicators.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/plugins\/min\/debug.addIndicators-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/uncompressed\/plugins\/jquery.ScrollMagic.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/plugins\/jquery.ScrollMagic.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/plugins\/min\/jquery.ScrollMagic-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/scrollmagic\/uncompressed\/ScrollMagic.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/ScrollMagic.js",
+		"outputAbbreviatedPath": "\/bower_components\/scrollmagic\/uncompressed\/min\/ScrollMagic-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/skrollr\/min\/skrollr-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/skrollr\/min\/skrollr-min.js",
+		"outputAbbreviatedPath": "\/bower_components\/skrollr\/min\/min\/skrollr-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/skrollr\/skrollr.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/skrollr\/skrollr.js",
+		"outputAbbreviatedPath": "\/bower_components\/skrollr\/min\/skrollr-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/skrollr\/skrollr.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/skrollr\/skrollr.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/skrollr\/min\/skrollr.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -8797,12 +9314,34 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/controllers\/min\/tab_controller-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/controllers\/min\/tab_controller-min.js",
+		"outputAbbreviatedPath": "\/controllers\/min\/min\/tab_controller-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/controllers\/projects_controller.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/controllers\/projects_controller.js",
 		"outputAbbreviatedPath": "\/controllers\/min\/projects_controller-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/controllers\/tab_controller.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/controllers\/tab_controller.js",
+		"outputAbbreviatedPath": "\/controllers\/min\/tab_controller-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -8819,6 +9358,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/data\/biography.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/data\/biography.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/data\/biography-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/data\/blogs.json": {
 		"fileType": 524288,
 		"ignore": 1,
@@ -8826,6 +9376,28 @@
 		"inputAbbreviatedPath": "\/data\/blogs.json",
 		"orderOutput": 0,
 		"outputAbbreviatedPath": "\/data\/blogs-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/data\/blurb.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/data\/blurb.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/data\/blurb-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/data\/facts.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/data\/facts.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/data\/facts-min.json",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
@@ -8848,6 +9420,17 @@
 		"inputAbbreviatedPath": "\/data\/projects.json",
 		"orderOutput": 0,
 		"outputAbbreviatedPath": "\/data\/projects-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/data\/short_descriptions.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/data\/short_descriptions.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/data\/short_descriptions-min.json",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
@@ -8958,12 +9541,56 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/scripts\/min\/scroll-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scripts\/min\/scroll-min.js",
+		"outputAbbreviatedPath": "\/scripts\/min\/min\/scroll-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/scripts\/scroll.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scripts\/scroll.js",
+		"outputAbbreviatedPath": "\/scripts\/min\/scroll-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/server.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/server.js",
 		"outputAbbreviatedPath": "\/min\/server-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/services\/data_service.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/services\/data_service.js",
+		"outputAbbreviatedPath": "\/services\/min\/data_service-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/services\/min\/data_service-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/services\/min\/data_service-min.js",
+		"outputAbbreviatedPath": "\/services\/min\/min\/data_service-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -9021,6 +9648,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/style\/scss\/_animations.scss",
 		"outputAbbreviatedPath": "\/style\/css\/_animations.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/style\/scss\/_css3-mixins.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/style\/scss\/_css3-mixins.scss",
+		"outputAbbreviatedPath": "\/style\/css\/_css3-mixins.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -9188,6 +9831,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/templates\/projects.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/templates\/sidebar.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/templates\/sidebar.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -9389,7 +10041,7 @@
 	"javascriptCreateSourceMap": 1,
 	"javascriptOutputStyle": 1,
 	"javascriptSyntaxCheckerStyle": 1,
-	"jsCheckerReservedNamesString": "",
+	"jsCheckerReservedNamesString": "define, require, angular",
 	"jsHintFlags2": {
 		"asi": {
 			"active": 0,
@@ -9440,7 +10092,7 @@
 			"flagValue": -1
 			},
 		"eqeqeq": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"eqnull": {

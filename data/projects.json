@@ -1,97 +1,356 @@
 [
-	{"name": "This Website!",
-	"goal": "Create a showcase of my accomplishments using some of them in the process.",
-	"steps": [{"show": true, "heading": "Storyboard", "detail": "Getting ones inspiration and basic outline is probably the hardest part of any project. I started with a sketch in my notebook of a basic layout that I liked - which was also inspired by the nature of the aspects of AngularJS that I planned to use."},
-		{"show": false, "heading": "Create the layout", "detail": "I put together a working version that had no content, so as to know how to structure the data models I would use to fill it and also which additional specialty things I might have to research and implement (e.g. photo slider)."},
-		{"show": false, "heading": "Fill in and Fill out", "detail": "The final steps involved writing the actual content, gathering together the assets (photos, documents), and getting a little fancy with animations, responsive design, support for all popular browsers, and added functionality. To achieve the latter improvements I made use of CSS transitions, @media types, ngAnimate, a photo slider module called angular-carousel, and hover.css."}],
-	"images": [{"path": "/assets/home-page.jpg", "caption": "Homepage"},
-			{"path": "/assets/sublime.jpg", "caption": "Sublime showing app.js"},
-			{"path": "/assets/navbar template.jpg", "caption": "Sublime showing navigation bar template"}
-			],
-	"showImages": true,
-	"thumbnail": "/assets/home-page sm.jpg",
-	"documents": []
-	},
-	{"name": "iOS Calculator App",
-	"goal": "Practive C, Obj-C, and Swift by creating a simple calculator app for iOS.",
-	"steps": [{"show": true, "heading": "The basic C program", "detail": "This project started as a way for me to learn the C programming language and I used a CLI to perform calculations with fractions and mixed numbers. Once I felt comfortable with those skills, I moved on to Objective-C and began to reuse my C code in an Xcode setting!"},
-		{"show": false, "heading": "Objective-C", "detail": "Compared to C, objective-C was a whole other animal, so I had to play around quite a bit before I felt comfortable using the storyboard tool to create a UI and integrating it satisfactorily with my C functionality. This required quite a different approach to my code and a more global vision of how the different pieces fit together."},
-		{"show": false, "heading": "Issue tracking and refactoring", "detail": "As with any programming endeavor, there were many bugs that I had to address and I spent a great amount of time letting others use my app so that I could see where the problems were and what potential cases I hadn't foreseen on my own. Most of these issues had to do with the interaction between the UI elements and the actual computations happening in the background. Although I didn't get around to completing all of the functionalities I intended, the resulting app is usable and I was quite proud of the rapid progress I had made (I went from nothing to a working app in a couple weeks)."},
-		{"show": false, "heading": "Write in Swift", "detail": "When Apple released their new Swift programming language, I was very intrigued by the possibilities of such an elegant and succinct language. I began to take my calculator and port it over into a completely Swift project that also used only a coded UI (no storyboard, all UI elements were written directly in the View Controller). Although I didn't have time to complete this project, it was a great learning experience and I'm very impressed with Swift and its potential!"}],
-	"images": [{"path": "/assets/storyboard.jpg", "caption": "Storyboard of iPhone UI"},
-			{"path": "/assets/calculator class.jpg", "caption": "Calculator class definition"},
-			{"path": "/assets/working calculator app.jpg", "caption": "Calculator app simulation"},
-			{"path": "/assets/Swift version.jpg", "caption": "Partial Swift calculator app"}
-			],
-	"showImages": true,
-	"thumbnail": "/assets/storyboard sm.jpg",
-	"documents": []
-	},
-	{"name": "FluentU Caption Files",
-	"goal": "Facilitate the creation, organization, and manipulation of caption files.",
-	"steps": [{"show": true, "heading": "Move to the cloud", "detail": "Prior to my arrival at FluentU, the company had been using excel documents and a rather arbitrary and opaque structure for organizing captions. Working with them was unwieldy and require lots of extra time and effort, not to mention the fact that collaboration was virtually impossible. I quickly proposed moving to a cloud solution and designed Google Sheets documents and a more transparent format. Furthermore, the power of Google Apps Scripts was at our fingertips - something I did not fail to take advantage of!"},
-			{"show": false, "heading": "Improve functionality","detail": "Using Google Apps Scripts, I created tools to streamline processes such as entering time codes, hiding unnecessary rows, keeping track of and standardizing caption length, providing word count and rate of speech data, giving quick access to the corresponding YouTube content, checking for errors, and more. Suddenly, we no longer had to email files back and forth, manage multiple versions of files, require one person to delegate transcription or translation tasks, or perform bothersome tasks that a computer can do much better. As a result the work became much more efficient, effective, and enjoyable."},
-			{"show": false, "heading": "Google Sheets Add-on", "detail": "As the tools for caption files matured, I took advantage of the newest possibility with Google Sheets - the ability to use Add-ons. This opened up the door to other possibilities and removed some annoying aspects of using scripts that were associated with documents, rather than a separate mini-app. This Add-on (which I christened \"CaptionControl\") became a side-along companion to the entire process and allowed for: real-time spell checking, embedded YouTube player in the sidebar, and easier interaction with tools that require user input."}],
-	"images": [{"path": "/assets/old-caption-file2.jpg", "caption": "Old caption file"},
-			{"path": "/assets/caption-file-new.jpg", "caption": "New caption file"},
-			{"path": "/assets/caption-errors.jpg", "caption": "Caption file showing errors"},
-			{"path": "/assets/caption-file-addon.jpg", "caption": "Caption file with Add-on"},
-			{"path": "/assets/caption-upload.jpg", "caption": "Import captions dialog box"}
-			],
-	"showImages": true,
-	"thumbnail": "/assets/caption-file-new.jpg",
-	"documents": []
-	},
-	{"name": "FluentU Dashboard",
-	"goal": "Improve workflow to increase independence and promote job satisfaction.",
-	"steps": [{"show": true, "heading": "Standardize", "detail": "FluentU was growing quickly, moving from a site that offered Chinese, to offering Spanish, English, French, German, and Japanese as well. This rapid expansion meant that we needed to solidify and standardize our tracking systems and workflows to use \"best practices\" everywhere. I initiated new designs for all of the major Google documents that we work from and made sure that we could quickly and easily access the information we needed."},
-			{"show": false, "heading": "Automate repetitive tasks", "detail": "Many of the things our workers spent time doing didn't have much to do with their actual \"positions\" at FluentU, so I created tools to automate the tasks that they would otherwise have taken much longer to do manually. Workers could focus on using their specific skill sets on the jobs that required their expertise, and not on menial, repetative tasks."},
-			{"show": false, "heading": "Improve reliability", "detail": "Managing these tools for our rapidly expanding team, meant that I was constantly thinking about how to improve upon the reliability of the systems I had created. This involved lots of refactoring code, utilizing different strategies, and finding creative solutions to new problems."}
-			],
-	"images":  [{"path": "/assets/dash.jpg", "caption": "Work Tracking (Dashboard) Document"},
-			{"path": "/assets/fcvl.jpg", "caption": "Video Finding Document"},
-			{"path": "/assets/publishing-data.jpg", "caption": "Publishing Data"},
-			{"path": "/assets/scripts.jpg", "caption": "Google Apps Script document (5,000+ lines)"}
-			],
-	"showImages": true,
-	"thumbnail": "/assets/dash-sm.jpg",
-	"documents": []
-	},
-	{"name": "FluentU Analitics",
-	"goal": "Measure and assess productivity to improve efficiency.",
-	"steps": [{"show": true, "heading": "Gather information", "detail": "In order to know what \"best practices\" were we needed to gather data about how we were working and compare strategies and results. Early on in the process, I began to record who performed which tasks and when they were completed. I also built a small application that used the Time Doctor API to get all of the time data for each employee (broken up into tasks), allowing us to see how much time we were spending at each stage."},
-			{"show": false, "heading": "Track progress", "detail": "All of the informating we gather is recorded and retained regularly, allowing us to compile a significant amount of data and see trends and progress towards goals over time. It also allowed us to assess the effectiveness of new strategies."},
-			{"show": false, "heading": "Visualize useful information", "detail": "Although the information was stored as large tables of numbers, certain data points were put into charts and tables to allow us to integrate the information more easily into our process. This allowed for more intentional curation of content and more structured decisions about priorities."},
-			{"show": false, "heading": "Implement meaningful change", "detail": "Interpreting the data and examining it as a team allowed us to pinpoint successful strategies and share them with each other, both ensuring the use of \"best practices\" to improve productivity, and to have a standardized workflow across all 6 language teams. As a result, we saw consistent improvements to workflow and productivity."}
-			],
-	"images":  [{"path": "/assets/api-application.jpg", "caption": "Integration with Time Doctor API"},
-			{"path": "/assets/trends.jpg", "caption": "Graphs displaying library stats"},
-			{"path": "/assets/monthly.jpg", "caption": "Real-time company-wide progress report"},
-			{"path": "/assets/graphs.jpg", "caption": "Real-time team and individual graphs"}
-			],
-	"showImages": true,
-	"thumbnail": "/assets/graphs-sm.jpg",
-	"documents": []
-	},
-	{"name": "File Helper",
-	"goal": "Create a set of tools to perform file-system organization tasks using python.",
-	"steps":[{"show": true, "heading": "Learn to manipulate Tkinter and os python modules", "detail": "This was my final project for a CS course I took at Carleton and I wanted it to solve a problem that I had in real life: organizing hundreds of ebooks organized in folder by author. My professor expressed his concern that it was a bit too ambitious, but I was adamant. I now had a substantial command of python, but in order to build a GUI, I needed to learn to implement Tkinter - a UI building module."},
-			{"show": false, "heading": "Create tools for perform actions in the file system", "detail": "Although building the UI for this application was the biggest challenge I encountered, I was more interested in the effect it would have on the file system. I established a wide array of actions that could be performed on files and folders, such as: merging folders, mass renaming, finding duplicates, and more. All of these tasks required learning how to use various parts of the os module and considering the user experience."}],
-	"images": [{"path": "/assets/file-helper.jpg", "caption": "FileHelper applicaiton window"},
-			{"path": "/assets/filehelper-sm.png", "caption": "FileHelper icon"}],
-	"showImages": true,
-	"thumbnail": "/assets/filehelper-sm.png",
-	"documents": [{"path": "/assets/FileHelper.zip", "name": "FileHelper (MacOSX)"}]
-	},
-	{"name": "Zombies Game",
-	"goal": "Use python to build a simple zombie apocalypse game.",
-	"steps":[{"show": true, "heading": "Learn python and pygame", "detail": "Creating a game using python required learning the basics of the python language and object-oriented programming as well as integrating the pygame module for rendering visuals to the user. Up to this point my python experience had been limited to the command line, but I was glad for the opportunity to express my programming abilities through a GUI."},
-			{"show": false, "heading": "Improve upon the complexity of the game", "detail": "Since this game started as an assignment for class, there were certain criteria that had to be met. However, I was highly unsatisfied with the simplicity of running around a black rectangle while another circle followed the player around. I added a lot more complexity to the game: custom graphics, sound effects and music, laser gun, a powerup, health meter, points, lives, and the ability to \"lose\" or \"win\" at the game. In short, the basic requirements for a game that is actually enjoyable (and, I might add, rather hard to beat)! Try it for yourself by downloading the zip file below!"}],
-	"images": [{"path": "/assets/zombies-sm.png", "caption": "Zombies icon"},
-			{"path": "/assets/zombies-shoot.jpg", "caption": "Gameplay"},
-			{"path": "/assets/zombies-game-over.jpg", "caption": "Zombies Game Over"}],
-	"showImages": true,
-	"thumbnail": "/assets/zombies-sm.png",
-	"documents": [{"path": "/assets/Zombies.zip", "name": "Zombies (MacOSX)"}]
-	}
+  {
+    "name": "This Website!",
+    "goal": "Create a showcase of my accomplishments using some of them in the process.",
+    "steps": [
+      {
+        "show": true,
+        "heading": "Storyboard",
+        "detail": "Getting ones inspiration and basic outline is probably the hardest part of any project. I started with a sketch in my notebook of a basic layout that I liked - which was also inspired by the nature of the aspects of AngularJS that I planned to use.",
+        "$$hashKey": "object:189"
+      },
+      {
+        "show": false,
+        "heading": "Create the layout",
+        "detail": "I put together a working version that had no content, so as to know how to structure the data models I would use to fill it and also which additional specialty things I might have to research and implement (e.g. photo slider).",
+        "$$hashKey": "object:190"
+      },
+      {
+        "show": false,
+        "heading": "Fill in and Fill out",
+        "detail": "The final steps involved writing the actual content, gathering together the assets (photos, documents), and getting a little fancy with animations, responsive design, support for all popular browsers, and added functionality. To achieve the latter improvements I made use of CSS transitions, @media types, ngAnimate, a photo slider module called angular-carousel, and hover.css.",
+        "$$hashKey": "object:191"
+      }
+    ],
+    "images": [
+      {
+        "path": "http://tyler.boddyspargo.com/assets/home-page.jpg",
+        "caption": "Homepage",
+        "$$hashKey": "object:195"
+      },
+      {
+        "path": "http://tyler.boddyspargo.com/assets/sublime.jpg",
+        "caption": "Sublime showing app.js",
+        "$$hashKey": "object:196"
+      },
+      {
+        "path": "http://tyler.boddyspargo.com/assets/navbar template.jpg",
+        "caption": "Sublime showing navigation bar template",
+        "$$hashKey": "object:197"
+      }
+    ],
+    "showImages": true,
+    "thumbnail": "http://tyler.boddyspargo.com/assets/home-page sm.jpg",
+    "documents": [],
+    "$$hashKey": "object:172",
+    "activeImage": 0
+  },
+  {
+    "name": "iOS Calculator App",
+    "goal": "Practive C, Obj-C, and Swift by creating a simple calculator app for iOS.",
+    "steps": [
+      {
+        "show": true,
+        "heading": "The basic C program",
+        "detail": "This project started as a way for me to learn the C programming language and I used a CLI to perform calculations with fractions and mixed numbers. Once I felt comfortable with those skills, I moved on to Objective-C and began to reuse my C code in an Xcode setting!",
+        "$$hashKey": "object:208"
+      },
+      {
+        "show": false,
+        "heading": "Objective-C",
+        "detail": "Compared to C, objective-C was a whole other animal, so I had to play around quite a bit before I felt comfortable using the storyboard tool to create a UI and integrating it satisfactorily with my C functionality. This required quite a different approach to my code and a more global vision of how the different pieces fit together.",
+        "$$hashKey": "object:209"
+      },
+      {
+        "show": false,
+        "heading": "Issue tracking and refactoring",
+        "detail": "As with any programming endeavor, there were many bugs that I had to address and I spent a great amount of time letting others use my app so that I could see where the problems were and what potential cases I hadn't foreseen on my own. Most of these issues had to do with the interaction between the UI elements and the actual computations happening in the background. Although I didn't get around to completing all of the functionalities I intended, the resulting app is usable and I was quite proud of the rapid progress I had made (I went from nothing to a working app in a couple weeks).",
+        "$$hashKey": "object:210"
+      },
+      {
+        "show": false,
+        "heading": "Write in Swift",
+        "detail": "When Apple released their new Swift programming language, I was very intrigued by the possibilities of such an elegant and succinct language. I began to take my calculator and port it over into a completely Swift project that also used only a coded UI (no storyboard, all UI elements were written directly in the View Controller). Although I didn't have time to complete this project, it was a great learning experience and I'm very impressed with Swift and its potential!",
+        "$$hashKey": "object:211"
+      }
+    ],
+    "images": [
+      {
+        "path": "http://tyler.boddyspargo.com/assets/storyboard.jpg",
+        "caption": "Storyboard of iPhone UI",
+        "$$hashKey": "object:216"
+      },
+      {
+        "path": "http://tyler.boddyspargo.com/assets/calculator class.jpg",
+        "caption": "Calculator class definition",
+        "$$hashKey": "object:217"
+      },
+      {
+        "path": "http://tyler.boddyspargo.com/assets/working calculator app.jpg",
+        "caption": "Calculator app simulation",
+        "$$hashKey": "object:218"
+      },
+      {
+        "path": "http://tyler.boddyspargo.com/assets/Swift version.jpg",
+        "caption": "Partial Swift calculator app",
+        "$$hashKey": "object:219"
+      }
+    ],
+    "showImages": true,
+    "thumbnail": "http://tyler.boddyspargo.com/assets/storyboard sm.jpg",
+    "documents": [],
+    "$$hashKey": "object:173",
+    "activeImage": 0
+  },
+  {
+    "name": "FluentU Caption Files",
+    "goal": "Facilitate the creation, organization, and manipulation of caption files.",
+    "steps": [
+      {
+        "show": true,
+        "heading": "Move to the cloud",
+        "detail": "Prior to my arrival at FluentU, the company had been using excel documents and a rather arbitrary and opaque structure for organizing captions. Working with them was unwieldy and require lots of extra time and effort, not to mention the fact that collaboration was virtually impossible. I quickly proposed moving to a cloud solution and designed Google Sheets documents and a more transparent format. Furthermore, the power of Google Apps Scripts was at our fingertips - something I did not fail to take advantage of!",
+        "$$hashKey": "object:232"
+      },
+      {
+        "show": false,
+        "heading": "Improve functionality",
+        "detail": "Using Google Apps Scripts, I created tools to streamline processes such as entering time codes, hiding unnecessary rows, keeping track of and standardizing caption length, providing word count and rate of speech data, giving quick access to the corresponding YouTube content, checking for errors, and more. Suddenly, we no longer had to email files back and forth, manage multiple versions of files, require one person to delegate transcription or translation tasks, or perform bothersome tasks that a computer can do much better. As a result the work became much more efficient, effective, and enjoyable.",
+        "$$hashKey": "object:233"
+      },
+      {
+        "show": false,
+        "heading": "Google Sheets Add-on",
+        "detail": "As the tools for caption files matured, I took advantage of the newest possibility with Google Sheets - the ability to use Add-ons. This opened up the door to other possibilities and removed some annoying aspects of using scripts that were associated with documents, rather than a separate mini-app. This Add-on (which I christened \"CaptionControl\") became a side-along companion to the entire process and allowed for: real-time spell checking, embedded YouTube player in the sidebar, and easier interaction with tools that require user input.",
+        "$$hashKey": "object:234"
+      }
+    ],
+    "images": [
+      {
+        "path": "http://tyler.boddyspargo.com/assets/old-caption-file2.jpg",
+        "caption": "Old caption file",
+        "$$hashKey": "object:238"
+      },
+      {
+        "path": "http://tyler.boddyspargo.com/assets/caption-file-new.jpg",
+        "caption": "New caption file",
+        "$$hashKey": "object:239"
+      },
+      {
+        "path": "http://tyler.boddyspargo.com/assets/caption-errors.jpg",
+        "caption": "Caption file showing errors",
+        "$$hashKey": "object:240"
+      },
+      {
+        "path": "http://tyler.boddyspargo.com/assets/caption-file-addon.jpg",
+        "caption": "Caption file with Add-on",
+        "$$hashKey": "object:241"
+      },
+      {
+        "path": "http://tyler.boddyspargo.com/assets/caption-upload.jpg",
+        "caption": "Import captions dialog box",
+        "$$hashKey": "object:242"
+      }
+    ],
+    "showImages": true,
+    "thumbnail": "http://tyler.boddyspargo.com/assets/caption-file-new.jpg",
+    "documents": [],
+    "$$hashKey": "object:174",
+    "activeImage": 0
+  },
+  {
+    "name": "FluentU Dashboard",
+    "goal": "Improve workflow to increase independence and promote job satisfaction.",
+    "steps": [
+      {
+        "show": true,
+        "heading": "Standardize",
+        "detail": "FluentU was growing quickly, moving from a site that offered Chinese, to offering Spanish, English, French, German, and Japanese as well. This rapid expansion meant that we needed to solidify and standardize our tracking systems and workflows to use \"best practices\" everywhere. I initiated new designs for all of the major Google documents that we work from and made sure that we could quickly and easily access the information we needed.",
+        "$$hashKey": "object:255"
+      },
+      {
+        "show": false,
+        "heading": "Automate repetitive tasks",
+        "detail": "Many of the things our workers spent time doing didn't have much to do with their actual \"positions\" at FluentU, so I created tools to automate the tasks that they would otherwise have taken much longer to do manually. Workers could focus on using their specific skill sets on the jobs that required their expertise, and not on menial, repetative tasks.",
+        "$$hashKey": "object:256"
+      },
+      {
+        "show": false,
+        "heading": "Improve reliability",
+        "detail": "Managing these tools for our rapidly expanding team, meant that I was constantly thinking about how to improve upon the reliability of the systems I had created. This involved lots of refactoring code, utilizing different strategies, and finding creative solutions to new problems.",
+        "$$hashKey": "object:257"
+      }
+    ],
+    "images": [
+      {
+        "path": "http://tyler.boddyspargo.com/assets/dash.jpg",
+        "caption": "Work Tracking (Dashboard) Document",
+        "$$hashKey": "object:261"
+      },
+      {
+        "path": "http://tyler.boddyspargo.com/assets/fcvl.jpg",
+        "caption": "Video Finding Document",
+        "$$hashKey": "object:262"
+      },
+      {
+        "path": "http://tyler.boddyspargo.com/assets/publishing-data.jpg",
+        "caption": "Publishing Data",
+        "$$hashKey": "object:263"
+      },
+      {
+        "path": "http://tyler.boddyspargo.com/assets/scripts.jpg",
+        "caption": "Google Apps Script document (5,000+ lines)",
+        "$$hashKey": "object:264"
+      }
+    ],
+    "showImages": true,
+    "thumbnail": "http://tyler.boddyspargo.com/assets/dash-sm.jpg",
+    "documents": [],
+    "$$hashKey": "object:175",
+    "activeImage": 0
+  },
+  {
+    "name": "FluentU Analytics",
+    "goal": "Measure and assess productivity to improve efficiency.",
+    "steps": [
+      {
+        "show": true,
+        "heading": "Gather information",
+        "detail": "In order to know what \"best practices\" were we needed to gather data about how we were working and compare strategies and results. Early on in the process, I began to record who performed which tasks and when they were completed. I also built a small application that used the Time Doctor API to get all of the time data for each employee (broken up into tasks), allowing us to see how much time we were spending at each stage.",
+        "$$hashKey": "object:276"
+      },
+      {
+        "show": false,
+        "heading": "Track progress",
+        "detail": "All of the informating we gather is recorded and retained regularly, allowing us to compile a significant amount of data and see trends and progress towards goals over time. It also allowed us to assess the effectiveness of new strategies.",
+        "$$hashKey": "object:277"
+      },
+      {
+        "show": false,
+        "heading": "Visualize useful information",
+        "detail": "Although the information was stored as large tables of numbers, certain data points were put into charts and tables to allow us to integrate the information more easily into our process. This allowed for more intentional curation of content and more structured decisions about priorities.",
+        "$$hashKey": "object:278"
+      },
+      {
+        "show": false,
+        "heading": "Implement meaningful change",
+        "detail": "Interpreting the data and examining it as a team allowed us to pinpoint successful strategies and share them with each other, both ensuring the use of \"best practices\" to improve productivity, and to have a standardized workflow across all 6 language teams. As a result, we saw consistent improvements to workflow and productivity.",
+        "$$hashKey": "object:279"
+      }
+    ],
+    "images": [
+      {
+        "path": "http://tyler.boddyspargo.com/assets/api-application.jpg",
+        "caption": "Integration with Time Doctor API",
+        "$$hashKey": "object:284"
+      },
+      {
+        "path": "http://tyler.boddyspargo.com/assets/trends.jpg",
+        "caption": "Graphs displaying library stats",
+        "$$hashKey": "object:285"
+      },
+      {
+        "path": "http://tyler.boddyspargo.com/assets/monthly.jpg",
+        "caption": "Real-time company-wide progress report",
+        "$$hashKey": "object:286"
+      },
+      {
+        "path": "http://tyler.boddyspargo.com/assets/graphs.jpg",
+        "caption": "Real-time team and individual graphs",
+        "$$hashKey": "object:287"
+      }
+    ],
+    "showImages": true,
+    "thumbnail": "http://tyler.boddyspargo.com/assets/graphs-sm.jpg",
+    "documents": [],
+    "$$hashKey": "object:176",
+    "activeImage": 0
+  },
+  {
+    "name": "File Helper",
+    "goal": "Create a set of tools to perform file-system organization tasks using python.",
+    "steps": [
+      {
+        "show": true,
+        "heading": "Learn to manipulate Tkinter and os python modules",
+        "detail": "This was my final project for a CS course I took at Carleton and I wanted it to solve a problem that I had in real life: organizing hundreds of ebooks organized in folder by author. My professor expressed his concern that it was a bit too ambitious, but I was adamant. I now had a substantial command of python, but in order to build a GUI, I needed to learn to implement Tkinter - a UI building module.",
+        "$$hashKey": "object:300"
+      },
+      {
+        "show": false,
+        "heading": "Create tools for perform actions in the file system",
+        "detail": "Although building the UI for this application was the biggest challenge I encountered, I was more interested in the effect it would have on the file system. I established a wide array of actions that could be performed on files and folders, such as: merging folders, mass renaming, finding duplicates, and more. All of these tasks required learning how to use various parts of the os module and considering the user experience.",
+        "$$hashKey": "object:301"
+      }
+    ],
+    "images": [
+      {
+        "path": "http://tyler.boddyspargo.com/assets/file-helper.jpg",
+        "caption": "FileHelper applicaiton window",
+        "$$hashKey": "object:306"
+      },
+      {
+        "path": "http://tyler.boddyspargo.com/assets/filehelper-sm.png",
+        "caption": "FileHelper icon",
+        "$$hashKey": "object:307"
+      }
+    ],
+    "showImages": true,
+    "thumbnail": "http://tyler.boddyspargo.com/assets/filehelper-sm.png",
+    "documents": [
+      {
+        "path": "http://tyler.boddyspargo.com/assets/FileHelper.zip",
+        "name": "FileHelper (MacOSX)",
+        "$$hashKey": "object:304"
+      }
+    ],
+    "$$hashKey": "object:177",
+    "activeImage": 0
+  },
+  {
+    "name": "Zombies Game",
+    "goal": "Use python to build a simple zombie apocalypse game.",
+    "steps": [
+      {
+        "show": true,
+        "heading": "Learn python and pygame",
+        "detail": "Creating a game using python required learning the basics of the python language and object-oriented programming as well as integrating the pygame module for rendering visuals to the user. Up to this point my python experience had been limited to the command line, but I was glad for the opportunity to express my programming abilities through a GUI.",
+        "$$hashKey": "object:316"
+      },
+      {
+        "show": false,
+        "heading": "Improve upon the complexity of the game",
+        "detail": "Since this game started as an assignment for class, there were certain criteria that had to be met. However, I was highly unsatisfied with the simplicity of running around a black rectangle while another circle followed the player around. I added a lot more complexity to the game: custom graphics, sound effects and music, laser gun, a powerup, health meter, points, lives, and the ability to \"lose\" or \"win\" at the game. In short, the basic requirements for a game that is actually enjoyable (and, I might add, rather hard to beat)! Try it for yourself by downloading the zip file below!",
+        "$$hashKey": "object:317"
+      }
+    ],
+    "images": [
+      {
+        "path": "http://tyler.boddyspargo.com/assets/zombies-sm.png",
+        "caption": "Zombies icon",
+        "$$hashKey": "object:322"
+      },
+      {
+        "path": "http://tyler.boddyspargo.com/assets/zombies-shoot.jpg",
+        "caption": "Gameplay",
+        "$$hashKey": "object:323"
+      },
+      {
+        "path": "http://tyler.boddyspargo.com/assets/zombies-game-over.jpg",
+        "caption": "Zombies Game Over",
+        "$$hashKey": "object:324"
+      }
+    ],
+    "showImages": true,
+    "thumbnail": "http://tyler.boddyspargo.com/assets/zombies-sm.png",
+    "documents": [
+      {
+        "path": "http://tyler.boddyspargo.com/assets/Zombies.zip",
+        "name": "Zombies (MacOSX)",
+        "$$hashKey": "object:320"
+      }
+    ],
+    "$$hashKey": "object:178",
+    "activeImage": 0
+  }
 ]

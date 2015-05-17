@@ -1,31 +1,10 @@
-@mixin transition($attribute, $time, $transition:"") {
-	-webkit-transition: $attribute $time unquote($transition);
-	   -moz-transition: $attribute $time unquote($transition);
-	     -o-transition: $attribute $time unquote($transition);
-	        transition: $attribute $time unquote($transition);
-}
-
 @mixin touch_select($value) {
     -webkit-touch-callout: $value;
-      -webkit-user-select: $value;
-       -khtml-user-select: $value;
-         -moz-user-select: $value;
-          -ms-user-select: $value;
-              user-select: $value;
-}
-
-@mixin transform($value) {
-	-webkit-transform: $value;
-	   -moz-transform: $value;
-	     -o-transform: $value;
-	        transform: $value;
+    @include css3-prefix('user-select', $value)
 }
 
 @mixin transform-origin($value) {
-	-webkit-transform-origin: $value;
-	-o-transform-origin: $value;
-	-ms-transform-origin: $value;
-	transform-origin: $value;
+	@include css3-prefix('transform-origin', $value);
 }
 
 @mixin clickable {
@@ -105,6 +84,10 @@ $bgColor: #cccccc;
 .bullet-ok {
 	margin-right: 3px;
 	top: 2px !important;
+}
+
+.hidden {
+	visibility: hidden;
 }
 
 .panel {

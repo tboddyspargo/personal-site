@@ -1,18 +1,25 @@
 body {
 	position: relative;
 	background: url(../assets/pattern.jpg) 640px 480px repeat fixed;
+	min-height: 100%;
 }
 
 .banner {
 	position: absolute;
-	top:-60px;
+	top: -60px;
 	@include size (100%, 300px);
-	overflow: hidden
+	overflow: hidden;
 }
 
 #banner-image {
-	background: url(../assets/banner1.jpg) calc(-750px + ((100% - 1280px) / 2)) -100px repeat fixed;
-	height: 400px;
+	background: url(../assets/banner1.jpg) calc(-750px + ((100% - 1280px) / 2)) 0px repeat;
+	@include size(100%, 300px);
+}
+
+#banner-cover {
+	@include size(100%, 300px);
+	position: absolute;
+	background: transparent;
 }
 
 #name {
@@ -27,13 +34,27 @@ body {
 
 #tab-content {
 	position: absolute;
-	margin-top:270px;
+	margin-top: 240px;
 }
 
-.sidebar-container {
+.main-content {
+	margin-top: 30px;
+}
+
+#sidebar-container {
 	height: 0px;
 	overflow: visible;
+	margin-top: 30px;
+}
+
+.sidebar-not-fixed {
 	position: absolute;
+	top: 240px;
+}
+
+.sidebar-fixed {
+	position: fixed;
+	top:40px;
 }
 
 #sidebar {
@@ -75,11 +96,6 @@ body {
 		display: inline-block;
 		margin-top: -3px;
 	}
-}
-
-.sidebar-fixed {
-	position: fixed;
-	top:70px;
 }
 
 footer {

@@ -1,0 +1,37 @@
+<div class="col-xs-12 col-sm-8 col-md-9"></div>
+<div id='sidebar' class="col-xs-12 col-sm-4 col-md-3">
+	<div class="panel panel-default contents-panel" ng-if='sidebar[active].contents.length+sidebar[active].text.length' ng-init='showContents = true'>
+		<h4 class="panel-heading">{{sidebar[active].heading}}<span class="right-toggle glyphicon" ng-class='{"glyphicon-plus-sign":!showContents, "glyphicon-minus-sign":showContents}' ng-click='showContents=!showContents'></span></h4>
+		<div class="panel-body" ng-show='showContents'>
+			<p ng-show='sidebar[active].text.length'>{{sidebar[active].text}}</p>
+			<ul ng-show='sidebar[active].contents.length' class='contents'>
+				<li class='content-item hvr-shrink' ng-repeat='content in sidebar[active].contents' ng-click='goTo(content.loc)'>- {{content.name}}</li>
+			</ul>
+		</div>
+	</div>
+	<div class='panel panel-default facts-panel' ng-init='showFacts = true'>
+		<h4 class='panel-heading'>Fun Facts<span class="right-toggle glyphicon" ng-class='{"glyphicon-plus-sign":!showFacts, "glyphicon-minus-sign":showFacts}' ng-click='showFacts=!showFacts'></span></h4>
+		<div class="panel-body links-body" ng-show='showFacts'>
+			<ul class='facts-list'>
+				<li class='fact-item' ng-repeat='fact in facts|orderBy:"text"|limitTo:5'><span class="glyphicon glyphicon-ok-circle bullet-ok"></span><a ng-if='fact.link.length' href='{{fact.link}}' target='_blank'>{{fact.text}}</a><span ng-if='!fact.link.length'>{{fact.text}}</span></li>
+			</ul>
+		</div>
+	</div>
+	<div class='panel panel-default links-panel' ng-init='showLinks = false'>
+		<h4 class='panel-heading'>{{links.heading}}<span class="right-toggle glyphicon" ng-class='{"glyphicon-plus-sign":!showLinks, "glyphicon-minus-sign":showLinks}' ng-click='showLinks=!showLinks'></span></h4>
+		<div class="panel-body links-body" ng-show='showLinks'>
+			<ul class='links-list'>
+				<li class='link-item' ng-repeat='link in links.links'><a href='{{link.address}}' target='_blank' ng-style="{'background-image': 'url('+link.icon+')'}" class='icon'></a><a class='text-link' href='{{link.address}}' target='{{link.noNewPage ? "" : "_blank"}}'>{{link.name}}</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class='panel panel-default links-panel' ng-init='showBlogs = false'>
+		<h4 class='panel-heading'>{{blogs.heading}}<span class="right-toggle glyphicon" ng-class='{"glyphicon-plus-sign":!showBlogs, "glyphicon-minus-sign":showBlogs}' ng-click='showBlogs=!showBlogs'></span></h4>
+		<div class="panel-body links-body" ng-show='showBlogs'>
+			<ul class='links-list'>
+				<li class='list-item' ng-repeat='blog in blogs.links'><a href='{{blog.address}}' target='_blank' ng-style="{'background-image': 'url('+blog.icon+')'}" class='icon'></a><a class='text-link' href='{{blog.address}}' target='_blank'>{{blog.name}}</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="col-xs-1 col-lg-push-0 col-xs-push-1"></div>

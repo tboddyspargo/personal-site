@@ -1,0 +1,247 @@
+[
+  {
+    "heading": "Education",
+    "bottom": "Highest Degree: BA in Romance Languages",
+    "id": "education",
+    "images": [
+      {
+        "path": "http://tyler.boddyspargo.com/assets/conservatoire-royal-de-bruxelles.jpg",
+        "caption": "Royal Conservatory",
+        "$$hashKey": "object:105"
+      },
+      {
+        "path": "http://tyler.boddyspargo.com/assets/niedermeyer-media.jpg",
+        "caption": "Niedermeyer Conservatory",
+        "$$hashKey": "object:106"
+      },
+      {
+        "path": "http://tyler.boddyspargo.com/assets/carleton1.jpg",
+        "caption": "Carleton College",
+        "$$hashKey": "object:107"
+      },
+      {
+        "path": "http://tyler.boddyspargo.com/assets/carleton2.jpg",
+        "caption": "Carleton College",
+        "$$hashKey": "object:108"
+      },
+      {
+        "path": "http://tyler.boddyspargo.com/assets/castle.jpg",
+        "caption": "Chambord Castle in France",
+        "$$hashKey": "object:109"
+      },
+      {
+        "path": "http://tyler.boddyspargo.com/assets/spain2.jpg",
+        "caption": "Castell building in Montserrat, Spain"
+      }
+    ],
+    "showImages": true,
+    "activeImage": 0,
+    "text": "",
+    "entries": [
+      {
+        "name": "Royal Conservatory of Brussels",
+        "title": "Barroque/Classical Trumpet",
+        "logo": "http://tyler.boddyspargo.com/assets/crb-logo.jpg",
+        "website": "http://www.conservatoire.be",
+        "duration": "2014-2015",
+        "location": "Brussels, Belgium",
+        "description": "I enrolled in the Royal conservatory of Brussels as a prospective master student, hoping that this more challenging, immersive environment would finally remove any doubt I still had about my musical endeavors. I took a full load as a first-years student and tested into 2nd-year musical fundamentals class and harmony/composition. I continued to work for FluentU and teach English to pay for school.",
+        "docIntro": "",
+        "documents": [],
+        "thumbnail": "http://tyler.boddyspargo.com/assets/crb-logo-wide-sm.jpg",
+        "$$hashKey": "object:95"
+      },
+      {
+        "name": "Niedermeyer Conservatory",
+        "title": "Certificate of Advanced Musical Studies - Trumpet",
+        "logo": "http://tyler.boddyspargo.com/assets/grand-paris-issy.jpg",
+        "website": "http://www.agglo-gpso.fr/culture_et_loisirs_conservatoire_d_issy_les_moulineaux.html",
+        "duration": "2012-2014",
+        "location": "Issy-Les-Moulineaux (Paris), France",
+        "description": "Music is a peculiar pursuit and if one wants to become a great musician, one must start young. My youth was slipping away and I knew that if I wanted to try to become a musician, it had to be now, rather than later. I enrolled in a regional conservatory near Paris with Hervé Noël who took me under his wing and encouraged me to continue towards that goal. I also took general courses in preparation for enrolling in a more significant degree program in the future. All the while, I was working as a teacher and, eventually, for FluentU.com to pay off my undergraduate student loans.",
+        "docIntro": "",
+        "documents": [
+          {
+            "address": "http://tyler.boddyspargo.com/assets/certificat-etudes.pdf",
+            "name": "Transcript",
+            "$$hashKey": "object:119"
+          }
+        ],
+        "thumbnail": "http://tyler.boddyspargo.com/assets/grand-paris-issy.jpg",
+        "$$hashKey": "object:96"
+      },
+      {
+        "name": "Carleton College",
+        "title": "Romance Languages (French and Spanish)",
+        "logo": "http://tyler.boddyspargo.com/assets/carleton-seal.png",
+        "website": "http://www.carleton.edu",
+        "duration": "2008-2012",
+        "location": "Northfield, MN & Europe",
+        "description": "After high school I was accepted to Carleton College, a small liberal arts school in Northfield, MN. I quickly discovered many passions including acting, comedy, dance, gymnastics, figure skating, singing, and French, but it was the latter that allowed me to grow in the most formative ways, inspiring me to go on many adventures abroad, meet new people, experience new things, and delve into the unknown. I declared French as a major before finally convincing the Spanish department chair to accept my request for a romance languages major. I completed my degree in 2012 and knew that I wanted to use my language skills immediately - prompting me to move to Europe for the following three years.",
+        "docIntro": "",
+        "documents": [
+          {
+            "address": "http://tyler.boddyspargo.com/assets/carleton-diploma.pdf",
+            "name": "Diploma",
+            "$$hashKey": "object:123"
+          },
+          {
+            "address": "http://tyler.boddyspargo.com/assets/carleton-transcript.pdf",
+            "name": "Official Transcript",
+            "$$hashKey": "object:124"
+          }
+        ],
+        "thumbnail": "http://tyler.boddyspargo.com/assets/carleton-knights.jpg",
+        "$$hashKey": "object:97"
+      },
+      {
+        "name": "Madrid Study Abroad - Film and the City",
+        "title": "Immersion Program",
+        "logo": "http://tyler.boddyspargo.com/assets/carleton-seal.png",
+        "website": "https://apps.carleton.edu/curricular/ocs/madrid/archive/2011/courses/",
+        "duration": "Jun - Dec 2011",
+        "location": "Madrid & Valencia, Spain",
+        "description": "I was lucky enough to be able to go on a second study abroad trip to Spain in my senior year. I left in June for a program that started in September, which alowed me to live for 2 months with a friend of mine in Valencia, bike the Danube river in Germany, and walk across Spain on the Way of Saint James before the program actually began. My second program was just as good as the first and at the end, I spoke better Spanish than French, which was hard for most people to believe. After the program I visited 4 more countries, not being able to resist visiting my recently adopted family in Paris, before I finally returned to the States to finish up my degree.",
+        "docIntro": "",
+        "documents": [],
+        "thumbnail": "http://tyler.boddyspargo.com/assets/spain1.jpg",
+        "$$hashKey": "object:98"
+      },
+      {
+        "name": "Paris Study Abroad - European Identities",
+        "title": "Immersion Program",
+        "logo": "http://tyler.boddyspargo.com/assets/carleton-seal.png",
+        "website": "https://apps.carleton.edu/curricular/ocs/paris/archive/2010/",
+        "duration": "Mar - Aug 2010",
+        "location": "Paris, France & Thiaumont, Belgium",
+        "description": "In the spring of 2010 I went overseas for the first time. The Carleton study abroad program to Paris was an astoundingly positive experience and I excelled at French, visited 6 countries, helped clean the catacombs of Paris, and adopted my host family as my own (they subsequently came to my graduation and I lived with them from 2012-2014).",
+        "docIntro": "",
+        "documents": [],
+        "thumbnail": "http://tyler.boddyspargo.com/assets/castle.jpg",
+        "$$hashKey": "object:99"
+      }
+    ],
+    "$$hashKey": "object:83"
+  },
+  {
+    "heading": "Employment History",
+    "bottom": "This is only a partial list of employment history. Please see my <a href=\"http://tyler.boddyspargo.com/assets/cv.pdf\" target=\"_blank\">CV</a> and/or <a href=\"mailto:muyleche@gmail.com\" target=\"_blank\">contact me</a> for more information.",
+    "images": [],
+    "id": "employment",
+    "text": "",
+    "showImages": false,
+    "activeImage": 0,
+    "entries": [
+      {
+        "name": "Head Content Editor - French",
+        "title": "FluentU.com",
+        "logo": "http://tyler.boddyspargo.com/assets/fluentu-blue-on-white.png",
+        "website": "http://fluentu.com/",
+        "duration": "2013 - Current",
+        "location": "Telecommute",
+        "list": [
+          "Co-lead a team whose goal is to curate, translate, and enrich video content in French.",
+          "Translate videos (French to English) and create a language-learning dictionary.",
+          "Develop tools to work more quickly and effectively in Google Sheets.",
+          "Implemented and maintained analytical tools and functionality to improve overall efficiency."
+        ],
+        "docIntro": "Contacts:",
+        "documents": [
+          {
+            "name": "Alan Park",
+            "address": "mailto:alan@fluentu.com",
+            "$$hashKey": "object:141"
+          },
+          {
+            "name": "Jason Shumann",
+            "address": "mailto:jason@fluentu.com",
+            "$$hashKey": "object:142"
+          },
+          {
+            "name": "Nicole Durham",
+            "address": "mailto:nicole@fluentu.com",
+            "$$hashKey": "object:143"
+          }
+        ],
+        "thumbnail": "http://tyler.boddyspargo.com/assets/fluentu-blue-on-white.png",
+        "$$hashKey": "object:132"
+      },
+      {
+        "name": "Technology Assistant",
+        "title": "Media Technology Dept. - Carleton College",
+        "logo": "http://tyler.boddyspargo.com/assets/peps.jpg",
+        "website": "https://apps.carleton.edu/campus/peps/",
+        "duration": "2008 - 2012",
+        "location": "Carleton College; Northfield, Minnesota",
+        "list": [
+          "Helped customers with their technology needs.",
+          "Troubleshot technical problems with students and faculty.",
+          "Filmed, edited, and produced recordings of campus events."
+        ],
+        "docIntro": "Contacts:",
+        "documents": [
+          {
+            "name": "Tucker MacNiel",
+            "address": "mailto:tmacniel@carleton.edu",
+            "$$hashKey": "object:152"
+          },
+          {
+            "name": "Jim Pierret",
+            "address": "mailto:jpierret@carleton.edu",
+            "$$hashKey": "object:153"
+          }
+        ],
+        "thumbnail": "http://tyler.boddyspargo.com/assets/peps.jpg",
+        "$$hashKey": "object:133"
+      },
+      {
+        "name": "Lycée Les-Côtes-de-Villebon",
+        "title": "Language Assistant",
+        "logo": "http://tyler.boddyspargo.com/assets/villebon-logo.jpg",
+        "website": "http://www.lyc-cotesdevillebon-meudon.ac-versailles.fr",
+        "duration": "2013-2014",
+        "location": "Meudon-la-forêt, France",
+        "list": [
+          "Led and designed oral/written activities, presentations, and tests.",
+          "Worked with students to improve their language and cultural knowledge.",
+          "Provided support to the English department faculty."
+        ],
+        "docIntro": "Contacts:",
+        "documents": [
+          {
+            "name": "Claudine Dumas",
+            "address": "mailto:tiny.d@orange.fr",
+            "$$hashKey": "object:160"
+          }
+        ],
+        "thumbnail": "http://tyler.boddyspargo.com/assets/villebon-logo.jpg",
+        "$$hashKey": "object:134"
+      },
+      {
+        "name": "Counselor, Instructor",
+        "title": "Concordia Language Villages - Lac-du-bois",
+        "logo": "http://tyler.boddyspargo.com/assets/cord3.jpg",
+        "website": "http://www.concordialanguagevillages.org",
+        "duration": "Jul - Aug 2013",
+        "location": "Bemidji, Minnesota",
+        "list": [
+          "Designed and taught four-week intermediate high-school-credit French course.",
+          "Provided a space for an immersive exploration of French language and francophone culture.",
+          "Developed projects designed to promote a complex awareness of culture and current events.",
+          "Led adult conversation course exploring current political, economic, and civil topics."
+        ],
+        "docIntro": "Contacts:",
+        "documents": [
+          {
+            "name": "Katherine Dutko",
+            "address": "mailto:kdutko@cord.edu",
+            "$$hashKey": "object:166"
+          }
+        ],
+        "thumbnail": "http://tyler.boddyspargo.com/assets/cord3.jpg",
+        "$$hashKey": "object:135"
+      }
+    ],
+    "$$hashKey": "object:84"
+  }
+]
