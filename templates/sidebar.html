@@ -1,11 +1,10 @@
-<div class="col-xs-12 col-sm-8 col-md-9"></div>
-<div id='sidebar' class="col-xs-12 col-sm-4 col-md-3">
-	<div class="panel panel-default contents-panel" ng-if='sidebar[active].contents.length+sidebar[active].text.length' ng-init='showContents = true'>
-		<h4 class="panel-heading">{{sidebar[active].heading}}<span class="right-toggle glyphicon" ng-class='{"glyphicon-plus-sign":!showContents, "glyphicon-minus-sign":showContents}' ng-click='showContents=!showContents'></span></h4>
+<div id='sidebar' class="col-sm-push-8 col-sm-4 col-md-push-8 col-md-4 col-lg-push-8 col-lg-3">
+	<div class="panel panel-default contents-panel" ng-if='sidebar.contents.length+sidebar.text.length' ng-init='showContents = true'>
+		<h4 class="panel-heading">{{sidebar.heading}}<span class="right-toggle glyphicon" ng-class='{"glyphicon-plus-sign":!showContents, "glyphicon-minus-sign":showContents}' ng-click='showContents=!showContents'></span></h4>
 		<div class="panel-body" ng-show='showContents'>
-			<p ng-show='sidebar[active].text.length'>{{sidebar[active].text}}</p>
-			<ul ng-show='sidebar[active].contents.length' class='contents'>
-				<li class='content-item hvr-shrink' ng-repeat='content in sidebar[active].contents' ng-click='goTo(content.loc)'>- {{content.name}}</li>
+			<p ng-show='sidebar.text.length'>{{sidebar.text}}</p>
+			<ul ng-show='sidebar.contents.length' class='contents'>
+				<li class='content-item hvr-shrink' ng-repeat='content in sidebar.contents' ng-click='goTo(content.loc)'>- {{content.name}}</li>
 			</ul>
 		</div>
 	</div>
@@ -34,4 +33,3 @@
 		</div>
 	</div>
 </div>
-<div class="col-xs-1 col-lg-push-0 col-xs-push-1"></div>

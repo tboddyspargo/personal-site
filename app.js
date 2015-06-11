@@ -6,27 +6,61 @@
 **angular-router handles url changes when tabs change
 **ng-view
 */
-define(['angularAMD',
-	'tab_controller',
-	'angular-route', 
-	'ngAnimate', 
-	'ngTouch', 
-	'angular-carousel', 
-	'ngSanitize', 
-	'behavior'], 
-	function (angularAMD,
-			tabCtrl) {
+define('app', ['angular','angularAMD','tab-controller', 'home-controller', 'about-controller', 'projects-controller','angular-route', 'ngAnimate', 'ngTouch', 'angular-carousel', 'ngSanitize', 'spark-scroll'], 
+	function (angular, angularAMD) {
 
-	var app = angular.module("application",['ngAnimate', 'angular-carousel', 'ngSanitize', 'ngRoute', 'application.tabCtrl']);
+	var app = angular.module("application",['ngAnimate', 'angular-carousel', 'ngSanitize', 'ngRoute', 'gilbox.sparkScroll']);
 
 	app.run(['$anchorScroll', function($anchorScroll) {
-		  $anchorScroll.yOffset = 70;   // always scroll by 50 extra pixels
+		  $anchorScroll.yOffset = 50;   // always scroll by 50 extra pixels
 		}]);
 
-	app.config(function($locationProvider) {
-			$locationProvider.html5Mode(true).hashPrefix('#');
-		});
+	app.config(function($routeProvider, $locationProvider) {
+	    $routeProvider
+	      .when('/', {
+	        templateUrl: 'views/home.html',
+	        controller: 'HomeCtrl'
+	      })
+	      .when('/about', {
+	        templateUrl: 'views/about.html',
+	        controller: 'AboutCtrl'
+	      })
+	      .when('/projects', {
+	        templateUrl: 'views/projects.html',
+	        controller: 'ProjectsCtrl'
+	      })
+	      .otherwise({
+	        redirectTo: '/'
+	      });
 
+		$locationProvider.html5Mode(true).hashPrefix('#');
+	});
+
+	app.controller('MainCtrl', ['$scope', '$location', '$anchorScroll', '$sce','$http','$rootScope','sparkSetup',
+		function ($scope, $location, $anchorScroll, $sce, $http, $rootScope, sparkSetup) {
+			sparkSetup.debug = true;
+			sparkSetup.enableInvalidationInterval();
+
+			$rootScope.makeActive = function(index) {
+				var string = '/';
+				$location.path(string).hash('');
+				$rootScope.active = index;
+			};
+
+			$rootScope.isActive = function(index) {
+				return $rootScope.active === index;
+			};
+
+			$rootScope.deliberatelyTrustDangerousSnippet = function(item) {
+	           return $sce.trustAsHtml(item);
+	         };
+
+			$rootScope.goTo = function(loc) {
+				$location.hash(loc);
+				$anchorScroll();
+			};
+
+	}]);
 
 	app.directive('navBar', function() {
 		return {
@@ -52,24 +86,44 @@ define(['angularAMD',
 	app.directive('homeContent', function() {
 		return {
 			restrict: 'E',
-			templateUrl: 'templates/home.html'
+			templateUrl: 'views/home.html'
 		};
 	});
 
 	app.directive('aboutContent', function() {
 		return {
 			restrict: 'E',
-			templateUrl: 'templates/about.html'
+			templateUrl: 'views/about.html'
 		};
 	});
 
 	app.directive('projectsContent', function() {
 		return {
 			restrict: 'E',
-			templateUrl: 'templates/projects.html'
+			templateUrl: 'views/projects.html'
 		};
 	});
 
+	app.directive('progressBar', function() {
+		return {
+		    restrict: 'A',
+		    link: function(scope, element, attrs) {
+		      var watchFor = attrs.progressBarWatch;
+		      var total = attrs.ariaValuemax;
+		      // update now
+		      var val = scope[watchFor];
+		      element.attr('aria-valuenow', val);
+		      element.css('width', (val/total*100)+"%");
+
+		      // watch for the value
+		      scope.$watch(watchFor, function(val) {
+		        element.attr('aria-valuenow', val);
+		        element.css('width', (Math.round(val/total*100))+"%");
+		        if (val/total === 1 || scope[watchFor] === undefined) {element.parent().parent().css('display', 'none');}
+		      })
+		    }
+		}
+	});
 
 
   return angularAMD.bootstrap(app);

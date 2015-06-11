@@ -26,7 +26,7 @@ define(['jquery'], function($) {
 	}
 
 	$(document).ready(function() {
-		document.onscroll = scroll;
+		//document.onscroll = scroll;
 	    document.ontouchmove = function(event) {
 		    // provent body move (ipad)
 		    var sourceElement = event.target || event.srcElement;

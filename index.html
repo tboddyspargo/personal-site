@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title> Tyler BoddySpargo</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,35 +14,61 @@
 	<meta property="og:description" content="An overview of Tyler BoddySpargo's personal and professional accomplishments."/>
 	<link rel="shortcut icon" href="/favicon.ico?"/>
 	<base href="/">
-
-
-	<link rel="stylesheet" type='text/css' href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" type='text/css' href="style/main.css">
-	<link rel='stylesheet' type='text/css' href='bower_components/hover/css/hover-min.css' media='all' async></link>
-	<link rel='stylesheet' type='text/css' href="bower_components/angular-carousel/dist/angular-carousel.min.css" async></link>
-	<link rel='stylesheet' type='text/css' href="style/ng-animation.css" async></link>
 	
-	<script data-main="scripts/main" src="./bower_components/requirejs/require.js"></script>
+	<link rel="stylesheet" type='text/css' href="style/main.css">
+	<script data-main="/main" src="/scripts/vendor/require.js"></script>
 </head>
 
-
-
-<body class='' ng-controller='TabCtrl'>
-	<div id='top' class="banner">
-		<div id="banner-cover"></div>
+<body ng-controller='MainCtrl'>
+	<div id='top' class="banner parallax-cont" spark-id='parallax'>
+		<div class="parallax-shadow banner-shadow"></div>
+		<div id="banner-cover" spark-scroll-animate="{
+		'centerTop':{ opacity: 0 },
+		'bottomTop':{ opacity: 1 }}" spark-trigger='parallax'></div>
 		<h1 id='name' class='noselect'>Tyler BoddySpargo</h1>
-		<div id="banner-image"></div>
+		<div id="banner-image" spark-scroll-ease spark-scroll-animate="{
+		topTop: { transform: 'translate3d(0px,0px,0px)' },
+		bottomTop:{ transform: 'translate3d(0px,100px,0px)' }}" spark-trigger='parallax'></div>
 	</div>
 	
-	<nav-bar id='navbar-container' class='nav-not-fixed'></nav-bar>
-
-	<tab-content id='tab-content'></tab-content>
+	<nav-bar id='navbar-container' class='nav-not-fixed'  spark-scroll="{
+    198:{ 'downAddClass,upRemoveClass': 'nav-fixed' }
+    }"></nav-bar>
 	
-	<sidebar id='sidebar-container' class="sidebar-not-fixed col-xs-12 col-lg-10 col-lg-push-1"></sidebar>
+	<div class='view-container'>
+		
+		<div ng-view></div>
 
-	
-	
-
-
+		<span id='back-to-top' class="btn btn-xs btn-primary back-to-top" spark-scroll="{198: {'upRemoveClass,downAddClass': 'show-me'}}" ng-click='goTo("top")'><span class='glyphicon glyphicon-menu-up'></span></span>
+		<footer>©Copyright 2015 BoddySpargo Productions<br>Last updated: May 5, 2015 by <a href="mailto:muyleche@gmail">Tyler BoddySpargo</a></footer>
+	</div>
+	<!--
+	<script src='/bower_components/angular/angular.js'></script>
+    <script src='/bower_components/angular-route/angular-route.js'></script>
+    <script src='/bower_components/jquery/dist/jquery.min.js'></script>
+    <script src='/bower_components/angular-animate/angular-animate.min.js'></script>
+    <script src='/bower_components/angular-sanitize/angular-sanitize.min.js'></script>
+    <script src='/bower_components/angular-touch/angular-touch.min.js'></script>
+    <script src='/bower_components/angular-carousel/dist/angular-carousel.min.js'></script>
+    <script src='/bower_components/scrollmagic/uncompressed/ScrollMagic.js'></script>
+    <script src='/bower_components/scrollmagic/uncompressed/greensock/TweenMax.js'></script>
+    <script src='/bower_components/scrollmagic/uncompressed/greensock/TweenLite.js'></script>
+    <script src='/bower_components/scrollmagic/uncompressed/greensock/TimelineLite.js'></script>
+    <script src='/bower_components/scrollmagic/uncompressed/greensock/TimelineMax.js'></script>
+    <script src='/bower_components/scrollmagic/uncompressed/plugins/debug.addIndicators.js'></script>
+    <script src='/bower_components/scrollmagic/uncompressed/plugins/animation.gsap.js'></script>
+    <script src='/bower_components/skrollr/skrollr.min.js'></script>
+    <script src='/bower_components/spark-scroll/src/spark-scroll.js'></script>
+    <script src='/bower_components/spark-scroll/src/plugins/spark-scroll-gsap.js'></script>
+    <script src='/bower_components/spark-scroll/src/plugins/AnimationFrame.js'></script>
+    <script src='/bower_components/spark-scroll/src/plugins/shifty.js'></script>
+    <script src='/bower_components/spark-scroll/src/plugins/underscore.js'></script>
+    <script src='/bower_components/lodash/dist/lodash.js'></script>
+    <script src='/bower_components/spark-scroll/src/plugins/rekapi.js'></script>
+    <script src='/scripts/behavior.js'></script>
+    <script src='/old-app.js'></script>
+    <script src='/controllers/tab_controller.js'></script>
+	-->
 </body>
+
 </html>

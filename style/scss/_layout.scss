@@ -6,29 +6,59 @@ body {
 
 .banner {
 	position: absolute;
-	top: -60px;
-	@include size (100%, 300px);
+	top: 0px;
+	@include size (100%, 240px);
 	overflow: hidden;
 }
 
 #banner-image {
-	background: url(../assets/banner1.jpg) calc(-750px + ((100% - 1280px) / 2)) 0px repeat;
+	z-index: 1;
+	background: url(../assets/banner1.jpg) calc(-750px + ((100% - 1280px) / 2)) -100px repeat;
 	@include size(100%, 300px);
 }
 
 #banner-cover {
 	@include size(100%, 300px);
 	position: absolute;
-	background: transparent;
+	background: black;
+	opacity: 0;
+	z-index: 5;
+}
+
+.parallax-shadow {
+	position: absolute;
+	z-index: 3;
+	@include size(100%);
+	@include box-shadow(0px 0px, 35px 0px, rgba(0,0,0,0.75), inset);
+	&.banner-shadow {
+		height: 240px;
+		@include abs-pos(0px, 0px, 0px, 0px);
+	}
+}
+
+#loading {
+	z-index: 5000;
+	position: fixed;
+	@include size(100%, 100%);
+	@include abs-pos(0,0,0,0);
+	background-color: rgba(0,0,0,0.5);
+	vertical-align: middle;
+	text-align: center;
+	.progress {
+		opacity: 1;
+		@include size(50%, none);
+		margin: 30% 25% 10% 25%;
+	}
 }
 
 #name {
+	position: absolute;
+	z-index: 4;
 	color: white;
 	font-family: Bradley Hand;
 	font-size:50px;
-	margin-top: 150px;
-	margin-right:20px;
-	float: right;
+	top: 80px;
+	right:20px;
 	text-shadow: 2px 3px rgba(50,50,50,0.7);
 }
 
@@ -37,24 +67,29 @@ body {
 	margin-top: 240px;
 }
 
+.view-container {
+	position: absolute;
+	top: 270px;
+}
+
 .main-content {
-	margin-top: 30px;
+
 }
 
 #sidebar-container {
+	width: 100%;
 	height: 0px;
 	overflow: visible;
-	margin-top: 30px;
 }
 
 .sidebar-not-fixed {
 	position: absolute;
-	top: 240px;
+	@include abs-pos(0px,none, none, 0px);
 }
 
 .sidebar-fixed {
 	position: fixed;
-	top:40px;
+	@include abs-pos(70px);
 }
 
 #sidebar {
