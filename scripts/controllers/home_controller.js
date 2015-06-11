@@ -1,9 +1,7 @@
 require(['app'], 
 	function(app) {
-	app.controller('HomeCtrl', ['$scope','$http','$rootScope','sparkSetup', '$sce', '$timeout',
-		function ($scope, $http, $rootScope, sparkSetup, $sce, $timeout) {
-			sparkSetup.debug = true;
-			sparkSetup.enableInvalidationInterval();
+	app.controller('HomeCtrl', ['$scope','$http','$rootScope', '$sce', '$timeout',
+		function ($scope, $http, $rootScope, $sce, $timeout) {
 			$scope.progress = 1;
 			$scope.total_progress = 7;
 			var x = 0;
@@ -32,21 +30,22 @@ require(['app'],
 						$scope.progress +=1;}
 			
 			if (!$rootScope.about) {
-			$http.get('/scripts/data/about.json', {})
-				.success(function(data) {
-					$scope.about = data;
-					for (var y = 0; y < $scope.about.length; y++) {
-						for (x = 0; x < $scope.about[y].entries.length; x++) {
-					 		if ($scope.about[y].heading === 'Education') {
-					 			$scope.short_desc.push({name: $scope.about[y].entries[x].name, desc: $scope.about[y].entries[x].description.slice(0,70)+"...", thumbnail: $scope.about[y].entries[x].thumbnail, label: 'School', page:2, loc: $scope.about[y].id});}
-					 		if ($scope.about[y].heading === 'Employment History') {
-					 			$scope.short_desc.push({name:$scope.about[y].entries[x].name, desc:$scope.about[y].entries[x].list[0]+"...", thumbnail:$scope.about[y].entries[x].thumbnail, label:'Job', page:2, loc:$scope.about[y].id});}
-					 	}
-					 	$rootScope.about_contents.push({'name':$scope.about[y].heading,'loc':$scope.about[y].id});
-					}
-				 	$rootScope.about = $scope.about;
-					$scope.progress +=1;
-				 });
+				$rootScope.about_contents.push({'name':'Biography','loc':'bio'});
+				$http.get('/scripts/data/about.json', {})
+					.success(function(data) {
+						$scope.about = data;
+						for (var y = 0; y < $scope.about.length; y++) {
+							for (x = 0; x < $scope.about[y].entries.length; x++) {
+						 		if ($scope.about[y].heading === 'Education') {
+						 			$scope.short_desc.push({name: $scope.about[y].entries[x].name, desc: $scope.about[y].entries[x].description.slice(0,70)+"...", thumbnail: $scope.about[y].entries[x].thumbnail, label: 'School', page:2, loc: $scope.about[y].id});}
+						 		if ($scope.about[y].heading === 'Employment History') {
+						 			$scope.short_desc.push({name:$scope.about[y].entries[x].name, desc:$scope.about[y].entries[x].list[0]+"...", thumbnail:$scope.about[y].entries[x].thumbnail, label:'Job', page:2, loc:$scope.about[y].id});}
+						 	}
+						 	$rootScope.about_contents.push({'name':$scope.about[y].heading,'loc':$scope.about[y].id});
+						}
+					 	$rootScope.about = $scope.about;
+						$scope.progress +=1;
+					 });
 			}
 			else {$scope.about = $rootScope.about;
 						$scope.progress +=1;}

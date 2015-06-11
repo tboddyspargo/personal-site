@@ -11,6 +11,12 @@ body {
 	overflow: hidden;
 }
 
+.about, .projects {
+	h3.panel-heading {
+		margin-bottom:0px;
+	}
+}
+
 #banner-image {
 	z-index: 1;
 	background: url(../assets/banner1.jpg) calc(-750px + ((100% - 1280px) / 2)) -100px repeat;

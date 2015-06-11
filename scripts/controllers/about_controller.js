@@ -1,9 +1,7 @@
 require(['app'], 
 	function(app) {
-	app.controller('AboutCtrl', ['$scope','$http','$rootScope','sparkSetup', '$sce', '$timeout',
-		function ($scope, $http, $rootScope, sparkSetup, $sce, $timeout) {
-			sparkSetup.debug = true;
-			sparkSetup.enableInvalidationInterval();
+	app.controller('AboutCtrl', ['$scope','$http','$rootScope', '$sce', '$timeout',
+		function ($scope, $http, $rootScope, $sce, $timeout) {
 			$scope.progress = 1;
 			$scope.total_progress = 6;
 			var x = 0;
@@ -25,6 +23,7 @@ require(['app'],
 						$scope.progress +=1;}
 
 			if (!$rootScope.about_contents) {
+				$scope.sidebar.contents.push({'name':'Biography','loc':'bio'});
 			 	for (var x = 0; x < $scope.projects.length; x++) {
 			 		$scope.sidebar.contents.push({'name':$scope.about[y].heading,'loc':$scope.about[y].id});
 				}

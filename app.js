@@ -19,15 +19,18 @@ define('app', ['angular','angularAMD','tab-controller', 'home-controller', 'abou
 	    $routeProvider
 	      .when('/', {
 	        templateUrl: 'views/home.html',
-	        controller: 'HomeCtrl'
+	        controller: 'HomeCtrl',
+	        controllerAs: 'HomeCtrl'
 	      })
 	      .when('/about', {
 	        templateUrl: 'views/about.html',
-	        controller: 'AboutCtrl'
+	        controller: 'AboutCtrl',
+	        controllerAs: 'AboutCtrl'
 	      })
 	      .when('/projects', {
 	        templateUrl: 'views/projects.html',
-	        controller: 'ProjectsCtrl'
+	        controller: 'ProjectsCtrl',
+	        controllerAs: 'ProjectsCtrl'
 	      })
 	      .otherwise({
 	        redirectTo: '/'
@@ -36,14 +39,12 @@ define('app', ['angular','angularAMD','tab-controller', 'home-controller', 'abou
 		$locationProvider.html5Mode(true).hashPrefix('#');
 	});
 
-	app.controller('MainCtrl', ['$scope', '$location', '$anchorScroll', '$sce','$http','$rootScope','sparkSetup',
-		function ($scope, $location, $anchorScroll, $sce, $http, $rootScope, sparkSetup) {
+	app.controller('MainCtrl', ['$scope', '$location', '$anchorScroll', '$sce','$http','$rootScope','sparkSetup', '$timeout',
+		function ($scope, $location, $anchorScroll, $sce, $http, $rootScope, sparkSetup, $timeout) {
 			sparkSetup.debug = true;
 			sparkSetup.enableInvalidationInterval();
 
 			$rootScope.makeActive = function(index) {
-				var string = '/';
-				$location.path(string).hash('');
 				$rootScope.active = index;
 			};
 
@@ -56,8 +57,10 @@ define('app', ['angular','angularAMD','tab-controller', 'home-controller', 'abou
 	         };
 
 			$rootScope.goTo = function(loc) {
-				$location.hash(loc);
-				$anchorScroll();
+				$timeout(function() {
+		            $location.hash(loc);
+		            $anchorScroll();
+		        });
 			};
 
 	}]);
@@ -104,6 +107,7 @@ define('app', ['angular','angularAMD','tab-controller', 'home-controller', 'abou
 		};
 	});
 
+	//directive that updates progress bar based on given scope value to watch.
 	app.directive('progressBar', function() {
 		return {
 		    restrict: 'A',

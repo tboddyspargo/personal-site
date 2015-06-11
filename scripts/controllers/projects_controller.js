@@ -1,9 +1,7 @@
 require(['app'], 
 	function(app) {
-	app.controller('ProjectsCtrl', ['$scope','$http','$rootScope','sparkSetup', '$sce', '$timeout',
-		function ($scope, $http, $rootScope, sparkSetup, $sce, $timeout) {
-			sparkSetup.debug = true;
-			sparkSetup.enableInvalidationInterval();
+	app.controller('ProjectsCtrl', ['$scope','$http','$rootScope', '$sce', '$timeout',
+		function ($scope, $http, $rootScope, $sce, $timeout) {
 			$scope.progress = 1;
 			$scope.total_progress = 5;
 			var x = 0;
