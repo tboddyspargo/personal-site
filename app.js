@@ -9,31 +9,43 @@
 define('app', ['angular','angularAMD','tab-controller', 'home-controller', 'about-controller', 'projects-controller','angular-route', 'ngAnimate', 'ngTouch', 'angular-carousel', 'ngSanitize', 'spark-scroll'], 
 	function (angular, angularAMD) {
 
+
 	var app = angular.module("application",['ngAnimate', 'angular-carousel', 'ngSanitize', 'ngRoute', 'gilbox.sparkScroll']);
 
-	app.run(['$anchorScroll', function($anchorScroll) {
-		  $anchorScroll.yOffset = 50;   // always scroll by 50 extra pixels
-		}]);
+	app.run(['$rootScope', '$location', '$anchorScroll', '$routeParams', '$timeout', function($rootScope, $location, $anchorScroll, $routeParams, $timeout) {
+		$anchorScroll.yOffset = 50;   // always scroll by 50 extra pixels
+		$rootScope.$on('$routeChangeSuccess',
+			function(next, current) {
+				if ($routeParams.loc) {
+					$location.url($location.path());
+					$location.hash($routeParams.loc);
+					$anchorScroll();
+				}
+  			});
+	}]);
 
 	app.config(function($routeProvider, $locationProvider) {
 	    $routeProvider
 	      .when('/', {
 	        templateUrl: 'views/home.html',
 	        controller: 'HomeCtrl',
-	        controllerAs: 'HomeCtrl'
+	        controllerAs: 'HomeCtrl',
+	        reloadOnSearch: false
 	      })
 	      .when('/about', {
 	        templateUrl: 'views/about.html',
 	        controller: 'AboutCtrl',
-	        controllerAs: 'AboutCtrl'
+	        controllerAs: 'AboutCtrl',
+	        reloadOnSearch: false
 	      })
 	      .when('/projects', {
 	        templateUrl: 'views/projects.html',
 	        controller: 'ProjectsCtrl',
-	        controllerAs: 'ProjectsCtrl'
+	        controllerAs: 'ProjectsCtrl',
+	        reloadOnSearch: false
 	      })
 	      .otherwise({
-	        redirectTo: '/'
+	        redirectTo: '/',
 	      });
 
 		$locationProvider.html5Mode(true).hashPrefix('#');
@@ -56,26 +68,28 @@ define('app', ['angular','angularAMD','tab-controller', 'home-controller', 'abou
 	           return $sce.trustAsHtml(item);
 	         };
 
-			$rootScope.goTo = function(loc) {
-				$timeout(function() {
-		            $location.hash(loc);
-		            $anchorScroll();
-		        });
-			};
-
 	}]);
+
+	//directive that scrolls to element with given id. It also prevents page refresh
+	app.directive('scrollTo', function ($location, $anchorScroll, $timeout) {
+	  return function(scope, element, attrs) {
+
+	    element.bind('click', function(event) {
+	        if (attrs.scrollTo) {
+		        $timeout(function () {
+		            $location.hash(attrs.scrollTo);
+		            $anchorScroll();
+	    	    });
+	    	}
+	    });
+
+	  };
+	});
 
 	app.directive('navBar', function() {
 		return {
 			restrict: 'E',
 			templateUrl: 'templates/navbar.html'
-		};
-	});
-
-	app.directive('tabContent', function() {
-		return {
-			restrict: 'E',
-			templateUrl: 'templates/tabs.html'
 		};
 	});
 
@@ -86,26 +100,6 @@ define('app', ['angular','angularAMD','tab-controller', 'home-controller', 'abou
 		};
 	});
 
-	app.directive('homeContent', function() {
-		return {
-			restrict: 'E',
-			templateUrl: 'views/home.html'
-		};
-	});
-
-	app.directive('aboutContent', function() {
-		return {
-			restrict: 'E',
-			templateUrl: 'views/about.html'
-		};
-	});
-
-	app.directive('projectsContent', function() {
-		return {
-			restrict: 'E',
-			templateUrl: 'views/projects.html'
-		};
-	});
 
 	//directive that updates progress bar based on given scope value to watch.
 	app.directive('progressBar', function() {

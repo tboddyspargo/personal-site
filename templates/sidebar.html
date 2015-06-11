@@ -4,7 +4,7 @@
 		<div class="panel-body" ng-show='showContents'>
 			<p ng-show='sidebar.text.length'>{{sidebar.text}}</p>
 			<ul ng-show='sidebar.contents.length' class='contents'>
-				<li class='content-item hvr-shrink' ng-repeat='content in sidebar.contents' ng-click='goTo(content.loc)'>- {{content.name}}</li>
+				<li class='content-item hvr-shrink' ng-repeat='content in sidebar.contents' scroll-to='{{content.loc}}'>- {{content.name}}</li>
 			</ul>
 		</div>
 	</div>
@@ -12,7 +12,7 @@
 		<h4 class='panel-heading'>Fun Facts<span class="right-toggle glyphicon" ng-class='{"glyphicon-plus-sign":!showFacts, "glyphicon-minus-sign":showFacts}' ng-click='showFacts=!showFacts'></span></h4>
 		<div class="panel-body links-body" ng-show='showFacts'>
 			<ul class='facts-list'>
-				<li class='fact-item' ng-repeat='fact in facts|orderBy:"text"|limitTo:5'><span class="glyphicon glyphicon-ok-circle bullet-ok"></span><a ng-if='fact.link.length' href='{{fact.link}}' target='_blank'>{{fact.text}}</a><span ng-if='!fact.link.length'>{{fact.text}}</span></li>
+				<li class='fact-item' ng-repeat='fact in side_facts|orderBy:"text"|limitTo:5'><span class="glyphicon glyphicon-ok-circle bullet-ok"></span><a ng-if='fact.link.length' href='{{fact.link}}' target='_blank'>{{fact.text}}</a><span ng-if='!fact.link.length'>{{fact.text}}</span></li>
 			</ul>
 		</div>
 	</div>

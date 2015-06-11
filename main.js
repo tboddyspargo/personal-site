@@ -3,8 +3,8 @@ require.config({
     
     // alias libraries paths.  Must set 'angular'
     paths: {
-        'angular': '/scripts/vendor/angular.min',
-        'angular-route': '/scripts/vendor/angular-route.min',
+        'angular': '/scripts/vendor/angular',
+        'angular-route': '/scripts/vendor/angular-route',
         'angularAMD': '/scripts/vendor/angularAMD.min',
         'jquery': '/scripts/vendor/jquery.min',
         'ngAnimate': '/scripts/vendor/angular-animate.min',
@@ -30,7 +30,8 @@ require.config({
         'tab-controller': '/scripts/controllers/tab_controller',
         'home-controller': '/scripts/controllers/home_controller',
         'about-controller': '/scripts/controllers/about_controller',
-        'projects-controller': '/scripts/controllers/projects_controller'
+        'projects-controller': '/scripts/controllers/projects_controller',
+        'helpers': '/scripts/helpers'
    },
     
     // Add angular modules that does not support AMD out of the box, put it in a shim

@@ -1,7 +1,8 @@
-require(['app'], 
+require(['app', 'helpers'], 
 	function(app) {
 	app.controller('ProjectsCtrl', ['$scope','$http','$rootScope', '$sce', '$timeout',
 		function ($scope, $http, $rootScope, $sce, $timeout) {
+			$rootScope.active=3;
 			$scope.progress = 1;
 			$scope.total_progress = 5;
 			var x = 0;
@@ -30,26 +31,18 @@ require(['app'],
 			}
 			else {$scope.sidebar.contents = $rootScope.projects_contents}
 
-			if (!$rootScope.facts || !$rootScope.main_facts) {
-			$http.get('/scripts/data/facts.json', {})
-				.success(function(data) {
-				 	var newFacts = data.slice(0), num;
-				 	for (x = 0; x < 5; x ++) {
-				 		num = Math.floor(Math.random()*newFacts.length);
-				 		$scope.main_facts = $scope.main_facts.concat(newFacts.splice(num,1));
-				 	}
-				 	$rootScope.main_facts = $scope.main_facts;
-				 	for (x = 0; x < 5; x ++) {
-				 		num = Math.floor(Math.random()*newFacts.length);
-				 		$scope.facts = $scope.facts.concat(newFacts.splice(num,1));
-				 	}
-				 	$rootScope.facts = $scope.facts;
-					$scope.progress +=1;
-				 });
+			if (!$rootScope.facts) {
+				$http.get('/scripts/data/facts.json', {})
+					.success(function(data) {
+					 	var facts = shuffleArray(data);
+			 			$rootScope.facts = facts;
+					 	$scope.side_facts = $rootScope.facts.slice(5,10);
+						$scope.progress +=1;
+					 });
 			}
-			else {$scope.facts = $rootScope.facts;
-				 	$scope.main_facts = $rootScope.main_facts;
-					$scope.progress +=1;}
+			else {$rootScope.facts = shuffleArray($rootScope.facts);
+			 	$scope.side_facts = $rootScope.facts.slice(5,10);
+				$scope.progress +=1;}
 
 
 			if (!$rootScope.links) {

@@ -16,7 +16,7 @@
 		<h3 class="panel-heading">What have I done?</h3>
 		<div class="panel-body all-thumbs">
 			<div class="thumbnail-grid col-xs-12">
-				<div class="thumbnail-grid-item hvr-grow col-xs-6 col-sm-4 col-md-3" ng-repeat='short in short_desc|orderBy:"-desc"' ng-click='makeActive(short.page); goTo(short.loc);'>
+				<a class="thumbnail-grid-item hvr-grow col-xs-6 col-sm-4 col-md-3" ng-repeat='short in short_desc' ng-href='{{short.pageLoc}}?loc={{short.loc}}'>
 					<div class="thumbnail">
 						<div class="thumb-wrapper">
 							<div class="thumb-container col-xs-12"><img class='' ng-src="{{short.thumbnail}}" alt=""></div>
@@ -29,7 +29,7 @@
 							<p>{{short.desc}}</p>
 						</div>
 					</div>
-				</div>
+				</a>
 			</div>
 		</div>
 	</div>
