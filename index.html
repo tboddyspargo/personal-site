@@ -20,27 +20,17 @@
 </head>
 
 <body ng-controller='MainCtrl'>
-	<div id='top' class="banner parallax-cont" spark-id='parallax'>
-		<div class="parallax-shadow banner-shadow"></div>
-		<div id="banner-cover" spark-scroll-animate="{
-		'centerTop':{ opacity: 0 },
-		'bottomTop':{ opacity: 1 }}" spark-trigger='parallax'></div>
-		<h1 id='name' class='noselect'>Tyler BoddySpargo</h1>
-		<div id="banner-image" spark-scroll-ease spark-scroll-animate="{
-		topTop: { transform: 'translate3d(0px,0px,0px)' },
-		bottomTop:{ transform: 'translate3d(0px,100px,0px)' }}" spark-trigger='parallax'></div>
-	</div>
 	
-	<nav-bar id='navbar-container' class='nav-not-fixed'  spark-scroll="{
-    198:{ 'downAddClass,upRemoveClass': 'nav-fixed' }
-    }"></nav-bar>
+	<nav-bar></nav-bar>
 	
 	<div class='view-container'>
-		
-		<div ng-view autoscroll></div>
+		<loading-window></loading-window>
 
-		<span id='back-to-top' class="btn btn-xs btn-primary back-to-top" spark-scroll="{198: {'upRemoveClass,downAddClass': 'show-me'}}" scroll-to='top'><span class='glyphicon glyphicon-menu-up'></span></span>
-		<footer>©2015 BoddySpargo Productions<br>Last updated: June 11, 2015 by <a href="mailto:muyleche@gmail">Tyler BoddySpargo</a></footer>
+		<ng-view autoscroll></ng-view>
+
+		<sidebar></sidebar>
+
+		<tbs-footer></tbs-footer>
 	</div>
 
 </body>

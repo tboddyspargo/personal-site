@@ -1,29 +1,31 @@
 /*
 **TO DO:
-**separate controllers
-**separate data - 'contents' sidebar will be tab.sidebar.contents set equal to an array from each content page's scope.
-**fetch data with .json and separate services for each page.
-**angular-router handles url changes when tabs change
-**ng-view
+**
+**
 */
-define('app', ['angular','angularAMD','tab-controller', 'home-controller', 'about-controller', 'projects-controller','angular-route', 'ngAnimate', 'ngTouch', 'angular-carousel', 'ngSanitize', 'spark-scroll'], 
+define('app', ['angular','angularAMD','home-controller', 'about-controller', 'projects-controller','angular-route','angular-carousel', 'ngSanitize', 'spark-scroll', 'behavior', 'ng-slide-down'], 
 	function (angular, angularAMD) {
 
 
-	var app = angular.module("application",['ngAnimate', 'angular-carousel', 'ngSanitize', 'ngRoute', 'gilbox.sparkScroll']);
+	var app = angular.module("application",['ngAnimate', 'angular-carousel', 'ngSanitize', 'ngRoute', 'gilbox.sparkScroll', 'ng-slide-down']);
 
+	//initiate app and handle route changes that also scroll to location.
 	app.run(['$rootScope', '$location', '$anchorScroll', '$routeParams', '$timeout', function($rootScope, $location, $anchorScroll, $routeParams, $timeout) {
 		$anchorScroll.yOffset = 50;   // always scroll by 50 extra pixels
 		$rootScope.$on('$routeChangeSuccess',
 			function(next, current) {
-				if ($routeParams.loc) {
-					$location.url($location.path());
-					$location.hash($routeParams.loc);
-					$anchorScroll();
+				var loc = $routeParams.loc;
+				if (loc) {
+					$timeout(function(){
+						$location.url($location.path());
+						$location.hash(loc);
+						$anchorScroll();
+					},null,null,loc);
 				}
   			});
 	}]);
 
+	//configure routes
 	app.config(function($routeProvider, $locationProvider) {
 	    $routeProvider
 	      .when('/', {
@@ -51,10 +53,34 @@ define('app', ['angular','angularAMD','tab-controller', 'home-controller', 'abou
 		$locationProvider.html5Mode(true).hashPrefix('#');
 	});
 
-	app.controller('MainCtrl', ['$scope', '$location', '$anchorScroll', '$sce','$http','$rootScope','sparkSetup', '$timeout',
-		function ($scope, $location, $anchorScroll, $sce, $http, $rootScope, sparkSetup, $timeout) {
+	//the MainCtrl initiates spark-scroll and provides it and other rootScope functions to app.
+	app.controller('MainCtrl', ['$sce','$rootScope','sparkSetup', '$http',
+		function ($sce, $rootScope, sparkSetup, $http) {
 			sparkSetup.debug = true;
 			sparkSetup.enableInvalidationInterval();
+			$rootScope.sidebar = {heading: 'Contents',
+									contents:[]};
+			if (!$rootScope.links) {
+				$http.get('/scripts/data/links.json', {})
+					.success(function(data) {
+				 		$rootScope.links =  data;
+					});
+			}
+			if (!$rootScope.blogs) {
+				$http.get('/scripts/data/blogs.json', {})
+					.success(function(data) {
+				 		$rootScope.blogs = data;
+					});
+			}
+
+			if (!$rootScope.facts) {
+				$http.get('/scripts/data/facts.json', {})
+					.success(function(data) {
+					 	var facts = shuffleArray(data);
+			 			$rootScope.facts = facts;
+					 	$rootScope.side_facts = $rootScope.facts.slice(0,5);
+					 });
+			}
 
 			$rootScope.makeActive = function(index) {
 				$rootScope.active = index;
@@ -86,6 +112,15 @@ define('app', ['angular','angularAMD','tab-controller', 'home-controller', 'abou
 	  };
 	});
 
+	//loading window as element
+	app.directive('loadingWindow', function() {
+		return {
+			restrict: 'E',
+			templateUrl: 'templates/loading.html'
+		};
+	});
+
+	//navbar as element
 	app.directive('navBar', function() {
 		return {
 			restrict: 'E',
@@ -93,10 +128,19 @@ define('app', ['angular','angularAMD','tab-controller', 'home-controller', 'abou
 		};
 	});
 
+	//sidebar as element
 	app.directive('sidebar', function() {
 		return {
 			restrict: 'E',
 			templateUrl: 'templates/sidebar.html'
+		};
+	});
+
+	//footer as element
+	app.directive('tbsFooter', function() {
+		return {
+			restrict: 'E',
+			templateUrl: 'templates/footer.html'
 		};
 	});
 

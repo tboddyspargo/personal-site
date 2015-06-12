@@ -43,6 +43,16 @@
 	@if $left != none {left:$left;}
 }
 
+@mixin v-align {
+  position: relative;
+  top: 50%;
+  @include transform(translateY(-50%));
+}
+
+@mixin parent-v-align {
+	@include transform-style(preserve3d);
+}
+
 $bgColor: #cccccc;
 
 .noselect, img {
