@@ -13,6 +13,7 @@
 
 .close-image-slider {
 	position: absolute;
+	@include clickable;
 	right:10px;
 	top:10px;
 }

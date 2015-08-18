@@ -1,0 +1,14 @@
+<div id="image-viewer" ng-show='showViewer'>
+	<div><span id="close-viewer" class='glyphicon glyphicon-remove' ng-click='hideViewer()'></span></div>
+	<div id="viewer-main">
+		<div class="view-carousel enable_touchmove">
+			<ul rn-carousel rn-carousel-controls rn-carousel-buffered rn-carousel-index='activeImage' class='enable_touchmove'>
+				<li class='view-carousel-li enable_touchmove' ng-repeat="image in images">
+				<div class="view-image-container"><img ng-src="{{image.path}}" alt="" class="enable_touchmove"/></div>
+				<div class='view-caption-wrapper'><span class='view-caption enable_touchmove noselect'>{{image.caption}}</span>
+				</div>
+                </li>
+			</ul>
+		</div>
+	</div>
+</div>

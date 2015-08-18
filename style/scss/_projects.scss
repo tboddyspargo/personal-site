@@ -1,5 +1,39 @@
+.projects {
+	padding: 0px;
+}
+
+h4.goal {
+	margin-left: 40px;
+}
+
+.project-item {
+	margin:0px;
+}
+
+.project-heading {
+	padding: 15px 0px 0px 20px;
+	margin: 0px;
+}
+
 .project-step {
 	margin:0px;
 	word-wrap: break-word;
 	overflow:hidden;
+}
+
+.project-detail {
+	padding: 0px 70px 20px 70px;
+	hr {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		border-color: #ddd;
+	}
+	p {
+		margin-left: 25px;
+	}
+}
+
+.step-bullet {
+	float:left;
+	margin-right: 10px
 }

@@ -1,20 +1,11 @@
-<div class="projects col-xs-12 col-sm-8 col-lg-7 col-lg-push-1">
-	<div  ng-repeat='project in projects' id='project{{$index}}' class="panel panel-info">
-		<h3 class="panel-heading">{{project.name}}<span class='glyphicon glyphicon-picture close-image-slider' ng-if='project.images.length' ng-click='project.showImages = !project.showImages' ng-style='{opacity:(project.showImages ? 1 : 0.25)}'></span></h3>
-		<div class="panel-body">
-			<div class="image-carousel enable_touchmove" ng-if='project.images.length' ng-show='project.showImages'>
-				<ul rn-carousel rn-carousel-controls rn-carousel-buffered rn-carousel-index='project.activeImage' class='enable_touchmove'>
-					<li class='image-carousel-li enable_touchmove' ng-repeat="image in project.images" style='display: inline-block;max-width:100%; max-height:325px'>
-					<div class="image-container"><img ng-src="{{image.path}}" alt="" class="enable_touchmove"/></div>
-					<div class='image-caption-wrapper'><span class='image-caption enable_touchmove noselect'>{{image.caption}}</span>
-					</div>
-                    </li>
-				</ul>
-			</div>
-			<h3>Goal: {{project.goal}}</h3>
+<div class="projects col-xs-12 col-lg-10 col-lg-push-1">
+	<div  ng-repeat='project in projects' id='project{{$index}}' spark-id='project{{$index}}' class='project-item' ng-style='{backgroundColor:({{$index}} % 2 == 0 ? "white" : "whiteSmoke")}'>
+		<h3 class="project-heading">{{project.name}}<span class='glyphicon glyphicon-picture close-image-slider' ng-if='project.images.length' ng-click='displayViewer(project.images)' ng-style='{opacity:(project.showImages ? 1 : 0.25)}'></span></h3>
+		<h4 class='goal'>Goal: {{project.goal}}</h4>
+		<div class='project-detail'>
 			<div ng-repeat='step in project.steps'>
 				<hr>
-				<span class="glyphicon glyphicon-check" style='float:left; margin-right: 10px'></span><span><h4>{{step.heading}}<span class="right-toggle glyphicon" ng-class='{"glyphicon-plus-sign":!step.show, "glyphicon-minus-sign":step.show}' ng-click='step.show=!step.show'></span></h4></span>
+				<span class="step-bullet glyphicon glyphicon-check"></span><span><h5>{{step.heading}}<span class="right-toggle glyphicon" ng-class='{"glyphicon-plus-sign":!step.show, "glyphicon-minus-sign":step.show}' ng-click='step.show=!step.show'></span></h5></span>
 				<p id='detail{{$index}}' class='project-step' ng-slide-down='step.show' timeing-function="ease-out" duration="0.4" ng-repeat='paragraph in step.detail.split("\n")'>{{paragraph}}</p>
 			</div>
 			<div class="document-wrapper" ng-show='project.documents.length'>

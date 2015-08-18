@@ -22,13 +22,14 @@
 <body ng-controller='MainCtrl'>
 	
 	<nav-bar></nav-bar>
-	
+	<sidebar></sidebar>
+
 	<div class='view-container'>
 		<loading-window></loading-window>
+		<viewing-window></viewing-window>
+
 
 		<ng-view autoscroll></ng-view>
-
-		<sidebar></sidebar>
 
 		<tbs-footer></tbs-footer>
 	</div>

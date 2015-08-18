@@ -1,4 +1,4 @@
-<div class="about col-xs-12 col-sm-8 col-lg-7 col-lg-push-1">
+<div class="about col-xs-12 col-lg-10 col-lg-push-1">
 	<div id='bio' class="panel panel-info">
 		<h3 class="panel-heading">My Bio</h3>
 		<div class="panel-body">
@@ -12,7 +12,7 @@
 			<p ng-repeat='paragraph in bio.split("\n")' ng-bind-html='deliberatelyTrustDangerousSnippet(paragraph)'></p>
 		</div>
 	</div>
-	<div ng-repeat='section in about' id='{{section.id}}' class="panel" ng-class='{"panel-success":section.id==="education", "panel-primary": section.id==="employment"}'>
+	<div ng-repeat='section in about' id='{{section.id}}'  spark-id='{{section.id}}' class="panel" ng-class='{"panel-success":section.id==="education", "panel-primary": section.id==="employment"}'>
 		<h3 class="panel-heading">{{section.heading}}<span class='glyphicon glyphicon-picture close-image-slider' ng-if='section.images.length' ng-click='section.showImages = !section.showImages' ng-style='{opacity:(section.showImages ? 1 : 0.25)}'></span></h3>
 		<div class="panel-body">
 			<div class="image-carousel enable_touchmove"  ng-if='section.images.length' ng-show='section.showImages'>

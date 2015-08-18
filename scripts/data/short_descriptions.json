@@ -5,8 +5,7 @@
     "thumbnail": "http://tyler.boddyspargo.com/assets/home-page sm.jpg",
     "label": "Project",
     "page": 3,
-    "loc": "project0",
-    "$$hashKey": "object:48"
+    "loc": "project0"
   },
   {
     "name": "iOS Calculator App",
@@ -14,8 +13,7 @@
     "thumbnail": "http://tyler.boddyspargo.com/assets/storyboard sm.jpg",
     "label": "Project",
     "page": 3,
-    "loc": "project1",
-    "$$hashKey": "object:37"
+    "loc": "project1"
   },
   {
     "name": "FluentU Caption Files",
@@ -23,8 +21,7 @@
     "thumbnail": "http://tyler.boddyspargo.com/assets/caption-file-new.jpg",
     "label": "Project",
     "page": 3,
-    "loc": "project2",
-    "$$hashKey": "object:46"
+    "loc": "project2"
   },
   {
     "name": "FluentU Dashboard",
@@ -32,8 +29,7 @@
     "thumbnail": "http://tyler.boddyspargo.com/assets/dash-sm.jpg",
     "label": "Project",
     "page": 3,
-    "loc": "project3",
-    "$$hashKey": "object:42"
+    "loc": "project3"
   },
   {
     "name": "FluentU Analytics",
@@ -41,8 +37,7 @@
     "thumbnail": "http://tyler.boddyspargo.com/assets/graphs-sm.jpg",
     "label": "Project",
     "page": 3,
-    "loc": "project4",
-    "$$hashKey": "object:39"
+    "loc": "project4"
   },
   {
     "name": "File Helper",
@@ -50,8 +45,7 @@
     "thumbnail": "http://tyler.boddyspargo.com/assets/filehelper-sm.png",
     "label": "Project",
     "page": 3,
-    "loc": "project5",
-    "$$hashKey": "object:49"
+    "loc": "project5"
   },
   {
     "name": "Zombies Game",
@@ -59,8 +53,7 @@
     "thumbnail": "http://tyler.boddyspargo.com/assets/zombies-sm.png",
     "label": "Project",
     "page": 3,
-    "loc": "project6",
-    "$$hashKey": "object:36"
+    "loc": "project6"
   },
   {
     "name": "Royal Conservatory of Brussels",
@@ -68,8 +61,7 @@
     "thumbnail": "http://tyler.boddyspargo.com/assets/crb-logo-wide-sm.jpg",
     "label": "School",
     "page": 2,
-    "loc": "education",
-    "$$hashKey": "object:44"
+    "loc": "education"
   },
   {
     "name": "Niedermeyer Conservatory",
@@ -77,8 +69,7 @@
     "thumbnail": "http://tyler.boddyspargo.com/assets/grand-paris-issy.jpg",
     "label": "School",
     "page": 2,
-    "loc": "education",
-    "$$hashKey": "object:38"
+    "loc": "education"
   },
   {
     "name": "Carleton College",
@@ -86,8 +77,7 @@
     "thumbnail": "http://tyler.boddyspargo.com/assets/carleton-knights.jpg",
     "label": "School",
     "page": 2,
-    "loc": "education",
-    "$$hashKey": "object:51"
+    "loc": "education"
   },
   {
     "name": "Madrid Study Abroad - Film and the City",
@@ -95,8 +85,7 @@
     "thumbnail": "http://tyler.boddyspargo.com/assets/spain1.jpg",
     "label": "School",
     "page": 2,
-    "loc": "education",
-    "$$hashKey": "object:43"
+    "loc": "education"
   },
   {
     "name": "Paris Study Abroad - European Identities",
@@ -104,17 +93,15 @@
     "thumbnail": "http://tyler.boddyspargo.com/assets/castle.jpg",
     "label": "School",
     "page": 2,
-    "loc": "education",
-    "$$hashKey": "object:41"
+    "loc": "education"
   },
   {
     "name": "Head Content Editor - French",
-    "desc": "Co-lead a team whose goal is to curate, translate, and enrich video content in French....",
+    "desc": "Co-lead a team whose goal is to curate, translate, and enrich video content in French...",
     "thumbnail": "http://tyler.boddyspargo.com/assets/fluentu-blue-on-white.png",
     "label": "Job",
     "page": 2,
-    "loc": "employment",
-    "$$hashKey": "object:50"
+    "loc": "employment"
   },
   {
     "name": "Technology Assistant",
@@ -122,25 +109,22 @@
     "thumbnail": "http://tyler.boddyspargo.com/assets/peps.jpg",
     "label": "Job",
     "page": 2,
-    "loc": "employment",
-    "$$hashKey": "object:45"
+    "loc": "employment"
   },
   {
     "name": "Lycée Les-Côtes-de-Villebon",
-    "desc": "Led and designed oral/written activities, presentations, and tests....",
+    "desc": "Led and designed oral/written activities, presentations, and tests...",
     "thumbnail": "http://tyler.boddyspargo.com/assets/villebon-logo.jpg",
     "label": "Job",
     "page": 2,
-    "loc": "employment",
-    "$$hashKey": "object:40"
+    "loc": "employment"
   },
   {
     "name": "Counselor, Instructor",
-    "desc": "Designed and taught four-week intermediate high-school-credit French course....",
+    "desc": "Designed and taught four-week intermediate high-school-credit French course...",
     "thumbnail": "http://tyler.boddyspargo.com/assets/cord3.jpg",
     "label": "Job",
     "page": 2,
-    "loc": "employment",
-    "$$hashKey": "object:47"
+    "loc": "employment"
   }
 ]

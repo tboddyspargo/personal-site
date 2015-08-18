@@ -54,8 +54,9 @@ define('app', ['angular','angularAMD','home-controller', 'about-controller', 'pr
 	});
 
 	//the MainCtrl initiates spark-scroll and provides it and other rootScope functions to app.
-	app.controller('MainCtrl', ['$sce','$rootScope','sparkSetup', '$http',
-		function ($sce, $rootScope, sparkSetup, $http) {
+	app.controller('MainCtrl', ['$sce','$rootScope','sparkSetup', '$http', '$document',
+		function ($sce, $rootScope, sparkSetup, $http, $document) {
+			$rootScope.showViewer = false;
 			sparkSetup.debug = true;
 			sparkSetup.enableInvalidationInterval();
 			$rootScope.sidebar = {heading: 'Contents',
@@ -85,6 +86,18 @@ define('app', ['angular','angularAMD','home-controller', 'about-controller', 'pr
 			$rootScope.makeActive = function(index) {
 				$rootScope.active = index;
 			};
+
+			$rootScope.displayViewer = function(images) {
+				if (images) {$rootScope.images = images;}
+				$rootScope.showViewer = true;
+				angular.element(document).find('body').addClass('noscroll');
+			};
+
+			$rootScope.hideViewer = function() {
+				$rootScope.showViewer = false;
+				angular.element(document).find('body').removeClass('noscroll');
+				$rootScope.showViewer = false;
+			}
 
 			$rootScope.isActive = function(index) {
 				return $rootScope.active === index;
@@ -117,6 +130,14 @@ define('app', ['angular','angularAMD','home-controller', 'about-controller', 'pr
 		return {
 			restrict: 'E',
 			templateUrl: 'templates/loading.html'
+		};
+	});
+
+	//image-viewer as element
+	app.directive('viewingWindow', function() {
+		return {
+			restrict: 'E',
+			templateUrl: 'templates/image-viewer.html'
 		};
 	});
 

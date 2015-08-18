@@ -8,7 +8,6 @@ require(['app', 'helpers'],
 			$rootScope.progress = $scope.this_progress;
 			$rootScope.total_progress = 3;
 			var x = 0;
-			
 
 
 			if (!$scope.bio) {

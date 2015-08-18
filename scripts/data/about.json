@@ -6,28 +6,23 @@
     "images": [
       {
         "path": "http://tyler.boddyspargo.com/assets/conservatoire-royal-de-bruxelles.jpg",
-        "caption": "Royal Conservatory",
-        "$$hashKey": "object:105"
+        "caption": "Royal Conservatory"
       },
       {
         "path": "http://tyler.boddyspargo.com/assets/niedermeyer-media.jpg",
-        "caption": "Niedermeyer Conservatory",
-        "$$hashKey": "object:106"
+        "caption": "Niedermeyer Conservatory"
       },
       {
         "path": "http://tyler.boddyspargo.com/assets/carleton1.jpg",
-        "caption": "Carleton College",
-        "$$hashKey": "object:107"
+        "caption": "Carleton College"
       },
       {
         "path": "http://tyler.boddyspargo.com/assets/carleton2.jpg",
-        "caption": "Carleton College",
-        "$$hashKey": "object:108"
+        "caption": "Carleton College"
       },
       {
         "path": "http://tyler.boddyspargo.com/assets/castle.jpg",
-        "caption": "Chambord Castle in France",
-        "$$hashKey": "object:109"
+        "caption": "Chambord Castle in France"
       },
       {
         "path": "http://tyler.boddyspargo.com/assets/spain2.jpg",
@@ -48,8 +43,7 @@
         "description": "I enrolled in the Royal conservatory of Brussels as a prospective master student, hoping that this more challenging, immersive environment would finally remove any doubt I still had about my musical endeavors. I took a full load as a first-years student and tested into 2nd-year musical fundamentals class and harmony/composition. I continued to work for FluentU and teach English to pay for school.",
         "docIntro": "",
         "documents": [],
-        "thumbnail": "http://tyler.boddyspargo.com/assets/crb-logo-wide-sm.jpg",
-        "$$hashKey": "object:95"
+        "thumbnail": "http://tyler.boddyspargo.com/assets/crb-logo-wide-sm.jpg"
       },
       {
         "name": "Niedermeyer Conservatory",
@@ -63,12 +57,10 @@
         "documents": [
           {
             "address": "http://tyler.boddyspargo.com/assets/certificat-etudes.pdf",
-            "name": "Transcript",
-            "$$hashKey": "object:119"
+            "name": "Transcript"
           }
         ],
-        "thumbnail": "http://tyler.boddyspargo.com/assets/grand-paris-issy.jpg",
-        "$$hashKey": "object:96"
+        "thumbnail": "http://tyler.boddyspargo.com/assets/grand-paris-issy.jpg"
       },
       {
         "name": "Carleton College",
@@ -82,17 +74,14 @@
         "documents": [
           {
             "address": "http://tyler.boddyspargo.com/assets/carleton-diploma.pdf",
-            "name": "Diploma",
-            "$$hashKey": "object:123"
+            "name": "Diploma"
           },
           {
             "address": "http://tyler.boddyspargo.com/assets/carleton-transcript.pdf",
-            "name": "Official Transcript",
-            "$$hashKey": "object:124"
+            "name": "Official Transcript"
           }
         ],
-        "thumbnail": "http://tyler.boddyspargo.com/assets/carleton-knights.jpg",
-        "$$hashKey": "object:97"
+        "thumbnail": "http://tyler.boddyspargo.com/assets/carleton-knights.jpg"
       },
       {
         "name": "Madrid Study Abroad - Film and the City",
@@ -104,8 +93,7 @@
         "description": "I was lucky enough to be able to go on a second study abroad trip to Spain in my senior year. I left in June for a program that started in September, which alowed me to live for 2 months with a friend of mine in Valencia, bike the Danube river in Germany, and walk across Spain on the Way of Saint James before the program actually began. My second program was just as good as the first and at the end, I spoke better Spanish than French, which was hard for most people to believe. After the program I visited 4 more countries, not being able to resist visiting my recently adopted family in Paris, before I finally returned to the States to finish up my degree.",
         "docIntro": "",
         "documents": [],
-        "thumbnail": "http://tyler.boddyspargo.com/assets/spain1.jpg",
-        "$$hashKey": "object:98"
+        "thumbnail": "http://tyler.boddyspargo.com/assets/spain1.jpg"
       },
       {
         "name": "Paris Study Abroad - European Identities",
@@ -117,11 +105,9 @@
         "description": "In the spring of 2010 I went overseas for the first time. The Carleton study abroad program to Paris was an astoundingly positive experience and I excelled at French, visited 6 countries, helped clean the catacombs of Paris, and adopted my host family as my own (they subsequently came to my graduation and I lived with them from 2012-2014).",
         "docIntro": "",
         "documents": [],
-        "thumbnail": "http://tyler.boddyspargo.com/assets/castle.jpg",
-        "$$hashKey": "object:99"
+        "thumbnail": "http://tyler.boddyspargo.com/assets/castle.jpg"
       }
-    ],
-    "$$hashKey": "object:83"
+    ]
   },
   {
     "heading": "Employment History",
@@ -149,22 +135,18 @@
         "documents": [
           {
             "name": "Alan Park",
-            "address": "mailto:alan@fluentu.com",
-            "$$hashKey": "object:141"
+            "address": "mailto:alan@fluentu.com"
           },
           {
             "name": "Jason Shumann",
-            "address": "mailto:jason@fluentu.com",
-            "$$hashKey": "object:142"
+            "address": "mailto:jason@fluentu.com"
           },
           {
             "name": "Nicole Durham",
-            "address": "mailto:nicole@fluentu.com",
-            "$$hashKey": "object:143"
+            "address": "mailto:nicole@fluentu.com"
           }
         ],
-        "thumbnail": "http://tyler.boddyspargo.com/assets/fluentu-blue-on-white.png",
-        "$$hashKey": "object:132"
+        "thumbnail": "http://tyler.boddyspargo.com/assets/fluentu-blue-on-white.png"
       },
       {
         "name": "Technology Assistant",
@@ -182,17 +164,14 @@
         "documents": [
           {
             "name": "Tucker MacNiel",
-            "address": "mailto:tmacniel@carleton.edu",
-            "$$hashKey": "object:152"
+            "address": "mailto:tmacniel@carleton.edu"
           },
           {
             "name": "Jim Pierret",
-            "address": "mailto:jpierret@carleton.edu",
-            "$$hashKey": "object:153"
+            "address": "mailto:jpierret@carleton.edu"
           }
         ],
-        "thumbnail": "http://tyler.boddyspargo.com/assets/peps.jpg",
-        "$$hashKey": "object:133"
+        "thumbnail": "http://tyler.boddyspargo.com/assets/peps.jpg"
       },
       {
         "name": "Lycée Les-Côtes-de-Villebon",
@@ -210,12 +189,10 @@
         "documents": [
           {
             "name": "Claudine Dumas",
-            "address": "mailto:tiny.d@orange.fr",
-            "$$hashKey": "object:160"
+            "address": "mailto:tiny.d@orange.fr"
           }
         ],
-        "thumbnail": "http://tyler.boddyspargo.com/assets/villebon-logo.jpg",
-        "$$hashKey": "object:134"
+        "thumbnail": "http://tyler.boddyspargo.com/assets/villebon-logo.jpg"
       },
       {
         "name": "Counselor, Instructor",
@@ -234,14 +211,11 @@
         "documents": [
           {
             "name": "Katherine Dutko",
-            "address": "mailto:kdutko@cord.edu",
-            "$$hashKey": "object:166"
+            "address": "mailto:kdutko@cord.edu"
           }
         ],
-        "thumbnail": "http://tyler.boddyspargo.com/assets/cord3.jpg",
-        "$$hashKey": "object:135"
+        "thumbnail": "http://tyler.boddyspargo.com/assets/cord3.jpg"
       }
-    ],
-    "$$hashKey": "object:84"
+    ]
   }
 ]
