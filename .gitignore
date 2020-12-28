@@ -1,0 +1,6 @@
+.codekit-cach/*
+.sass-cache/*
+Planning/*
+config.codekit
+.DS_Store
+**/.DS_Store
