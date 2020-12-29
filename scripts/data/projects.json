@@ -31,20 +31,20 @@
     ],
     "images": [
       {
-        "path": "http://tyler.boddyspargo.com/assets/home-page.jpg",
+        "path": "/assets/home-page.jpg",
         "caption": "Homepage"
       },
       {
-        "path": "http://tyler.boddyspargo.com/assets/sublime.jpg",
+        "path": "/assets/sublime.jpg",
         "caption": "Sublime showing app.js"
       },
       {
-        "path": "http://tyler.boddyspargo.com/assets/navbar template.jpg",
+        "path": "/assets/navbar template.jpg",
         "caption": "Sublime showing navigation bar template"
       }
     ],
     "showImages": true,
-    "thumbnail": "http://tyler.boddyspargo.com/assets/home-page sm.jpg",
+    "thumbnail": "/home-page sm.jpg",
     "documents": [],
     "activeImage": 0
   },
@@ -75,24 +75,24 @@
     ],
     "images": [
       {
-        "path": "http://tyler.boddyspargo.com/assets/storyboard.jpg",
+        "path": "/assets/storyboard.jpg",
         "caption": "Storyboard of iPhone UI"
       },
       {
-        "path": "http://tyler.boddyspargo.com/assets/calculator class.jpg",
+        "path": "/assets/calculator class.jpg",
         "caption": "Calculator class definition"
       },
       {
-        "path": "http://tyler.boddyspargo.com/assets/working calculator app.jpg",
+        "path": "/assets/working calculator app.jpg",
         "caption": "Calculator app simulation"
       },
       {
-        "path": "http://tyler.boddyspargo.com/assets/Swift version.jpg",
+        "path": "/assets/Swift version.jpg",
         "caption": "Partial Swift calculator app"
       }
     ],
     "showImages": true,
-    "thumbnail": "http://tyler.boddyspargo.com/assets/storyboard sm.jpg",
+    "thumbnail": "/storyboard sm.jpg",
     "documents": [],
     "activeImage": 0
   },
@@ -118,28 +118,28 @@
     ],
     "images": [
       {
-        "path": "http://tyler.boddyspargo.com/assets/old-caption-file2.jpg",
+        "path": "/assets/old-caption-file2.jpg",
         "caption": "Old caption file"
       },
       {
-        "path": "http://tyler.boddyspargo.com/assets/caption-file-new.jpg",
+        "path": "/assets/caption-file-new.jpg",
         "caption": "New caption file"
       },
       {
-        "path": "http://tyler.boddyspargo.com/assets/caption-errors.jpg",
+        "path": "/assets/caption-errors.jpg",
         "caption": "Caption file showing errors"
       },
       {
-        "path": "http://tyler.boddyspargo.com/assets/caption-file-addon.jpg",
+        "path": "/assets/caption-file-addon.jpg",
         "caption": "Caption file with Add-on"
       },
       {
-        "path": "http://tyler.boddyspargo.com/assets/caption-upload.jpg",
+        "path": "/assets/caption-upload.jpg",
         "caption": "Import captions dialog box"
       }
     ],
     "showImages": true,
-    "thumbnail": "http://tyler.boddyspargo.com/assets/caption-file-new.jpg",
+    "thumbnail": "/caption-file-new.jpg",
     "documents": [],
     "activeImage": 0
   },
@@ -165,24 +165,24 @@
     ],
     "images": [
       {
-        "path": "http://tyler.boddyspargo.com/assets/dash.jpg",
+        "path": "/assets/dash.jpg",
         "caption": "Work Tracking (Dashboard) Document"
       },
       {
-        "path": "http://tyler.boddyspargo.com/assets/fcvl.jpg",
+        "path": "/assets/fcvl.jpg",
         "caption": "Video Finding Document"
       },
       {
-        "path": "http://tyler.boddyspargo.com/assets/publishing-data.jpg",
+        "path": "/assets/publishing-data.jpg",
         "caption": "Publishing Data"
       },
       {
-        "path": "http://tyler.boddyspargo.com/assets/scripts.jpg",
+        "path": "/assets/scripts.jpg",
         "caption": "Google Apps Script document (5,000+ lines)"
       }
     ],
     "showImages": true,
-    "thumbnail": "http://tyler.boddyspargo.com/assets/dash-sm.jpg",
+    "thumbnail": "/dash-sm.jpg",
     "documents": [],
     "activeImage": 0
   },
@@ -213,24 +213,24 @@
     ],
     "images": [
       {
-        "path": "http://tyler.boddyspargo.com/assets/api-application.jpg",
+        "path": "/assets/api-application.jpg",
         "caption": "Integration with Time Doctor API"
       },
       {
-        "path": "http://tyler.boddyspargo.com/assets/trends.jpg",
+        "path": "/assets/trends.jpg",
         "caption": "Graphs displaying library stats"
       },
       {
-        "path": "http://tyler.boddyspargo.com/assets/monthly.jpg",
+        "path": "/assets/monthly.jpg",
         "caption": "Real-time company-wide progress report"
       },
       {
-        "path": "http://tyler.boddyspargo.com/assets/graphs.jpg",
+        "path": "/assets/graphs.jpg",
         "caption": "Real-time team and individual graphs"
       }
     ],
     "showImages": true,
-    "thumbnail": "http://tyler.boddyspargo.com/assets/graphs-sm.jpg",
+    "thumbnail": "/graphs-sm.jpg",
     "documents": [],
     "activeImage": 0
   },
@@ -251,19 +251,19 @@
     ],
     "images": [
       {
-        "path": "http://tyler.boddyspargo.com/assets/file-helper.jpg",
+        "path": "/assets/file-helper.jpg",
         "caption": "FileHelper applicaiton window"
       },
       {
-        "path": "http://tyler.boddyspargo.com/assets/filehelper-sm.png",
+        "path": "/assets/filehelper-sm.png",
         "caption": "FileHelper icon"
       }
     ],
     "showImages": true,
-    "thumbnail": "http://tyler.boddyspargo.com/assets/filehelper-sm.png",
+    "thumbnail": "/filehelper-sm.png",
     "documents": [
       {
-        "path": "http://tyler.boddyspargo.com/assets/FileHelper.zip",
+        "path": "/assets/FileHelper.zip",
         "name": "FileHelper (MacOSX)"
       }
     ],
@@ -286,23 +286,23 @@
     ],
     "images": [
       {
-        "path": "http://tyler.boddyspargo.com/assets/zombies-sm.png",
+        "path": "/assets/zombies-sm.png",
         "caption": "Zombies icon"
       },
       {
-        "path": "http://tyler.boddyspargo.com/assets/zombies-shoot.jpg",
+        "path": "/assets/zombies-shoot.jpg",
         "caption": "Gameplay"
       },
       {
-        "path": "http://tyler.boddyspargo.com/assets/zombies-game-over.jpg",
+        "path": "/assets/zombies-game-over.jpg",
         "caption": "Zombies Game Over"
       }
     ],
     "showImages": true,
-    "thumbnail": "http://tyler.boddyspargo.com/assets/zombies-sm.png",
+    "thumbnail": "/zombies-sm.png",
     "documents": [
       {
-        "path": "http://tyler.boddyspargo.com/assets/Zombies.zip",
+        "path": "/assets/Zombies.zip",
         "name": "Zombies (MacOSX)"
       }
     ],

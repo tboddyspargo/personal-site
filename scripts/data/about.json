@@ -5,27 +5,27 @@
     "id": "education",
     "images": [
       {
-        "path": "http://tyler.boddyspargo.com/assets/conservatoire-royal-de-bruxelles.jpg",
+        "path": "/conservatoire-royal-de-bruxelles.jpg",
         "caption": "Royal Conservatory"
       },
       {
-        "path": "http://tyler.boddyspargo.com/assets/niedermeyer-media.jpg",
+        "path": "/niedermeyer-media.jpg",
         "caption": "Niedermeyer Conservatory"
       },
       {
-        "path": "http://tyler.boddyspargo.com/assets/carleton1.jpg",
+        "path": "/carleton1.jpg",
         "caption": "Carleton College"
       },
       {
-        "path": "http://tyler.boddyspargo.com/assets/carleton2.jpg",
+        "path": "/carleton2.jpg",
         "caption": "Carleton College"
       },
       {
-        "path": "http://tyler.boddyspargo.com/assets/castle.jpg",
+        "path": "/castle.jpg",
         "caption": "Chambord Castle in France"
       },
       {
-        "path": "http://tyler.boddyspargo.com/assets/spain2.jpg",
+        "path": "/spain2.jpg",
         "caption": "Castell building in Montserrat, Spain"
       }
     ],
@@ -36,82 +36,82 @@
       {
         "name": "Royal Conservatory of Brussels",
         "title": "Barroque/Classical Trumpet",
-        "logo": "http://tyler.boddyspargo.com/assets/crb-logo.jpg",
-        "website": "http://www.conservatoire.be",
+        "logo": "/crb-logo.jpg",
+        "website": "https://www.conservatoire.be",
         "duration": "2014-2015",
         "location": "Brussels, Belgium",
         "description": "I enrolled in the Royal conservatory of Brussels as a prospective master student, hoping that this more challenging, immersive environment would finally remove any doubt I still had about my musical endeavors. I took a full load as a first-years student and tested into 2nd-year musical fundamentals class and harmony/composition. I continued to work for FluentU and teach English to pay for school.",
         "docIntro": "",
         "documents": [],
-        "thumbnail": "http://tyler.boddyspargo.com/assets/crb-logo-wide-sm.jpg"
+        "thumbnail": "/crb-logo-wide-sm.jpg"
       },
       {
         "name": "Niedermeyer Conservatory",
         "title": "Certificate of Advanced Musical Studies - Trumpet",
-        "logo": "http://tyler.boddyspargo.com/assets/grand-paris-issy.jpg",
-        "website": "http://www.agglo-gpso.fr/culture_et_loisirs_conservatoire_d_issy_les_moulineaux.html",
+        "logo": "/grand-paris-issy.jpg",
+        "website": "https://www.agglo-gpso.fr/culture_et_loisirs_conservatoire_d_issy_les_moulineaux.html",
         "duration": "2012-2014",
         "location": "Issy-Les-Moulineaux (Paris), France",
         "description": "Music is a peculiar pursuit and if one wants to become a great musician, one must start young. My youth was slipping away and I knew that if I wanted to try to become a musician, it had to be now, rather than later. I enrolled in a regional conservatory near Paris with Hervé Noël who took me under his wing and encouraged me to continue towards that goal. I also took general courses in preparation for enrolling in a more significant degree program in the future. All the while, I was working as a teacher and, eventually, for FluentU.com to pay off my undergraduate student loans.",
         "docIntro": "",
         "documents": [
           {
-            "address": "http://tyler.boddyspargo.com/assets/certificat-etudes.pdf",
+            "address": "/certificat-etudes.pdf",
             "name": "Transcript"
           }
         ],
-        "thumbnail": "http://tyler.boddyspargo.com/assets/grand-paris-issy.jpg"
+        "thumbnail": "/grand-paris-issy.jpg"
       },
       {
         "name": "Carleton College",
         "title": "Romance Languages (French and Spanish)",
-        "logo": "http://tyler.boddyspargo.com/assets/carleton-seal.png",
-        "website": "http://www.carleton.edu",
+        "logo": "/carleton-seal.png",
+        "website": "https://www.carleton.edu",
         "duration": "2008-2012",
         "location": "Northfield, MN & Europe",
         "description": "After high school I was accepted to Carleton College, a small liberal arts school in Northfield, MN. I quickly discovered many passions including acting, comedy, dance, gymnastics, figure skating, singing, and French, but it was the latter that allowed me to grow in the most formative ways, inspiring me to go on many adventures abroad, meet new people, experience new things, and delve into the unknown. I declared French as a major before finally convincing the Spanish department chair to accept my request for a romance languages major. I completed my degree in 2012 and knew that I wanted to use my language skills immediately - prompting me to move to Europe for the following three years.",
         "docIntro": "",
         "documents": [
           {
-            "address": "http://tyler.boddyspargo.com/assets/carleton-diploma.pdf",
+            "address": "/carleton-diploma.pdf",
             "name": "Diploma"
           },
           {
-            "address": "http://tyler.boddyspargo.com/assets/carleton-transcript.pdf",
+            "address": "/carleton-transcript.pdf",
             "name": "Official Transcript"
           }
         ],
-        "thumbnail": "http://tyler.boddyspargo.com/assets/carleton-knights.jpg"
+        "thumbnail": "/carleton-knights.jpg"
       },
       {
         "name": "Madrid Study Abroad - Film and the City",
         "title": "Immersion Program",
-        "logo": "http://tyler.boddyspargo.com/assets/carleton-seal.png",
+        "logo": "/carleton-seal.png",
         "website": "https://apps.carleton.edu/curricular/ocs/madrid/archive/2011/courses/",
         "duration": "Jun - Dec 2011",
         "location": "Madrid & Valencia, Spain",
         "description": "I was lucky enough to be able to go on a second study abroad trip to Spain in my senior year. I left in June for a program that started in September, which alowed me to live for 2 months with a friend of mine in Valencia, bike the Danube river in Germany, and walk across Spain on the Way of Saint James before the program actually began. My second program was just as good as the first and at the end, I spoke better Spanish than French, which was hard for most people to believe. After the program I visited 4 more countries, not being able to resist visiting my recently adopted family in Paris, before I finally returned to the States to finish up my degree.",
         "docIntro": "",
         "documents": [],
-        "thumbnail": "http://tyler.boddyspargo.com/assets/spain1.jpg"
+        "thumbnail": "/spain1.jpg"
       },
       {
         "name": "Paris Study Abroad - European Identities",
         "title": "Immersion Program",
-        "logo": "http://tyler.boddyspargo.com/assets/carleton-seal.png",
+        "logo": "/carleton-seal.png",
         "website": "https://apps.carleton.edu/curricular/ocs/paris/archive/2010/",
         "duration": "Mar - Aug 2010",
         "location": "Paris, France & Thiaumont, Belgium",
         "description": "In the spring of 2010 I went overseas for the first time. The Carleton study abroad program to Paris was an astoundingly positive experience and I excelled at French, visited 6 countries, helped clean the catacombs of Paris, and adopted my host family as my own (they subsequently came to my graduation and I lived with them from 2012-2014).",
         "docIntro": "",
         "documents": [],
-        "thumbnail": "http://tyler.boddyspargo.com/assets/castle.jpg"
+        "thumbnail": "/castle.jpg"
       }
     ]
   },
   {
     "heading": "Employment History",
-    "bottom": "This is only a partial list of employment history. Please see my <a href=\"http://tyler.boddyspargo.com/assets/cv.pdf\" target=\"_blank\">CV</a> and/or <a href=\"mailto:muyleche@gmail.com\" target=\"_blank\">contact me</a> for more information.",
+    "bottom": "This is only a partial list of employment history. Please see my <a href=\"/cv.pdf\" target=\"_blank\">CV</a> and/or <a href=\"mailto:muyleche@gmail.com\" target=\"_blank\">contact me</a> for more information.",
     "images": [],
     "id": "employment",
     "text": "",
@@ -121,8 +121,8 @@
       {
         "name": "Head Content Editor - French",
         "title": "FluentU.com",
-        "logo": "http://tyler.boddyspargo.com/assets/fluentu-blue-on-white.png",
-        "website": "http://fluentu.com/",
+        "logo": "/fluentu-blue-on-white.png",
+        "website": "https://fluentu.com/",
         "duration": "2013 - Current",
         "location": "Telecommute",
         "list": [
@@ -146,12 +146,12 @@
             "address": "mailto:nicole@fluentu.com"
           }
         ],
-        "thumbnail": "http://tyler.boddyspargo.com/assets/fluentu-blue-on-white.png"
+        "thumbnail": "/fluentu-blue-on-white.png"
       },
       {
         "name": "Technology Assistant",
         "title": "Media Technology Dept. - Carleton College",
-        "logo": "http://tyler.boddyspargo.com/assets/peps.jpg",
+        "logo": "/peps.jpg",
         "website": "https://apps.carleton.edu/campus/peps/",
         "duration": "2008 - 2012",
         "location": "Carleton College; Northfield, Minnesota",
@@ -171,13 +171,13 @@
             "address": "mailto:jpierret@carleton.edu"
           }
         ],
-        "thumbnail": "http://tyler.boddyspargo.com/assets/peps.jpg"
+        "thumbnail": "/peps.jpg"
       },
       {
         "name": "Lycée Les-Côtes-de-Villebon",
         "title": "Language Assistant",
-        "logo": "http://tyler.boddyspargo.com/assets/villebon-logo.jpg",
-        "website": "http://www.lyc-cotesdevillebon-meudon.ac-versailles.fr",
+        "logo": "/villebon-logo.jpg",
+        "website": "https://www.lyc-cotesdevillebon-meudon.ac-versailles.fr",
         "duration": "2013-2014",
         "location": "Meudon-la-forêt, France",
         "list": [
@@ -192,13 +192,13 @@
             "address": "mailto:tiny.d@orange.fr"
           }
         ],
-        "thumbnail": "http://tyler.boddyspargo.com/assets/villebon-logo.jpg"
+        "thumbnail": "/villebon-logo.jpg"
       },
       {
         "name": "Counselor, Instructor",
         "title": "Concordia Language Villages - Lac-du-bois",
-        "logo": "http://tyler.boddyspargo.com/assets/cord3.jpg",
-        "website": "http://www.concordialanguagevillages.org",
+        "logo": "/cord3.jpg",
+        "website": "https://www.concordialanguagevillages.org",
         "duration": "Jul - Aug 2013",
         "location": "Bemidji, Minnesota",
         "list": [
@@ -214,7 +214,7 @@
             "address": "mailto:kdutko@cord.edu"
           }
         ],
-        "thumbnail": "http://tyler.boddyspargo.com/assets/cord3.jpg"
+        "thumbnail": "/cord3.jpg"
       }
     ]
   }

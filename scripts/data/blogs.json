@@ -3,12 +3,12 @@
 	"text":"",
 	"links":[
 		{
-			"address":"http://tboddyspargo.wordpress.com",
+			"address":"https://tboddyspargo.wordpress.com",
 			"name": "Pond Hopping",
 			"icon":"assets/round-icons/pond-hopping-sm.png"
 		},
 		{
-			"address":"http://tylerbod.wordpress.com",
+			"address":"https://tylerbod.wordpress.com",
 			"name": "The Life of Ty",
 			"icon":"assets/round-icons/life-of-ty-sm.png"
 		}

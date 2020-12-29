@@ -2,7 +2,7 @@
   {
     "name": "This Website!",
     "desc": "Create a showcase of my accomplishments using some of them in the process.",
-    "thumbnail": "http://tyler.boddyspargo.com/assets/home-page sm.jpg",
+    "thumbnail": "home-page sm.jpg",
     "label": "Project",
     "page": 3,
     "loc": "project0"
@@ -10,7 +10,7 @@
   {
     "name": "iOS Calculator App",
     "desc": "Practive C, Obj-C, and Swift by creating a simple calculator app for iOS.",
-    "thumbnail": "http://tyler.boddyspargo.com/assets/storyboard sm.jpg",
+    "thumbnail": "storyboard sm.jpg",
     "label": "Project",
     "page": 3,
     "loc": "project1"
@@ -18,7 +18,7 @@
   {
     "name": "FluentU Caption Files",
     "desc": "Facilitate the creation, organization, and manipulation of caption files.",
-    "thumbnail": "http://tyler.boddyspargo.com/assets/caption-file-new.jpg",
+    "thumbnail": "caption-file-new.jpg",
     "label": "Project",
     "page": 3,
     "loc": "project2"
@@ -26,7 +26,7 @@
   {
     "name": "FluentU Dashboard",
     "desc": "Improve workflow to increase independence and promote job satisfaction.",
-    "thumbnail": "http://tyler.boddyspargo.com/assets/dash-sm.jpg",
+    "thumbnail": "dash-sm.jpg",
     "label": "Project",
     "page": 3,
     "loc": "project3"
@@ -34,7 +34,7 @@
   {
     "name": "FluentU Analytics",
     "desc": "Measure and assess productivity to improve efficiency.",
-    "thumbnail": "http://tyler.boddyspargo.com/assets/graphs-sm.jpg",
+    "thumbnail": "graphs-sm.jpg",
     "label": "Project",
     "page": 3,
     "loc": "project4"
@@ -42,7 +42,7 @@
   {
     "name": "File Helper",
     "desc": "Create a set of tools to perform file-system organization tasks using python.",
-    "thumbnail": "http://tyler.boddyspargo.com/assets/filehelper-sm.png",
+    "thumbnail": "filehelper-sm.png",
     "label": "Project",
     "page": 3,
     "loc": "project5"
@@ -50,7 +50,7 @@
   {
     "name": "Zombies Game",
     "desc": "Use python to build a simple zombie apocalypse game.",
-    "thumbnail": "http://tyler.boddyspargo.com/assets/zombies-sm.png",
+    "thumbnail": "zombies-sm.png",
     "label": "Project",
     "page": 3,
     "loc": "project6"
@@ -58,7 +58,7 @@
   {
     "name": "Royal Conservatory of Brussels",
     "desc": "I enrolled in the Royal conservatory of Brussels as a prospective mast...",
-    "thumbnail": "http://tyler.boddyspargo.com/assets/crb-logo-wide-sm.jpg",
+    "thumbnail": "crb-logo-wide-sm.jpg",
     "label": "School",
     "page": 2,
     "loc": "education"
@@ -66,7 +66,7 @@
   {
     "name": "Niedermeyer Conservatory",
     "desc": "Music is a peculiar pursuit and if one wants to become a great musicia...",
-    "thumbnail": "http://tyler.boddyspargo.com/assets/grand-paris-issy.jpg",
+    "thumbnail": "grand-paris-issy.jpg",
     "label": "School",
     "page": 2,
     "loc": "education"
@@ -74,7 +74,7 @@
   {
     "name": "Carleton College",
     "desc": "After high school I was accepted to Carleton College, a small liberal ...",
-    "thumbnail": "http://tyler.boddyspargo.com/assets/carleton-knights.jpg",
+    "thumbnail": "carleton-knights.jpg",
     "label": "School",
     "page": 2,
     "loc": "education"
@@ -82,7 +82,7 @@
   {
     "name": "Madrid Study Abroad - Film and the City",
     "desc": "I was lucky enough to be able to go on a second study abroad trip to S...",
-    "thumbnail": "http://tyler.boddyspargo.com/assets/spain1.jpg",
+    "thumbnail": "spain1.jpg",
     "label": "School",
     "page": 2,
     "loc": "education"
@@ -90,7 +90,7 @@
   {
     "name": "Paris Study Abroad - European Identities",
     "desc": "In the spring of 2010 I went overseas for the first time. The Carleton...",
-    "thumbnail": "http://tyler.boddyspargo.com/assets/castle.jpg",
+    "thumbnail": "castle.jpg",
     "label": "School",
     "page": 2,
     "loc": "education"
@@ -98,7 +98,7 @@
   {
     "name": "Head Content Editor - French",
     "desc": "Co-lead a team whose goal is to curate, translate, and enrich video content in French...",
-    "thumbnail": "http://tyler.boddyspargo.com/assets/fluentu-blue-on-white.png",
+    "thumbnail": "fluentu-blue-on-white.png",
     "label": "Job",
     "page": 2,
     "loc": "employment"
@@ -106,7 +106,7 @@
   {
     "name": "Technology Assistant",
     "desc": "Helped customers with their technology needs....",
-    "thumbnail": "http://tyler.boddyspargo.com/assets/peps.jpg",
+    "thumbnail": "peps.jpg",
     "label": "Job",
     "page": 2,
     "loc": "employment"
@@ -114,7 +114,7 @@
   {
     "name": "Lycée Les-Côtes-de-Villebon",
     "desc": "Led and designed oral/written activities, presentations, and tests...",
-    "thumbnail": "http://tyler.boddyspargo.com/assets/villebon-logo.jpg",
+    "thumbnail": "villebon-logo.jpg",
     "label": "Job",
     "page": 2,
     "loc": "employment"
@@ -122,7 +122,7 @@
   {
     "name": "Counselor, Instructor",
     "desc": "Designed and taught four-week intermediate high-school-credit French course...",
-    "thumbnail": "http://tyler.boddyspargo.com/assets/cord3.jpg",
+    "thumbnail": "cord3.jpg",
     "label": "Job",
     "page": 2,
     "loc": "employment"
