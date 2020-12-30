@@ -12,7 +12,7 @@
 				<a class="thumbnail-grid-item hvr-grow col-xs-4 col-sm-3 col-lg-2" ng-repeat='short in short_desc' ng-href='{{short.pageLoc}}?loc={{short.loc}}'>
 					<div class="thumbnail">
 						<div class="thumb-wrapper">
-							<div class="thumb-container col-xs-12"><img class='' ng-src="/assets/{{short.thumbnail}}" alt=""></div>
+							<div class="thumb-container col-xs-12"><img class='' ng-src="{{short.thumbnail}}" alt=""></div>
 							<span class='tag label' ng-class='{"label-info": short.label=="Project", "label-success": short.label=="School", "label-primary":short.label=="Job"}'>{{short.label}}</span>
 						</div>
 						<div class="title">

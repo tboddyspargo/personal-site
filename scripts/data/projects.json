@@ -31,20 +31,20 @@
     ],
     "images": [
       {
-        "path": "/assets/home-page.jpg",
+        "path": "assets/home-page.jpg",
         "caption": "Homepage"
       },
       {
-        "path": "/assets/sublime.jpg",
+        "path": "assets/sublime.jpg",
         "caption": "Sublime showing app.js"
       },
       {
-        "path": "/assets/navbar template.jpg",
+        "path": "assets/navbar template.jpg",
         "caption": "Sublime showing navigation bar template"
       }
     ],
     "showImages": true,
-    "thumbnail": "/home-page sm.jpg",
+    "thumbnail": "assets/home-page sm.jpg",
     "documents": [],
     "activeImage": 0
   },
@@ -75,24 +75,24 @@
     ],
     "images": [
       {
-        "path": "/assets/storyboard.jpg",
+        "path": "assets/storyboard.jpg",
         "caption": "Storyboard of iPhone UI"
       },
       {
-        "path": "/assets/calculator class.jpg",
+        "path": "assets/calculator class.jpg",
         "caption": "Calculator class definition"
       },
       {
-        "path": "/assets/working calculator app.jpg",
+        "path": "assets/working calculator app.jpg",
         "caption": "Calculator app simulation"
       },
       {
-        "path": "/assets/Swift version.jpg",
+        "path": "assets/Swift version.jpg",
         "caption": "Partial Swift calculator app"
       }
     ],
     "showImages": true,
-    "thumbnail": "/storyboard sm.jpg",
+    "thumbnail": "assets/storyboard sm.jpg",
     "documents": [],
     "activeImage": 0
   },
@@ -118,28 +118,28 @@
     ],
     "images": [
       {
-        "path": "/assets/old-caption-file2.jpg",
+        "path": "assets/old-caption-file2.jpg",
         "caption": "Old caption file"
       },
       {
-        "path": "/assets/caption-file-new.jpg",
+        "path": "assets/caption-file-new.jpg",
         "caption": "New caption file"
       },
       {
-        "path": "/assets/caption-errors.jpg",
+        "path": "assets/caption-errors.jpg",
         "caption": "Caption file showing errors"
       },
       {
-        "path": "/assets/caption-file-addon.jpg",
+        "path": "assets/caption-file-addon.jpg",
         "caption": "Caption file with Add-on"
       },
       {
-        "path": "/assets/caption-upload.jpg",
+        "path": "assets/caption-upload.jpg",
         "caption": "Import captions dialog box"
       }
     ],
     "showImages": true,
-    "thumbnail": "/caption-file-new.jpg",
+    "thumbnail": "assets/caption-file-new.jpg",
     "documents": [],
     "activeImage": 0
   },
@@ -165,24 +165,24 @@
     ],
     "images": [
       {
-        "path": "/assets/dash.jpg",
+        "path": "assets/dash.jpg",
         "caption": "Work Tracking (Dashboard) Document"
       },
       {
-        "path": "/assets/fcvl.jpg",
+        "path": "assets/fcvl.jpg",
         "caption": "Video Finding Document"
       },
       {
-        "path": "/assets/publishing-data.jpg",
+        "path": "assets/publishing-data.jpg",
         "caption": "Publishing Data"
       },
       {
-        "path": "/assets/scripts.jpg",
+        "path": "assets/scripts.jpg",
         "caption": "Google Apps Script document (5,000+ lines)"
       }
     ],
     "showImages": true,
-    "thumbnail": "/dash-sm.jpg",
+    "thumbnail": "assets/dash-sm.jpg",
     "documents": [],
     "activeImage": 0
   },
@@ -213,24 +213,24 @@
     ],
     "images": [
       {
-        "path": "/assets/api-application.jpg",
+        "path": "assets/api-application.jpg",
         "caption": "Integration with Time Doctor API"
       },
       {
-        "path": "/assets/trends.jpg",
+        "path": "assets/trends.jpg",
         "caption": "Graphs displaying library stats"
       },
       {
-        "path": "/assets/monthly.jpg",
+        "path": "assets/monthly.jpg",
         "caption": "Real-time company-wide progress report"
       },
       {
-        "path": "/assets/graphs.jpg",
+        "path": "assets/graphs.jpg",
         "caption": "Real-time team and individual graphs"
       }
     ],
     "showImages": true,
-    "thumbnail": "/graphs-sm.jpg",
+    "thumbnail": "assets/graphs-sm.jpg",
     "documents": [],
     "activeImage": 0
   },
@@ -251,19 +251,19 @@
     ],
     "images": [
       {
-        "path": "/assets/file-helper.jpg",
+        "path": "assets/file-helper.jpg",
         "caption": "FileHelper applicaiton window"
       },
       {
-        "path": "/assets/filehelper-sm.png",
+        "path": "assets/filehelper-sm.png",
         "caption": "FileHelper icon"
       }
     ],
     "showImages": true,
-    "thumbnail": "/filehelper-sm.png",
+    "thumbnail": "assets/filehelper-sm.png",
     "documents": [
       {
-        "path": "/assets/FileHelper.zip",
+        "path": "assets/FileHelper.zip",
         "name": "FileHelper (MacOSX)"
       }
     ],
@@ -286,23 +286,23 @@
     ],
     "images": [
       {
-        "path": "/assets/zombies-sm.png",
+        "path": "assets/zombies-sm.png",
         "caption": "Zombies icon"
       },
       {
-        "path": "/assets/zombies-shoot.jpg",
+        "path": "assets/zombies-shoot.jpg",
         "caption": "Gameplay"
       },
       {
-        "path": "/assets/zombies-game-over.jpg",
+        "path": "assets/zombies-game-over.jpg",
         "caption": "Zombies Game Over"
       }
     ],
     "showImages": true,
-    "thumbnail": "/zombies-sm.png",
+    "thumbnail": "assets/zombies-sm.png",
     "documents": [
       {
-        "path": "/assets/Zombies.zip",
+        "path": "assets/Zombies.zip",
         "name": "Zombies (MacOSX)"
       }
     ],

@@ -3,7 +3,7 @@
 **
 **
 */
-define('app', ['angular','angularAMD','home-controller', 'about-controller', 'projects-controller','angular-route','angular-carousel', 'ngSanitize', 'spark-scroll', 'behavior', 'ng-slide-down'], 
+define('app', ['angular','angularAMD','home-controller', 'about-controller', 'projects-controller','angular-route','angular-carousel', 'ngSanitize', 'spark-scroll', 'behavior', 'ng-slide-down'],
 	function (angular, angularAMD) {
 
 

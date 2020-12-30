@@ -1,6 +1,6 @@
 <div class="projects col-xs-12 col-lg-10 col-lg-push-1">
 	<div  ng-repeat='project in projects' id='project{{$index}}' spark-id='project{{$index}}' class='project-item' ng-style='{backgroundColor:({{$index}} % 2 == 0 ? "white" : "whiteSmoke")}'>
-		<h3 class="project-heading">{{project.name}}<span class='glyphicon glyphicon-picture close-image-slider' ng-if='project.images.length' ng-click='displayViewer(project.images)' ng-style='{opacity:(project.showImages ? 1 : 0.25)}'></span></h3>
+		<h3 class="project-heading">{{project.name}}<span class='glyphicon glyphicon-picture close-image-slider' ng-if='project.images.length' ng-click='displayViewer(project.images)'></span></h3>
 		<h4 class='goal'>Goal: {{project.goal}}</h4>
 		<div class='project-detail'>
 			<div ng-repeat='step in project.steps'>
@@ -9,7 +9,7 @@
 				<p id='detail{{$index}}' class='project-step' ng-slide-down='step.show' timeing-function="ease-out" duration="0.4" ng-repeat='paragraph in step.detail.split("\n")'>{{paragraph}}</p>
 			</div>
 			<div class="document-wrapper" ng-show='project.documents.length'>
-				<div class="document" ng-repeat='doc in project.documents'>Give it a try! =>  
+				<div class="document" ng-repeat='doc in project.documents'>Give it a try! =>
 					<span><a href='{{doc.path}}' target='_blank'>{{doc.name}}</a></span>
 				</div>
 			</div>

@@ -1,6 +1,6 @@
 require.config({
-    baseUrl: "",
-    
+    baseUrl: "/",
+
     // alias libraries paths.  Must set 'angular'
     paths: {
         //angular 1.4.0
@@ -70,7 +70,7 @@ require.config({
         'projects-controller': '/scripts/controllers/projects_controller',
         'helpers': '/scripts/helpers'
    },
-    
+
     // Add angular modules that does not support AMD out of the box, put it in a shim
     shim: {
         'angular': {exports: 'angular'},
@@ -85,7 +85,7 @@ require.config({
         'jquery': {exports: '$'},
         'spark-scroll': ['angular', 'animationFrame', 'lodash', 'rekapi']
     },
-    
+
     // kick start application
     deps: ['app']
 });
