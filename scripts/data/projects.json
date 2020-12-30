@@ -21,7 +21,7 @@
       {
         "show": false,
         "heading": "V2.0 Logic",
-        "detail": "The first version of anything is likely to only have the basics and my interest in exploring various aspects of Angular and CSS meant that I was raring to put some bells and whistles on my site. I did a lot of refactoring that separated the different sections of my site into unique controllers. Then, I used routing logic rather than loading everything and hiding unnecessary parts. I also realized that I was loading lots of JS files and wanted to clearn up my <script> tags, so I turned to Require.js which allows JS files to be loaded only when they're needed. My site is now much more readable, modularized, and responsive!"
+        "detail": "The first version of anything is likely to only have the basics and my interest in exploring various aspects of Angular and CSS meant that I was raring to put some bells and whistles on my site. I did a lot of refactoring that separated the different sections of my site into unique controllers. Then, I used routing logic rather than loading everything and hiding unnecessary parts. I also realized that I was loading lots of JS files and wanted to clean up my <script> tags, so I turned to Require.js which allows JS files to be loaded only when they're needed. My site is now much more readable, modularized, and responsive!"
        },
       {
         "show": false,
