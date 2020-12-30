@@ -47,9 +47,14 @@ body {
 
 #close-viewer {
 	@include clickable;
+	color: rgba(200, 200, 200, 0.5);
 	font-size: 20px;
 	position: absolute;
-	@include abs-pos(10px,10px);
+	@include abs-pos(calc(5% + 10px),calc(5% + 10px));
+  z-index: 1000;
+	&:hover {
+		color: rgba(200, 200, 200, 1);
+	}
 }
 
 #viewer-main {
@@ -110,7 +115,7 @@ body {
 			display: inline-block;
 			height: 100%;
 			vertical-align: middle;
-			margin-right: -0.25em; 
+			margin-right: -0.25em;
 		}
 	}
 
@@ -147,7 +152,7 @@ body {
 		display: inline-block;
 		height: 100%;
 		vertical-align: middle;
-		margin-right: -0.25em; 
+		margin-right: -0.25em;
 	}
 
 	.contents-side-nav {

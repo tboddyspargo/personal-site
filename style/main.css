@@ -257,10 +257,14 @@ body {
 
 #close-viewer {
   cursor: pointer;
+  color: rgba(200, 200, 200, 0.5);
   font-size: 20px;
   position: absolute;
-  top: 10px;
-  right: 10px; }
+  top: calc(5% + 10px);
+  right: calc(5% + 10px);
+  z-index: 1000; }
+  #close-viewer:hover {
+    color: #c8c8c8; }
 
 #viewer-main {
   background-color: rgba(0, 0, 0, 0.8);
@@ -654,7 +658,8 @@ footer {
     left: -10px; }
 
 .projects {
-  padding: 0px; }
+  padding: 0px;
+  border: 1px solid rgba(0, 0, 0, 0.3); }
 
 h4.goal {
   margin-left: 40px; }
@@ -696,10 +701,14 @@ h4.goal {
     height: 100%; }
 
 .close-image-slider {
-  position: absolute;
   cursor: pointer;
-  right: 10px;
-  top: 10px; }
+  opacity: 0.25;
+  position: relative;
+  float: right;
+  right: 30px;
+  top: 0px; }
+  .close-image-slider:hover {
+    opacity: 1; }
 
 .image-container {
   width: 100%;

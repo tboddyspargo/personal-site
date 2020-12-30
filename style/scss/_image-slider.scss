@@ -12,10 +12,15 @@
 }
 
 .close-image-slider {
-	position: absolute;
 	@include clickable;
-	right:10px;
-	top:10px;
+	opacity: 0.25;
+	position: relative;
+	float: right;
+	right: 30px;
+	top: 0px;
+	&:hover {
+		opacity: 1;
+	}
 }
 
 .image-container {
