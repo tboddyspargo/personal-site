@@ -1,9 +1,12 @@
 <div id='sidebar'>
-	
+
 	<div class="contents-side-nav" ng-show='sidebar.contents.length'>
 		<a ng-repeat='content in sidebar.contents' scroll-to='{{content.loc}}'><div class='content-item' spark-scroll="{
-topCenter:{ 'downAddClass,upRemoveClass': 'active-content' },
-bottomCenter:{ 'downRemoveClass,upAddClass': 'active-content' }}" spark-trigger='{{content.loc}}'></div></a>
+			bottomTop:{ 'downRemoveClass': 'active-content' },
+			topCenter:{ 'downAddClass,upRemoveClass': 'active-content' },
+			bottomCenter:{ 'downRemoveClass,upAddClass': 'active-content' },
+			centerTop:{ 'downRemoveClass': 'active-content' },
+			centerBottom:{ 'upRemoveClass': 'active-content' }}" spark-trigger='{{content.loc}}'></div></a>
 	</div>
-	
+
 </div>

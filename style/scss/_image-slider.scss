@@ -14,10 +14,8 @@
 .close-image-slider {
 	@include clickable;
 	opacity: 0.25;
-	position: relative;
-	float: right;
-	right: 30px;
-	top: 0px;
+	position: absolute;
+	@include abs-pos(10px, 15px);
 	&:hover {
 		opacity: 1;
 	}
