@@ -25,8 +25,7 @@ define([
     'angularfire'
 ],
 (angular, firebase, mainController, homeController, aboutController, projectsController) => {
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    // Firebase configuration
     var firebaseConfig = {
         apiKey: "AIzaSyAUMLrpSEYcmbViqWscWyBSqdZV122CNy8",
         authDomain: "valued-cumulus-300017.firebaseapp.com",
