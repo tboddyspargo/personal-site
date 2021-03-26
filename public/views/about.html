@@ -5,7 +5,7 @@
 		<div class="statbox">
 			<h5>Fun Facts:</h5>
 			<ul>
-				<li ng-repeat='fact in main_facts'><span class="glyphicon glyphicon-ok-circle bullet-ok"></span><a ng-if='fact.link.length' href='{{fact.link}}' target='_blank'>{{fact.text}}</a><span ng-if='!fact.link.length'>{{fact.text}}</span></li>
+				<li ng-repeat='fact in main_facts'><span class="glyphicon glyphicon-ok-circle bullet-ok"></span><a ng-if='fact.link.length' href='{{fact.link}}' target='_blank' rel="noopener noreferrer">{{fact.text}}</a><span ng-if='!fact.link.length'>{{fact.text}}</span></li>
 
 			</ul>
 			</div>
@@ -29,7 +29,7 @@
 			</div>
 			<div class="schools" ng-repeat='entry in section.entries'>
 				<hr ng-show='$index!=0'>
-					<a href='{{entry.website}}' target='_blank' ng-show='entry.logo.length+ entry.website.length' alt='Website' class='school-logo' ng-style="{'background-image': 'url('+entry.logo+')'}"></a>
+					<a href='{{entry.website}}' target='_blank' rel="noopener noreferrer" ng-show='entry.logo.length+ entry.website.length' alt='Website' class='school-logo' ng-style="{'background-image': 'url('+entry.logo+')'}"></a>
 
 				<div class="school-heading">
 					<div class="school-title-main">
@@ -47,7 +47,7 @@
 				</ui>
 				<div class="document-wrapper" ng-show='entry.documents.length'>{{entry.docIntro}}
 					<div class="document" ng-repeat='doc in entry.documents'>
-						<span><a href='{{doc.address}}' target="_blank">{{doc.name}}</a></span>
+						<span><a href='{{doc.address}}' target="_blank" rel="noopener noreferrer">{{doc.name}}</a></span>
 					</div>
 				</div>
 			</div>
