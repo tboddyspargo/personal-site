@@ -98,6 +98,7 @@ require.config({
         'angular': {
             exports: 'angular'
         },
+        'angularfire': ['angular'],
         'angularAMD': ['angular'],
         'angular-route': ['angular'],
         'ngAnimate': ['angular'],
