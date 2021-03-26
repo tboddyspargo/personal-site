@@ -28,7 +28,7 @@ define([
     // Your web app's Firebase configuration
     // For Firebase JS SDK v7.20.0 and later, measurementId is optional
     var firebaseConfig = {
-        apiKey: "AIzaSyBPBLobWaILBfjiaK7omNrCJD-u5ssALNo",
+        apiKey: "AIzaSyAUMLrpSEYcmbViqWscWyBSqdZV122CNy8",
         authDomain: "valued-cumulus-300017.firebaseapp.com",
         projectId: "valued-cumulus-300017",
         storageBucket: "valued-cumulus-300017.appspot.com",
