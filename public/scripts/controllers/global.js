@@ -1,5 +1,5 @@
 define(['utils/helpers'], () => {
-    function mainController($sce, $rootScope, sparkSetup, $http, $document) {
+    function globalController($sce, $rootScope, sparkSetup, $http, $document) {
         $rootScope.showViewer = false;
         sparkSetup.debug = true;
         sparkSetup.enableInvalidationInterval();
@@ -55,7 +55,7 @@ define(['utils/helpers'], () => {
 
     };
 
-    mainController.$inject = ['$sce', '$rootScope', 'sparkSetup', '$http', '$document'];
+    globalController.$inject = ['$sce', '$rootScope', 'sparkSetup', '$http', '$document'];
 
-    return mainController;
+    return globalController;
 });
