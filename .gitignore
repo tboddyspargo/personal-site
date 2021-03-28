@@ -4,6 +4,9 @@ Planning
 config.codekit
 .codekit-cache/
 
+# 3rd Party JS
+public/scripts/vendor/
+
 # Sass
 **/.sass-cache
 .sass-cache/
