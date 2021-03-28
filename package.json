@@ -1,18 +1,35 @@
 {
   "scripts": {
-    "start": "node server.js"
+    "start": "firebase serve --only hosting",
+    "preinstall": "rimraf public/scripts/vendor",
+    "postinstall": "vendor-copy"
   },
   "name": "personal-site",
   "description": "This is a site demonstrating my skills with Require.js, Angular, SASS+CSS, and JavaScript (modules and frameworks like spark-scroll and ScrollMagic). The site also contains an overview of various other projects and a summary of my professional and educational background.",
   "version": "1.0.0",
   "main": "main.js",
   "dependencies": {
-    "firebase": "~8.3.1"
+    "angular": "~1.4.0",
+    "angular-amd": "~0.2.1",
+    "angular-animate": "~1.4.0",
+    "angular-carousel": "~1.1.0",
+    "angular-route": "~1.4.0",
+    "angular-sanitize": "~1.4.0",
+    "angular-touch": "~1.4.0",
+    "angularfire": "^2.3.0",
+    "firebase": "^8.3.1",
+    "gsap": "^1.20.6",
+    "jquery": "^3.6.0",
+    "ng-slide-down": "^0.4.2",
+    "requirejs": "^2.3.6",
+    "rimraf": "^3.0.2",
+    "scrollmagic": "^2.0.8",
+    "vendor-copy": "^2.0.0"
   },
   "devDependencies": {
-    "connect": "~3.3.4",
-    "express": "~4.12.4",
-    "serve-static": "~1.9.2"
+    "connect": "^3.3.4",
+    "express": "^4.17.1",
+    "serve-static": "^1.9.2"
   },
   "repository": {
     "type": "git",
@@ -23,5 +40,189 @@
   "bugs": {
     "url": "https://github.com/tboddyspargo/personal-site/issues"
   },
-  "homepage": "https://github.com/tboddyspargo/personal-site#readme"
+  "homepage": "https://github.com/tboddyspargo/personal-site#readme",
+  "vendorCopy": [
+    {
+      "from": "node_modules/angular/angular.min.js",
+      "to": "public/scripts/vendor/angular.min.js"
+    },
+    {
+      "from": "node_modules/angular/angular.min.js.map",
+      "to": "public/scripts/vendor/angular.min.js.map"
+    },
+    {
+      "from": "node_modules/angular-amd/angularAMD.min.js",
+      "to": "public/scripts/vendor/angularAMD.min.js"
+    },
+    {
+      "from": "node_modules/angular-amd/angularAMD.min.map",
+      "to": "public/scripts/vendor/angularAMD.min.map"
+    },
+    {
+      "from": "node_modules/angular-animate/angular-animate.min.js",
+      "to": "public/scripts/vendor/angular-animate.min.js"
+    },
+    {
+      "from": "node_modules/angular-animate/angular-animate.min.js.map",
+      "to": "public/scripts/vendor/angular-animate.min.js.map"
+    },
+    {
+      "from": "node_modules/angular-carousel/dist/angular-carousel.min.js",
+      "to": "public/scripts/vendor/angular-carousel.min.js"
+    },
+    {
+      "from": "node_modules/angular-route/angular-route.min.js",
+      "to": "public/scripts/vendor/angular-route.min.js"
+    },
+    {
+      "from": "node_modules/angular-route/angular-route.min.js.map",
+      "to": "public/scripts/vendor/angular-route.min.js.map"
+    },
+    {
+      "from": "node_modules/angular-sanitize/angular-sanitize.min.js",
+      "to": "public/scripts/vendor/angular-sanitize.min.js"
+    },
+    {
+      "from": "node_modules/angular-sanitize/angular-sanitize.min.js.map",
+      "to": "public/scripts/vendor/angular-sanitize.min.js.map"
+    },
+    {
+      "from": "node_modules/angular-touch/angular-touch.min.js",
+      "to": "public/scripts/vendor/angular-touch.min.js"
+    },
+    {
+      "from": "node_modules/angular-touch/angular-touch.min.js.map",
+      "to": "public/scripts/vendor/angular-touch.min.js.map"
+    },
+    {
+      "from": "node_modules/angularfire/dist/angularfire.min.js",
+      "to": "public/scripts/vendor/angularfire.min.js"
+    },
+    {
+      "from": "node_modules/firebase/firebase-app.js",
+      "to": "public/scripts/vendor/firebase-app.js"
+    },
+    {
+      "from": "node_modules/firebase/firebase-app.js.map",
+      "to": "public/scripts/vendor/firebase-app.js.map"
+    },
+    {
+      "from": "node_modules/firebase/firebase-analytics.js",
+      "to": "public/scripts/vendor/firebase-analytics.js"
+    },
+    {
+      "from": "node_modules/firebase/firebase-analytics.js.map",
+      "to": "public/scripts/vendor/firebase-analytics.js.map"
+    },
+    {
+      "from": "node_modules/firebase/firebase-firestore.js",
+      "to": "public/scripts/vendor/firebase-firestore.js"
+    },
+    {
+      "from": "node_modules/firebase/firebase-firestore.js.map",
+      "to": "public/scripts/vendor/firebase-firestore.js.map"
+    },
+    {
+      "from": "node_modules/firebase/firebase-performance.js",
+      "to": "public/scripts/vendor/firebase-performance.js"
+    },
+    {
+      "from": "node_modules/firebase/firebase-performance.js.map",
+      "to": "public/scripts/vendor/firebase-performance.js.map"
+    },
+    {
+      "from": "node_modules/firebase/firebase-storage.js",
+      "to": "public/scripts/vendor/firebase-storage.js"
+    },
+    {
+      "from": "node_modules/firebase/firebase-storage.js.map",
+      "to": "public/scripts/vendor/firebase-storage.js.map"
+    },
+    {
+      "from": "node_modules/gsap/TimelineMax.js",
+      "to": "public/scripts/vendor/TimelineMax.js"
+    },
+    {
+      "from": "node_modules/gsap/TweenMax.js",
+      "to": "public/scripts/vendor/TweenMax.js"
+    },
+    {
+      "from": "node_modules/jquery/dist/jquery.min.js",
+      "to": "public/scripts/vendor/jquery.min.js"
+    },
+    {
+      "from": "node_modules/ng-slide-down/dist/ng-slide-down.min.js",
+      "to": "public/scripts/vendor/ng-slide-down.min.js"
+    },
+    {
+      "from": "node_modules/requirejs/require.js",
+      "to": "public/scripts/vendor/require.js"
+    },
+    {
+      "from": "node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js",
+      "to": "public/scripts/vendor/ScrollMagic.min.js"
+    },
+    {
+      "from": "node_modules/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js",
+      "to": "public/scripts/vendor/animation.gsap.min.js"
+    },
+    {
+      "from": "node_modules/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js",
+      "to": "public/scripts/vendor/debug.addIndicators.min.js"
+    }
+  ],
+  "devVendorCopy": [
+    {
+      "from": "node_modules/angular/angular.js",
+      "to": "public/scripts/vendor/angular.js"
+    },
+    {
+      "from": "node_modules/angular-amd/angularAMD.js",
+      "to": "public/scripts/vendor/angularAMD.js"
+    },
+    {
+      "from": "node_modules/angular-animate/angular-animate.js",
+      "to": "public/scripts/vendor/angular-animate.js"
+    },
+    {
+      "from": "node_modules/angular-carousel/dist/angular-carousel.js",
+      "to": "public/scripts/vendor/angular-carousel.js"
+    },
+    {
+      "from": "node_modules/angular-route/angular-route.js",
+      "to": "public/scripts/vendor/angular-route.js"
+    },
+    {
+      "from": "node_modules/angular-sanitize/angular-sanitize.js",
+      "to": "public/scripts/vendor/angular-sanitize.js"
+    },
+    {
+      "from": "node_modules/angular-touch/angular-touch.js",
+      "to": "public/scripts/vendor/angular-touch.js"
+    },
+    {
+      "from": "node_modules/angularfire/dist/angularfire.js",
+      "to": "public/scripts/vendor/angularfire.js"
+    },
+    {
+      "from": "node_modules/jquery/dist/jquery.js",
+      "to": "public/scripts/vendor/jquery.js"
+    },
+    {
+      "from": "node_modules/ng-slide-down/dist/ng-slide-down.js",
+      "to": "public/scripts/vendor/ng-slide-down.js"
+    },
+    {
+      "from": "node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js",
+      "to": "public/scripts/vendor/ScrollMagic.js"
+    },
+    {
+      "from": "node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js",
+      "to": "public/scripts/vendor/animation.gsap.js"
+    },
+    {
+      "from": "node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js",
+      "to": "public/scripts/vendor/debug.addIndicators.js"
+    }
+  ]
 }

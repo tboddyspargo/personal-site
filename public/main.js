@@ -1,134 +1,170 @@
-'use strict';
-
-if(window.__karma__) {
-	var allTestFiles = [];
-	var TEST_REGEXP = /spec\.js$/;
-
-	var pathToModule = function(path) {
-		return path.replace(/^\//, '').replace(/\.js$/, '');
-	};
-
-	Object.keys(window.__karma__.files).forEach(function(file) {
-		if (TEST_REGEXP.test(file)) {
-			// Normalize paths to RequireJS module names.
-			allTestFiles.push(pathToModule(file));
-		}
-	});
-}
-
-require.config({
-	baseUrl: window.__karma__ ? '/' : '/',
-    optimizeAllPluginResources: true,
-    paths: {
-        'services': 'scripts/services',
-        'vendor': 'scripts/vendor',
-        'controllers': 'scripts/controllers',
-        'utils': 'scripts/utils',
-
-        // update the version numbers as needed
-        // angular version:  1.4.0
-        // firebase version: 8.3.1
-        // angular fire version: 2.3.0
-        
-
-        // no minification:
-        '@firebase/app': 'https://www.gstatic.com/firebasejs/8.3.1/firebase-app',
-        '@firebase/functions': 'https://www.gstatic.com/firebasejs/8.3.1/firebase-functions',
-        '@firebase/storage': 'https://www.gstatic.com/firebasejs/8.3.1/firebase-storage',
-        '@firebase/analytics': 'https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics',
-        '@firebase/performance': 'https://www.gstatic.com/firebasejs/8.3.1/firebase-performance',
-        'TimelineLite': 'scripts/vendor/plugins/TimelineLite',
-        'TimelineMax': 'scripts/vendor/plugins/TimelineMax',
-        'ScrollMagic.debug': 'scripts/vendor/plugins/debug.addIndicators',
-        'animationFrame': 'scripts/vendor/plugins/AnimationFrame',
-        'spark-animate': 'scripts/vendor/plugins/spark-scroll-gsap',
-        'underscore': 'scripts/vendor/plugins/underscore',
-        'spark-scroll':'scripts/vendor/spark-scroll',
-
-        // unminified versions:
-        // 'angular': 'scripts/vendor/angular',
-        // 'angular-route': 'scripts/vendor/angular-route',
-        // 'angularAMD': 'scripts/vendor/angularAMD',
-        // 'angularfire': 'https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire',
-        // 'jquery': 'scripts/vendor/jquery',
-        // 'ngAnimate': 'scripts/vendor/angular-animate',
-        // 'ng-slide-down': 'scripts/vendor/ng-slide-down',
-        // 'ngSanitize':'scripts/vendor/angular-sanitize',
-        // 'ngTouch':'scripts/vendor/angular-touch',
-        // 'angular-carousel':'scripts/vendor/angular-carousel',
-        // 'ScrollMagic':'scripts/vendor/ScrollMagic',
-        // 'TweenMax': 'scripts/vendor/plugins/TweenMax',
-        // 'TweenLite': 'scripts/vendor/plugins/TweenLite',
-        // 'animationGSAP': 'scripts/vendor/plugins/animation.gsap',
-        // 'skrollr': 'scripts/vendor/skrollr',
-        // 'shifty': 'scripts/vendor/plugins/shifty',
-        // 'rekapi': 'scripts/vendor/plugins/rekapi',
-        // 'lodash':'scripts/vendor/plugins/lodash',
-
-        // minified versions:
-        'angular': 'scripts/vendor/angular.min',
-        'angular-route': 'scripts/vendor/angular-route.min',
-        'angularAMD': 'scripts/vendor/angularAMD.min',
-        'angularfire': 'https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min',
-        'jquery': 'scripts/vendor/jquery.min',
-        'ngAnimate': 'scripts/vendor/angular-animate.min',
-        'ng-slide-down': 'scripts/vendor/ng-slide-down.min',
-        'ngSanitize':'scripts/vendor/angular-sanitize.min',
-        'ngTouch':'scripts/vendor/angular-touch.min',
-        'angular-carousel':'scripts/vendor/angular-carousel.min',
-        'ScrollMagic':'scripts/vendor/ScrollMagic.min',
-        'TweenMax': 'scripts/vendor/plugins/TweenMax.min',
-        'TweenLite': 'scripts/vendor/plugins/TweenLite.min',
-        'animationGSAP': 'scripts/vendor/plugins/animation.gsap.min',
-        'skrollr': 'scripts/vendor/skrollr.min',
-        'shifty': 'scripts/vendor/plugins/shifty.min',
-        'rekapi': 'scripts/vendor/plugins/rekapi.min',
-        'lodash':'scripts/vendor/plugins/lodash.min',
-   },
-
-    // Add angular modules that do not support AMD out of the box.
-    // Declare any dependencies of each module so they can be loaded in the proper order.
-    shim: {
-        '@firebase/app': {
-            exports: 'firebase'
-        },
-        '@firebase/storage': ['@firebase/app'],
-        '@firebase/analytics': ['@firebase/app'],
-        '@firebase/performance': ['@firebase/app'],
-        'angular': {
-            exports: 'angular'
-        },
-        'angularfire': ['angular'],
-        'angularAMD': ['angular'],
-        'angular-route': ['angular'],
-        'ngAnimate': ['angular'],
-        'ng-slide-down': ['angular'],
-        'angular-carousel': ['angular', 'ngTouch', 'ngAnimate'],
-        'ngTouch': ['angular'],
-        'ngSanitize': ['angular'],
-        'lodash': {
-            exports: '_'
-        },
-        'jquery': {
-            exports: '$'
-        },
-        'spark-scroll': ['angular', 'animationFrame', 'lodash', 'rekapi']
-    },
-	priority: [
-		"angular"
-	],
-	deps: window.__karma__ ? allTestFiles : [],
-	callback: window.__karma__ ? window.__karma__.start : null,
-});
-
+/*
+** Defines an entry-point module for Tyler's personal site.
+**
+** Dependencies to be injected into this module are listed in an array using relative path aliases from require.config.js.
+** Include only the Firebase features as you need.
+*/
 require([
-	'angular',
-	'app'
-	], function(angular, app) {
-		var $html = angular.element(document.getElementsByTagName('html')[0]);
-		angular.element().ready(function() {
-			// bootstrap the app manually
-			angular.bootstrap(document, ['tyler-site']);
-		});
-	}
-);
+    'angularAMD',
+    '@firebase/app',
+    'controllers/global',
+    'controllers/home',
+    'controllers/about',
+    'controllers/projects',
+    'angular-carousel',
+    'angular-route',
+    'angular-sanitize',
+    'utils/behavior',
+    'utils/helpers',
+    'ng-slide-down',
+    '@firebase/analytics',
+    'angularfire'
+],
+(angularAMD, FirebaseApp, globalController, homeController, aboutController, projectsController) => {
+    // Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyAUMLrpSEYcmbViqWscWyBSqdZV122CNy8",
+        authDomain: "valued-cumulus-300017.firebaseapp.com",
+        projectId: "valued-cumulus-300017",
+        storageBucket: "valued-cumulus-300017.appspot.com",
+        messagingSenderId: "927371268598",
+        appId: "1:927371268598:web:7ba741d86a81b828e837d7",
+        measurementId: "G-SEJV5SEFXB"
+    };
+    // Initialize Firebase
+    FirebaseApp.initializeApp(firebaseConfig);
+    FirebaseApp.analytics();
+
+    var app = angular.module('tyler-site', ['firebase', 'ngAnimate', 'ngTouch', 'angular-carousel', 'ngSanitize', 'ngRoute', 'ng-slide-down']);
+
+    // initiate app and handle route changes that also scroll to location.
+    app.run(['$rootScope', '$location', '$anchorScroll', '$routeParams', '$timeout', function ($rootScope, $location, $anchorScroll, $routeParams, $timeout) {
+        $anchorScroll.yOffset = 50; // always scroll by 50 extra pixels
+        $rootScope.$on('$routeChangeSuccess',
+            function (next, current) {
+                var loc = $routeParams.loc;
+                if (loc) {
+                    $timeout(function () {
+                        $location.url($location.path());
+                        $location.hash(loc);
+                        $anchorScroll();
+                    }, null, null, loc);
+                }
+            });
+    } ]);
+
+    // configure routes
+    app.config(function ($routeProvider, $locationProvider) {
+        $routeProvider
+            .when('/', {
+                templateUrl: 'views/home.html',
+                controller: homeController,
+                controllerAs: 'HomeCtrl',
+                reloadOnSearch: false
+            })
+            .when('/about', {
+                templateUrl: 'views/about.html',
+                controller: aboutController,
+                controllerAs: 'AboutCtrl',
+                reloadOnSearch: false
+            })
+            .when('/projects', {
+                templateUrl: 'views/projects.html',
+                controller: projectsController,
+                controllerAs: 'ProjectsCtrl',
+                reloadOnSearch: false
+            })
+            .otherwise({
+                redirectTo: '/',
+            });
+
+        $locationProvider.html5Mode(true).hashPrefix('#');
+    });
+
+    // the GlobalCtrl initiates spark-scroll and provides it and other rootScope functions to app.
+    app.controller('GlobalCtrl', globalController);
+
+    // loading window as element
+    app.directive('loadingWindow', function () {
+        return {
+            restrict: 'E',
+            templateUrl: 'templates/loading.html'
+        };
+    });
+
+    // image-viewer as element
+    app.directive('viewingWindow', function () {
+        return {
+            restrict: 'E',
+            templateUrl: 'templates/image-viewer.html'
+        };
+    });
+
+    // navbar as element
+    app.directive('navBar', function () {
+        return {
+            restrict: 'E',
+            templateUrl: 'templates/navbar.html'
+        };
+    });
+
+    // sidebar as element
+    app.directive('sidebar', function () {
+        return {
+            restrict: 'E',
+            templateUrl: 'templates/sidebar.html'
+        };
+    });
+
+    // footer as element
+    app.directive('tbsFooter', function () {
+        return {
+            restrict: 'E',
+            templateUrl: 'templates/footer.html'
+        };
+    });
+
+    //directive that scrolls to element with given id. It also prevents page refresh
+    app.directive('scrollTo', function ($location, $anchorScroll, $timeout) {
+        return function (scope, element, attrs) {
+
+            element.bind('click', function (event) {
+                if (attrs.scrollTo) {
+                    $timeout(function () {
+                        $location.hash(attrs.scrollTo);
+                        $anchorScroll();
+                    });
+                }
+            });
+
+        };
+    });
+
+    // directive that updates progress bar based on given scope value to watch.
+    app.directive('progressBar', function () {
+        return {
+            restrict: 'A',
+            link: function (scope, element, attrs) {
+                var watchFor = attrs.progressBarWatch;
+                var total = attrs.ariaValuemax;
+                // update now
+                var val = scope[watchFor];
+                element.attr('aria-valuenow', val);
+                element.css('width', (val / total * 100) + "%");
+
+                // watch for the value
+                scope.$watch(watchFor, function (val) {
+                    element.attr('aria-valuenow', val);
+                    element.css('width', (Math.round(val / total * 100)) + "%");
+                    if (val / total === 1 || scope[watchFor] === undefined) { element.parent().parent().css('display', 'none'); }
+                });
+            }
+        };
+    });
+
+    var $html = angular.element(document.getElementsByTagName('html')[0]);
+    angular.element().ready(function() {
+        // bootstrap the app manually
+        angular.bootstrap(document, ['tyler-site']);
+    });
+});

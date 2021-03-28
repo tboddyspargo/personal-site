@@ -1,4 +1,4 @@
-define(['utils/helpers'], function() {
+define(['utils/helpers', 'controllers/global'], function() {
 	function homeController($scope, $http, $rootScope, $sce, $timeout) {
 		$rootScope.active = 1;
 		$rootScope.sidebar.contents = [];
