@@ -1,8 +1,6 @@
-define(['utils/helpers'], () => {
-    function globalController($sce, $rootScope, sparkSetup, $http, $document) {
+define(['angularAMD', 'utils/helpers'], (angularAMD) => {
+    function globalController($sce, $rootScope, $http, $document) {
         $rootScope.showViewer = false;
-        sparkSetup.debug = true;
-        sparkSetup.enableInvalidationInterval();
         $rootScope.sidebar = {
             heading: 'Contents',
             contents: []
@@ -55,7 +53,7 @@ define(['utils/helpers'], () => {
 
     };
 
-    globalController.$inject = ['$sce', '$rootScope', 'sparkSetup', '$http', '$document'];
+    globalController.$inject = ['$sce', '$rootScope', '$http', '$document'];
 
     return globalController;
 });

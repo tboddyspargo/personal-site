@@ -1,23 +1,23 @@
 'use strict';
 
 if(window.__karma__) {
-	var allTestFiles = [];
-	var TEST_REGEXP = /spec\.js$/;
+    var allTestFiles = [];
+    var TEST_REGEXP = /spec\.js$/;
 
-	var pathToModule = function(path) {
-		return path.replace(/^\//, '').replace(/\.js$/, '');
-	};
+    var pathToModule = function(path) {
+        return path.replace(/^\//, '').replace(/\.js$/, '');
+    };
 
-	Object.keys(window.__karma__.files).forEach(function(file) {
-		if (TEST_REGEXP.test(file)) {
-			// Normalize paths to RequireJS module names.
-			allTestFiles.push(pathToModule(file));
-		}
-	});
+    Object.keys(window.__karma__.files).forEach(function(file) {
+        if (TEST_REGEXP.test(file)) {
+            // Normalize paths to RequireJS module names.
+            allTestFiles.push(pathToModule(file));
+        }
+    });
 }
 
 require.config({
-	baseUrl: window.__karma__ ? '/' : '/',
+    baseUrl: window.__karma__ ? '/' : '/',
     optimizeAllPluginResources: true,
     paths: {
         'services': 'scripts/services',
@@ -98,21 +98,9 @@ require.config({
             deps: ['jquery', 'TimelineMax.gsap', 'TweenMax.gsap', 'animation.gsap', 'ScrollMagic.debug'],
         }
     },
-	priority: [
-		"angular"
-	],
-	deps: window.__karma__ ? allTestFiles : ['main'],
-	callback: window.__karma__ ? window.__karma__.start : null,
+    priority: [
+        "angular"
+    ],
+    deps: window.__karma__ ? allTestFiles : ['main'],
+    callback: window.__karma__ ? window.__karma__.start : null,
 });
-
-// require([
-// 	'angularAMD',
-// 	'main'
-// 	], function(angularAMD, main) {
-// 		var $html = angular.element(document.getElementsByTagName('html')[0]);
-// 		angular.element().ready(function() {
-// 			// bootstrap the app manually
-// 			angular.bootstrap(document, ['tyler-site']);
-// 		});
-// 	}
-// );
