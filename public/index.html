@@ -1,50 +1,50 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-	<title>Tyler BoddySpargo</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF-8">
-	<meta name="description" content="An overview of the personal and professional accomplishments of Tyler BoddySpargo.">
-	<meta name="keywords" content="Tyler BoddySpargo,BoddySpargo,Software Developer,Software Engineer,DevOps Technical Lead,DevOps Engineer,Site Reliability Engineer">
-	<meta name="author" content="Tyler BoddySpargo">
-	<meta property="og:image" content='http://tyler.boddyspargo.com/assets/thumbnail.jpg'/>
-	<meta property="og:url" content="http://tyler.boddyspargo.com/"/>
-	<meta property="og:title" content="Tyler BoddySpargo"/>
-	<meta property="og:description" content="An overview of the personal and professional accomplishments of Tyler BoddySpargo."/>
-	<link rel="shortcut icon" href="/favicon.ico?"/>
-	<base href="/">
+	<head>
+		<title>Tyler BoddySpargo</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<meta name="description" content="An overview of the personal and professional accomplishments of Tyler BoddySpargo.">
+		<meta name="keywords" content="Tyler BoddySpargo,BoddySpargo,Software Developer,Software Engineer,DevOps Technical Lead,DevOps Engineer,Site Reliability Engineer">
+		<meta name="author" content="Tyler BoddySpargo">
+		<meta property="og:image" content='http://tyler.boddyspargo.com/assets/thumbnail.jpg'/>
+		<meta property="og:url" content="http://tyler.boddyspargo.com/"/>
+		<meta property="og:title" content="Tyler BoddySpargo"/>
+		<meta property="og:description" content="An overview of the personal and professional accomplishments of Tyler BoddySpargo."/>
+		<link rel="shortcut icon" href="/favicon.ico?"/>
+		<base href="/">
 
-	<link rel="stylesheet" type='text/css' href="style/main.css">
-	<script data-main="require.config" src="scripts/vendor/require.js"></script>
-	
-	<!-- Global site tag (gtag.js) - Google Analytics
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-103027689-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+		<link rel="stylesheet" type='text/css' href="style/main.css">
+		<script data-main="require.config" src="scripts/vendor/require.js"></script>
+		
+		<!-- Global site tag (gtag.js) - Google Analytics
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-103027689-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-	  gtag('config', 'UA-103027689-1');
-	</script> -->
+		gtag('config', 'UA-103027689-1');
+		</script> -->
 
-</head>
+	</head>
 
-<body ng-controller='MainCtrl'>
+	<body ng-controller='SiteCtrl'>
 
-	<nav-bar></nav-bar>
-	<sidebar></sidebar>
+		<nav-bar></nav-bar>
+		<sidebar></sidebar>
 
-	<div class='view-container'>
-		<loading-window></loading-window>
-		<viewing-window></viewing-window>
+		<div class='view-container'>
+			<loading-window></loading-window>
+			<viewing-window></viewing-window>
 
 
-		<ng-view autoscroll></ng-view>
+			<ng-view autoscroll></ng-view>
 
-		<tbs-footer></tbs-footer>
-	</div>
+			<tbs-footer></tbs-footer>
+		</div>
 
-</body>
+	</body>
 
 </html>

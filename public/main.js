@@ -4,7 +4,7 @@
 ** Dependencies to be injected into this module are listed in an array using relative path aliases from require.config.js.
 ** Include only the Firebase features as you need.
 */
-require([
+define([
     'angularAMD',
     '@firebase/app',
     'controllers/global',
@@ -81,8 +81,8 @@ require([
         $locationProvider.html5Mode(true).hashPrefix('#');
     });
 
-    // the GlobalCtrl initiates spark-scroll and provides it and other rootScope functions to app.
-    app.controller('GlobalCtrl', globalController);
+    // the SiteCtrl initiates rootScope functions to app.
+    app.controller('SiteCtrl', globalController);
 
     // loading window as element
     app.directive('loadingWindow', function () {
@@ -162,9 +162,6 @@ require([
         };
     });
 
-    var $html = angular.element(document.getElementsByTagName('html')[0]);
-    angular.element().ready(function() {
-        // bootstrap the app manually
-        angular.bootstrap(document, ['tyler-site']);
-    });
+
+    angular.bootstrap(document, ['tyler-site']);
 });
