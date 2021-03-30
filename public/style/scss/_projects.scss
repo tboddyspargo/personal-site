@@ -1,6 +1,6 @@
 .projects {
 	padding: 0px;
-	border: 1px solid rgba(0,0,0,0.3);
+	// border: 1px solid rgba(0,0,0,0.3);
 }
 
 h4.goal {
@@ -8,19 +8,14 @@ h4.goal {
 }
 
 .project-item {
+	padding: 5px 25px;
 	margin:0px;
-	position: relative;
-}
-
-.project-heading {
-	padding: 15px 0px 0px 20px;
-	margin: 0px;
 }
 
 .project-step {
-	margin:0px;
+	margin: 0px;
 	word-wrap: break-word;
-	overflow:hidden;
+	overflow: hidden;
 }
 
 .project-detail {
@@ -36,6 +31,6 @@ h4.goal {
 }
 
 .step-bullet {
-	float:left;
+	float: left;
 	margin-right: 10px
 }

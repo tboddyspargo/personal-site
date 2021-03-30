@@ -1,7 +1,7 @@
 <div id='sidebar'>
 
 	<div class="contents-side-nav" ng-show='sidebar.contents.length'>
-		<a ng-repeat='content in sidebar.contents' scroll-to='{{content.loc}}'><div class='content-item' spark-scroll="{
+		<a ng-repeat='content in sidebar.contents' id='section-indicator-{{$index}}' scroll-to='{{content.loc}}'><div class='content-item' spark-scroll="{
 			bottomTop:{ 'downRemoveClass': 'active-content' },
 			topCenter:{ 'downAddClass,upRemoveClass': 'active-content' },
 			bottomCenter:{ 'downRemoveClass,upAddClass': 'active-content' },

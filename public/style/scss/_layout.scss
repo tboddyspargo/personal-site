@@ -40,9 +40,10 @@ body {
 	position: fixed;
 	left: 0px;
 	top: 0px;
-	z-index: 10;
-	background-color: rgba(0,0,0,0.5);
 	@include size(100%);
+	z-index: 10;
+	padding: 15px;
+	background-color: rgba(0,0,0,0.7);
 }
 
 #close-viewer {
@@ -50,93 +51,11 @@ body {
 	color: rgba(200, 200, 200, 0.5);
 	font-size: 20px;
 	position: absolute;
-	@include abs-pos(calc(5% + 10px),calc(5% + 10px));
-  z-index: 1000;
+	@include abs-pos(35px, 35px);
+  	z-index: 1000;
 	&:hover {
 		color: rgba(200, 200, 200, 1);
-	}
-}
 
-#viewer-main {
-	background-color: rgba(0,0,0,0.8);
-	position: absolute;
-	@include size(90%);
-	top:5%;
-	left:5%;
-
-	.view-carousel {
-		box-sizing:border-box;
-		position: relative;
-		height:100%;
-		overflow: hidden;
-
-		ul {
-			@include size(100%);
-		}
-
-		&.rn-carousel-control {
-			border-radius: 20px;
-			background-color: rgba(255,255,255,0.5);
-			color:rgba(50,50,50,0.5);
-			@include transition(all 0.3s);
-			border: 2px solid rgba(50,50,50,0.5);
-			&:hover {
-				cursor: pointer;
-				background-color: rgba(255,255,255,0.8);
-				color: rgba(35,82,124,1);
-				border: 2px solid rgba(35,82,124,0.8);
-			}
-		}
-
-		&.rn-carousel-control-next {
-			padding: 0px 3px 2px 5px;
-		}
-
-		&.rn-carousel-control-prev {
-			padding: 0px 5px 2px 3px;
-		}
-	}
-
-	.view-image-container {
-		@include size(100%);
-		display: table-cell;
-		float:left;
-		line-height:100%;
-		vertical-align: middle;
-		text-align: center;
-		img {
-			@include max-size(100%, 100%);
-			background-position:center center;
-			background-repeat:no-repeat;
-			background-size: cover;
-		}
-		&:before {
-			content: '';
-			display: inline-block;
-			height: 100%;
-			vertical-align: middle;
-			margin-right: -0.25em;
-		}
-	}
-
-	.view-caption-wrapper {
-		position: absolute;
-		color: white;
-		@include abs-pos(none,0px,none,0px);
-		margin-left:auto;
-		margin-right:auto;
-		bottom: 15px;
-		text-align: center;
-	}
-
-	.view-image-caption {
-		border-radius: 20px;
-		font-size: 15px;
-		color: white;
-		border: 3px solid rgba(50,50,50, 0.3);
-	    background-clip: padding-box;
-		background-color: rgba(0,0,0,0.6);
-		padding:3px 10px 3px 10px;
 	}
 }
 
