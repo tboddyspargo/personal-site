@@ -33,10 +33,11 @@ require.config({
         'angular-sanitize': 'scripts/vendor/angular-sanitize.min',
         'angular-touch': 'scripts/vendor/angular-touch.min',
         'angularfire': 'scripts/vendor/angularfire.min',
+        'animation.gsap': 'scripts/vendor/animation.gsap.min',
         'jquery': 'scripts/vendor/jquery.min',
         'ng-slide-down': 'scripts/vendor/ng-slide-down.min',
+        'shifty': 'scripts/vendor/shifty.min',
         'ScrollMagic': 'scripts/vendor/ScrollMagic.min',
-        'animation.gsap': 'scripts/vendor/animation.gsap.min',
         'ScrollMagic.debug': 'scripts/vendor/debug.addIndicators.min',
 
         // No minified versions:
@@ -95,7 +96,7 @@ require.config({
             deps: ['angular']
         },
         'ScrollMagic': {
-            deps: ['jquery', 'TimelineMax.gsap', 'TweenMax.gsap', 'animation.gsap', 'ScrollMagic.debug'],
+            deps: ['jquery', 'TimelineMax.gsap', 'TweenMax.gsap', 'shifty', 'animation.gsap', 'ScrollMagic.debug'],
         }
     },
     priority: [

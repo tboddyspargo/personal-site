@@ -24,6 +24,7 @@
     "requirejs": "^2.3.6",
     "rimraf": "^3.0.2",
     "scrollmagic": "^2.0.8",
+    "shifty": "^1.5.1",
     "vendor-copy": "^2.0.0"
   },
   "devDependencies": {
@@ -159,6 +160,10 @@
       "to": "public/scripts/vendor/require.js"
     },
     {
+      "from": "node_modules/shifty/dist/shifty.min.js",
+      "to": "public/scripts/vendor/shifty.min.js"
+    },
+    {
       "from": "node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js",
       "to": "public/scripts/vendor/ScrollMagic.min.js"
     },
@@ -211,6 +216,10 @@
     {
       "from": "node_modules/ng-slide-down/dist/ng-slide-down.js",
       "to": "public/scripts/vendor/ng-slide-down.js"
+    },
+    {
+      "from": "node_modules/shifty/dist/shifty.js",
+      "to": "public/scripts/vendor/shifty.js"
     },
     {
       "from": "node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js",

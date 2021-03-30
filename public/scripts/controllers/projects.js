@@ -19,8 +19,9 @@ define(['utils/helpers', 'controllers/global'], function() {
 					}; $rootScope.sidebar.contents = $scope.projects_contents;
 					$scope.this_progress += 1; $rootScope.progress = $scope.this_progress;
 				});
+		} else {
+			$rootScope.sidebar.contents = $scope.projects_contents;
 		}
-		else {$rootScope.sidebar.contents = $scope.projects_contents;}
 
 		if ($rootScope.facts) {
 			$rootScope.facts = shuffleArray($rootScope.facts);

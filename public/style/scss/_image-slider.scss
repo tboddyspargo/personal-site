@@ -1,10 +1,8 @@
-
+/* shared image carousel styles */
 .image-carousel {
-	margin: -16px -15px 20px -15px;
-	box-sizing:border-box;
-	border-bottom: 1px solid rgba(200,200,200, 0.5);
+	box-sizing: border-box;
 	position: relative;
-	height:325px;
+	height: 100%;
 	overflow: hidden;
 	ul {
 		@include size(100%);
@@ -14,25 +12,19 @@
 .close-image-slider {
 	@include clickable;
 	opacity: 0.25;
-	position: absolute;
-	@include abs-pos(10px, 15px);
+	float: right;
 	&:hover {
-		opacity: 1;
+		opacity: 1 !important;
 	}
 }
 
 .image-container {
 	@include size(100%);
-	display: table-cell;
-	float:left;
-	line-height:325px;
-	vertical-align: middle;
-	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	img {
 		@include max-size(100%, 100%);
-		background-position:center center;
-		background-repeat:no-repeat;
-		background-size: cover;
 	}
 }
 
@@ -83,6 +75,22 @@
 
 .zoom:hover {
 	@include transform(translate3DZ(50%));
+}
+
+/* Inline Image Carousel */
+
+.image-carousel.inline-carousel {
+	margin: -16px -15px 20px -15px;
+	height: 325px;
+	border-bottom: 1px solid rgba(200,200,200, 0.5);
+}
+
+/* Full Screen Image Carousel */
+
+#image-viewer {
+	.image-container {
+		padding: 50px;
+	}
 }
 
 

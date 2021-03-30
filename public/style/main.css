@@ -250,94 +250,22 @@ body {
   position: fixed;
   left: 0px;
   top: 0px;
-  z-index: 10;
-  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  z-index: 10;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.7); }
 
 #close-viewer {
   cursor: pointer;
   color: rgba(200, 200, 200, 0.5);
   font-size: 20px;
   position: absolute;
-  top: calc(5% + 10px);
-  right: calc(5% + 10px);
+  top: 35px;
+  right: 35px;
   z-index: 1000; }
   #close-viewer:hover {
     color: #c8c8c8; }
-
-#viewer-main {
-  background-color: rgba(0, 0, 0, 0.8);
-  position: absolute;
-  width: 90%;
-  height: 90%;
-  top: 5%;
-  left: 5%; }
-  #viewer-main .view-carousel {
-    box-sizing: border-box;
-    position: relative;
-    height: 100%;
-    overflow: hidden; }
-    #viewer-main .view-carousel ul {
-      width: 100%;
-      height: 100%; }
-    #viewer-main .view-carousel.rn-carousel-control {
-      border-radius: 20px;
-      background-color: rgba(255, 255, 255, 0.5);
-      color: rgba(50, 50, 50, 0.5);
-      -webkit-transition: all 0.3s;
-      -khtml-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      -ms-transition: all 0.3s;
-      -o-transition: all 0.3s;
-      transition: all 0.3s;
-      border: 2px solid rgba(50, 50, 50, 0.5); }
-      #viewer-main .view-carousel.rn-carousel-control:hover {
-        cursor: pointer;
-        background-color: rgba(255, 255, 255, 0.8);
-        color: #23527c;
-        border: 2px solid rgba(35, 82, 124, 0.8); }
-    #viewer-main .view-carousel.rn-carousel-control-next {
-      padding: 0px 3px 2px 5px; }
-    #viewer-main .view-carousel.rn-carousel-control-prev {
-      padding: 0px 5px 2px 3px; }
-  #viewer-main .view-image-container {
-    width: 100%;
-    height: 100%;
-    display: table-cell;
-    float: left;
-    line-height: 100%;
-    vertical-align: middle;
-    text-align: center; }
-    #viewer-main .view-image-container img {
-      max-width: 100%;
-      max-height: 100%;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover; }
-    #viewer-main .view-image-container:before {
-      content: '';
-      display: inline-block;
-      height: 100%;
-      vertical-align: middle;
-      margin-right: -0.25em; }
-  #viewer-main .view-caption-wrapper {
-    position: absolute;
-    color: white;
-    right: 0px;
-    left: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    bottom: 15px;
-    text-align: center; }
-  #viewer-main .view-image-caption {
-    border-radius: 20px;
-    font-size: 15px;
-    color: white;
-    border: 3px solid rgba(50, 50, 50, 0.3);
-    background-clip: padding-box;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 3px 10px 3px 10px; }
 
 #sidebar {
   overflow: visible;
@@ -658,18 +586,13 @@ footer {
     left: -10px; }
 
 .projects {
-  padding: 0px;
-  border: 1px solid rgba(0, 0, 0, 0.3); }
+  padding: 0px; }
 
 h4.goal {
   margin-left: 40px; }
 
 .project-item {
-  margin: 0px;
-  position: relative; }
-
-.project-heading {
-  padding: 15px 0px 0px 20px;
+  padding: 5px 25px;
   margin: 0px; }
 
 .project-step {
@@ -690,12 +613,11 @@ h4.goal {
   float: left;
   margin-right: 10px; }
 
+/* shared image carousel styles */
 .image-carousel {
-  margin: -16px -15px 20px -15px;
   box-sizing: border-box;
-  border-bottom: 1px solid rgba(200, 200, 200, 0.5);
   position: relative;
-  height: 325px;
+  height: 100%;
   overflow: hidden; }
   .image-carousel ul {
     width: 100%;
@@ -704,26 +626,19 @@ h4.goal {
 .close-image-slider {
   cursor: pointer;
   opacity: 0.25;
-  position: absolute;
-  top: 10px;
-  right: 15px; }
+  float: right; }
   .close-image-slider:hover {
-    opacity: 1; }
+    opacity: 1 !important; }
 
 .image-container {
   width: 100%;
   height: 100%;
-  display: table-cell;
-  float: left;
-  line-height: 325px;
-  vertical-align: middle;
-  text-align: center; }
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   .image-container img {
     max-width: 100%;
-    max-height: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover; }
+    max-height: 100%; }
 
 .rn-carousel-control {
   border-radius: 20px;
@@ -781,6 +696,16 @@ h4.goal {
   -ms-transform: translate3DZ(50%);
   -o-transform: translate3DZ(50%);
   transform: translate3DZ(50%); }
+
+/* Inline Image Carousel */
+.image-carousel.inline-carousel {
+  margin: -16px -15px 20px -15px;
+  height: 325px;
+  border-bottom: 1px solid rgba(200, 200, 200, 0.5); }
+
+/* Full Screen Image Carousel */
+#image-viewer .image-container {
+  padding: 50px; }
 
 /* Custom Image Slider CSS */
 @media only screen and (max-width: 768px) {

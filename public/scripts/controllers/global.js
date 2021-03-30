@@ -1,4 +1,4 @@
-define(['angularAMD', 'utils/helpers'], (angularAMD) => {
+define(['angularAMD', 'utils/helpers'], (angularAMD, utils) => {
     function globalController($sce, $rootScope, $http, $document) {
         $rootScope.showViewer = false;
         $rootScope.sidebar = {
