@@ -1,122 +1,27 @@
-.banner {
-	position: absolute;
-	top: 0px;
-	@include size (100%, 240px);
-	overflow: hidden;
-}
-
-#banner-image {
-	z-index: 1;
-	background: url(/assets/banner1.jpg) calc(-750px + ((100% - 1280px) / 2)) 0px repeat;
-	@include size(100%, 460px);
-}
-
-#banner-cover {
-	@include size(100%);
-	background: black;
-	opacity: 0;
-	z-index: 5;
-}
-
-.parallax-shadow {
-	position: absolute;
-	z-index: 3;
-	@include size(100%);
-	@include box-shadow(0px 0px, 35px 0px, rgba(0,0,0,0.75), inset);
-	&.banner-shadow {
-		@include abs-pos(0px, 0px, 0px, 0px);
-	}
-}
-
-#name {
-	position: absolute;
-	z-index: 4;
-	color: white;
-	font-family: Bradley Hand;
-	font-size:50px;
-	top: 80px;
-	right:20px;
-	text-shadow: 2px 3px rgba(50,50,50,0.7);
+#navbar-container {
+  position: sticky;
+  top: 0px;
+  z-index: 5;
 }
 
 #brand {
-	margin-bottom:5px;
-	height:40px;
-	@include transition(margin-left 0.3s ease-out);
+  @include transition(margin-left 0.3s ease-out);
 }
 
 .hidden-left {
-	margin-left: -170px;
-}
-
-#navbar-container {
-	height:42px;
-	width:100%;
-	z-index: 5;
-}
-
-.nav {
-	border: none;
-}
-
-.nav-not-fixed {
-	position: absolute;
-	top: 198px;
-	background-color: transparent;
-}
-
-.nav-fixed {
-	position: fixed;
-	top: 0px;
-	background-color: black;
-	@include abs-pos(0px, none, none, 0px);
-	border-bottom: 1px solid rgba(150,150,150,0.7);
-}
-
-.left-nav {
-	position: absolute;
-	height:46px;
-	left:0px;
-	top:-4px;
-	width: 100%;
-}
-
-.right-nav {
-	position: absolute;
-	right:-3px;
-}
-
-#navbar-links-wrapper {
-	margin-left:0px;
-	float:left;
-	overflow: visible;
-	@include transition(margin-left 0.5s ease-in-out);
+  margin-left: -$brand-width;
 }
 
 .navbar-round-link {
-	background-size: 30px 30px;
-	background-repeat: no-repeat;
-	@include clickable;
-	@include size(30px,30px);
-	float:right;
-	margin: 10px 0px 0px 5px;
-	border-radius: 20px;
-	@include transition(transform 0.2s cubic-bezier(0, 0, 0.6, 0.81));
-	@include transition(margin-left 0.5s ease-in-out);
-	&:hover {
-		@include transform(scale(1.15));
-	}
-}
-
-.slide-out {
-	margin-left:-30px;
-}
-
-#navbar-hover-space {
-	@include size(50%, 100%);
-	min-width: 450px;
-	overflow: visible;
-	&:hover .navbar-round-link.slide-out {
-		margin-left:5px;
-	}
+  @include clickable;
+  display: flex;
+  align-items: center;
+  &:before {
+    content: "";
+    display: inline-block;
+    @include size($round-icon-size, $round-icon-size);
+    margin-right: 5px;
+    background-size: $round-icon-size $round-icon-size;
+    background-repeat: no-repeat;
+  }
 }

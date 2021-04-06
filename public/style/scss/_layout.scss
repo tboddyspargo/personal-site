@@ -1,108 +1,27 @@
-body {
-	position: relative;
-	background: white 640px 480px repeat fixed;
-	min-height: 100%;
-}
-
-.about, .projects {
-	h3.panel-heading {
-		margin-bottom:0px;
-	}
-}
-
 #loading {
-	z-index: 5000;
-	position: fixed;
-	@include size(100%, 100%);
-	@include abs-pos(0,0,0,0);
-	background-color: rgba(0,0,0,0.5);
-	vertical-align: middle;
-	text-align: center;
-	.progress {
-		opacity: 1;
-		@include size(50%, none);
-		margin: 30% 25% 10% 25%;
-	}
+  z-index: 5000;
+  position: fixed;
+  @include size(100%, 100%);
+  @include abs-pos(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+  vertical-align: middle;
+  text-align: center;
+  .progress {
+    opacity: 1;
+    @include size(50%, none);
+    margin: 30% 25% 10% 25%;
+  }
 }
 
-#tab-content {
-	position: absolute;
-	margin-top: 240px;
-}
-
-.view-container {
-	position: absolute;
-	top: 270px;
-	@include size(100%);
-}
-
-#image-viewer {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	@include size(100%);
-	z-index: 10;
-	padding: 15px;
-	background-color: rgba(0,0,0,0.7);
-}
-
-#close-viewer {
-	@include clickable;
-	color: rgba(200, 200, 200, 0.5);
-	font-size: 20px;
-	position: absolute;
-	@include abs-pos(35px, 35px);
-  	z-index: 1000;
-	&:hover {
-		color: rgba(200, 200, 200, 1);
-
-	}
-}
-
-#sidebar {
-	overflow: visible;
-	position: fixed;
-	top:0px;
-	right:0px;
-	height: 100%;
-	z-index: 10;
-	&:before {
-		content: '';
-		display: inline-block;
-		height: 100%;
-		vertical-align: middle;
-		margin-right: -0.25em;
-	}
-
-	.contents-side-nav {
-		display: inline-block;
- 		vertical-align: middle;
-	}
-
-	a {
-		@include clickable;
-		display: block;
-		margin-bottom: 3px;
-		margin-right: 15px;
-		@include transition(transform ease-in-out 0.2s);
-		&:hover {
-			@include transform(scale(1.2,1.2));
-		}
-	}
-	.content-item {
-		@include size(15px);
-		background-color: rgba(50, 100, 150, 0.6);
-		border-radius: 3px;
-		&.active-content {
-			background-color: rgba(50, 100, 150, 1);
-		}
-	}
+#main-content {
+  position: relative;
+  display: block;
 }
 
 footer {
-	position: relative;
-	display: inline-block;
-	text-align: center;
-	bottom: 0px;
-	width: 100%;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  bottom: 0px;
+  width: 100%;
 }

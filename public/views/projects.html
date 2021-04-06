@@ -1,18 +1,41 @@
-<div class="projects col-xs-12 col-lg-10 col-lg-push-1">
-	<div  ng-repeat='project in projects' id='project{{$index}}' spark-id='project{{$index}}' class='project-item' ng-style='{backgroundColor:({{$index}} % 2 == 0 ? "white" : "whiteSmoke")}'>
-		<h3 class="project-heading">{{project.name}}<span class='glyphicon glyphicon-picture close-image-slider' ng-if='project.images.length' ng-click='displayViewer(project.images)'></span></h3>
-		<h4 class='goal'>Goal: {{project.goal}}</h4>
-		<div class='project-detail'>
-			<div ng-repeat='step in project.steps'>
-				<hr>
-				<span class="step-bullet glyphicon glyphicon-check"></span><span><h5>{{step.heading}}<span class="right-toggle glyphicon" ng-class='{"glyphicon-plus-sign":!step.show, "glyphicon-minus-sign":step.show}' ng-click='step.show=!step.show'></span></h5></span>
-				<p id='detail{{$index}}' class='project-step' ng-slide-down='step.show' timeing-function="ease-out" duration="0.4" ng-repeat='paragraph in step.detail.split("\n")'>{{paragraph}}</p>
-			</div>
-			<div class="document-wrapper" ng-show='project.documents.length'>
-				<div class="document" ng-repeat='doc in project.documents'>Give it a try! =>
-					<span><a href='{{doc.path}}' target='_blank' rel="noopener noreferrer">{{doc.name}}</a></span>
-				</div>
-			</div>
-		</div>
-	</div>
+<div class='projects card row'>
+  <ul class="list-group list-group-flush">
+    <li ng-repeat='project in projects' id='project-{{$index}}' class='list-group-item section-{{$index}}'>
+      <div class="project-heading d-flex justify-content-between align-items-center">
+        <h3>{{project.name}}</h3>
+        <span class='fa fa-images fa-2x toggle-image-slider emphasize-interaction' ng-if='project.images.length'
+          ng-click='displayViewer(project.images)'></span>
+      </div>
+      <p class='lead'>Goal: {{project.goal}}</p>
+      <div id='project{{$index}}-steps' class='accordion mx-lg-5 mx-md-0'>
+        <div ng-repeat='step in project.steps' class='card'>
+          <div id='project{{$parent.$index}}-step{{$index}}-heading' class='card-header'>
+            <button class="btn btn-block d-flex justify-content-between align-items-center collapsed" type="button"
+              data-toggle="collapse" data-target="#project{{$parent.$index}}-step{{$index}}-detail"
+              aria-expanded="{{ $index === 0 ? true : false}}"
+              aria-controls="project{{$parent.$index}}-step{{$index}}-detail">
+              <h5 class='d-flex align-items-center'><small
+                  class="step-bullet fa fa-check-circle"></small>{{step.heading}}
+              </h5>
+              <span class="fa fa-chevron-down step-expand-icon"></span>
+              <span class="fa fa-chevron-up step-collapse-icon"></span>
+            </button>
+          </div>
+          <div id='project{{$parent.$index}}-step{{$index}}-detail' class='collapse'
+            aria-labelledby="project{{$parent.$index}}-step{{$index}}-heading"
+            data-parent="#project{{$parent.$index}}-steps">
+            <div class='card-body'>
+              <p class='project-step' ng-repeat='paragraph in step.detail.split("\n")'>{{paragraph}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="document-wrapper" ng-if='project.documents.length'>
+        <div class="document" ng-repeat='doc in project.documents'>Give it a try! =>
+          <span><a href='{{doc.path}}' target='_blank' rel="noopener noreferrer">{{doc.name}}</a></span>
+        </div>
+      </div>
+    </li>
+  </ul>
 </div>

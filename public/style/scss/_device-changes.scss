@@ -1,74 +1,30 @@
 @media only screen and (max-width: 768px) {
-	#brand {
-		margin-left: -170px;
-	}
-	.slide-out {
-		margin-left:5px;
-	}
+  #brand {
+    margin-left: -$brand-width;
+  }
 
-	#sidebar-container {
-		display: none;
-	}
-	.right-degree, .school-name {
-		width:100%;
-		text-align: left;
-	}
-	.thumbnail-grid-item {
-		div[class^="col"]{padding-left:10px; padding-right:10px;}
-	}
-
-	#navbar-hover-space {
-		min-width: 300px;
-	}
+  #sidebar {
+    display: none;
+  }
+  .domain,
+  .org-name {
+    width: 100%;
+    text-align: left;
+  }
+  .thumbnail-grid-item {
+    div[class^="col"] {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
 }
 
 @media only screen and (max-width: 480px) {
-	#name {
-		font-size: 30px;
-	}
-	
-	div[class^="col"]{padding-left:5px; padding-right:5px;}
+  #name {
+    font-size: 30px;
+  }
 
-	.main-content {
-		padding-left:0px;
-		padding-right:0px;
-	}
-
-	#sidebar-container {
-		display: none;
-	}
-
-	.slide-out {
-		margin-left:0px;
-	}
-
-	.navbar-round-link:not(.slide-out) {
-		display: none;
-	}
-
-	#navbar-links-wrapper {
-		margin-left:-15px;
-	}
-
-	#navbar-hover-space:hover .navbar-round-link.slide-out {
-		margin-left:0px;
-	}
-
-	#navbar li > a {
-		margin:0px;
-		padding-left:5px;
-		padding-right:5px;
-	}
-	.nav-fixed .right-nav {
-		background-color: black;
-	}
-	.nav-fixed li > a.active {
-		background-color: white;
-	}
-	.nav-fixed li > a:hover {
-		background-color: white;
-	}
-	.navbar-round-link:last-child {
-		visibility: hidden;
-	}
+  #sidebar-container {
+    display: none;
+  }
 }

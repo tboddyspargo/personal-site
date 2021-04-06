@@ -1,29 +1,31 @@
-<div class="home col-xs-12 col-lg-10 col-lg-push-1">
-	<div class="panel panel-success">
-		<h3 class="panel-heading">Who am I?</h3>
-		<div class="panel-body blurb">
-		<div class="profile my-photo"></div><p ng-repeat='paragraph in blurb.split("\n")' ng-bind-html='deliberatelyTrustDangerousSnippet(paragraph)'></p>
-		</div>
-	</div>
-	<div class="panel panel-primary">
-		<h3 class="panel-heading">What have I done?</h3>
-		<div class="panel-body all-thumbs">
-			<div class="thumbnail-grid container">
-				<a class="thumbnail-grid-item hvr-grow col-xs-4 col-sm-3 col-lg-2" ng-repeat='short in short_desc' ng-href='{{short.pageLoc}}?loc={{short.loc}}'>
-					<div class="thumbnail">
-						<div class="thumb-wrapper">
-							<div class="thumb-container col-xs-12"><img class='' ng-src="{{short.thumbnail}}" alt=""></div>
-							<span class='tag label' ng-class='{"label-info": short.label=="Project", "label-success": short.label=="School", "label-primary":short.label=="Job"}'>{{short.label}}</span>
-						</div>
-						<div class="title">
-							<h4>{{short.name}}</h4>
-						</div>
-						<div class="caption">
-							<p>{{short.desc}}</p>
-						</div>
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
-</div>
+<div class="home">
+  <div class="card row mb-5">
+    <div class="card-body blurb">
+      <h3 class="card-title">Who am I?</h3>
+      <div class="profile-img my-photo"></div>
+      <p ng-repeat='paragraph in blurb.split("\n")' ng-bind-html='deliberatelyTrustDangerousSnippet(paragraph)'></p>
+    </div>
+  </div>
+  <div class="card row mb-5">
+    <h3 class="card-header">What have I done?</h3>
+    <div class="card-body container-fluid">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+        <div class='col p-3' ng-repeat='short in short_desc'>
+          <div class='thumbnail-grid-item card hvr-grow'>
+            <span class='thumbnail-tag badge'
+              ng-class='{"badge-info": short.label=="Project", "badge-success": short.label=="School", "badge-primary":short.label=="Job"}'>{{short.label}}</span>
+            <img class='thumbnail-img card-img-top' ng-src="{{short.thumbnail}}" alt="" />
+            <div class="card-body px-3 py-2">
+              <h5 class='card-title'>{{short.name}}</h5>
+              <p class="caption card-text">{{short.desc}}</p>
+            </div>
+            <div class='px-3 pb-2 d-flex justify-content-end'>
+              <a class="btn btn-outline-secondary btn-sm stretched-link"
+                ng-href='{{short.pageLoc}}?loc={{short.loc}}'>Learn
+                more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,15 +1,18 @@
 <div id="image-viewer" ng-show='showViewer'>
-	<span id="close-viewer" class='glyphicon glyphicon-remove' ng-click='hideViewer()'></span>
-	<div class="image-carousel enable_touchmove">
-		<ul rn-carousel rn-carousel-controls rn-carousel-buffered slides="images" rn-carousel-index='activeImage' class='enable_touchmove'>
-			<li class='image-carousel-li enable_touchmove' ng-repeat="image in images">
-				<div class="image-container">
-					<img ng-src="{{image.path}}" alt="{{image.caption}}" class="enable_touchmove"/>
-				</div>
-				<div class='image-caption-wrapper'>
-					<span class='image-caption enable_touchmove noselect'>{{image.caption}}</span>
-				</div>
-			</li>
-		</ul>
-	</div>
+  <button type='button' id="close-viewer" class='close' aria-label='Close' ng-click='hideViewer()'>
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <div class="image-carousel enable_touchmove">
+    <ul rn-carousel rn-carousel-controls rn-carousel-buffered slides="images" rn-carousel-index='activeImage'
+      class='enable_touchmove'>
+      <li class='image-carousel-li enable_touchmove' ng-repeat="image in images">
+        <div class="image-container">
+          <img ng-src="{{image.path}}" alt="{{image.caption}}" class="enable_touchmove" />
+        </div>
+        <div class='image-caption-wrapper'>
+          <span class='image-caption enable_touchmove no-select'>{{image.caption}}</span>
+        </div>
+      </li>
+    </ul>
+  </div>
 </div>

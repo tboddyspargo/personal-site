@@ -1,36 +1,16 @@
-.projects {
-	padding: 0px;
-	// border: 1px solid rgba(0,0,0,0.3);
+button.collapsed {
+  & > .step-expand-icon {
+    display: none;
+  }
 }
 
-h4.goal {
-	margin-left: 40px;
-}
-
-.project-item {
-	padding: 5px 25px;
-	margin:0px;
-}
-
-.project-step {
-	margin: 0px;
-	word-wrap: break-word;
-	overflow: hidden;
-}
-
-.project-detail {
-	padding: 0px 70px 20px 70px;
-	hr {
-		margin-top: 10px;
-		margin-bottom: 10px;
-		border-color: #ddd;
-	}
-	p {
-		margin-left: 25px;
-	}
+button:not(.collapsed) {
+  & > .step-collapse-icon {
+    display: none;
+  }
 }
 
 .step-bullet {
-	float: left;
-	margin-right: 10px
+  float: left;
+  margin-right: 10px;
 }
