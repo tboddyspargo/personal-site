@@ -1,7 +1,6 @@
-define(['utils/helpers', 'controllers/global'], function() {
+define(['scripts/app', 'utils/scroll', 'utils/helpers'], function(ngApp, scroll) {
 	function aboutController($scope, $http, $rootScope, $sce, $timeout) {
 		$rootScope.active = 2;
-		$rootScope.sidebar.contents = [];
 		$scope.this_progress = $scope.this_progress || 1;
 		$rootScope.progress = $scope.this_progress;
 		$rootScope.total_progress = 3;
@@ -20,14 +19,16 @@ define(['utils/helpers', 'controllers/global'], function() {
 			$http.get('/scripts/data/about.json', {})
 				.success(function(data) {
 					$scope.about = data;
-					$scope.about_contents = [{'name':'My Bio', 'loc':'bio'}];
+					$scope.about_contents = [{'name':'My Bio', 'id':'bio'}];
 					for (var x = 0; x < $scope.about.length; x++) {
-						$scope.about_contents.push({'name':$scope.about[x].heading,'loc':$scope.about[x].id});
-					}; $rootScope.sidebar.contents = $scope.about_contents;
+						$scope.about_contents.push({'name':$scope.about[x].heading,'id':`${$scope.about[x].id}`});
+					};
+					$rootScope.sections = $scope.about_contents.map((i) => { return `#${i.id}`; });
 					$scope.this_progress += 1; $rootScope.progress = $scope.this_progress;
-					});
+				});
+		} else {
+			$rootScope.sections = $scope.about_contents.map((i) => { return `#${i.id}`; });
 		}
-		else {$rootScope.sidebar.contents = $scope.about_contents;}
 
 		if ($rootScope.facts) {
 			$rootScope.facts = shuffleArray($rootScope.facts);
@@ -38,7 +39,5 @@ define(['utils/helpers', 'controllers/global'], function() {
 
 	};
 
-	aboutController.$inject = ['$scope','$http','$rootScope'];
-
-	return aboutController;
+	ngApp.controller('AboutCtrl', ['$scope','$http','$rootScope', aboutController]);
 });
