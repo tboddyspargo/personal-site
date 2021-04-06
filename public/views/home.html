@@ -1,15 +1,15 @@
-<div class="home">
-  <div class="card row mb-5">
+<div class="home my-n5">
+  <div class="card row my-5">
     <div class="card-body blurb">
       <h3 class="card-title">Who am I?</h3>
       <div class="profile-img my-photo"></div>
       <p ng-repeat='paragraph in blurb.split("\n")' ng-bind-html='deliberatelyTrustDangerousSnippet(paragraph)'></p>
     </div>
   </div>
-  <div class="card row mb-5">
+  <div class="card row my-5">
     <h3 class="card-header">What have I done?</h3>
     <div class="card-body container-fluid">
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+      <div class="row my-n3 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
         <div class='col p-3' ng-repeat='short in short_desc'>
           <div class='thumbnail-grid-item card hvr-grow'>
             <span class='thumbnail-tag badge'

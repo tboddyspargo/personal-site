@@ -1,5 +1,5 @@
-<div class="about">
-  <div id='bio' class="card row my-4">
+<div class="about my-n5">
+  <div id='bio' class="card row my-5">
     <div class="card-body">
       <h3 class="card-title">My Bio</h3>
       <div class="stat-box">
@@ -15,7 +15,7 @@
       <p ng-repeat='paragraph in bio.split("\n")' ng-bind-html='deliberatelyTrustDangerousSnippet(paragraph)'></p>
     </div>
   </div>
-  <div ng-repeat='section in about' id='{{section.id}}' class="card row my-4">
+  <div ng-repeat='section in about' id='{{section.id}}' class="card row my-5">
     <div class='card-header d-flex justify-content-between align-items-center'>
       <h3>{{section.heading}}</h3>
       <span class='fa fa-images fa-2x toggle-image-slider' title='Hide/show images' ng-if='section.images.length'
