@@ -1,14 +1,15 @@
 {
   "scripts": {
     "start": "firebase serve --only hosting",
-    "preinstall": "rimraf public/scripts/vendor",
-    "postinstall": "vendor-copy"
+    "preinstall": "rimraf public/scripts/vendor public/style/vendor public/fonts/vendor",
+    "postinstall": "vendor-copy; scss --update public/style/scss:public/style/ -t compressed"
   },
   "name": "personal-site",
   "description": "This is a site demonstrating my skills with Require.js, AngularJS, SASS+CSS, and JavaScript (modules and frameworks like jquery and ScrollMagic). The site also contains an overview of various other projects and a summary of my professional and educational background.",
   "version": "1.0.0",
   "main": "main.js",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "angular": "~1.4.0",
     "angular-amd": "~0.2.1",
     "angular-animate": "~1.4.0",
@@ -17,14 +18,14 @@
     "angular-sanitize": "~1.4.0",
     "angular-touch": "~1.4.0",
     "angularfire": "^2.3.0",
+    "bootstrap": "^4.6.0",
     "firebase": "^8.3.1",
-    "gsap": "^1.20.6",
+    "gsap": "^3.0.0",
+    "hover.css": "^2.3.2",
     "jquery": "^3.6.0",
-    "ng-slide-down": "^0.4.2",
+    "octicons": "^8.5.0",
     "requirejs": "^2.3.6",
     "rimraf": "^3.0.2",
-    "scrollmagic": "^2.0.8",
-    "shifty": "^1.5.1",
     "vendor-copy": "^2.0.0"
   },
   "devDependencies": {
@@ -72,6 +73,14 @@
       "to": "public/scripts/vendor/angular-carousel.min.js"
     },
     {
+      "from": "node_modules/angular-carousel/dist/angular-carousel.min.css",
+      "to": "public/style/vendor/angular-carousel.min.css"
+    },
+    {
+      "from": "node_modules/angular-carousel/dist/angular-carousel.css.map",
+      "to": "public/style/vendor/angular-carousel.css.map"
+    },
+    {
       "from": "node_modules/angular-route/angular-route.min.js",
       "to": "public/scripts/vendor/angular-route.min.js"
     },
@@ -98,6 +107,26 @@
     {
       "from": "node_modules/angularfire/dist/angularfire.min.js",
       "to": "public/scripts/vendor/angularfire.min.js"
+    },
+    {
+      "from": "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "to": "public/scripts/vendor/bootstrap.bundle.min.js"
+    },
+    {
+      "from": "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "to": "public/scripts/vendor/bootstrap.bundle.min.js.map"
+    },
+    {
+      "from": "node_modules/bootstrap/scss",
+      "to": "public/style/vendor/bootstrap/"
+    },
+    {
+      "from": "node_modules/bootstrap/dist/css/bootstrap.min.css",
+      "to": "public/style/vendor/bootstrap.min.css"
+    },
+    {
+      "from": "node_modules/bootstrap/dist/css/bootstrap.min.css.map",
+      "to": "public/style/vendor/bootstrap.min.css.map"
     },
     {
       "from": "node_modules/firebase/firebase-app.js",
@@ -140,40 +169,56 @@
       "to": "public/scripts/vendor/firebase-storage.js.map"
     },
     {
-      "from": "node_modules/gsap/TimelineMax.js",
-      "to": "public/scripts/vendor/TimelineMax.js"
+      "from": "node_modules/@fortawesome/fontawesome-free/scss/",
+      "to": "public/style/vendor/fontawesome/scss/"
     },
     {
-      "from": "node_modules/gsap/TweenMax.js",
-      "to": "public/scripts/vendor/TweenMax.js"
+      "from": "node_modules/@fortawesome/fontawesome-free/webfonts/",
+      "to": "public/fonts/vendor/fontawesome/"
+    },
+    {
+      "from": "node_modules/gsap/dist/gsap.min.js",
+      "to": "public/scripts/vendor/gsap.min.js"
+    },
+    {
+      "from": "node_modules/gsap/dist/gsap.min.js.map",
+      "to": "public/scripts/vendor/gsap.min.js.map"
+    },
+    {
+      "from": "node_modules/gsap/dist/ScrollTrigger.min.js",
+      "to": "public/scripts/vendor/ScrollTrigger.min.js"
+    },
+    {
+      "from": "node_modules/gsap/dist/ScrollTrigger.min.js.map",
+      "to": "public/scripts/vendor/ScrollTrigger.min.js.map"
+    },
+    {
+      "from": "node_modules/gsap/dist/ScrollToPlugin.min.js",
+      "to": "public/scripts/vendor/ScrollToPlugin.min.js"
+    },
+    {
+      "from": "node_modules/hover.css/css/hover-min.css",
+      "to": "public/style/vendor/hover-min.css"
+    },
+    {
+      "from": "node_modules/hover.css/css/hover.css.map",
+      "to": "public/style/vendor/hover.css.map"
+    },
+    {
+      "from": "node_modules/gsap/dist/ScrollToPlugin.min.js.map",
+      "to": "public/scripts/vendor/ScrollToPlugin.min.js.map"
     },
     {
       "from": "node_modules/jquery/dist/jquery.min.js",
       "to": "public/scripts/vendor/jquery.min.js"
     },
     {
-      "from": "node_modules/ng-slide-down/dist/ng-slide-down.min.js",
-      "to": "public/scripts/vendor/ng-slide-down.min.js"
+      "from": "node_modules/octicons/",
+      "to": "public/style/vendor/octicons/"
     },
     {
       "from": "node_modules/requirejs/require.js",
       "to": "public/scripts/vendor/require.js"
-    },
-    {
-      "from": "node_modules/shifty/dist/shifty.min.js",
-      "to": "public/scripts/vendor/shifty.min.js"
-    },
-    {
-      "from": "node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js",
-      "to": "public/scripts/vendor/ScrollMagic.min.js"
-    },
-    {
-      "from": "node_modules/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js",
-      "to": "public/scripts/vendor/animation.gsap.min.js"
-    },
-    {
-      "from": "node_modules/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js",
-      "to": "public/scripts/vendor/debug.addIndicators.min.js"
     }
   ],
   "devVendorCopy": [
@@ -210,28 +255,12 @@
       "to": "public/scripts/vendor/angularfire.js"
     },
     {
+      "from": "node_modules/gsap/dist/gsap.js",
+      "to": "public/scripts/vendor/gsap.js"
+    },
+    {
       "from": "node_modules/jquery/dist/jquery.js",
       "to": "public/scripts/vendor/jquery.js"
-    },
-    {
-      "from": "node_modules/ng-slide-down/dist/ng-slide-down.js",
-      "to": "public/scripts/vendor/ng-slide-down.js"
-    },
-    {
-      "from": "node_modules/shifty/dist/shifty.js",
-      "to": "public/scripts/vendor/shifty.js"
-    },
-    {
-      "from": "node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js",
-      "to": "public/scripts/vendor/ScrollMagic.js"
-    },
-    {
-      "from": "node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js",
-      "to": "public/scripts/vendor/animation.gsap.js"
-    },
-    {
-      "from": "node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js",
-      "to": "public/scripts/vendor/debug.addIndicators.js"
     }
   ]
 }
