@@ -35,7 +35,7 @@
     "entries": [
       {
         "name": "Royal Conservatory of Brussels",
-        "title": "Barroque/Classical Trumpet",
+        "title": "Baroque/Classical Trumpet",
         "logo": "assets/crb-logo.jpg",
         "website": "https://www.conservatoire.be",
         "duration": "2014-2015",
@@ -84,19 +84,19 @@
         "thumbnail": "assets/carleton-knights.jpg"
       },
       {
-        "name": "Madrid Study Abroad - Film and the City",
+        "name": "Madrid Study Abroad: Film and the City",
         "title": "Immersion Program",
         "logo": "assets/carleton-seal.png",
         "website": "https://apps.carleton.edu/curricular/ocs/madrid/archive/2011/courses/",
         "duration": "Jun - Dec 2011",
         "location": "Madrid & Valencia, Spain",
-        "description": "I was lucky enough to be able to go on a second study abroad trip to Spain in my senior year. I left in June for a program that started in September, which alowed me to live for 2 months with a friend of mine in Valencia, bike the Danube river in Germany, and walk across Spain on the Way of Saint James before the program actually began. My second program was just as good as the first and at the end, I spoke better Spanish than French, which was hard for most people to believe. After the program I visited 4 more countries, not being able to resist visiting my recently adopted family in Paris, before I finally returned to the States to finish up my degree.",
+        "description": "I was lucky enough to be able to go on a second study abroad trip to Spain in my senior year. I left in June for a program that started in September, which allowed me to live for 2 months with a friend of mine in Valencia, bike the Danube river in Germany, and walk across Spain on the Way of Saint James before the program actually began. My second program was just as good as the first and at the end, I spoke better Spanish than French, which was hard for most people to believe. After the program I visited 4 more countries, not being able to resist visiting my recently adopted family in Paris, before I finally returned to the States to finish up my degree.",
         "docIntro": "",
         "documents": [],
         "thumbnail": "assets/spain1.jpg"
       },
       {
-        "name": "Paris Study Abroad - European Identities",
+        "name": "Paris Study Abroad: European Identities",
         "title": "Immersion Program",
         "logo": "assets/carleton-seal.png",
         "website": "https://apps.carleton.edu/curricular/ocs/paris/archive/2010/",
@@ -150,7 +150,7 @@
       },
       {
         "name": "Technology Assistant",
-        "title": "Media Technology Dept. - Carleton College",
+        "title": "Media Technology Department",
         "logo": "assets/peps.jpg",
         "website": "https://apps.carleton.edu/campus/peps/",
         "duration": "2008 - 2012",
@@ -174,8 +174,8 @@
         "thumbnail": "assets/peps.jpg"
       },
       {
-        "name": "Lycée Les-Côtes-de-Villebon",
-        "title": "Language Assistant",
+        "name": "Language Assistant",
+        "title": "Lycée Les-Côtes-de-Villebon",
         "logo": "assets/villebon-logo.jpg",
         "website": "https://www.lyc-cotesdevillebon-meudon.ac-versailles.fr",
         "duration": "2013-2014",
@@ -195,7 +195,7 @@
         "thumbnail": "assets/villebon-logo.jpg"
       },
       {
-        "name": "Counselor, Instructor",
+        "name": "Camp Counselor, French Instructor",
         "title": "Concordia Language Villages - Lac-du-bois",
         "logo": "assets/cord3.jpg",
         "website": "https://www.concordialanguagevillages.org",
