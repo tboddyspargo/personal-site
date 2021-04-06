@@ -4,8 +4,10 @@ Planning
 config.codekit
 .codekit-cache/
 
-# 3rd Party JS
+# 3rd Party content
 public/scripts/vendor/
+public/style/vendor/
+public/fonts/vendor/
 
 # Sass
 **/.sass-cache
@@ -13,6 +15,9 @@ public/scripts/vendor/
 *.css.map
 *.sass.map
 *.scss.map
+
+# compiled style
+public/style/main.css
 
 # Logs
 logs
