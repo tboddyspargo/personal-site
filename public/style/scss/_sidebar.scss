@@ -1,0 +1,42 @@
+#sidebar {
+  overflow: visible;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  z-index: 10;
+  &:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+  }
+
+  .active-section {
+    .side-nav-link-icon {
+      background-color: rgba(50, 100, 150, 1);
+    }
+  }
+}
+
+.side-nav-area {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.side-nav-link {
+  @include clickable;
+  display: block;
+  margin-bottom: 3px;
+  margin-right: 15px;
+  @include transition(transform ease-in-out 0.2s);
+  &:hover {
+    @include transform(scale(1.2, 1.2));
+  }
+}
+.side-nav-link-icon {
+  @include size(15px);
+  background-color: rgba(50, 100, 150, 0.6);
+  border-radius: 3px;
+}

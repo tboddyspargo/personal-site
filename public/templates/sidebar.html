@@ -1,12 +1,9 @@
 <div id='sidebar'>
-
-	<div class="contents-side-nav" ng-show='sidebar.contents.length'>
-		<a ng-repeat='content in sidebar.contents' id='section-indicator-{{$index}}' scroll-to='{{content.loc}}'><div class='content-item' spark-scroll="{
-			bottomTop:{ 'downRemoveClass': 'active-content' },
-			topCenter:{ 'downAddClass,upRemoveClass': 'active-content' },
-			bottomCenter:{ 'downRemoveClass,upAddClass': 'active-content' },
-			centerTop:{ 'downRemoveClass': 'active-content' },
-			centerBottom:{ 'upRemoveClass': 'active-content' }}" spark-trigger='{{content.loc}}'></div></a>
-	</div>
+  <div class="side-nav-area" ng-if='ids && ids.length'>
+    <a ng-repeat='section in ids' id='side-nav-link-{{$index}}' class='side-nav-link' title='{{section.name}}'
+      scroll-to='{{section}}'>
+      <div class='side-nav-link-icon'></div>
+    </a>
+  </div>
 
 </div>

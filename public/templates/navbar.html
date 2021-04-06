@@ -1,34 +1,38 @@
-<div id='top' class="banner parallax-cont" spark-id='parallax'>
-	<div class="parallax-shadow banner-shadow">
-		<div id="banner-cover" spark-scroll-animate="{
-		'centerTop-15':{ opacity: 0 },
-		'bottomTop-30':{ opacity: 1 }}" spark-trigger='parallax'></div>
-	</div>
-	<h1 id='name' class='noselect'>Tyler BoddySpargo</h1>
-	<div id="banner-image" spark-scroll-ease spark-scroll-animate="{
-	topTop: { transform: 'translate3d(0px,-100px,0px)' },
-	bottomTop:{ transform: 'translate3d(0px,-20px,0px)' }}" spark-trigger='parallax'></div>
-</div>
-<div  id='navbar-container' class='nav-not-fixed'  spark-scroll="{
-    198:{ 'downAddClass,upRemoveClass': 'nav-fixed' }
-    }">
-	<ul class="nav nav-tabs left-nav">
-		<a id='brand' class='navbar-brand hidden-left' ng-click='makeActive(1);' href='/' spark-scroll-animate="{
-		198:{ 'downRemoveClass,upAddClass': 'hidden-left' }}">Tyler BoddySpargo</a>
-		<div id="navbar-hover-space">
-			<div id="navbar-links-wrapper" class='left'>
-				<a href='https://www.facebook.com/tboddyspargo' target='_blank' rel="noopener noreferrer" class='facebook-round navbar-round-link slide-out'></a>
-				<a href='https://be.linkedin.com/in/tylerboddyspargo' target='_blank' rel="noopener noreferrer" class='linkedin-round navbar-round-link slide-out'></a>
-				<a href='https://google.com/+TylerBoddySpargo' target='_blank' rel="noopener noreferrer" class='google-round navbar-round-link slide-out'></a>
-				<a href='https://tylerbod.wordpress.com' target='_blank' rel="noopener noreferrer" class='ty-round navbar-round-link slide-out'></a>
-				<a href='https://tboddyspargo.wordpress.com' target='_blank' rel="noopener noreferrer" class='ph-round navbar-round-link slide-out'></a>
-				<a href='mailto:muyleche@gmail' target='_blank' rel="noopener noreferrer" class='email-round navbar-round-link'></a>
-			</div>
-		</div>
-	</ul>
-	<ul class="nav nav-tabs right-nav">
-		<li role='presentation' ng-click='makeActive(1);' ng-class='{active:isActive(1)}'><a href='/'>Home</a></li>
-		<li role='presentation' ng-click='makeActive(2);' ng-class='{active:isActive(2)}'><a href='/about'>About</a></li>
-		<li role='presentation' ng-click='makeActive(3);' ng-class='{active:isActive(3)}'><a href='/projects'>Projects</a></li>
-	</ul>
-</div>
+<nav id='navbar-container' class='navbar navbar-dark bg-dark navbar-expand-md'>
+  <a id='brand' class='navbar-brand hidden-left'>Tyler BoddySpargo</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div id='navbarCollapse' class='collapse navbar-collapse justify-content-end'>
+    <ul class="navbar-nav">
+      <li class='nav-item'>
+        <a class='nav-link' ng-click='makeActive(1);' ng-class='{active:isActive(1)}' href='/'>Home</a>
+      </li>
+      <li class='nav-item'>
+        <a class='nav-link' ng-click='makeActive(2);' ng-class='{active:isActive(2)}' href='/about'>About</a>
+      </li>
+      <li class='nav-item'>
+        <a class='nav-link' ng-click='makeActive(3);' ng-class='{active:isActive(3)}' href='/projects'>Projects</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Links
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class='dropdown-item email-round navbar-round-link' href='mailto:muyleche@gmail.com' target='_blank'
+            rel="noopener noreferrer">E-mail</a>
+          <a class='dropdown-item linkedin-round navbar-round-link' href='https://be.linkedin.com/in/tylerboddyspargo'
+            target='_blank' rel="noopener noreferrer">LinkedIn</a>
+          <a class='dropdown-item facebook-round navbar-round-link' href='https://www.facebook.com/tboddyspargo'
+            target='_blank' rel="noopener noreferrer">Facebook</a>
+          <a class='dropdown-item ty-round navbar-round-link' href='https://tylerbod.wordpress.com' target='_blank'
+            rel="noopener noreferrer">Blog: Life of Ty</a>
+          <a class='dropdown-item ph-round navbar-round-link' href='https://tboddyspargo.wordpress.com' target='_blank'
+            rel="noopener noreferrer">Blog: Pond Hopping</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>

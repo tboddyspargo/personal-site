@@ -1,20 +1,12 @@
 /* shared image carousel styles */
 .image-carousel {
+  position: relative;
 	box-sizing: border-box;
-	position: relative;
-	height: 100%;
+	width: 100%;
+	height: 80%;
 	overflow: hidden;
 	ul {
 		@include size(100%);
-	}
-}
-
-.close-image-slider {
-	@include clickable;
-	opacity: 0.25;
-	float: right;
-	&:hover {
-		opacity: 1 !important;
 	}
 }
 
@@ -64,7 +56,7 @@
 	font-size: 15px;
 	color: white;
 	border: 3px solid rgba(50,50,50, 0.3);
-    background-clip: padding-box;
+  background-clip: padding-box;
 	background-color: rgba(0,0,0,0.6);
 	padding:3px 10px 3px 10px;
 }
@@ -80,16 +72,41 @@
 /* Inline Image Carousel */
 
 .image-carousel.inline-carousel {
-	margin: -16px -15px 20px -15px;
 	height: 325px;
 	border-bottom: 1px solid rgba(200,200,200, 0.5);
+	border-top: 1px solid rgba(200,200,200, 0.5);
+}
+
+.toggle-image-slider {
+  @include toggle-with-transparency;
 }
 
 /* Full Screen Image Carousel */
 
+
+
 #image-viewer {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	@include pos(0px, none, none, 0px);
+	@include size(100%);
+	z-index: 100;
+	background-color: rgba(0,0,0,0.9);
 	.image-container {
 		padding: 50px;
+	}
+}
+
+#close-viewer {
+	@include clickable;
+	@include abs-pos(35px, 35px);
+	color: rgba(200, 200, 200, 0.5);
+	font-size: 40px;
+  	z-index: 100;
+	&:hover {
+		color: rgba(200, 200, 200, 1);
+
 	}
 }
 

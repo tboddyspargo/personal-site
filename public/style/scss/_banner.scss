@@ -1,0 +1,37 @@
+#top {
+  position: relative;
+}
+
+.banner {
+  @include size(100%, 240px);
+  overflow: hidden;
+}
+
+#banner-image {
+  height: 100%;
+  overflow: visible;
+  z-index: 1;
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+  }
+}
+
+#banner-cover {
+  @include abs-pos(0px, none, none, 0px);
+  @include size(100%);
+  background: rgb(33, 37, 41);
+  opacity: 0;
+  z-index: 5;
+}
+
+#name {
+  @include abs-pos(80px, 20px);
+  z-index: 4;
+  color: white;
+  font-family: Bradley Hand;
+  font-size: 50px;
+  text-shadow: 2px 3px rgba(50, 50, 50, 0.7);
+}

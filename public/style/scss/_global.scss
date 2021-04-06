@@ -1,46 +1,70 @@
 @mixin touch_select($value) {
-    -webkit-touch-callout: $value;
-    @include css3-prefix('user-select', $value)
+  -webkit-touch-callout: $value;
+  @include css3-prefix("user-select", $value);
 }
 
 @mixin transform-origin($value) {
-	@include css3-prefix('transform-origin', $value);
+  @include css3-prefix("transform-origin", $value);
 }
 
 @mixin clickable {
-	cursor: pointer;
+  cursor: pointer;
 }
 
-@mixin size($width, $height:$width) {
-	width: $width;
-	height: $height;
+@mixin toggle-with-transparency {
+  @include clickable;
+  opacity: 0.3;
+  &.active {
+    opacity: 0.8;
+  }
+  &:hover {
+    opacity: 1 !important;
+  }
 }
 
-@mixin min-size($width, $height:$width) {
-	min-width: $width;
-	min-height: $height;
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
 }
 
-@mixin max-size($width, $height:$width) {
-	max-width: $width;
-	max-height: $height;
+@mixin min-size($width, $height: $width) {
+  min-width: $width;
+  min-height: $height;
+}
+
+@mixin max-size($width, $height: $width) {
+  max-width: $width;
+  max-height: $height;
 }
 
 @mixin no-drag-away-events {
-	@include touch_select(none);
-	cursor: default;
+  @include touch_select(none);
+  cursor: default;
 }
 
 @mixin no-cursor-events {
-	@include no-drag-away-events;
-	pointer-events: none;
+  @include no-drag-away-events;
+  pointer-events: none;
 }
 
-@mixin abs-pos($top:none,$right:none,$bottom:none,$left:none) {
-	@if $top != none {top:$top;}
-	@if $right != none {right:$right;}
-	@if $bottom != none {bottom:$bottom;}
-	@if $left != none {left:$left;}
+@mixin abs-pos($top: none, $right: none, $bottom: none, $left: none) {
+  position: absolute;
+  @include pos($top, $right, $bottom, $left);
+}
+
+@mixin pos($top: none, $right: none, $bottom: none, $left: none) {
+  @if $top != none {
+    top: $top;
+  }
+  @if $right != none {
+    right: $right;
+  }
+  @if $bottom != none {
+    bottom: $bottom;
+  }
+  @if $left != none {
+    left: $left;
+  }
 }
 
 @mixin v-align {
@@ -50,140 +74,132 @@
 }
 
 @mixin parent-v-align {
-	@include transform-style(preserve3d);
+  @include transform-style(preserve3d);
 }
 
-$bgColor: #cccccc;
-
-.noselect, img {
-	@include no-cursor-events;
+/* mixin for multi-line */
+@mixin multiLineEllipsis($lineHeight: 1.2em, $lineCount: 1, $bgColor: white) {
+  overflow: hidden;
+  position: relative;
+  line-height: $lineHeight;
+  max-height: $lineHeight * $lineCount;
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1em;
+  &:before {
+    content: "...";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: $bgColor;
+  }
 }
 
-.facebook-round {
-	background-image: url(/assets/round-icons/Facebook-round.png);
+.no-select,
+img {
+  @include no-cursor-events;
 }
 
-.linkedin-round {
-	background-image: url(/assets/round-icons/Linkedin-round.png);
+.facebook-round:before {
+  background-image: url(/assets/round-icons/Facebook-round.png);
 }
 
-.google-round {
-	background-image: url(/assets/round-icons/Google-plus-round.png);
+.linkedin-round:before {
+  background-image: url(/assets/round-icons/Linkedin-round.png);
 }
 
-.ty-round {
-	background-image: url(/assets/round-icons/life-of-ty-sm.png);
+.google-round:before {
+  background-image: url(/assets/round-icons/Google-plus-round.png);
 }
 
-.ph-round {
-	background-image: url(/assets/round-icons/pond-hopping-sm.png);
+.ty-round:before {
+  background-image: url(/assets/round-icons/life-of-ty-sm.png);
 }
 
-.email-round {
-	background-image: url(/assets/round-icons/email-2-icon.png);
+.ph-round:before {
+  background-image: url(/assets/round-icons/pond-hopping-sm.png);
 }
 
-.me-round {
-	background-image: url(/assets/round-icons/me-round.png);
+.email-round:before {
+  background-image: url(/assets/round-icons/email-2-icon.png);
 }
 
-.pdf-round {
-	background-image: url(/assets/round-icons/pdf-round.png);
+.me-round:before {
+  background-image: url(/assets/round-icons/me-round.png);
+}
+
+.pdf-round:before {
+  background-image: url(/assets/round-icons/pdf-round.png);
 }
 
 .bullet-ok {
-	margin-right: 3px;
-	top: 2px !important;
+  margin-right: 3px;
+  top: 2px !important;
 }
 
 .hidden {
-	visibility: hidden;
+  visibility: hidden;
 }
 
-.noscroll {
-	overflow: hidden;
-}
-
-.panel {
-	position: relative;
-}
-
-h4 {
-	&.panel-heading {
-		margin-top:0px;
-		margin-bottom: 0px;
-	}
-	span.label {
-		font-size: 10px;
-		float: right;
-		margin-top: 25px;
-	}
-}
-
-h3 {
-	&.panel-heading {
-		margin-top: 0px;
-		padding-right:35px;
-	}
-}
-
-.panel-body {
-	overflow: hidden;
-	h4 {
-		margin-top: 0px;
-	}
-	h3 {
-		margin-top:0px;
-	}
+.no-scroll {
+  overflow: hidden;
 }
 
 .back-to-top {
-	z-index: 3;
-	display: none;
-	position: fixed;
-	@include abs-pos(none, 10px, 10px);
+  z-index: 3;
+  display: none;
+  position: fixed;
+  @include abs-pos(none, 10px, 10px);
 }
 
 .right-toggle {
-	float:right;
-	opacity: 0.3;
-	&:hover {
-		cursor: pointer;
-	}
+  float: right;
+  opacity: 0.3;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .show-me {
-	display: inherit;
+  display: inherit;
 }
 
 .hide-me {
-	display: none;
+  display: none;
 }
 
 .opaque {
-	opacity: 1;
+  opacity: 1;
 }
 
 .half {
-	opacity: 0.5;
+  opacity: 0.5;
 }
 
 .red {
-	background-color: red;
+  background-color: red;
 }
 
 .green {
-	background-color: green;
+  background-color: green;
 }
 
 .blue {
-	background-color: blue;
+  background-color: blue;
 }
 
 .yellow {
-	background-color: yellow;
+  background-color: yellow;
 }
 
 .orange {
-	background-color: orange;
+  background-color: orange;
 }
