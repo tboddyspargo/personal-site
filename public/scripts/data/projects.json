@@ -17,17 +17,17 @@
         "show": false,
         "heading": "Fill in and Fill out",
         "detail": "The final steps involved writing the actual content, gathering together the assets (photos, documents), and getting a little fancy with animations, responsive design, support for all popular browsers, and added functionality. To achieve the latter improvements I made use of CSS transitions, @media types, ngAnimate, a photo slider module called angular-carousel, and hover.css."
-       },
+      },
       {
         "show": false,
         "heading": "V2.0 Logic",
         "detail": "The first version of anything is likely to only have the basics and my interest in exploring various aspects of Angular and CSS meant that I was raring to put some bells and whistles on my site. I did a lot of refactoring that separated the different sections of my site into unique controllers. Then, I used routing logic rather than loading everything and hiding unnecessary parts. I also realized that I was loading lots of JS files and wanted to clean up my <script> tags, so I turned to Require.js which allows JS files to be loaded only when they're needed. My site is now much more readable, modularized, and responsive!"
-       },
+      },
       {
         "show": false,
         "heading": "V2.0 Looks",
         "detail": "I had always been aware that my CSS file (yes, singular) was super messy and I struggled to find relevant selectors when I wanted to make adjustments. However, I wasn't sure how to approach this problem... that is, until I discovered Sassy CSS. It was a HUGE time-saver and an organizational boon and it allowed me to think much more cleanly about style as I was writing it - using mixins and nesting. In addition to this discovery, I also developed a deeper understanding of 'the angular way' that allowed me to take some style elements (more complex animations) and work them into directives (JS proves to be a much more elegant solution than CSS for complex and/or interactive animations)."
-       }
+      }
     ],
     "images": [
       {
@@ -50,7 +50,7 @@
   },
   {
     "name": "iOS Calculator App",
-    "goal": "Practive C, Obj-C, and Swift by creating a simple calculator app for iOS.",
+    "goal": "Practice C, Obj-C, and Swift by creating a simple calculator app for iOS.",
     "steps": [
       {
         "show": true,
@@ -155,7 +155,7 @@
       {
         "show": false,
         "heading": "Automate repetitive tasks",
-        "detail": "Many of the things our workers spent time doing didn't have much to do with their actual \"positions\" at FluentU, so I created tools to automate the tasks that they would otherwise have taken much longer to do manually. Workers could focus on using their specific skill sets on the jobs that required their expertise, and not on menial, repetative tasks."
+        "detail": "Many of the things our workers spent time doing didn't have much to do with their actual \"positions\" at FluentU, so I created tools to automate the tasks that they would otherwise have taken much longer to do manually. Workers could focus on using their specific skill sets on the jobs that required their expertise, and not on menial, repetitive tasks."
       },
       {
         "show": false,
@@ -198,7 +198,7 @@
       {
         "show": false,
         "heading": "Track progress",
-        "detail": "All of the informating we gather is recorded and retained regularly, allowing us to compile a significant amount of data and see trends and progress towards goals over time. It also allowed us to assess the effectiveness of new strategies."
+        "detail": "All of the information we gather is recorded and retained regularly, allowing us to compile a significant amount of data and see trends and progress towards goals over time. It also allowed us to assess the effectiveness of new strategies."
       },
       {
         "show": false,
@@ -241,7 +241,7 @@
       {
         "show": true,
         "heading": "Learn to manipulate Tkinter and os python modules",
-        "detail": "This was my final project for a CS course I took at Carleton and I wanted it to solve a problem that I had in real life: organizing hundreds of ebooks organized in folder by author. My professor expressed his concern that it was a bit too ambitious, but I was adamant. I now had a substantial command of python, but in order to build a GUI, I needed to learn to implement Tkinter - a UI building module."
+        "detail": "This was my final project for a CS course I took at Carleton and I wanted it to solve a problem that I had in real life: organizing hundreds of ebooks in folders by author. My professor expressed his concern that it was a bit too ambitious, but I was adamant. I now had a decent command of python, but in order to build a GUI, I needed to learn to implement Tkinter - a UI building module."
       },
       {
         "show": false,
@@ -252,7 +252,7 @@
     "images": [
       {
         "path": "assets/file-helper.jpg",
-        "caption": "FileHelper applicaiton window"
+        "caption": "FileHelper application window"
       },
       {
         "path": "assets/filehelper-sm.png",
@@ -281,7 +281,7 @@
       {
         "show": false,
         "heading": "Improve upon the complexity of the game",
-        "detail": "Since this game started as an assignment for class, there were certain criteria that had to be met. However, I was highly unsatisfied with the simplicity of running around a black rectangle while another circle followed the player around. I added a lot more complexity to the game: custom graphics, sound effects and music, laser gun, a powerup, health meter, points, lives, and the ability to \"lose\" or \"win\" at the game. In short, the basic requirements for a game that is actually enjoyable (and, I might add, rather hard to beat)! Try it for yourself by downloading the zip file below!"
+        "detail": "Since this game started as an assignment for class, there were certain criteria that had to be met. However, I was highly unsatisfied with the simplicity of running around a black rectangle while another circle followed the player around. I added a lot more complexity to the game: custom graphics, sound effects and music, laser gun, a power-up, health meter, points, lives, and the ability to \"lose\" or \"win\" at the game. In short, the basic requirements for a game that is actually enjoyable (and, I might add, rather hard to beat)! Try it for yourself by downloading the zip file below!"
       }
     ],
     "images": [

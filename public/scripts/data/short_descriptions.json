@@ -9,7 +9,7 @@
   },
   {
     "name": "iOS Calculator App",
-    "desc": "Practive C, Obj-C, and Swift by creating a simple calculator app for iOS.",
+    "desc": "Practice C, Obj-C, and Swift by creating a simple calculator app for iOS.",
     "thumbnail": "assets/storyboard sm.jpg",
     "label": "Project",
     "page": 3,
@@ -65,7 +65,7 @@
   },
   {
     "name": "Niedermeyer Conservatory",
-    "desc": "Music is a peculiar pursuit and if one wants to become a great musicia...",
+    "desc": "Music is a peculiar pursuit and if one wants to become a great musician...",
     "thumbnail": "assets/grand-paris-issy.jpg",
     "label": "School",
     "page": 2,
@@ -80,7 +80,7 @@
     "loc": "education"
   },
   {
-    "name": "Madrid Study Abroad - Film and the City",
+    "name": "Madrid Study Abroad: Film and the City",
     "desc": "I was lucky enough to be able to go on a second study abroad trip to S...",
     "thumbnail": "assets/spain1.jpg",
     "label": "School",
@@ -88,7 +88,7 @@
     "loc": "education"
   },
   {
-    "name": "Paris Study Abroad - European Identities",
+    "name": "Paris Study Abroad: European Identities",
     "desc": "In the spring of 2010 I went overseas for the first time. The Carleton...",
     "thumbnail": "assets/castle.jpg",
     "label": "School",
@@ -112,7 +112,7 @@
     "loc": "employment"
   },
   {
-    "name": "Lycée Les-Côtes-de-Villebon",
+    "name": "English Teaching Assistant",
     "desc": "Led and designed oral/written activities, presentations, and tests...",
     "thumbnail": "assets/villebon-logo.jpg",
     "label": "Job",
@@ -120,7 +120,7 @@
     "loc": "employment"
   },
   {
-    "name": "Counselor, Instructor",
+    "name": "Camp Counselor, French Instructor",
     "desc": "Designed and taught four-week intermediate high-school-credit French course...",
     "thumbnail": "assets/cord3.jpg",
     "label": "Job",
