@@ -12764,6 +12764,7 @@ footer {
   top: 0px;
   right: 0px;
   height: 100%;
+  min-height: 800px;
   z-index: 10; }
   #sidebar:before {
     content: "";

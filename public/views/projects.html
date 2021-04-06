@@ -1,12 +1,12 @@
 <div class='projects card row'>
   <ul class="list-group list-group-flush">
-    <li ng-repeat='project in projects' id='project-{{$index}}' class='list-group-item section-{{$index}}'>
+    <li ng-repeat='project in projects' id='project-{{$index}}' class='list-group-item section-{{$index}} my-2'>
       <div class="project-heading d-flex justify-content-between align-items-center">
         <h3>{{project.name}}</h3>
         <span class='fa fa-images fa-2x toggle-image-slider emphasize-interaction' ng-if='project.images.length'
           ng-click='displayViewer(project.images)'></span>
       </div>
-      <p class='lead'>Goal: {{project.goal}}</p>
+      <p class='lead'><strong>Goal: </strong>{{project.goal}}</p>
       <div id='project{{$index}}-steps' class='accordion mx-lg-5 mx-md-0'>
         <div ng-repeat='step in project.steps' class='card'>
           <div id='project{{$parent.$index}}-step{{$index}}-heading' class='card-header'>
