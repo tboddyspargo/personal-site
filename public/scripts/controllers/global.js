@@ -22,8 +22,7 @@ define(['scripts/app', 'utils/helpers', 'utils/scroll'], (ngApp, utils, scroll) 
     if (!$rootScope.facts) {
       $http.get('/scripts/data/facts.json', {})
         .success(function (data) {
-          var facts = shuffleArray(data);
-          $rootScope.facts = facts;
+          $rootScope.facts = shuffleArray(data);
           $rootScope.side_facts = $rootScope.facts.slice(0, 5);
         });
     }
