@@ -20,16 +20,14 @@
       <span class='fa fa-images fa-2x toggle-image-slider' title='Hide/show images' ng-if='section.images.length'
         ng-click='section.showImages = !section.showImages' ng-class='{active: section.showImages}'></span>
     </div>
-    <div class="card-img-top image-carousel inline-carousel enable_touchmove" ng-if='section.images.length'
+    <div class="card-img-top image-carousel text-dark inline-carousel enable_touchmove" ng-if='section.images.length'
       ng-show='section.showImages'>
       <ul rn-carousel rn-carousel-controls rn-carousel-buffered rn-carousel-index='section.activeImage'
-        class=' enable_touchmove'>
+        class='enable_touchmove'>
         <li class='image-carousel-li enable_touchmove' ng-repeat="image in section.images">
           <div class="image-container">
             <img ng-src="{{image.path}}" alt="" class="image enable_touchmove" />
-          </div>
-          <div class='image-caption-wrapper'>
-            <span class='image-caption'>{{image.caption}}</span>
+            <span class='carousel-caption enable_touchmove'>{{image.caption}}</span>
           </div>
         </li>
       </ul>

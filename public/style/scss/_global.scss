@@ -12,11 +12,18 @@
 }
 
 @mixin toggle-with-transparency {
-  @include clickable;
   opacity: 0.3;
   &.active {
-    opacity: 0.8;
+    opacity: 0.75;
   }
+  &:hover {
+    opacity: 1 !important;
+  }
+}
+
+@mixin button-with-transparency {
+  @include clickable;
+  opacity: 0.75;
   &:hover {
     opacity: 1 !important;
   }
@@ -67,42 +74,6 @@
   }
 }
 
-@mixin v-align {
-  position: relative;
-  top: 50%;
-  @include transform(translateY(-50%));
-}
-
-@mixin parent-v-align {
-  @include transform-style(preserve3d);
-}
-
-/* mixin for multi-line */
-@mixin multiLineEllipsis($lineHeight: 1.2em, $lineCount: 1, $bgColor: white) {
-  overflow: hidden;
-  position: relative;
-  line-height: $lineHeight;
-  max-height: $lineHeight * $lineCount;
-  text-align: justify;
-  margin-right: -1em;
-  padding-right: 1em;
-  &:before {
-    content: "...";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  }
-  &:after {
-    content: "";
-    position: absolute;
-    right: 0;
-    width: 1em;
-    height: 1em;
-    margin-top: 0.2em;
-    background: $bgColor;
-  }
-}
-
 .no-select,
 img {
   @include no-cursor-events;
@@ -149,12 +120,4 @@ img {
   display: none;
   position: fixed;
   @include abs-pos(none, 10px, 10px);
-}
-
-.right-toggle {
-  float: right;
-  opacity: 0.3;
-  &:hover {
-    cursor: pointer;
-  }
 }
