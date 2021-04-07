@@ -1,80 +1,78 @@
 /* shared image carousel styles */
 .image-carousel {
   position: relative;
-	box-sizing: border-box;
-	width: 100%;
-	height: 80%;
-	overflow: hidden;
-	ul {
-		@include size(100%);
-	}
+  box-sizing: border-box;
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+  ul {
+    @include size(100%);
+  }
 }
 
 .image-container {
-	@include size(100%);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	img {
-		@include max-size(100%, 100%);
-	}
+  @include size(100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    @include max-size(100%, 100%);
+  }
 }
 
 .rn-carousel-control {
-	border-radius: 20px;
-	background-color: rgba(255,255,255,0.5);
-	color:rgba(50,50,50,0.5);
-	@include transition(all 0.3s);
-	border: 2px solid rgba(50,50,50,0.5);
-	&:hover {
-		cursor: pointer;
-		background-color: rgba(255,255,255,0.8);
-		color: rgba(35,82,124,1);
-		border: 2px solid rgba(35,82,124,0.8);
-	}
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgba(50, 50, 50, 0.5);
+  @include transition(all 0.3s);
+  border: 2px solid rgba(50, 50, 50, 0.5);
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgba(35, 82, 124, 1);
+    border: 2px solid rgba(35, 82, 124, 0.8);
+  }
 }
 
 .rn-carousel-control-next {
-	padding: 0px 3px 2px 5px;
+  padding: 0px 3px 2px 5px;
 }
 
 .rn-carousel-control-prev {
-	padding: 0px 5px 2px 3px;
+  padding: 0px 5px 2px 3px;
 }
 
 .image-caption-wrapper {
-	position: absolute;
-	@include abs-pos(none,0px,none,0px);
-	margin-left:auto;
-	margin-right:auto;
-	bottom: 15px;
-	text-align: center;
+  position: absolute;
+  @include abs-pos(none, 0px, none, 0px);
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 15px;
+  text-align: center;
 }
 
 .image-caption {
-	border-radius: 20px;
-	font-size: 15px;
-	color: white;
-	border: 3px solid rgba(50,50,50, 0.3);
+  border-radius: 20px;
+  font-size: 15px;
+  color: white;
+  border: 3px solid rgba(50, 50, 50, 0.3);
   background-clip: padding-box;
-	background-color: rgba(0,0,0,0.6);
-	padding:3px 10px 3px 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 3px 10px 3px 10px;
 }
 
 .zoom {
-	@include transform(translate3DZ(0px));
+  @include transform(translate3DZ(0px));
 }
 
 .zoom:hover {
-	@include transform(translate3DZ(50%));
+  @include transform(translate3DZ(50%));
 }
 
 /* Inline Image Carousel */
 
 .image-carousel.inline-carousel {
-	height: 325px;
-	border-bottom: 1px solid rgba(200,200,200, 0.5);
-	border-top: 1px solid rgba(200,200,200, 0.5);
+  height: 325px;
 }
 
 .toggle-image-slider {
@@ -83,34 +81,29 @@
 
 /* Full Screen Image Carousel */
 
-
-
 #image-viewer {
-	position: fixed;
-	display: flex;
-	align-items: center;
-	@include pos(0px, none, none, 0px);
-	@include size(100%);
-	z-index: 100;
-	background-color: rgba(0,0,0,0.9);
-	.image-container {
-		padding: 50px;
-	}
+  position: fixed;
+  display: flex;
+  align-items: center;
+  @include pos(0px, none, none, 0px);
+  @include size(100%);
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.9);
+  .image-container {
+    padding: 50px;
+  }
 }
 
 #close-viewer {
-	@include clickable;
-	@include abs-pos(35px, 35px);
-	color: rgba(200, 200, 200, 0.5);
-	font-size: 40px;
-  	z-index: 100;
-	&:hover {
-		color: rgba(200, 200, 200, 1);
-
-	}
+  @include clickable;
+  @include abs-pos(35px, 35px);
+  color: rgba(200, 200, 200, 0.5);
+  font-size: 40px;
+  z-index: 100;
+  &:hover {
+    color: rgba(200, 200, 200, 1);
+  }
 }
-
-
 
 /* Custom Image Slider CSS */
 // .image-slider-wrapper {

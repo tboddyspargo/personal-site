@@ -2,11 +2,10 @@
   <div id='bio' class="card row my-5">
     <div class="card-body">
       <h3 class="card-title">My Bio</h3>
-      <div class="stat-box">
-        <h5>Fun Facts:</h5>
-        <ul>
-          <li ng-repeat='fact in main_facts'>
-            <span class="fa fa-check-circle bullet-ok"></span>
+      <div class="stat-box card ml-2 mr-4 mb-3" ng-if='facts.length'>
+        <h5 class='card-header'>Fun Facts:</h5>
+        <ul class='list-group list-group-flush'>
+          <li ng-repeat='fact in facts' class='list-group-item py-1'>
             <a ng-if='fact.link.length' href='{{fact.link}}' target='_blank' rel="noopener noreferrer">{{fact.text}}</a>
             <span ng-if='!fact.link.length'>{{fact.text}}</span>
           </li>

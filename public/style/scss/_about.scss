@@ -1,78 +1,50 @@
+.stat-box {
+  float: left;
+  max-width: 25%;
+  min-width: 300px;
+  @include transform(rotateZ(-5deg));
+}
+
 .event-heading {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .event-title-main {
-	display: inline-flex;
-	align-items: center;
+  display: inline-flex;
+  align-items: center;
 }
 
 .org-name {
-	white-space: pre-wrap;
-	text-decoration: underline;
+  white-space: pre-wrap;
+  text-decoration: underline;
 }
 
 .org-location {
-	text-align: right;
-	font-size: 0.9em;
+  text-align: right;
+  font-size: 0.9em;
 }
 
 .org-logo {
-	margin-right: 15px;
-	width: $org-logo-size;
-	max-height: $org-logo-size;
+  margin-right: 15px;
+  width: $org-logo-size;
+  max-height: $org-logo-size;
 }
 
 .domain {
-	display: block;
+  display: block;
   font-weight: 500;
-	font-size: 1.25em;
-}
-
-.document-wrapper {
-	display: flex;
-  justify-content: flex-end;
-}
-
-.document {
-	margin-right:5px;
-	margin-left: 10px;
+  font-size: 1.25em;
 }
 
 .responsibilities {
-	display: block;
-	margin-left: 25px;
+  display: block;
+  margin-left: 25px;
   list-style: initial;
 }
 
-.stat-box {
-	border-radius: 20px;
-	max-width:250px;
-	border: 4px ridge rgba(60,90,150,0.6);
-	float:left;
-	margin: 10px 15px 5px 10px;
-	padding:15px 0px 0px 10px;
-	@include transform(rotateZ(-5deg));
-}
-
-.stat-box > ul {
-	list-style: none;
-}
-
-.stat-box li {
-	margin-left: -35px;
-}
-
-.stat-box h5 {
-	margin-left: 5px;
-	text-decoration: underline;
-	margin-top: -5px;
-	margin-bottom: 5px;
-}
-
 .event-desc {
-	margin: 10px 0px 5px 25px;
-	word-wrap: break-word;
-	overflow:hidden;
+  margin: 10px 0px 5px 25px;
+  word-wrap: break-word;
+  overflow: hidden;
 }
