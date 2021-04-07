@@ -13,14 +13,8 @@
 }
 
 .thumbnail-grid-item {
-  display: inline-block;
-  position: relative;
-  max-height: 24em;
-  margin-top: 0.5em;
+  @include clickable;
 
-  &:hover {
-    cursor: pointer;
-  }
   .caption {
     position: relative;
     line-height: 1.1em;

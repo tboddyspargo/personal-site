@@ -140,15 +140,6 @@ img {
   background-image: url(/assets/round-icons/pdf-round.png);
 }
 
-.bullet-ok {
-  margin-right: 3px;
-  top: 2px !important;
-}
-
-.hidden {
-  visibility: hidden;
-}
-
 .no-scroll {
   overflow: hidden;
 }
@@ -166,40 +157,4 @@ img {
   &:hover {
     cursor: pointer;
   }
-}
-
-.show-me {
-  display: inherit;
-}
-
-.hide-me {
-  display: none;
-}
-
-.opaque {
-  opacity: 1;
-}
-
-.half {
-  opacity: 0.5;
-}
-
-.red {
-  background-color: red;
-}
-
-.green {
-  background-color: green;
-}
-
-.blue {
-  background-color: blue;
-}
-
-.yellow {
-  background-color: yellow;
-}
-
-.orange {
-  background-color: orange;
 }
