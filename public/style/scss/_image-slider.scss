@@ -1,78 +1,36 @@
-/* shared image carousel styles */
+/* Shared image carousel styles */
 .image-carousel {
-  position: relative;
-  box-sizing: border-box;
-  width: 100%;
-  height: 80%;
-  overflow: hidden;
+  position: relative; // helps appropriately place the carousel controls
+  height: 100%;
   ul {
-    @include size(100%);
+    height: 100%;
   }
 }
 
 .image-container {
-  @include size(100%);
+  @include size(calc(100% - 6em), 100%);
+  margin: auto;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   img {
     @include max-size(100%, 100%);
   }
 }
-
 .rn-carousel-control {
-  border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.5);
-  color: rgba(50, 50, 50, 0.5);
-  @include transition(all 0.3s);
-  border: 2px solid rgba(50, 50, 50, 0.5);
-  &:hover {
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.8);
-    color: rgba(35, 82, 124, 1);
-    border: 2px solid rgba(35, 82, 124, 0.8);
-  }
-}
-
-.rn-carousel-control-next {
-  padding: 0px 3px 2px 5px;
-}
-
-.rn-carousel-control-prev {
-  padding: 0px 5px 2px 3px;
-}
-
-.image-caption-wrapper {
-  position: absolute;
-  @include abs-pos(none, 0px, none, 0px);
-  margin-left: auto;
-  margin-right: auto;
-  bottom: 15px;
-  text-align: center;
-}
-
-.image-caption {
-  border-radius: 20px;
-  font-size: 15px;
-  color: white;
-  border: 3px solid rgba(50, 50, 50, 0.3);
-  background-clip: padding-box;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 3px 10px 3px 10px;
-}
-
-.zoom {
-  @include transform(translate3DZ(0px));
-}
-
-.zoom:hover {
-  @include transform(translate3DZ(50%));
+  top: calc(50% - 1em); // helps better vertically center the carousel controls
 }
 
 /* Inline Image Carousel */
 
 .image-carousel.inline-carousel {
   height: 325px;
+
+  .carousel-caption {
+    bottom: 0px;
+    text-shadow: 1px 1px 3px black;
+  }
 }
 
 .toggle-image-slider {
@@ -83,26 +41,27 @@
 
 #image-viewer {
   position: fixed;
-  display: flex;
-  align-items: center;
   @include pos(0px, none, none, 0px);
-  @include size(100%);
+  @include size(100vw, 100vh);
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.9);
-  .image-container {
-    padding: 50px;
+
+  .image-carousel {
+    padding-top: 4em;
+  }
+
+  .carousel-caption {
+    position: relative;
+    bottom: revert;
+    right: revert;
+    left: revert;
   }
 }
 
 #close-viewer {
-  @include clickable;
-  @include abs-pos(35px, 35px);
-  color: rgba(200, 200, 200, 0.5);
-  font-size: 40px;
-  z-index: 100;
-  &:hover {
-    color: rgba(200, 200, 200, 1);
-  }
+  @include abs-pos(0.5em, 0.5em);
+  @include button-with-transparency;
+  font-size: 2.25em;
 }
 
 /* Custom Image Slider CSS */
