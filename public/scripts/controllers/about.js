@@ -1,12 +1,12 @@
 define(['scripts/app', 'utils/scroll', 'utils/helpers'], function (ngApp, scroll) {
   function aboutController($scope, $http, $rootScope, $sce, $timeout) {
+    $scope.name = 'about';
     $rootScope.active = 2;
     $scope.this_progress = $scope.this_progress || 1;
     $rootScope.progress = $scope.this_progress;
     $rootScope.total_progress = 3;
     $scope.facts = [];
     var x = 0;
-
 
     if (!$scope.bio) {
       $http.get('/scripts/data/biography.json', {})
@@ -24,11 +24,11 @@ define(['scripts/app', 'utils/scroll', 'utils/helpers'], function (ngApp, scroll
           for (var x = 0; x < $scope.about.length; x++) {
             $scope.about_contents.push({ 'name': $scope.about[x].heading, 'id': `${$scope.about[x].id}` });
           };
-          $rootScope.sections = $scope.about_contents.map((i) => { return `#${i.id}`; });
+          $rootScope.sections = $scope.about_contents.map((i) => { return `${i.id}`; });
           $scope.this_progress += 1; $rootScope.progress = $scope.this_progress;
         });
     } else {
-      $rootScope.sections = $scope.about_contents.map((i) => { return `#${i.id}`; });
+      $rootScope.sections = $scope.about_contents.map((i) => { return `${i.id}`; });
     }
 
     $scope.$watch(
