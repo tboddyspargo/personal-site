@@ -54,6 +54,7 @@ require.config({
   // Declare any dependencies of each module so they can be loaded in the proper order.
   shim: {
     'angular': {
+      deps: ['jquery'],
       exports: 'angular'
     },
     'angularAMD': {
@@ -127,7 +128,8 @@ require([
   'directives/navbar',
   'directives/banner',
   'directives/footer',
-  'directives/sidebar'
+  'directives/sidebar',
+  'directives/scroll_to'
 ], (angularAMD, mainApp) => {
   angular.bootstrap(document, ['tyler-site']);
 });
