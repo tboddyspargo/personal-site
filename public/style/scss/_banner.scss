@@ -12,10 +12,9 @@
   overflow: visible;
   z-index: 1;
   img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-60%, -50%);
+    @include abs-pos(50%, none, none, 50%);
+    min-width: 100%;
+    @include transform(translate(-50%, -50%));
   }
 }
 
