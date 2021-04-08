@@ -116,8 +116,8 @@ img {
 }
 
 .back-to-top {
-  z-index: 3;
+  z-index: 100;
   display: none;
-  position: fixed;
-  @include abs-pos(none, 10px, 10px);
+  opacity: 0.75;
+  @include abs-pos(none, 10px, 25px);
 }
