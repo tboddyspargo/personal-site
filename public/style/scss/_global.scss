@@ -3,6 +3,12 @@ img {
   @include no-cursor-events;
 }
 
+// flex items will expand according to their contents (i.e. a large image)
+// unless we force non-default min-height, min-width, or overflow values.
+.clear-flex-grow-expansion {
+  overflow: hidden;
+}
+
 .facebook-round:before {
   background-image: url(/assets/round-icons/Facebook-round.png);
 }

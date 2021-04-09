@@ -7,7 +7,9 @@
       class='enable_touchmove'>
       <li class='image-carousel-li enable_touchmove' ng-repeat="image in images">
         <div class="image-container">
-          <img ng-src="{{image.path}}" alt="{{image.caption}}" class="enable_touchmove" />
+          <div class='clear-flex-grow-expansion text-center'>
+            <img ng-src="{{image.path}}" alt="{{image.caption}}" class="enable_touchmove" />
+          </div>
           <span class='carousel-caption lead enable_touchmove no-select'>{{image.caption}}</span>
         </div>
       </li>
