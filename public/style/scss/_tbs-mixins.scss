@@ -12,6 +12,7 @@
 }
 
 @mixin toggle-with-transparency {
+  @include clickable;
   opacity: 0.3;
   &.active {
     opacity: 0.75;
