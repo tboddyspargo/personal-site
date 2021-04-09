@@ -95,10 +95,11 @@ require.config({
     },
     'ScrollTrigger': {
       deps: ['gsap'],
-      export: 'ScrollTrigger'
+      exports: 'ScrollTrigger'
     },
     'ScrollToPlugin': {
-      deps: ['gsap']
+      deps: ['gsap'],
+      exports: 'ScrollToPlugin'
     },
     'jquery': {
       exports: '$'
@@ -113,11 +114,9 @@ require.config({
 
 require([
   'angularAMD',
-  'utils/behavior',
-  'utils/helpers',
-  'utils/scroll',
   'scripts/app',
   'scripts/run',
+  'utils/scroll',
   'controllers/global',
   'controllers/home',
   'controllers/about',
