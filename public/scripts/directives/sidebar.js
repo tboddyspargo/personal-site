@@ -14,10 +14,10 @@ define(['scripts/app', 'utils/scroll'], function (ngApp, scroll) {
           (newValue, oldValue) => {
             if (newValue != oldValue) {
               element.ready(() => {
-                if (ids) {
+                if (attrs.hasOwnProperty('ids') && scope.ids) {
                   scroll.configureSectionNavigationBehavior(scope.ids);
-                } else if (sections) {
-                  scroll.configureSectionNavigationBehavior(sections.map((i) => i.id))
+                } else if (attrs.hasOwnProperty('sections') && scope.sections) {
+                  scroll.configureSectionNavigationBehavior(scope.sections.map((i) => i.id))
                 } else {
                   console.log('No sections or ids were provided to tbs-sidebar.');
                 }
