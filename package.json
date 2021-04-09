@@ -197,6 +197,10 @@
       "to": "public/scripts/vendor/ScrollToPlugin.min.js"
     },
     {
+      "from": "node_modules/gsap/dist/ScrollToPlugin.min.js.map",
+      "to": "public/scripts/vendor/ScrollToPlugin.min.js.map"
+    },
+    {
       "from": "node_modules/hover.css/css/hover-min.css",
       "to": "public/style/vendor/hover-min.css"
     },
