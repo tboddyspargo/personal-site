@@ -9,3 +9,12 @@ button:not(.collapsed) {
     display: none;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .thumbnail-grid-item {
+    div[class^="col"] {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
