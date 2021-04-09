@@ -40,16 +40,19 @@ define([
         .when('/', {
           templateUrl: 'views/home.html',
           controller: 'HomeCtrl',
+          activeTab: 'home',
           reloadOnSearch: false
         })
         .when('/about', {
           templateUrl: 'views/about.html',
           controller: 'AboutCtrl',
+          activeTab: 'about',
           reloadOnSearch: false
         })
         .when('/projects', {
           templateUrl: 'views/projects.html',
           controller: 'ProjectsCtrl',
+          activeTab: 'projects',
           reloadOnSearch: false
         })
         .otherwise({
