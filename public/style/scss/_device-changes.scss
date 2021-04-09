@@ -1,8 +1,4 @@
 @media only screen and (max-width: 768px) {
-  #brand {
-    margin-left: -$brand-width;
-  }
-
   #sidebar {
     display: none;
   }
@@ -20,10 +16,6 @@
 }
 
 @media only screen and (max-width: 480px) {
-  #name {
-    font-size: 30px;
-  }
-
   #sidebar-container {
     display: none;
   }
