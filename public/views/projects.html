@@ -1,5 +1,6 @@
 <div class='projects card row'>
   <tbs-sidebar ids='sections'></tbs-sidebar>
+  <image-viewer></image-viewer>
   <ul class="list-group list-group-flush pt-2">
     <li ng-repeat='project in projects' id='project{{$index}}' class='list-group-item section-{{$index}} mb-2'>
       <div class="project-heading d-flex justify-content-between align-items-start">
@@ -17,8 +18,8 @@
               aria-controls="project{{$parent.$index}}-step{{$index}}-detail">
               <h5 class='d-flex align-items-center'><small class="fa fa-check-circle mr-2"></small>{{step.heading}}
               </h5>
-              <span class="fa fa-chevron-down step-expand-icon"></span>
-              <span class="fa fa-chevron-up step-collapse-icon"></span>
+              <span class="fa fa-chevron-right step-expand-icon"></span>
+              <span class="fa fa-chevron-down step-collapse-icon"></span>
             </button>
           </div>
           <div id='project{{$parent.$index}}-step{{$index}}-detail' class='collapse'
