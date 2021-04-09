@@ -39,8 +39,6 @@ define(['ScrollTrigger', 'ScrollToPlugin', 'gsap',],
             originalPadding = 15,
             rightPadding = 20 + Math.max(0, (viewWidth - elWidth) * 0.1)
           result = Math.max(0, viewWidth - elWidth - originalPadding - rightPadding);
-          console.log(`vWidth: ${viewWidth}; elWidth: ${elWidth}; rightPadding: ${rightPadding}`);
-          console.log(result);
           return `${result}px`;
         },
         y: '-150px',
