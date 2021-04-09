@@ -121,3 +121,9 @@ img {
   opacity: 0.75;
   @include abs-pos(none, 10px, 25px);
 }
+
+@media only screen and (max-width: 480px) {
+  .back-to-top {
+    display: inline-block;
+  }
+}
