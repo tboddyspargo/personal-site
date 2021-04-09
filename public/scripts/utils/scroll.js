@@ -76,7 +76,7 @@ define(['ScrollTrigger', 'ScrollToPlugin', 'gsap',],
           scrub: true,
           toggleClass: {
             targets: targetSelector,
-            className: 'active-section'
+            className: 'active'
           }
         }));
       };
