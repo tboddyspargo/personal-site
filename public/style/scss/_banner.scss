@@ -25,12 +25,3 @@
   opacity: 0;
   z-index: 5;
 }
-
-#name {
-  @include abs-pos(80px, 20px);
-  z-index: 4;
-  color: white;
-  font-family: Bradley Hand;
-  font-size: 50px;
-  text-shadow: 2px 3px rgba(50, 50, 50, 0.7);
-}

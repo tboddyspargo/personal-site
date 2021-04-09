@@ -24,17 +24,38 @@ define(['ScrollTrigger', 'ScrollToPlugin', 'gsap',],
 
     function configureNavbarBehavior() {
       ScrollTrigger.create({
-        trigger: '#navbar-container',
+        trigger: '#navbar',
         start: 'top-=5px top',
         end: 'bottom top-=100000%',
         toggleClass: 'navbar-fixed'
       });
 
-      ScrollTrigger.create({
-        trigger: '#brand',
-        start: 'top bottom',
-        end: 'top-=3px top',
-        toggleClass: 'hidden-left'
+      gsap.set('#name', { transformOrigin: 'center left' });
+      gsap.fromTo('#name', {
+        x: (index, target) => {
+          const view = document.getElementById('root'),
+            viewWidth = view.offsetWidth,
+            elWidth = target.offsetWidth,
+            originalPadding = 15,
+            rightPadding = 20 + Math.max(0, (viewWidth - elWidth) * 0.1)
+          result = Math.max(0, viewWidth - elWidth - originalPadding - rightPadding);
+          console.log(`vWidth: ${viewWidth}; elWidth: ${elWidth}; rightPadding: ${rightPadding}`);
+          console.log(result);
+          return `${result}px`;
+        },
+        y: '-150px',
+        fontSize: '3em'
+      }, {
+        scrollTrigger: {
+          trigger: '#top',
+          start: 'top top',
+          end: 'bottom top',
+          scrub: 0.5,
+          invalidateOnRefresh: true,
+        },
+        x: '0px',
+        y: '0px',
+        fontSize: '1.25em'
       });
     };
 
