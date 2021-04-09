@@ -3,6 +3,7 @@ define(['scripts/app', 'utils/scroll'], function (ngApp, scroll) {
   ngApp.directive('tbsSidebar', ['$timeout', ($timeout) => {
     return {
       restrict: 'EA',
+      replace: true,
       scope: {
         sections: '=',
         ids: '='
@@ -13,15 +14,18 @@ define(['scripts/app', 'utils/scroll'], function (ngApp, scroll) {
           (newValue, oldValue) => {
             if (newValue != oldValue) {
               element.ready(() => {
-                $timeout(() => {
-                  let tweens = scroll.configureSectionNavigationBehavior(scope.ids);
-                }, 1000, false);
+                if (ids) {
+                  scroll.configureSectionNavigationBehavior(scope.ids);
+                } else if (sections) {
+                  scroll.configureSectionNavigationBehavior(sections.map((i) => i.id))
+                } else {
+                  console.log('No sections or ids were provided to tbs-sidebar.');
+                }
               });
             }
           }
         );
       },
-      replace: true,
       templateUrl: '/templates/sidebar.html'
     };
   }]);

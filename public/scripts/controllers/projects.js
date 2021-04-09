@@ -2,6 +2,7 @@ define(['scripts/app', 'utils/scroll', 'utils/helpers', 'bootstrap'], function (
   function projectController($scope, $http, $rootScope, $sce, $timeout) {
     $scope.name = 'projects';
     $rootScope.active = 3;
+    $scope.sections = [];
     $scope.this_progress = $scope.this_progress || 1;
     $rootScope.progress = $scope.this_progress;
     $rootScope.total_progress = 2;
@@ -16,16 +17,12 @@ define(['scripts/app', 'utils/scroll', 'utils/helpers', 'bootstrap'], function (
             $rootScope.images = $scope.projects[x].images;
             $scope.projects_contents.push({ 'name': $scope.projects[x].name, 'id': `project${x}` });
           };
-          $rootScope.sections = $scope.projects_contents.map((i) => { return `${i.id}`; });
+          $scope.sections = $scope.projects_contents.map((i) => i.id);
           $scope.this_progress += 1; $rootScope.progress = $scope.this_progress;
         });
     } else {
-      $rootScope.sections = $scope.projects_contents.map((i) => { return `${i.id}`; });
-    }
-
-    if ($rootScope.facts) {
-      $rootScope.facts = shuffleArray($rootScope.facts);
-      $rootScope.side_facts = $rootScope.facts.slice(0, 5);
+      console.log('sections re-populating')
+      $scope.sections = $scope.projects_contents.map((i) => i.id);
     }
 
   };
