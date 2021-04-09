@@ -1,79 +1,3 @@
-@mixin touch_select($value) {
-  -webkit-touch-callout: $value;
-  @include css3-prefix("user-select", $value);
-}
-
-@mixin transform-origin($value) {
-  @include css3-prefix("transform-origin", $value);
-}
-
-@mixin clickable {
-  cursor: pointer;
-}
-
-@mixin toggle-with-transparency {
-  opacity: 0.3;
-  &.active {
-    opacity: 0.75;
-  }
-  &:hover {
-    opacity: 1 !important;
-  }
-}
-
-@mixin button-with-transparency {
-  @include clickable;
-  opacity: 0.75;
-  &:hover {
-    opacity: 1 !important;
-  }
-}
-
-@mixin size($width, $height: $width) {
-  width: $width;
-  height: $height;
-}
-
-@mixin min-size($width, $height: $width) {
-  min-width: $width;
-  min-height: $height;
-}
-
-@mixin max-size($width, $height: $width) {
-  max-width: $width;
-  max-height: $height;
-}
-
-@mixin no-drag-away-events {
-  @include touch_select(none);
-  cursor: default;
-}
-
-@mixin no-cursor-events {
-  @include no-drag-away-events;
-  pointer-events: none;
-}
-
-@mixin abs-pos($top: none, $right: none, $bottom: none, $left: none) {
-  position: absolute;
-  @include pos($top, $right, $bottom, $left);
-}
-
-@mixin pos($top: none, $right: none, $bottom: none, $left: none) {
-  @if $top != none {
-    top: $top;
-  }
-  @if $right != none {
-    right: $right;
-  }
-  @if $bottom != none {
-    bottom: $bottom;
-  }
-  @if $left != none {
-    left: $left;
-  }
-}
-
 .no-select,
 img {
   @include no-cursor-events;
@@ -113,6 +37,29 @@ img {
 
 .no-scroll {
   overflow: hidden;
+}
+
+// A wiggle effect that will draw attention to actionable items.
+@include keyframes("wiggle") {
+  0% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(5deg);
+  }
+  95% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.emphasize-interaction {
+  @include animation("wiggle 3s ease-in-out infinite");
 }
 
 .back-to-top {

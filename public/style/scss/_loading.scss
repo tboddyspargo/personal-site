@@ -6,22 +6,10 @@
   background-color: rgba(0, 0, 0, 0.5);
   vertical-align: middle;
   text-align: center;
+
   .progress {
     opacity: 1;
     @include size(50%, none);
     margin: 30% 25% 10% 25%;
   }
-}
-
-#main-content {
-  position: relative;
-  display: block;
-}
-
-footer {
-  position: relative;
-  display: inline-block;
-  text-align: center;
-  bottom: 0px;
-  width: 100%;
 }
