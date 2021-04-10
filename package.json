@@ -1,8 +1,8 @@
 {
   "scripts": {
     "start": "firebase serve --only hosting",
-    "build": "sass --version; sass public/style/scss:public/style/ --update --style compressed",
-    "postinstall": "rimraf public/scripts/vendor public/style/vendor public/fonts/vendor; vendor-copy;"
+    "prebuild": "rimraf public/scripts/vendor public/style/vendor public/fonts/vendor; vendor-copy;",
+    "build": "sass --version; sass public/style/scss:public/style/ --update --style compressed"
   },
   "name": "personal-site",
   "description": "This is a site demonstrating my skills with Require.js, AngularJS, SASS+CSS, and JavaScript (modules and frameworks like jquery and ScrollMagic). The site also contains an overview of various other projects and a summary of my professional and educational background.",
