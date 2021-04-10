@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "firebase serve --only hosting",
-    "build": "sass public/style/scss:public/style/ --update --style compressed",
+    "build": "sass --version; sass public/style/scss:public/style/ --update --style compressed",
     "postinstall": "rimraf public/scripts/vendor public/style/vendor public/fonts/vendor; vendor-copy;"
   },
   "name": "personal-site",
