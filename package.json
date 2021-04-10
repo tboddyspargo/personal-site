@@ -26,6 +26,7 @@
     "octicons": "^8.5.0",
     "requirejs": "^2.3.6",
     "rimraf": "^3.0.2",
+    "sass": "^1.32.8",
     "vendor-copy": "^2.0.0"
   },
   "devDependencies": {
