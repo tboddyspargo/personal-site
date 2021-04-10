@@ -1,10 +1,5 @@
 define(['scripts/app', 'utils/helpers', 'utils/scroll'], (ngApp, utils, scroll) => {
   function globalController($sce, $rootScope, $http, $document) {
-    $rootScope.showViewer = false;
-    $rootScope.sidebar = {
-      heading: 'Contents',
-      contents: []
-    };
 
     if (!$rootScope.links) {
       $http.get('/scripts/data/links.json', {})
@@ -26,26 +21,6 @@ define(['scripts/app', 'utils/helpers', 'utils/scroll'], (ngApp, utils, scroll) 
           $rootScope.side_facts = $rootScope.facts.slice(0, 5);
         });
     }
-
-    $rootScope.makeActive = function (index) {
-      $rootScope.active = index;
-    };
-
-    $rootScope.displayViewer = function (images) {
-      if (images) { $rootScope.images = images; }
-      $rootScope.showViewer = true;
-      angular.element(document).find('body').addClass('no-scroll');
-    };
-
-    $rootScope.hideViewer = function () {
-      $rootScope.showViewer = false;
-      angular.element(document).find('body').removeClass('no-scroll');
-      $rootScope.showViewer = false;
-    };
-
-    $rootScope.isActive = function (index) {
-      return $rootScope.active === index;
-    };
 
     $rootScope.deliberatelyTrustDangerousSnippet = function (item) {
       return $sce.trustAsHtml(item);
