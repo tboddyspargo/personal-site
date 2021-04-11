@@ -19,6 +19,7 @@ public/fonts/vendor/
 
 # compiled style
 public/style/main.css
+public/style/main.css.map
 
 # Logs
 logs
