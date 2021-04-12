@@ -1,33 +1,17 @@
-define(['scripts/app', 'utils/helpers', 'utils/scroll'],
-  (ngApp, utils, scroll) => {
-    function globalController($sce, $rootScope, $http, $document) {
-
-      if (!$rootScope.links) {
-        $http.get('/scripts/data/links.json', {})
-          .success(function (data) {
-            $rootScope.links = data;
-          });
-      }
-      if (!$rootScope.blogs) {
-        $http.get('/scripts/data/blogs.json', {})
-          .success(function (data) {
-            $rootScope.blogs = data;
-          });
-      }
+define(['scripts/app', 'utils/helpers'],
+  (ngApp, utils) => {
+    function globalController($rootScope, $http) {
 
       if (!$rootScope.facts) {
         $http.get('/scripts/data/facts.json', {})
-          .success(function (data) {
+          .then(({ data, status, statusText, xhrStatus }) => {
             $rootScope.facts = shuffleArray(data);
             $rootScope.side_facts = $rootScope.facts.slice(0, 5);
+          }, ({ data, status, statusText, xhrStatus }) => {
+            console.warn(`Failed to retrieve 'facts' data. Reason: (${status}) ${statusText}`)
           });
       }
-
-      $rootScope.deliberatelyTrustDangerousSnippet = function (item) {
-        return $sce.trustAsHtml(item);
-      };
-
     };
 
-    ngApp.controller('SiteCtrl', ['$sce', '$rootScope', '$http', '$document', globalController]);
+    ngApp.controller('SiteCtrl', ['$rootScope', '$http', globalController]);
   });

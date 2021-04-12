@@ -1,4 +1,5 @@
 <div class="about my-n5">
+  <tbs-progress value="{{progress}}" max="{{total_progress}}"></tbs-progress>
   <tbs-sidebar ids='sections'></tbs-sidebar>
   <div id='bio' class="card row my-5">
     <div class="card-body">
@@ -12,7 +13,7 @@
           </li>
         </ul>
       </div>
-      <p ng-repeat='paragraph in bio.split("\n")' ng-bind-html='deliberatelyTrustDangerousSnippet(paragraph)'></p>
+      <p ng-repeat='paragraph in bio.split("\n")' ng-bind-html='paragraph'></p>
     </div>
   </div>
   <div ng-repeat='section in about' id='{{section.id}}' class="card row my-5">
@@ -62,7 +63,7 @@
       </li>
     </ul>
     <div class='card-footer' ng-if='section.bottom.length'>
-      <div ng-bind-html='deliberatelyTrustDangerousSnippet(section.bottom)'></div>
+      <div ng-bind-html='section.bottom'></div>
     </div>
   </div>
 </div>
