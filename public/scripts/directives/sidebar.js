@@ -13,15 +13,18 @@ define(['scripts/app', 'utils/scroll'], function (ngApp, scroll) {
           'ids',
           (newValue, oldValue) => {
             if (newValue != oldValue) {
-              element.ready(() => {
-                if (attrs.hasOwnProperty('ids') && scope.ids) {
-                  scroll.configureSectionNavigationBehavior(scope.ids);
-                } else if (attrs.hasOwnProperty('sections') && scope.sections) {
-                  scroll.configureSectionNavigationBehavior(scope.sections.map((i) => i.id))
-                } else {
-                  console.log('No sections or ids were provided to tbs-sidebar.');
-                }
-              });
+              $timeout(() => {
+                element.ready(() => {
+                  console.debug(scope.ids);
+                  if (attrs.hasOwnProperty('ids') && scope.ids) {
+                    scroll.configureSectionNavigationBehavior(scope.ids);
+                  } else if (attrs.hasOwnProperty('sections') && scope.sections) {
+                    scroll.configureSectionNavigationBehavior(scope.sections.map((i) => i.id))
+                  } else {
+                    console.log('No sections or ids were provided to tbs-sidebar.');
+                  }
+                });
+              }, 0, 0, false);
             }
           }
         );

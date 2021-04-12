@@ -7,8 +7,8 @@
   },
   "name": "personal-site",
   "description": "This is a site demonstrating my skills with Require.js, AngularJS, SASS+CSS, and JavaScript (modules and frameworks like jquery and ScrollMagic). The site also contains an overview of various other projects and a summary of my professional and educational background.",
-  "version": "1.0.0",
-  "main": "main.js",
+  "version": "1.2.0",
+  "main": "require.config.js",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "angular": "~1.4.0",
