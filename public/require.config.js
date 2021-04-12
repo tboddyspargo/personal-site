@@ -114,6 +114,7 @@ require.config({
 
 require([
   'angularAMD',
+  'bootstrap',
   'scripts/app',
   'scripts/run',
   'utils/scroll',
