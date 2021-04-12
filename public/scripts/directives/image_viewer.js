@@ -1,6 +1,8 @@
 define(['scripts/app', 'utils/scroll'], function (ngApp, scroll) {
   function imageViewerController($scope) {
     $scope.showViewer = false;
+    $scope.images = [];
+    $scope.activeImage = 0;
     $scope.displayViewer = function (images) {
       if (images) { $scope.images = images; }
       $scope.activeImage = 0;
