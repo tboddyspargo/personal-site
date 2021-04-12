@@ -10,7 +10,7 @@ define(['scripts/app', 'utils/scroll'], function (ngApp, scroll) {
       },
       link: (scope, element, attrs) => {
         scope.$watch(
-          'ids',
+          () => scope.ids,
           (newValue, oldValue) => {
             if (newValue != oldValue) {
               $timeout(() => {
