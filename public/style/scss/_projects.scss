@@ -1,12 +1,10 @@
-button.collapsed {
-  & > .step-expand-icon {
-    display: none;
-  }
+.step-expand-icon {
+  @include transition(transform 0.25s linear);
 }
 
-button:not(.collapsed) {
-  & > .step-collapse-icon {
-    display: none;
+button.collapsed {
+  & > .step-expand-icon {
+    @include transform(rotate(180deg));
   }
 }
 

@@ -3,23 +3,16 @@
 This is a sample of my skills with Require.js, AngularJS, Sassy CSS, and JavaScript (modules and frameworks like spark-scroll and ScrollMagic) as well as an overview of various other projects and a summary of my professional and educational background.
 
 # Requirements
-- Sass
-- NodeJS
-- Angular 2
-- ScrollMagic
-- BoostrapJS
-- BoostrapJS
+See package.json
 
 # Usage
 
-## Localhost
-This project uses a simple node web server to run locally, serving up `index.html`.
+## Compile
+Before the site is functional, you'll need to compile the CSS using `sass` and move vendor JS files into place. You can accomplish this with the `npm run build` command (script is defined in `package.json`).
+## Serve locally
+This project uses firebase local hosting server
 ```bash
-node server.js
+firebase server --only hosting
 ```
 
-## scss
-To compile the SCSS into standard CSS, you can use the `sass` utility.
-```bash
-sass --watch style/scss/:style/
-```
+This is also the default action of the `npm start` script.

@@ -3,8 +3,15 @@
     "public": "public",
     "ignore": [
       "firebase.json",
+      "package.json",
+      "package-lock.json",
+      "**/.git/**",
       "**/.*",
-      "**/node_modules/**"
+      "**/.sass-cache/**",
+      "**/*.scss",
+      "**/vendor/*/**/*.css*",
+      "**/node_modules/**",
+      "**/planning/**"
     ],
     "rewrites": [
       {

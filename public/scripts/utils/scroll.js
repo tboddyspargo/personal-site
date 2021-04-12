@@ -66,7 +66,6 @@ define(['ScrollTrigger', 'ScrollToPlugin', 'gsap',],
       for (i = 0; id = sectionSelectors[i], i < sectionSelectors.length && id; i++) {
         let targetSelector = `${indicatorPrefix}${i}`;
         selector = `#${`${id}`.trimStart('#')}`;
-        console.debug(`toggle ${targetSelector} when scroll to ${selector}`)
         sidebarTweens.push(ScrollTrigger.create({
           trigger: `${selector}`,
           start: `top center-=15%`,

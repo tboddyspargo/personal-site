@@ -26,7 +26,7 @@ require.config({
     'directives': 'scripts/directives',
     'utils': 'scripts/utils',
 
-    'angular': 'scripts/vendor/angular',
+    'angular': 'scripts/vendor/angular.min',
     'angularAMD': 'scripts/vendor/angularAMD.min',
     'angular-animate': 'scripts/vendor/angular-animate.min',
     'angular-carousel': 'scripts/vendor/angular-carousel.min',
