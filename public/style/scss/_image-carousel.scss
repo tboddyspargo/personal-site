@@ -1,9 +1,10 @@
 /* Shared image carousel styles */
 .image-carousel {
   position: relative; // helps appropriately place the carousel controls
-  height: 100%;
-  ul {
-    height: 100%;
+  @include size(100%);
+  ul[rn-carousel],
+  ul[rn-carousel] li {
+    @include size(100%);
   }
 }
 
