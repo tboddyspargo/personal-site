@@ -24,7 +24,7 @@ define(['scripts/app', 'utils/scroll'],
                       console.log('No sections or ids were provided to tbs-sidebar.');
                     }
                   });
-                }, 100, 0, false);
+                }, 100, false);
               }
             }
           );
