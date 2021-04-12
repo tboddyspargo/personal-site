@@ -1,9 +1,10 @@
 <div class="home my-n5">
+  <tbs-progress value="{{progress}}" max="{{total_progress}}"></tbs-progress>
   <div class="card row my-5">
     <div class="card-body blurb">
       <h3 class="card-title">Who am I?</h3>
       <div class="profile-img my-photo"></div>
-      <p ng-repeat='paragraph in blurb.split("\n")' ng-bind-html='deliberatelyTrustDangerousSnippet(paragraph)'></p>
+      <p ng-repeat='paragraph in blurb.split("\n")' ng-bind-html='paragraph'></p>
     </div>
   </div>
   <div class="card row my-5">
