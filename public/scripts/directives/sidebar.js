@@ -15,7 +15,6 @@ define(['scripts/app', 'utils/scroll'], function (ngApp, scroll) {
             if (newValue != oldValue) {
               $timeout(() => {
                 element.ready(() => {
-                  console.debug(scope.ids);
                   if (attrs.hasOwnProperty('ids') && scope.ids) {
                     scroll.configureSectionNavigationBehavior(scope.ids);
                   } else if (attrs.hasOwnProperty('sections') && scope.sections) {
