@@ -1,15 +1,35 @@
 #loading {
   z-index: 5000;
   position: fixed;
-  @include size(100%, 100%);
-  @include abs-pos(0, 0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.5);
-  vertical-align: middle;
-  text-align: center;
+  @include pos(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .progress {
-    opacity: 1;
-    @include size(50%, none);
-    margin: 30% 25% 10% 25%;
+progress,
+progress[role] {
+  @include size(50%, none);
+  /* Turns off styling - not usually needed, but good to know. */
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  /* gets rid of default border in Firefox and Opera. */
+  border: none;
+  /* Needs to be in here for Safari polyfill so background images work as expected. */
+  background-size: auto;
+
+  // negative area
+  &::-webkit-progress-bar {
+    background-color: transparent;
+  }
+
+  // progress area
+  &::-moz-progress-bar {
+    background-color: var(--success);
+  }
+  &::-webkit-progress-value {
+    background-color: var(--success);
   }
 }

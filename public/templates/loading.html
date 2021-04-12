@@ -1,7 +1,6 @@
-<div id="loading">
-	<div class="progress">
-		<div class="progress-bar progress-bar-success" role="progressbar" progress-bar-watch="progress" aria-valuenow="" progress-bar aria-valuemin="0" aria-valuemax="{{total_progress}}">
-	    	<span class="sr-only">{{progress/total*100 | number:0}}% Complete</span>
-		</div>
-	</div>
+<div id="loading" ng-show="in_progress">
+  <progress class="progress" role="progressbar" value="{{progressValue}}" max="{{progressMax}}">
+    Loading...
+    <span class="sr-only">{{progressValue / progressMax * 100 | number:0}}% Complete</span>
+  </progress>
 </div>
