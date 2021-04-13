@@ -1,5 +1,5 @@
 define(['scripts/app', 'utils/scroll', 'utils/helpers'],
-  (ngApp, scroll) => {
+  (ngApp, scroll, Utils) => {
     function homeController($scope, $http, $rootScope, $sce, $timeout) {
       $scope.name = 'home';
       $scope.progress ||= 1;
@@ -14,7 +14,7 @@ define(['scripts/app', 'utils/scroll', 'utils/helpers'],
               $scope.short_desc.push({ name: $scope.projects[x].name, desc: $scope.projects[x].goal, thumbnail: $scope.projects[x].thumbnail, label: 'Project', page: 3, pageLoc: "/projects", loc: `#project${x}` });
             }
             $scope.progress += 1;
-            $scope.short_desc = shuffleArray($scope.short_desc);
+            $scope.short_desc = Utils.shuffleArray($scope.short_desc);
           }, ({ data, status, statusText, xhrStatus }) => {
             console.warn(`Failed to retrieve 'projects' data. Reason: (${status}) ${statusText}`)
           });
@@ -34,7 +34,7 @@ define(['scripts/app', 'utils/scroll', 'utils/helpers'],
                   $scope.short_desc.push({ name: $scope.about[y].entries[x].name, desc: $scope.about[y].entries[x].list[0], thumbnail: $scope.about[y].entries[x].thumbnail, label: 'Job', page: 2, pageLoc: "/about", loc: `#${$scope.about[y].id}` });
                 }
               }
-              $scope.short_desc = shuffleArray($scope.short_desc);
+              $scope.short_desc = Utils.shuffleArray($scope.short_desc);
             }
             $scope.progress += 1;
           }, ({ data, status, statusText, xhrStatus }) => {
