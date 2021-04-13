@@ -1,0 +1,109 @@
+{
+  "heading": "Employment History",
+  "bottom": "This is only a partial list of employment history. Please see my <a href=\"/assets/cv.pdf\" target=\"_blank\">CV</a> and/or <a href=\"mailto:muyleche@gmail.com\" target=\"_blank\">contact me</a> for more information.",
+  "images": [],
+  "id": "employment",
+  "text": "",
+  "showImages": false,
+  "activeImage": 0,
+  "entries": [
+    {
+      "name": "Head Content Editor - French",
+      "title": "FluentU.com",
+      "logo": "assets/fluentu-blue-on-white.png",
+      "website": "https://fluentu.com/",
+      "duration": "2013 - Current",
+      "location": "Telecommute",
+      "list": [
+        "Co-lead a team whose goal is to curate, translate, and enrich video content in French.",
+        "Translate videos (French to English) and create a language-learning dictionary.",
+        "Develop tools to work more quickly and effectively in Google Sheets.",
+        "Implemented and maintained analytical tools and functionality to improve overall efficiency."
+      ],
+      "docIntro": "Contacts:",
+      "documents": [
+        {
+          "name": "Alan Park",
+          "address": "assets/mailto:alan@fluentu.com"
+        },
+        {
+          "name": "Jason Shumann",
+          "address": "assets/mailto:jason@fluentu.com"
+        },
+        {
+          "name": "Nicole Durham",
+          "address": "assets/mailto:nicole@fluentu.com"
+        }
+      ],
+      "thumbnail": "assets/fluentu-blue-on-white.png"
+    },
+    {
+      "name": "Technology Assistant",
+      "title": "Media Technology Department",
+      "logo": "assets/peps.jpg",
+      "website": "https://apps.carleton.edu/campus/peps/",
+      "duration": "2008 - 2012",
+      "location": "Carleton College; Northfield, Minnesota",
+      "list": [
+        "Helped customers with their technology needs.",
+        "Troubleshot technical problems with students and faculty.",
+        "Filmed, edited, and produced recordings of campus events."
+      ],
+      "docIntro": "Contacts:",
+      "documents": [
+        {
+          "name": "Tucker MacNiel",
+          "address": "assets/mailto:tmacniel@carleton.edu"
+        },
+        {
+          "name": "Jim Pierret",
+          "address": "assets/mailto:jpierret@carleton.edu"
+        }
+      ],
+      "thumbnail": "assets/peps.jpg"
+    },
+    {
+      "name": "Language Assistant",
+      "title": "Lycée Les-Côtes-de-Villebon",
+      "logo": "assets/villebon-logo.jpg",
+      "website": "https://www.lyc-cotesdevillebon-meudon.ac-versailles.fr",
+      "duration": "2013-2014",
+      "location": "Meudon-la-forêt, France",
+      "list": [
+        "Led and designed oral/written activities, presentations, and tests.",
+        "Worked with students to improve their language and cultural knowledge.",
+        "Provided support to the English department faculty."
+      ],
+      "docIntro": "Contacts:",
+      "documents": [
+        {
+          "name": "Claudine Dumas",
+          "address": "assets/mailto:tiny.d@orange.fr"
+        }
+      ],
+      "thumbnail": "assets/villebon-logo.jpg"
+    },
+    {
+      "name": "Camp Counselor, French Instructor",
+      "title": "Concordia Language Villages - Lac-du-bois",
+      "logo": "assets/cord3.jpg",
+      "website": "https://www.concordialanguagevillages.org",
+      "duration": "Jul - Aug 2013",
+      "location": "Bemidji, Minnesota",
+      "list": [
+        "Designed and taught four-week intermediate high-school-credit French course.",
+        "Provided a space for an immersive exploration of French language and francophone culture.",
+        "Developed projects designed to promote a complex awareness of culture and current events.",
+        "Led adult conversation course exploring current political, economic, and civil topics."
+      ],
+      "docIntro": "Contacts:",
+      "documents": [
+        {
+          "name": "Katherine Dutko",
+          "address": "assets/mailto:kdutko@cord.edu"
+        }
+      ],
+      "thumbnail": "assets/cord3.jpg"
+    }
+  ]
+}

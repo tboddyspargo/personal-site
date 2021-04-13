@@ -1,0 +1,110 @@
+{
+  "heading": "Education",
+  "bottom": "Highest Degree: BA in Romance Languages",
+  "id": "education",
+  "images": [
+    {
+      "path": "assets/conservatoire-royal-de-bruxelles.jpg",
+      "caption": "Royal Conservatory"
+    },
+    {
+      "path": "assets/niedermeyer-media.jpg",
+      "caption": "Niedermeyer Conservatory"
+    },
+    {
+      "path": "assets/carleton1.jpg",
+      "caption": "Carleton College"
+    },
+    {
+      "path": "assets/carleton2.jpg",
+      "caption": "Carleton College"
+    },
+    {
+      "path": "assets/castle.jpg",
+      "caption": "Chambord Castle in France"
+    },
+    {
+      "path": "assets/spain2.jpg",
+      "caption": "Castell building in Montserrat, Spain"
+    }
+  ],
+  "showImages": true,
+  "activeImage": 0,
+  "text": "",
+  "entries": [
+    {
+      "name": "Royal Conservatory of Brussels",
+      "title": "Baroque/Classical Trumpet",
+      "logo": "assets/crb-logo.jpg",
+      "website": "https://www.conservatoire.be",
+      "duration": "2014-2015",
+      "location": "Brussels, Belgium",
+      "description": "I enrolled in the Royal conservatory of Brussels as a prospective master student, hoping that this more challenging, immersive environment would finally remove any doubt I still had about my musical endeavors. I took a full load as a first-years student and tested into 2nd-year musical fundamentals class and harmony/composition. I continued to work for FluentU and teach English to pay for school.",
+      "docIntro": "",
+      "documents": [],
+      "thumbnail": "assets/crb-logo-wide-sm.jpg"
+    },
+    {
+      "name": "Niedermeyer Conservatory",
+      "title": "Certificate of Advanced Musical Studies - Trumpet",
+      "logo": "assets/grand-paris-issy.jpg",
+      "website": "https://www.agglo-gpso.fr/culture_et_loisirs_conservatoire_d_issy_les_moulineaux.html",
+      "duration": "2012-2014",
+      "location": "Issy-Les-Moulineaux (Paris), France",
+      "description": "Music is a peculiar pursuit and if one wants to become a great musician, one must start young. My youth was slipping away and I knew that if I wanted to try to become a musician, it had to be now, rather than later. I enrolled in a regional conservatory near Paris with Hervé Noël who took me under his wing and encouraged me to continue towards that goal. I also took general courses in preparation for enrolling in a more significant degree program in the future. All the while, I was working as a teacher and, eventually, for FluentU.com to pay off my undergraduate student loans.",
+      "docIntro": "",
+      "documents": [
+        {
+          "address": "assets/certificat-etudes.pdf",
+          "name": "Transcript"
+        }
+      ],
+      "thumbnail": "assets/grand-paris-issy.jpg"
+    },
+    {
+      "name": "Carleton College",
+      "title": "Romance Languages (French and Spanish)",
+      "logo": "assets/carleton-seal.png",
+      "website": "https://www.carleton.edu",
+      "duration": "2008-2012",
+      "location": "Northfield, MN & Europe",
+      "description": "After high school I was accepted to Carleton College, a small liberal arts school in Northfield, MN. I quickly discovered many passions including acting, comedy, dance, gymnastics, figure skating, singing, and French, but it was the latter that allowed me to grow in the most formative ways, inspiring me to go on many adventures abroad, meet new people, experience new things, and delve into the unknown. I declared French as a major before finally convincing the Spanish department chair to accept my request for a romance languages major. I completed my degree in 2012 and knew that I wanted to use my language skills immediately - prompting me to move to Europe for the following three years.",
+      "docIntro": "",
+      "documents": [
+        {
+          "address": "assets/carleton-diploma.pdf",
+          "name": "Diploma"
+        },
+        {
+          "address": "assets/carleton-transcript.pdf",
+          "name": "Official Transcript"
+        }
+      ],
+      "thumbnail": "assets/carleton-knights.jpg"
+    },
+    {
+      "name": "Madrid Study Abroad: Film and the City",
+      "title": "Immersion Program",
+      "logo": "assets/carleton-seal.png",
+      "website": "https://apps.carleton.edu/curricular/ocs/madrid/archive/2011/courses/",
+      "duration": "Jun - Dec 2011",
+      "location": "Madrid & Valencia, Spain",
+      "description": "I was lucky enough to be able to go on a second study abroad trip to Spain in my senior year. I left in June for a program that started in September, which allowed me to live for 2 months with a friend of mine in Valencia, bike the Danube river in Germany, and walk across Spain on the Way of Saint James before the program actually began. My second program was just as good as the first and at the end, I spoke better Spanish than French, which was hard for most people to believe. After the program I visited 4 more countries, not being able to resist visiting my recently adopted family in Paris, before I finally returned to the States to finish up my degree.",
+      "docIntro": "",
+      "documents": [],
+      "thumbnail": "assets/spain1.jpg"
+    },
+    {
+      "name": "Paris Study Abroad: European Identities",
+      "title": "Immersion Program",
+      "logo": "assets/carleton-seal.png",
+      "website": "https://apps.carleton.edu/curricular/ocs/paris/archive/2010/",
+      "duration": "Mar - Aug 2010",
+      "location": "Paris, France & Thiaumont, Belgium",
+      "description": "In the spring of 2010 I went overseas for the first time. The Carleton study abroad program to Paris was an astoundingly positive experience and I excelled at French, visited 6 countries, helped clean the catacombs of Paris, and adopted my host family as my own (they subsequently came to my graduation and I lived with them from 2012-2014).",
+      "docIntro": "",
+      "documents": [],
+      "thumbnail": "assets/castle.jpg"
+    }
+  ]
+}
