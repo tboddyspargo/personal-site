@@ -1,12 +1,14 @@
-define([], function() {
-    function shuffleArray(o){
-        for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-        return o;
-    };
+define([], function () {
+  // Module's public return object.
+  const Helpers = {};
 
-    // leak global functions to the window object.
-    window.shuffleArray = shuffleArray;
-    return {
-        shuffleArray: shuffleArray
-    };
+  /* @summary Shuffle an array and return it.
+  ** @param [Array] array
+  */
+  Helpers.shuffleArray = function (array) {
+    for (let other, nextItem, next = array.length; next; other = Math.floor(Math.random() * next), nextItem = array[--next], array[next] = array[other], array[other] = nextItem);
+    return array;
+  };
+
+  return Helpers;
 });
