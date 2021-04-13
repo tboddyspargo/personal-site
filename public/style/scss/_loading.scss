@@ -10,7 +10,6 @@
 
 progress,
 progress[role] {
-  @include size(50%, none);
   /* Turns off styling - not usually needed, but good to know. */
   appearance: none;
   -moz-appearance: none;
