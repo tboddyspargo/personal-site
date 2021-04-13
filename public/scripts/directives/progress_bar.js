@@ -6,15 +6,23 @@ define(['scripts/app'],
       replace: true,
       scope: {
         progressValue: '@value',
-        progressMax: '@max'
+        progressMax: '@max',
+        complete: '@'
       },
       templateUrl: '/templates/loading.html',
       link: (scope, element, attrs) => {
-        scope.in_progress = true
+        scope.isIndeterminate = attrs.$attr.hasOwnProperty('indeterminate');
+        scope.in_progress = true;
         scope.$watch(
-          () => scope.progressValue / scope.progressMax,
+          () => {
+            if (scope.isIndeterminate) {
+              return scope.complete !== 'true';
+            } else {
+              return (scope.progressValue / (scope.progressMax || 1)) < 1;
+            }
+          },
           (newValue, oldValue) => {
-            scope.in_progress = newValue < 1;
+            scope.in_progress = newValue;
           }
         );
       }
