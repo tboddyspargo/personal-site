@@ -40,18 +40,21 @@ define([
         .when('/', {
           templateUrl: 'views/home.html',
           controller: 'HomeCtrl',
+          controllerAs: '$ctrl',
           activeTab: 'home',
           reloadOnSearch: false
         })
         .when('/about', {
           templateUrl: 'views/about.html',
           controller: 'AboutCtrl',
+          controllerAs: '$ctrl',
           activeTab: 'about',
           reloadOnSearch: false
         })
         .when('/projects', {
           templateUrl: 'views/projects.html',
           controller: 'ProjectsCtrl',
+          controllerAs: '$ctrl',
           activeTab: 'projects',
           reloadOnSearch: false
         })
