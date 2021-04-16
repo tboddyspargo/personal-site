@@ -4,7 +4,9 @@
     <div class="card-body blurb">
       <h3 class="card-title">Who am I?</h3>
       <div class="profile-img my-photo"></div>
-      <p ng-repeat='paragraph in blurb.split("\n")' ng-bind-html='paragraph'></p>
+      <div class='card-text' ng-if='intro'>
+        <p ng-repeat='paragraph in intro' ng-bind-html='paragraph'></p>
+      </div>
     </div>
   </div>
   <div class="card row my-5">
