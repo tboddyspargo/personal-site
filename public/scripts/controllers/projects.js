@@ -1,26 +1,22 @@
-define(['scripts/app', 'utils/helpers'],
-  (ngApp, utils) => {
-    function projectController($scope, $http, $rootScope, $sce, $timeout) {
-      $scope.name = 'projects';
-      $scope.sections = [];
-      $scope.progress ||= 1;
-      $scope.total_progress = 2;
+define(['scripts/app'],
+  (ngApp) => {
+    function projectController($q, $sce, $timeout, DataService) {
+      const ctrl = this;
+      ctrl.sections = [];
+      ctrl.progress = 0;
+      ctrl.total_progress = 1;
 
-      $http.get('/scripts/data/projects.json', {})
-        .then(({ data, status, statusText, xhrStatus }) => {
-          $scope.projects = data;
-          $scope.projects_contents = [];
-          for (let x = 0; x < $scope.projects.length; x++) {
-            $rootScope.images = $scope.projects[x].images;
-            $scope.projects_contents.push({ 'name': $scope.projects[x].name, 'id': `project${x}` });
-          };
-          $scope.sections = $scope.projects_contents.map((i) => i.id);
-          $scope.progress += 1;
-        }, ({ data, status, statusText, xhrStatus }) => {
-          console.warn(`Failed to retrieve 'bio' data. Reason: (${status}) ${statusText}`)
+      $q.when(DataService.getProjects())
+        .then((data) => {
+          ctrl.projects = data;
+          for (let x = 0; x < data.length; x++) {
+            ctrl.sections.push({ id: `project${x}`, name: data[x].name });
+          }
+          ctrl.progress += 1;
+          ctrl.projectsReady = true;
         });
 
     };
 
-    ngApp.controller('ProjectsCtrl', ['$scope', '$http', '$rootScope', projectController]);
+    ngApp.controller('ProjectsCtrl', ['$q', '$sce', '$timeout', 'DataService', projectController]);
   });
