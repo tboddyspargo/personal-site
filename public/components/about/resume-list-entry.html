@@ -1,0 +1,26 @@
+<div class="event-heading">
+  <div class="event-title-wrapper">
+    <a ng-href='{{$ctrl.entry.organization.website}}' target='_blank' rel="noopener noreferrer"
+      ng-if='$ctrl.entry.organization.website' class='event-link'>
+      <img ng-if='$ctrl.entry.organization.logo' class='org-logo' alt='Organization Logo'
+        ng-src='{{$ctrl.entry.organization.logo}}' />
+      <span ng-if='$ctrl.entry.organization.logo'>{{$ctrl.entry.organization.name}}</span>
+    </a>
+    <h4 class='event-title'>{{$ctrl.entry.title}}</h4>
+  </div>
+  <div class="org-location">
+    <span class="domain">{{$ctrl.entry.discipline}}</span>
+    <span>{{$ctrl.entry.location}}</span>
+    <span class='badge badge-success'>{{$ctrl.entry.duration}}</span>
+  </div>
+</div>
+<p class='event-desc' ng-if='$ctrl.entry.description' ng-repeat='paragraph in $ctrl.entry.description.split("\n")'>
+  {{paragraph}}</p>
+<ul class='responsibilities' ng-if='$ctrl.entry.highlights'>
+  <li ng-repeat='highlight in $ctrl.entry.highlights'>{{highlight}}</li>
+</ul>
+<div class="document-wrapper" ng-if='$ctrl.entry.documents.length'>
+  More Information:
+  <a class="document mx-2" ng-repeat='doc in $ctrl.entry.documents' href='{{doc.path}}' target="_blank"
+    rel="noopener noreferrer">{{doc.name}}</a>
+</div>

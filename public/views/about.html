@@ -1,69 +1,44 @@
 <div class="about my-n5">
-  <tbs-progress indeterminate complete='{{AboutMeService.ready()}}'></tbs-progress>
-  <tbs-sidebar ids='sections'></tbs-sidebar>
-  <div id='bio' class="card row my-5">
-    <div class="card-body">
-      <h3 class="card-title">My Bio</h3>
-      <div class="stat-box card ml-2 mr-4 mb-3" ng-if='FactService.facts.length'>
-        <h5 class='card-header'>Fun Facts:</h5>
-        <ul class='list-group list-group-flush'>
-          <li ng-repeat='f in FactService.facts | limitTo:5' class='list-group-item py-1'>
-            <a ng-if='f.link.length' href='{{f.link}}' target='_blank' rel="noopener noreferrer">{{f.text}}</a>
-            <span ng-if='!f.link.length'>{{f.text}}</span>
-          </li>
-        </ul>
+  <tbs-sidebar sections='$ctrl.sections'></tbs-sidebar>
+  <div class='row my-5'>
+    <tbs-progress class='container-fluid' indeterminate value='$ctrl.bioReady' description='Biography'></tbs-progress>
+
+    <div id='bio' class="card" ng-if='$ctrl.bioReady'>
+      <div class="card-body">
+        <h3 class="card-title">Biography</h3>
+        <div class="stat-box card ml-2 mr-4 mb-3" ng-if='$ctrl.facts && $ctrl.facts.length'>
+          <h5 class='card-header'>Fun Facts:</h5>
+          <ul class='list-group list-group-flush'>
+            <li ng-repeat='f in $ctrl.facts | limitTo:5' class='list-group-item py-1'>
+              <a ng-if='f.link.length' href='{{f.link}}' target='_blank' rel="noopener noreferrer">{{f.text}}</a>
+              <span ng-if='!f.link.length'>{{f.text}}</span>
+            </li>
+          </ul>
+        </div>
+        <div class='card-text'>
+          <p ng-repeat='pText in $ctrl.bio' ng-bind-html='pText'></p>
+        </div>
       </div>
-      <p ng-repeat='p in AboutMeService.bio' ng-bind-html='p'></p>
     </div>
   </div>
-  <div ng-repeat='section in AboutMeService.resumeSections' id='{{section.id}}' class="card row my-5">
-    <div class='card-header d-flex justify-content-between align-items-center'>
-      <h3>{{section.heading}}</h3>
-      <span class='fa fa-images fa-2x toggle-image-slider' title='Hide/show images' ng-if='section.images.length'
-        ng-click='section.showImages = !section.showImages' ng-class='{active: section.showImages}'></span>
-    </div>
-    <div class="card-img-top image-carousel text-dark inline-carousel enable_touchmove" ng-if='section.images.length'
-      ng-show='section.showImages'>
-      <ul rn-carousel rn-carousel-controls rn-carousel-buffered rn-carousel-index='section.activeImage'
-        class='enable_touchmove'>
-        <li class='image-carousel-li enable_touchmove' ng-repeat="image in section.images">
-          <div class="image-container">
-            <img ng-src="{{image.path}}" alt="" class="image enable_touchmove" />
-            <span class='carousel-caption enable_touchmove'>{{image.caption}}</span>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <ul class='events list-group list-group-flush'>
-      <li class="list-group-item" ng-repeat='entry in section.entries'>
-        <div class="event-heading">
-          <div class="event-title-main">
-            <a href='{{entry.website}}' target='_blank' rel="noopener noreferrer" ng-if='entry.website.length'
-              class='event-link'>
-              <img ng-if='entry.logo.length' class='org-logo' alt='Website' ng-src='{{entry.logo}}' />
-              <span ng-if='!entry.logo.length'>{{entry.website}}</span>
-            </a>
-            <h4 class='org-name'>{{entry.name}}</h4>
-          </div>
-          <div class="org-location">
-            <span class="domain">{{entry.title}}</span>
-            <span>{{entry.location}}</span>
-            <span class='badge badge-success'>{{entry.duration}}</span>
-          </div>
-        </div>
-        <p class='event-desc' ng-if='entry.description' ng-repeat='paragraph in entry.description.split("\n")'>
-          {{paragraph}}</p>
-        <ul class='responsibilities' ng-if='entry.list'>
-          <li ng-repeat='item in entry.list'>{{item}}</li>
-        </ul>
-        <div class="document-wrapper" ng-if='entry.documents.length'>{{entry.docIntro}}
-          <a class="document" ng-repeat='doc in entry.documents' href='{{doc.address}}' target="_blank"
-            rel="noopener noreferrer">{{doc.name}}</a>
-        </div>
-      </li>
-    </ul>
-    <div class='card-footer' ng-if='section.bottom.length'>
-      <div ng-bind-html='section.bottom'></div>
-    </div>
+
+  <div class='row my-5'>
+    <tbs-progress class='container-fluid' indeterminate value='$ctrl.educationReady'
+      description='{{$ctrl.education.title}}'>
+    </tbs-progress>
+    <tbs-resume-section id='education' class='flex-fill' ng-if='$ctrl.educationReady' title='{{$ctrl.education.title}}'
+      images='$ctrl.education.images' footer='$ctrl.education.bottom' entries='$ctrl.education.entries'>
+    </tbs-resume-section>
+  </div>
+
+
+  <div class='row my-5'>
+    <tbs-progress class='container-fluid' indeterminate value='$ctrl.educationReady'
+      description='{{$ctrl.employment.title}}'>
+    </tbs-progress>
+    <tbs-resume-section id='employment' class='flex-fill' ng-if='$ctrl.employmentReady'
+      title='{{$ctrl.employment.title}}' images='$ctrl.employment.images' footer='$ctrl.employment.bottom'
+      entries='$ctrl.employment.entries'>
+    </tbs-resume-section>
   </div>
 </div>

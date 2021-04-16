@@ -1,5 +1,5 @@
 define(['ScrollTrigger', 'ScrollToPlugin', 'gsap'], (ScrollTriggerModule, ScrollToPlugin, gsap3) => {
-  const gsap = gsap3.gsap;
+  const gsap = gsap3.gsap, ScrollTrigger = ScrollTriggerModule.ScrollTrigger;
   const Scroll = { gsap };
   gsap.registerPlugin(ScrollTriggerModule, ScrollToPlugin);
 
@@ -73,6 +73,7 @@ define(['ScrollTrigger', 'ScrollToPlugin', 'gsap'], (ScrollTriggerModule, Scroll
           start: `top center-=15%`,
           end: `bottom center-=15%`,
           scrub: true,
+          markers: true,
           toggleClass: {
             targets: targetSelector,
             className: 'active'
@@ -80,6 +81,13 @@ define(['ScrollTrigger', 'ScrollToPlugin', 'gsap'], (ScrollTriggerModule, Scroll
         })
       );
     };
+  };
+
+  Scroll.resetSectionNavigatorBehavior = function () {
+    for (const existingTween of sidebarTweens) {
+      existingTween.refresh();
+    }
+    console.log(`Reset ${sidebarTweens.length} Tweens.`);
   };
 
   return Scroll;
