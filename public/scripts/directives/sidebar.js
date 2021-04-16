@@ -29,7 +29,6 @@ define(['scripts/app'], (ngApp) => {
     ctrl.setScrollBehavior = function (sectionSelectors, indicatorPrefix = '#side-nav-link-') {
       for (const existingTween of sidebarTweens) existingTween.kill();
       sidebarTweens = [];
-      console.log(`configuring ${sectionSelectors.length} Tweens.`);
       for (let i = 0; i < sectionSelectors.length && sectionSelectors[i]; i++) {
         let id = sectionSelectors[i],
           targetSelector = `${indicatorPrefix}${i}`,
@@ -58,7 +57,6 @@ define(['scripts/app'], (ngApp) => {
     */
     ctrl.refreshScrollBehavior = function () {
       for (const existingTween of sidebarTweens) existingTween.refresh();
-      console.log(`Refreshed ${sidebarTweens.length} Tweens.`);
     };
 
     // We need to wait for the DOM to contain all the target elements before configuring Scroll behavior.
