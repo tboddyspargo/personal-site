@@ -32,16 +32,16 @@ define(['scripts/app', 'utils/scroll'], (ngApp, Scroll) => {
       ** @summary Configure scrolling behavior. Use $timeout to
       **   ensure sufficient cycles have completed for elements to have loaded.
       */
-      function setSidebarScrollBehavior() {
+
+
+
+      ctrl.$postLink = function () {
         $timeout(() => {
           $timeout(() => {
-            Scroll.configureSectionNavigationBehavior(ctrl.final_ids())
+            Scroll.configureSectionNavigationBehavior(ctrl.final_ids());
           });
         });
       };
-
-
-      ctrl.$postLink = setSidebarScrollBehavior;
     }]
   });
 });
