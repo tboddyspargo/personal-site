@@ -1,22 +1,23 @@
 {
-  "heading": "Employment History",
+  "title": "Employment History",
   "bottom": "This is only a partial list of employment history. Please see my <a href=\"/assets/cv.pdf\" target=\"_blank\">CV</a> and/or <a href=\"mailto:muyleche@gmail.com\" target=\"_blank\">contact me</a> for more information.",
-  "text": "",
   "entries": [
     {
-      "name": "Head Content Editor - French",
-      "title": "FluentU.com",
-      "logo": "assets/fluentu-blue-on-white.png",
-      "website": "https://fluentu.com/",
+      "title": "Head Content Editor",
+      "discipline": "French",
+      "organization": {
+        "name": "FluentU",
+        "logo": "assets/fluentu-blue-on-white.png",
+        "website": "https://fluentu.com/"
+      },
       "duration": "2013 - Current",
       "location": "Telecommute",
-      "list": [
+      "highlights": [
         "Co-lead a team whose goal is to curate, translate, and enrich video content in French.",
         "Translate videos (French to English) and create a language-learning dictionary.",
         "Develop tools to work more quickly and effectively in Google Sheets.",
         "Implemented and maintained analytical tools and functionality to improve overall efficiency."
       ],
-      "docIntro": "Contacts:",
       "documents": [
         {
           "name": "Alan Park",
@@ -34,18 +35,20 @@
       "thumbnail": "assets/fluentu-blue-on-white.png"
     },
     {
-      "name": "Technology Assistant",
-      "title": "Media Technology Department",
-      "logo": "assets/peps.jpg",
-      "website": "https://apps.carleton.edu/campus/peps/",
+      "title": "Technology Assistant",
+      "discipline": "Media Technology Department",
+      "organization": {
+        "name": "Carleton College",
+        "logo": "assets/peps.jpg",
+        "website": "https://apps.carleton.edu/campus/peps/"
+      },
       "duration": "2008 - 2012",
-      "location": "Carleton College; Northfield, Minnesota",
-      "list": [
+      "location": "Northfield, Minnesota",
+      "highlights": [
         "Helped customers with their technology needs.",
         "Troubleshot technical problems with students and faculty.",
         "Filmed, edited, and produced recordings of campus events."
       ],
-      "docIntro": "Contacts:",
       "documents": [
         {
           "name": "Tucker MacNiel",
@@ -59,18 +62,20 @@
       "thumbnail": "assets/peps.jpg"
     },
     {
-      "name": "Language Assistant",
-      "title": "Lycée Les-Côtes-de-Villebon",
-      "logo": "assets/villebon-logo.jpg",
-      "website": "https://www.lyc-cotesdevillebon-meudon.ac-versailles.fr",
+      "title": "Language Assistant",
+      "discipline": "English",
+      "organization": {
+        "name": "Lycée Les-Côtes-de-Villebon",
+        "logo": "assets/villebon-logo.jpg",
+        "website": "https://www.lyc-cotesdevillebon-meudon.ac-versailles.fr"
+      },
       "duration": "2013-2014",
       "location": "Meudon-la-forêt, France",
-      "list": [
+      "highlights": [
         "Led and designed oral/written activities, presentations, and tests.",
         "Worked with students to improve their language and cultural knowledge.",
         "Provided support to the English department faculty."
       ],
-      "docIntro": "Contacts:",
       "documents": [
         {
           "name": "Claudine Dumas",
@@ -80,19 +85,21 @@
       "thumbnail": "assets/villebon-logo.jpg"
     },
     {
-      "name": "Camp Counselor, French Instructor",
-      "title": "Concordia Language Villages - Lac-du-bois",
-      "logo": "assets/cord3.jpg",
-      "website": "https://www.concordialanguagevillages.org",
+      "title": "Camp Counselor, French Instructor",
+      "discipline": "French Village",
+      "organization": {
+        "name": "Concordia Language Villages",
+        "logo": "assets/cord3.jpg",
+        "website": "https://www.concordialanguagevillages.org"
+      },
       "duration": "Jul - Aug 2013",
       "location": "Bemidji, Minnesota",
-      "list": [
+      "highlights": [
         "Designed and taught four-week intermediate high-school-credit French course.",
         "Provided a space for an immersive exploration of French language and francophone culture.",
         "Developed projects designed to promote a complex awareness of culture and current events.",
         "Led adult conversation course exploring current political, economic, and civil topics."
       ],
-      "docIntro": "Contacts:",
       "documents": [
         {
           "name": "Katherine Dutko",

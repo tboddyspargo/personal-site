@@ -1,22 +1,58 @@
-define(['scripts/app', 'utils/helpers'],
-  (ngApp, utils) => {
-    function aboutController($scope, FactService, AboutMeService, $http, $rootScope) {
-      $scope.name = 'about';
+define(['scripts/app', 'utils/scroll'],
+  (ngApp, Scroll) => {
+    function aboutController($q, $timeout, DataService) {
+      const ctrl = this;
+      ctrl.title = "About";
+      ctrl.sections = [
+        { id: 'bio', name: 'Biography' },
+        { id: 'education', name: 'Education' },
+        { id: 'employment', name: 'Employment' }
+      ];
+      ctrl.resumeReady = false;
+      ctrl.resume = [];
+      ctrl.sectionReady = Scroll.resetSectionNavigatorBehavior;
 
-      // Info to determine if we're still loading data.
-      const dataDependencies = [FactService.progress, AboutMeService.progress];
-      $scope.progress ||= 0;
-      $scope.ready = false;
-      $scope.total_progress = dataDependencies.length - 1;
+      console.log(ctrl);
+      ctrl.changeStatus = function () {
+        console.log('button clicked');
+        ctrl.resumeReady = !ctrl.resumeReady;
+        ctrl.bioReady = !ctrl.bioReady;
+        ctrl.title += '!';
+        ctrl.sections.push({ id: 'new', name: 'NEW' });
+      }
 
-      // Prepare facts.
-      $scope.FactService = FactService;
-      FactService.shuffleFacts();
-      $scope.AboutMeService = AboutMeService;
+      $q.when(DataService.getBio())
+        .then((data) => {
+          ctrl.bio = data.split('\n');
+          ctrl.bioReady = true;
+        });
 
-      // Prepare ToC.
-      $scope.sections = [];
+      $q.when(DataService.getFacts())
+        .then((data) => {
+          ctrl.facts = data
+          ctrl.factsReady = true;
+        });
+
+      const eduPromise = $q.when(DataService.getEducation(), (data) => {
+        ctrl.education = data;
+        ctrl.resume.push(data);
+        ctrl.educationReady = true;
+      });
+
+      const empPromise = $q.when(DataService.getEmployment())
+        .then((data) => {
+          ctrl.employment = data;
+          ctrl.resume.push(data);
+          ctrl.employmentReady = true;
+        });
+
+      $q.when(Promise.all([eduPromise, empPromise]), () => {
+        ctrl.resumeReady = true;
+        $timeout(() => {
+          $timeout(Scroll.resetSectionNavigatorBehavior, 0, false);
+        }, 0, false);
+      });
     };
 
-    ngApp.controller('AboutCtrl', ['$scope', 'FactService', 'AboutMeService', '$http', '$rootScope', aboutController]);
+    ngApp.controller('AboutCtrl', ['$q', '$timeout', 'DataService', aboutController]);
   });
