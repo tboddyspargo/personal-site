@@ -61,39 +61,6 @@ define(['scripts/app', 'gsap', 'ScrollTrigger'], (ngApp, gsap3, ScrollTriggerMod
       });
     };
 
-    let sidebarTweens = [], intervalId;
-    Scroll.configureSectionNavigationBehavior = function (sectionSelectors, indicatorPrefix = '#side-nav-link-') {
-      for (const existingTween of sidebarTweens) existingTween.kill();
-      if (intervalId) clearInterval(intervalId);
-      sidebarTweens = [];
-      for (let i = 0; i < sectionSelectors.length && sectionSelectors[i]; i++) {
-        let id = sectionSelectors[i],
-          targetSelector = `${indicatorPrefix}${i}`,
-          selector = '#'.concat(`${id}`.trimStart('#'));
-        sidebarTweens.push(
-          Scroll.ScrollTrigger.create({
-            trigger: selector,
-            start: `top center-=15%`,
-            end: `bottom center-=15%`,
-            scrub: true,
-            invalidateOnRefresh: true,
-            markers: true,
-            toggleClass: {
-              targets: targetSelector,
-              className: 'active'
-            }
-          })
-        );
-      };
-      intervalId = setInterval(() => Scroll.resetSectionNavigatorBehavior(), 5000);
-    };
-
-    Scroll.resetSectionNavigatorBehavior = function () {
-      for (const existingTween of sidebarTweens) {
-        existingTween.refresh();
-      }
-      console.log(`Reset ${sidebarTweens.length} Tweens.`);
-    };
   };
   ngApp.service('ScrollService', [scrollService]);
 });
