@@ -1,4 +1,4 @@
-#sidebar {
+tbs-sidebar {
   position: fixed;
   @include pos(55vh, 0px);
   overflow: visible;
@@ -36,13 +36,13 @@
 }
 
 @media only screen and (max-width: 768px) {
-  #sidebar {
+  tbs-sidebar {
     display: none;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  #sidebar {
+  tbs-sidebar {
     display: none;
   }
 }
