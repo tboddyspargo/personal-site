@@ -1,7 +1,7 @@
 <div id='sidebar'>
-  <div class="side-nav-area" ng-if='ids && ids.length'>
-    <a ng-repeat='section in ids' id='side-nav-link-{{$index}}' class='side-nav-link' title='{{section.name}}'
-      scroll-to-on-click='{{section}}' update-url-on-scroll href='#{{section}}'>
+  <div class="side-nav-area">
+    <a ng-repeat='section in $ctrl.sections' id='side-nav-link-{{$index}}' class='side-nav-link'
+      title='{{section.name}}' scroll-to-on-click='{{section.id}}' update-url-on-scroll href='#{{section.id}}'>
       <div class='side-nav-link-icon'></div>
     </a>
   </div>
