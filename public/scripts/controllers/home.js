@@ -1,57 +1,56 @@
-define(['scripts/app', 'utils/scroll', 'utils/helpers'],
-  (ngApp, scroll, Utils) => {
-    function homeController($scope, $http, $rootScope, $sce, $timeout) {
+define(['scripts/app', 'utils/helpers'],
+  (ngApp, Utils) => {
+    function homeController($scope, $sce, DataService, $timeout) {
       $scope.name = 'home';
-      $scope.progress ||= 1;
+      $scope.progress = 0;
       $scope.total_progress = 4;
+      $scope.short_desc = [];
 
-      if (!$scope.projects) {
-        $scope.short_desc = $scope.short_desc || [];
-        $http.get('/scripts/data/projects.json', {})
-          .then(({ data, status, statusText, xhrStatus }) => {
-            $scope.projects = data;
-            for (let x = 0; x < $scope.projects.length; x++) {
-              $scope.short_desc.push({ name: $scope.projects[x].name, desc: $scope.projects[x].goal, thumbnail: $scope.projects[x].thumbnail, label: 'Project', page: 3, pageLoc: "/projects", loc: `#project${x}` });
+      const proj = DataService.getProjects()
+        .then((data) => {
+          $timeout(() => {
+            for (let x = 0; x < data.length; x++) {
+              $scope.short_desc.push({ name: data[x].name, desc: data[x].goal, thumbnail: data[x].thumbnail, label: 'Project', page: 3, pageLoc: "/projects", loc: `#project${x}` });
             }
             $scope.progress += 1;
-            $scope.short_desc = Utils.shuffleArray($scope.short_desc);
-          }, ({ data, status, statusText, xhrStatus }) => {
-            console.warn(`Failed to retrieve 'projects' data. Reason: (${status}) ${statusText}`)
           });
-      }
+        });
 
-      if (!$scope.about) {
-        $scope.short_desc = $scope.short_desc || [];
-        $http.get('/scripts/data/about.json', {})
-          .then(({ data, status, statusText, xhrStatus }) => {
-            $scope.about = data;
-            for (let y = 0; y < $scope.about.length; y++) {
-              for (x = 0; x < $scope.about[y].entries.length; x++) {
-                if ($scope.about[y].heading === 'Education') {
-                  $scope.short_desc.push({ name: $scope.about[y].entries[x].name, desc: $scope.about[y].entries[x].description, thumbnail: $scope.about[y].entries[x].thumbnail, label: 'School', page: 2, pageLoc: "/about", loc: `#${$scope.about[y].id}` });
-                }
-                if ($scope.about[y].heading === 'Employment History') {
-                  $scope.short_desc.push({ name: $scope.about[y].entries[x].name, desc: $scope.about[y].entries[x].list[0], thumbnail: $scope.about[y].entries[x].thumbnail, label: 'Job', page: 2, pageLoc: "/about", loc: `#${$scope.about[y].id}` });
-                }
-              }
-              $scope.short_desc = Utils.shuffleArray($scope.short_desc);
+      const edu = DataService.getEducation()
+        .then((data) => {
+          $timeout(() => {
+            for (const entry of data.entries) {
+              $scope.short_desc.push({ name: `${entry.title} (${entry.organization.name})`, desc: entry.description, thumbnail: entry.thumbnail, label: 'School', pageLoc: "/about", loc: '#education' });
+
             }
             $scope.progress += 1;
-          }, ({ data, status, statusText, xhrStatus }) => {
-            console.warn(`Failed to retrieve 'about' data. Reason: (${status}) ${statusText}`)
           });
-      }
+        });
 
-      if (!$scope.blurb) {
-        $http.get('/scripts/data/blurb.json', {})
-          .then(({ data, status, statusText, xhrStatus }) => {
-            $scope.blurb = data;
+      const emp = DataService.getEmployment()
+        .then((data) => {
+          $timeout(() => {
+            for (const entry of data.entries) {
+              $scope.short_desc.push({ name: entry.title, desc: entry.highlights[0], thumbnail: entry.thumbnail, label: 'Job', pageLoc: "/about", loc: '#employment' });
+            }
             $scope.progress += 1;
-          }, ({ data, status, statusText, xhrStatus }) => {
-            console.warn(`Failed to retrieve 'blurb' data. Reason: (${status}) ${statusText}`)
           });
-      }
+        });
+
+      Promise.all([proj, edu, emp]).then((data) => {
+        $timeout(() => {
+          $scope.short_desc = Utils.shuffleArray($scope.short_desc);
+        });
+      });
+
+      DataService.getIntro()
+        .then((data) => {
+          $timeout(() => {
+            $scope.intro = data;
+            $scope.progress += 1;
+          });
+        });
     };
 
-    ngApp.controller('HomeCtrl', ['$scope', '$http', '$rootScope', '$sce', '$timeout', homeController]);
+    ngApp.controller('HomeCtrl', ['$scope', '$sce', 'DataService', '$timeout', homeController]);
   });
