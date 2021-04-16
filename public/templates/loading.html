@@ -1,9 +1,10 @@
-<div id="loading" ng-show="in_progress">
-  <div class='progress w-75' role='progressbar' ng-if='isIndeterminate'>
+<div class='progress-wrapper container-fluid' ng-if="$ctrl.inProgress()">
+  <strong>Loading {{$ctrl.description | lowercase}}...</strong>
+  <div class='progress' role='progressbar' ng-if='$ctrl.isIndeterminate'>
     <div class='progress-bar progress-bar-striped progress-bar-animated bg-success w-100'></div>
   </div>
-  <progress class="progress w-75" role="progressbar" ng-attr-value="{{progressValue}}" ng-attr-max="{{progressMax}}"
-    ng-if="!isIndeterminate">
+  <progress ng-if="!$ctrl.isIndeterminate" class="progress" role="progressbar" value="{{$ctrl.getValue()}}"
+    max="{{$ctrl.getMax()}}">
+    <span sr-only>{{ $ctrl.getValue() / $ctrl.getMax() * 100}}% Loaded...</span>
   </progress>
-  <span class="sr-only">{{in_progress ? "Loading..." : "Complete" }}%</span>
 </div>

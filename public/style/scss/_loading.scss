@@ -1,34 +1,47 @@
-#loading {
-  z-index: 5000;
-  position: fixed;
-  @include pos(0, 0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.75);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-progress,
-progress[role] {
-  /* Turns off styling - not usually needed, but good to know. */
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  /* gets rid of default border in Firefox and Opera. */
-  border: none;
-  /* Needs to be in here for Safari polyfill so background images work as expected. */
-  background-size: auto;
-
-  // negative area
-  &::-webkit-progress-bar {
-    background-color: transparent;
+tbs-progress {
+  .progress-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
   }
 
-  // progress area
-  &::-moz-progress-bar {
-    background-color: var(--success);
+  &.full-screen {
+    z-index: 5000;
+    position: fixed;
+    @include pos(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.75);
   }
-  &::-webkit-progress-value {
-    background-color: var(--success);
+
+  progress,
+  progress[role],
+  .progress {
+    width: 75%;
+  }
+
+  progress,
+  progress[role] {
+    /* Turns off styling - not usually needed, but good to know. */
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    /* gets rid of default border in Firefox and Opera. */
+    border: none;
+    /* Needs to be in here for Safari polyfill so background images work as expected. */
+    background-size: auto;
+
+    // negative area
+    &::-webkit-progress-bar {
+      background-color: transparent;
+    }
+
+    // progress area
+    &::-moz-progress-bar {
+      background-color: var(--success);
+    }
+    &::-webkit-progress-value {
+      background-color: var(--success);
+    }
   }
 }
