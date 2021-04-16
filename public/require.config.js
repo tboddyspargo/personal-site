@@ -119,7 +119,6 @@ require([
   'scripts/run',
   'services/data.service',
   'services/scroll',
-  'controllers/global',
   'controllers/home',
   'controllers/about',
   'controllers/projects',
