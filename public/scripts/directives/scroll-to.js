@@ -1,5 +1,5 @@
 define(['scripts/app'], (ngApp) => {
-  // directive that scrolls to element with given id. It also prevents page refresh
+  // directive that scrolls to element with given id.
   ngApp.directive('scrollToOnClick', ['$location', '$timeout', '$anchorScroll', ($location, $timeout, $anchorScroll) => {
     return {
       restrict: 'A',

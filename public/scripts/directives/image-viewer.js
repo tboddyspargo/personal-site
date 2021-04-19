@@ -21,7 +21,7 @@ define(['scripts/app'], (ngApp) => {
     return {
       restrict: 'E',
       replace: true,
-      templateUrl: '/templates/image-viewer.html',
+      templateUrl: '/scripts/directives/image-viewer.html',
       controller: ['$scope', imageViewerController]
     };
   });

@@ -44,7 +44,7 @@ define(['scripts/app'], (ngApp) => {
       description: '@?',
       indeterminate: '@?'
     },
-    templateUrl: '/templates/loading.html',
+    templateUrl: '/components/layout/progress-bar.html',
     controller: ['$scope', '$element', '$attrs', '$timeout', progressCtrl]
   });
 });

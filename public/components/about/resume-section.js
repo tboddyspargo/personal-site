@@ -8,9 +8,6 @@ define(['scripts/app'], (ngApp) => {
     ctrl.showImages = () => ctrl._showImages;
     ctrl.toggleImages = () => ctrl._showImages = !ctrl._showImages;
     ctrl.hasImages = () => ctrl.images && Array.isArray(ctrl.images) && !!ctrl.images.length;
-
-
-
   };
 
   ngApp.component('tbsResumeSection', {
