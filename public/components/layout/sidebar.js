@@ -40,7 +40,6 @@ define(['scripts/app'], (ngApp) => {
             end: `bottom center-=15%`,
             scrub: true,
             invalidateOnRefresh: true,
-            markers: true,
             toggleClass: {
               targets: targetSelector,
               className: 'active'
@@ -48,7 +47,13 @@ define(['scripts/app'], (ngApp) => {
           })
         );
       };
-      if (sidebarTweens.length) setTimeout(ctrl.refreshScrollBehavior, 500);
+      if (sidebarTweens.length) {
+        // The DOM isn't reliably settled on initialization, so refresh behavior after 0.5s.
+        setTimeout(ctrl.refreshScrollBehavior, 500);
+
+        // refresh the calculations of element size/position every so often because accordions can change it.
+        setInterval(ctrl.refreshScrollBehavior, 10000);
+      }
     };
 
     /*
@@ -78,12 +83,13 @@ define(['scripts/app'], (ngApp) => {
     // clean up the tweens when we're done so they don't leak into other views.
     ctrl.$onDestroy = () => sidebarTweens.forEach(tween => tween.kill());
   }
+
   ngApp.component('tbsSidebar', {
     bindings: {
       sections: '<',
       ids: '<'
     },
-    templateUrl: '/templates/sidebar.html',
+    templateUrl: '/components/layout/sidebar.html',
     controller: ['$scope', '$element', '$attrs', 'ScrollService', '$timeout', '$document', sidebarCtrl]
   });
 });

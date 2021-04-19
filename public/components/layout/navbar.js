@@ -49,9 +49,9 @@ define(['scripts/app'], (ngApp) => {
       (newValue, oldValue) => $scope.activeTab = newValue
     );
   }
-  // navbar as element
+
   ngApp.component('tbsNavbar', {
-    templateUrl: '/templates/navbar.html',
+    templateUrl: '/components/layout/navbar.html',
     controller: ['$scope', '$element', '$attrs', '$route', 'ScrollService', navbarCtrl]
   });
 });

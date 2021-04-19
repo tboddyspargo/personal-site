@@ -28,9 +28,8 @@ define(['scripts/app'], (ngApp) => {
     ctrl.$onInit = ctrl.configureBannerParallax;
   };
 
-  // banner as component.
   ngApp.component('tbsBanner', {
-    templateUrl: '/templates/banner.html',
+    templateUrl: '/components/layout/banner.html',
     controller: ['ScrollService', bannerCtrl]
   });;
 });
