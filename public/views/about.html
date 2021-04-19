@@ -1,9 +1,9 @@
 <div class="about my-n5">
   <tbs-sidebar sections='$ctrl.sections'></tbs-sidebar>
-  <div class='row my-5'>
-    <tbs-progress class='container-fluid' indeterminate value='$ctrl.bioReady' description='Biography'></tbs-progress>
+  <div id='bio' class='row my-5'>
+    <tbs-progress indeterminate value='$ctrl.bioReady' description='Biography'></tbs-progress>
 
-    <div id='bio' class="card" ng-if='$ctrl.bioReady'>
+    <div class="card" ng-if='$ctrl.bioReady'>
       <div class="card-body">
         <h3 class="card-title">Biography</h3>
         <div class="stat-box card ml-2 mr-4 mb-3" ng-if='$ctrl.facts && $ctrl.facts.length'>
@@ -23,9 +23,8 @@
   </div>
 
   <div id='education' class='row my-5'>
-    <tbs-progress class='container-fluid' indeterminate value='$ctrl.educationReady'
-      description='{{$ctrl.education.title}}'>
-    </tbs-progress>
+    <tbs-progress indeterminate value='$ctrl.educationReady' description='{{$ctrl.education.title}}'></tbs-progress>
+
     <tbs-resume-section id='education' class='flex-fill' ng-if='$ctrl.educationReady' title='{{$ctrl.education.title}}'
       images='$ctrl.education.images' footer='$ctrl.education.bottom' entries='$ctrl.education.entries'>
     </tbs-resume-section>
@@ -33,9 +32,8 @@
 
 
   <div id='employment' class='row my-5'>
-    <tbs-progress class='container-fluid' indeterminate value='$ctrl.educationReady'
-      description='{{$ctrl.employment.title}}'>
-    </tbs-progress>
+    <tbs-progress indeterminate value='$ctrl.educationReady' description='{{$ctrl.employment.title}}'></tbs-progress>
+
     <tbs-resume-section id='employment' class='flex-fill' ng-if='$ctrl.employmentReady'
       title='{{$ctrl.employment.title}}' images='$ctrl.employment.images' footer='$ctrl.employment.bottom'
       entries='$ctrl.employment.entries'>
