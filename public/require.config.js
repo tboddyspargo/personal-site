@@ -117,20 +117,21 @@ require([
   'bootstrap',
   'scripts/app',
   'scripts/run',
-  'services/data.service',
+  'services/utility',
+  'services/data',
   'services/scroll',
   'controllers/home',
   'controllers/about',
   'controllers/projects',
   'components/about/resume-section',
   'components/about/resume-list-entry',
-  'directives/image_viewer',
-  'directives/progress_bar',
-  'directives/navbar',
-  'directives/banner',
-  'directives/footer',
-  'directives/sidebar',
-  'directives/scroll_to'
+  'components/layout/progress-bar',
+  'components/layout/navbar',
+  'components/layout/banner',
+  'components/layout/footer',
+  'components/layout/sidebar',
+  'directives/image-viewer',
+  'directives/scroll-to'
 ], (angularAMD, mainApp) => {
   angular.bootstrap(document, ['tyler-site']);
 });
