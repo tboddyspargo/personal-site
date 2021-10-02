@@ -1,266 +1,57 @@
 {
   "scripts": {
+    "build:watch": "webpack watch --mode development",
     "start": "firebase serve --only hosting",
-    "preinstall": "rm -rf public/scripts/vendor public/style/vendor public/fonts/vendor",
-    "postinstall": "vendor-copy;",
-    "build": "sass public/style/scss:public/style/ --update --style compressed"
+    "build": "webpack --mode production --bail --progress --profile"
   },
   "name": "personal-site",
-  "description": "This is a site demonstrating my skills with Require.js, AngularJS, SASS+CSS, and JavaScript (modules and frameworks like jquery and ScrollMagic). The site also contains an overview of various other projects and a summary of my professional and educational background.",
-  "version": "1.2.0",
-  "main": "require.config.js",
+  "description": "This is an site written in AngularJS and acting as a portfolio, bio, and resume.",
+  "version": "2.0.0",
+  "main": "index.js",
+  "browserList": [
+    "defaults",
+    "not IE 11",
+    "maintained node versions"
+  ],
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.3",
-    "angular": "~1.8.0",
-    "angular-amd": "~0.2.1",
-    "angular-animate": "~1.8.0",
-    "angular-carousel": "~1.1.0",
-    "angular-route": "~1.8.0",
-    "angular-sanitize": "~1.8.0",
-    "angular-touch": "~1.8.0",
-    "angularfire": "^2.3.0",
-    "bootstrap": "^4.6.0",
-    "firebase": "^8.3.1",
-    "gsap": "^3.0.0",
-    "hover.css": "^2.3.2",
-    "jquery": "^3.6.0",
-    "requirejs": "^2.3.6",
-    "sass": "^1.32.8",
-    "vendor-copy": "^2.0.0"
-  },
-  "devDependencies": {
-    "connect": "^3.3.4",
-    "express": "^4.17.1",
-    "serve-static": "^1.9.2"
+    "@babel/core": "^7.15",
+    "@babel/preset-env": "^7.15",
+    "@fortawesome/fontawesome-free": "^5.15",
+    "@popperjs/core": "^2.10",
+    "@types/node": "^16.10",
+    "angular": "~1.8",
+    "angular-animate": "~1.8",
+    "angular-carousel": "~1.1",
+    "angular-route": "~1.8",
+    "angular-sanitize": "~1.8",
+    "angular-touch": "~1.8",
+    "babel-loader": "^8.2",
+    "bootstrap": "^5.1",
+    "copy-webpack-plugin": "^9.0",
+    "css-loader": "^6.3",
+    "firebase": "^9.0",
+    "gsap": "^3.0",
+    "hover.css": "^2.3",
+    "html-webpack-plugin": "^5.3",
+    "jquery": "^3.6",
+    "postcss-loader": "^6.1",
+    "postcss-preset-env": "^6.7",
+    "sass": "^1.42",
+    "sass-loader": "^12.1",
+    "style-loader": "^3.3",
+    "ts-loader": "^9.2",
+    "typescript": "^4.4",
+    "webpack": "^5.55",
+    "webpack-cli": "^4.8"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tboddyspargo/personal-site.git"
+    "url": "https://github.com/tboddyspargo/personal-site.git"
   },
   "author": "Tyler BoddySpargo",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/tboddyspargo/personal-site/issues"
   },
-  "homepage": "https://github.com/tboddyspargo/personal-site#readme",
-  "vendorCopy": [
-    {
-      "from": "node_modules/angular/angular.min.js",
-      "to": "public/scripts/vendor/angular.min.js"
-    },
-    {
-      "from": "node_modules/angular/angular.min.js.map",
-      "to": "public/scripts/vendor/angular.min.js.map"
-    },
-    {
-      "from": "node_modules/angular-amd/angularAMD.min.js",
-      "to": "public/scripts/vendor/angularAMD.min.js"
-    },
-    {
-      "from": "node_modules/angular-amd/angularAMD.min.map",
-      "to": "public/scripts/vendor/angularAMD.min.map"
-    },
-    {
-      "from": "node_modules/angular-animate/angular-animate.min.js",
-      "to": "public/scripts/vendor/angular-animate.min.js"
-    },
-    {
-      "from": "node_modules/angular-animate/angular-animate.min.js.map",
-      "to": "public/scripts/vendor/angular-animate.min.js.map"
-    },
-    {
-      "from": "node_modules/angular-carousel/dist/angular-carousel.min.js",
-      "to": "public/scripts/vendor/angular-carousel.min.js"
-    },
-    {
-      "from": "node_modules/angular-carousel/dist/angular-carousel.min.css",
-      "to": "public/style/vendor/angular-carousel.min.css"
-    },
-    {
-      "from": "node_modules/angular-carousel/dist/angular-carousel.css.map",
-      "to": "public/style/vendor/angular-carousel.css.map"
-    },
-    {
-      "from": "node_modules/angular-route/angular-route.min.js",
-      "to": "public/scripts/vendor/angular-route.min.js"
-    },
-    {
-      "from": "node_modules/angular-route/angular-route.min.js.map",
-      "to": "public/scripts/vendor/angular-route.min.js.map"
-    },
-    {
-      "from": "node_modules/angular-sanitize/angular-sanitize.min.js",
-      "to": "public/scripts/vendor/angular-sanitize.min.js"
-    },
-    {
-      "from": "node_modules/angular-sanitize/angular-sanitize.min.js.map",
-      "to": "public/scripts/vendor/angular-sanitize.min.js.map"
-    },
-    {
-      "from": "node_modules/angular-touch/angular-touch.min.js",
-      "to": "public/scripts/vendor/angular-touch.min.js"
-    },
-    {
-      "from": "node_modules/angular-touch/angular-touch.min.js.map",
-      "to": "public/scripts/vendor/angular-touch.min.js.map"
-    },
-    {
-      "from": "node_modules/angularfire/dist/angularfire.min.js",
-      "to": "public/scripts/vendor/angularfire.min.js"
-    },
-    {
-      "from": "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "to": "public/scripts/vendor/bootstrap.bundle.min.js"
-    },
-    {
-      "from": "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "to": "public/scripts/vendor/bootstrap.bundle.min.js.map"
-    },
-    {
-      "from": "node_modules/bootstrap/scss",
-      "to": "public/style/vendor/bootstrap/"
-    },
-    {
-      "from": "node_modules/bootstrap/dist/css/bootstrap.min.css",
-      "to": "public/style/vendor/bootstrap.min.css"
-    },
-    {
-      "from": "node_modules/bootstrap/dist/css/bootstrap.min.css.map",
-      "to": "public/style/vendor/bootstrap.min.css.map"
-    },
-    {
-      "from": "node_modules/firebase/firebase-app.js",
-      "to": "public/scripts/vendor/firebase-app.js"
-    },
-    {
-      "from": "node_modules/firebase/firebase-app.js.map",
-      "to": "public/scripts/vendor/firebase-app.js.map"
-    },
-    {
-      "from": "node_modules/firebase/firebase-analytics.js",
-      "to": "public/scripts/vendor/firebase-analytics.js"
-    },
-    {
-      "from": "node_modules/firebase/firebase-analytics.js.map",
-      "to": "public/scripts/vendor/firebase-analytics.js.map"
-    },
-    {
-      "from": "node_modules/firebase/firebase-firestore.js",
-      "to": "public/scripts/vendor/firebase-firestore.js"
-    },
-    {
-      "from": "node_modules/firebase/firebase-firestore.js.map",
-      "to": "public/scripts/vendor/firebase-firestore.js.map"
-    },
-    {
-      "from": "node_modules/firebase/firebase-performance.js",
-      "to": "public/scripts/vendor/firebase-performance.js"
-    },
-    {
-      "from": "node_modules/firebase/firebase-performance.js.map",
-      "to": "public/scripts/vendor/firebase-performance.js.map"
-    },
-    {
-      "from": "node_modules/firebase/firebase-storage.js",
-      "to": "public/scripts/vendor/firebase-storage.js"
-    },
-    {
-      "from": "node_modules/firebase/firebase-storage.js.map",
-      "to": "public/scripts/vendor/firebase-storage.js.map"
-    },
-    {
-      "from": "node_modules/@fortawesome/fontawesome-free/scss/",
-      "to": "public/style/vendor/fontawesome/scss/"
-    },
-    {
-      "from": "node_modules/@fortawesome/fontawesome-free/webfonts/",
-      "to": "public/fonts/vendor/fontawesome/"
-    },
-    {
-      "from": "node_modules/gsap/dist/gsap.min.js",
-      "to": "public/scripts/vendor/gsap.min.js"
-    },
-    {
-      "from": "node_modules/gsap/dist/gsap.min.js.map",
-      "to": "public/scripts/vendor/gsap.min.js.map"
-    },
-    {
-      "from": "node_modules/gsap/dist/ScrollTrigger.min.js",
-      "to": "public/scripts/vendor/ScrollTrigger.min.js"
-    },
-    {
-      "from": "node_modules/gsap/dist/ScrollTrigger.min.js.map",
-      "to": "public/scripts/vendor/ScrollTrigger.min.js.map"
-    },
-    {
-      "from": "node_modules/gsap/dist/ScrollToPlugin.min.js",
-      "to": "public/scripts/vendor/ScrollToPlugin.min.js"
-    },
-    {
-      "from": "node_modules/gsap/dist/ScrollToPlugin.min.js.map",
-      "to": "public/scripts/vendor/ScrollToPlugin.min.js.map"
-    },
-    {
-      "from": "node_modules/hover.css/css/hover-min.css",
-      "to": "public/style/vendor/hover-min.css"
-    },
-    {
-      "from": "node_modules/hover.css/css/hover.css.map",
-      "to": "public/style/vendor/hover.css.map"
-    },
-    {
-      "from": "node_modules/gsap/dist/ScrollToPlugin.min.js.map",
-      "to": "public/scripts/vendor/ScrollToPlugin.min.js.map"
-    },
-    {
-      "from": "node_modules/jquery/dist/jquery.min.js",
-      "to": "public/scripts/vendor/jquery.min.js"
-    },
-    {
-      "from": "node_modules/requirejs/require.js",
-      "to": "public/scripts/vendor/require.js"
-    }
-  ],
-  "devVendorCopy": [
-    {
-      "from": "node_modules/angular/angular.js",
-      "to": "public/scripts/vendor/angular.js"
-    },
-    {
-      "from": "node_modules/angular-amd/angularAMD.js",
-      "to": "public/scripts/vendor/angularAMD.js"
-    },
-    {
-      "from": "node_modules/angular-animate/angular-animate.js",
-      "to": "public/scripts/vendor/angular-animate.js"
-    },
-    {
-      "from": "node_modules/angular-carousel/dist/angular-carousel.js",
-      "to": "public/scripts/vendor/angular-carousel.js"
-    },
-    {
-      "from": "node_modules/angular-route/angular-route.js",
-      "to": "public/scripts/vendor/angular-route.js"
-    },
-    {
-      "from": "node_modules/angular-sanitize/angular-sanitize.js",
-      "to": "public/scripts/vendor/angular-sanitize.js"
-    },
-    {
-      "from": "node_modules/angular-touch/angular-touch.js",
-      "to": "public/scripts/vendor/angular-touch.js"
-    },
-    {
-      "from": "node_modules/angularfire/dist/angularfire.js",
-      "to": "public/scripts/vendor/angularfire.js"
-    },
-    {
-      "from": "node_modules/gsap/dist/gsap.js",
-      "to": "public/scripts/vendor/gsap.js"
-    },
-    {
-      "from": "node_modules/jquery/dist/jquery.js",
-      "to": "public/scripts/vendor/jquery.js"
-    }
-  ]
+  "homepage": "https://github.com/tboddyspargo/personal-site#readme"
 }
