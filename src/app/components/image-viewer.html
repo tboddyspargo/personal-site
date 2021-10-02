@@ -1,0 +1,48 @@
+<div id="image-viewer" class='modal fade modal-xxl' data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <div id="viewer-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-keyboard="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#viewer-carousel" data-bs-slide-to="{{$index}}" ng-class="{ active: $first }"
+            aria-current="{{$first}}" aria-label="Image {{$index}}"  ng-repeat="image in $ctrl.images"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item" ng-class="{ active: $first }" ng-repeat="image in $ctrl.images">
+            <img ng-src="{{image.path}}" class="d-block w-100" alt="{{image.caption}}">
+            <div class="carousel-caption d-none d-md-block">
+              <p>{{image.caption}}</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#viewer-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#viewer-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      </div>
+    </div>
+  </div>
+    <!--
+    <div class="image-carousel text-light enable_touchmove">
+      <ul rn-carousel rn-carousel-controls rn-carousel-buffered slides="images" rn-carousel-index='activeImage'
+      class='enable_touchmove'>
+      <li class='image-carousel-li enable_touchmove' ng-repeat="image in images">
+        <div class="image-container">
+          <div class='clear-flex-grow-expansion text-center'>
+            <img ng-src="{{image.path}}" alt="{{image.caption}}" class="enable_touchmove" />
+          </div>
+          <span class='carousel-caption lead enable_touchmove no-select'>{{image.caption}}</span>
+        </div>
+      </li>
+    </ul>
+  </div> -->
+
+</div>
