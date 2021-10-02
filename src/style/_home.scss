@@ -9,7 +9,7 @@
 .my-photo {
   background: url(../img/tyler-sitting.jpg) no-repeat;
   background-size: cover;
-  @include transform(rotateZ(-5deg));
+  transform: rotateZ(-5deg);
 }
 
 .thumbnail-grid-item {
@@ -39,7 +39,7 @@
 .thumbnail-tag {
   float: left;
   position: absolute;
-  @include transform(rotateZ(-20deg));
+  transform: rotateZ(-20deg);
   margin-top: -5px;
   left: -10px;
 }

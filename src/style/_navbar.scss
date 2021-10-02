@@ -5,10 +5,9 @@
 }
 
 #name {
-  // @include transition(margin-left 0.3s ease-out);
   font-family: "Bradley Hand";
   text-shadow: 2px 3px rgba(50, 50, 50, 0.7);
-  @include transform-origin("center left");
+  transform-origin: center left;
   white-space: break-spaces;
 
   &.fly-in {

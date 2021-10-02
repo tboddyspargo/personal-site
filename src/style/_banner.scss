@@ -14,7 +14,7 @@
   img {
     @include abs-pos(50%, none, none, 50%);
     min-width: 100%;
-    @include transform(translate(-50%, -50%));
+    transform: translate(-50%, -50%);
   }
 }
 
