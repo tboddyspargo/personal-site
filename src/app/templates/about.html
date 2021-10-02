@@ -1,4 +1,4 @@
-<div class="about my-n5">
+<div class="about">
   <tbs-sidebar sections='$ctrl.sections'></tbs-sidebar>
   <div id='bio' class='row my-5'>
     <tbs-progress indeterminate value='$ctrl.bioReady' description='Biography'></tbs-progress>
@@ -6,7 +6,7 @@
     <div class="card" ng-if='$ctrl.bioReady'>
       <div class="card-body">
         <h3 class="card-title">Biography</h3>
-        <div class="stat-box card ms-2 me-4 mb-3" ng-if='$ctrl.facts && $ctrl.facts.length'>
+        <div class="stat-box card ms-4 me-1 mb-3" ng-if='$ctrl.facts && $ctrl.facts.length'>
           <h5 class='card-header'>Fun Facts:</h5>
           <ul class='list-group list-group-flush'>
             <li ng-repeat='f in $ctrl.facts | limitTo:5' class='list-group-item py-1'>

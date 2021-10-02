@@ -3,6 +3,7 @@ export default class ProjectController {
   sections = [];
   projects;
   projectsReady = false;
+  currentImages = [];
 
   constructor($sce, $timeout, DataService) {
     DataService.getProjects().then((data) => {
