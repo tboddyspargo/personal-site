@@ -1,0 +1,130 @@
+[
+  {
+    "name": "This Website!",
+    "desc": "Create a showcase of my accomplishments using some of them in the process.",
+    "thumbnail": "img/home-page sm.jpg",
+    "label": "Project",
+    "page": 3,
+    "loc": "project0"
+  },
+  {
+    "name": "iOS Calculator App",
+    "desc": "Practice C, Obj-C, and Swift by creating a simple calculator app for iOS.",
+    "thumbnail": "img/storyboard sm.jpg",
+    "label": "Project",
+    "page": 3,
+    "loc": "project1"
+  },
+  {
+    "name": "FluentU Caption Files",
+    "desc": "Facilitate the creation, organization, and manipulation of caption files.",
+    "thumbnail": "img/caption-file-new.jpg",
+    "label": "Project",
+    "page": 3,
+    "loc": "project2"
+  },
+  {
+    "name": "FluentU Dashboard",
+    "desc": "Improve workflow to increase independence and promote job satisfaction.",
+    "thumbnail": "img/dash-sm.jpg",
+    "label": "Project",
+    "page": 3,
+    "loc": "project3"
+  },
+  {
+    "name": "FluentU Analytics",
+    "desc": "Measure and assess productivity to improve efficiency.",
+    "thumbnail": "img/graphs-sm.jpg",
+    "label": "Project",
+    "page": 3,
+    "loc": "project4"
+  },
+  {
+    "name": "File Helper",
+    "desc": "Create a set of tools to perform file-system organization tasks using python.",
+    "thumbnail": "img/filehelper-sm.png",
+    "label": "Project",
+    "page": 3,
+    "loc": "project5"
+  },
+  {
+    "name": "Zombies Game",
+    "desc": "Use python to build a simple zombie apocalypse game.",
+    "thumbnail": "img/zombies-sm.png",
+    "label": "Project",
+    "page": 3,
+    "loc": "project6"
+  },
+  {
+    "name": "Royal Conservatory of Brussels",
+    "desc": "I enrolled in the Royal conservatory of Brussels as a prospective mast...",
+    "thumbnail": "img/crb-logo-wide-sm.jpg",
+    "label": "School",
+    "page": 2,
+    "loc": "education"
+  },
+  {
+    "name": "Niedermeyer Conservatory",
+    "desc": "Music is a peculiar pursuit and if one wants to become a great musician...",
+    "thumbnail": "img/grand-paris-issy.jpg",
+    "label": "School",
+    "page": 2,
+    "loc": "education"
+  },
+  {
+    "name": "Carleton College",
+    "desc": "After high school I was accepted to Carleton College, a small liberal ...",
+    "thumbnail": "img/carleton-knights.jpg",
+    "label": "School",
+    "page": 2,
+    "loc": "education"
+  },
+  {
+    "name": "Madrid Study Abroad: Film and the City",
+    "desc": "I was lucky enough to be able to go on a second study abroad trip to S...",
+    "thumbnail": "img/spain1.jpg",
+    "label": "School",
+    "page": 2,
+    "loc": "education"
+  },
+  {
+    "name": "Paris Study Abroad: European Identities",
+    "desc": "In the spring of 2010 I went overseas for the first time. The Carleton...",
+    "thumbnail": "img/castle.jpg",
+    "label": "School",
+    "page": 2,
+    "loc": "education"
+  },
+  {
+    "name": "Head Content Editor - French",
+    "desc": "Co-lead a team whose goal is to curate, translate, and enrich video content in French...",
+    "thumbnail": "img/fluentu-blue-on-white.png",
+    "label": "Job",
+    "page": 2,
+    "loc": "employment"
+  },
+  {
+    "name": "Technology Assistant",
+    "desc": "Helped customers with their technology needs....",
+    "thumbnail": "img/peps.jpg",
+    "label": "Job",
+    "page": 2,
+    "loc": "employment"
+  },
+  {
+    "name": "English Teaching Assistant",
+    "desc": "Led and designed oral/written activities, presentations, and tests...",
+    "thumbnail": "img/villebon-logo.jpg",
+    "label": "Job",
+    "page": 2,
+    "loc": "employment"
+  },
+  {
+    "name": "Camp Counselor, French Instructor",
+    "desc": "Designed and taught four-week intermediate high-school-credit French course...",
+    "thumbnail": "img/cord3.jpg",
+    "label": "Job",
+    "page": 2,
+    "loc": "employment"
+  }
+]

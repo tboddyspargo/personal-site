@@ -1,0 +1,11 @@
+// bootstrap with font-awesome and Octicons icon fonts.
+@import "~bootstrap/scss/bootstrap";
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+// @import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+
+// hover.css classes
+@import url("~hover.css/css/hover-min.css");
+
+// angular-carousel styles
+@import url("~angular-carousel/dist/angular-carousel.min.css");

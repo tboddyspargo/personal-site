@@ -105,3 +105,7 @@ typings/
 # Google files
 google*.html
 .firebase
+
+# build directories
+dist/
+public/dist/

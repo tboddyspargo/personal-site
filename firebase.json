@@ -5,13 +5,20 @@
       "firebase.json",
       "package.json",
       "package-lock.json",
-      "**/.git/**",
+      "tsconfig.json",
+      "babel.config.json",
+      "README.md",
+      "webpack.*.js",
+      ".github/**",
+      ".vscode/**",
+      ".firebase/**",
+      "full_quality_images/**",
+      "node_modules/**",
+      "planning/**",
+      "src/**",
+      ".git/**",
       "**/.*",
-      "**/.sass-cache/**",
-      "**/*.scss",
-      "**/vendor/*/**/*.css*",
-      "**/node_modules/**",
-      "**/planning/**"
+      "**/.sass-cache/**"
     ],
     "rewrites": [
       {

@@ -1,0 +1,45 @@
+.profile-img {
+  float: left;
+  @include min-size(150px);
+  margin: 20px 15px 5px 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.my-photo {
+  background: url(../img/tyler-sitting.jpg) no-repeat;
+  background-size: cover;
+  @include transform(rotateZ(-5deg));
+}
+
+.thumbnail-grid-item {
+  @include clickable;
+
+  .caption {
+    position: relative;
+    line-height: 1.1em;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: $thumbnail-summary-lines;
+    -webkit-box-orient: vertical;
+    max-height: calc($thumbnail-summary-lines * 1.1em - 2px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.thumbnail-img {
+  height: 100px;
+  width: initial;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.thumbnail-tag {
+  float: left;
+  position: absolute;
+  @include transform(rotateZ(-20deg));
+  margin-top: -5px;
+  left: -10px;
+}

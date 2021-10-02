@@ -1,0 +1,112 @@
+{
+  "title": "Employment History",
+  "bottom": "This is only a partial list of employment history. Please see my <a href=\"/img/cv.pdf\" target=\"_blank\">CV</a> and/or <a href=\"mailto:muyleche@gmail.com\" target=\"_blank\">contact me</a> for more information.",
+  "entries": [
+    {
+      "title": "Head Content Editor",
+      "discipline": "French",
+      "organization": {
+        "name": "FluentU",
+        "logo": "img/fluentu-blue-on-white.png",
+        "website": "https://fluentu.com/"
+      },
+      "duration": "2013 - Current",
+      "location": "Telecommute",
+      "highlights": [
+        "Co-lead a team whose goal is to curate, translate, and enrich video content in French.",
+        "Translate videos (French to English) and create a language-learning dictionary.",
+        "Develop tools to work more quickly and effectively in Google Sheets.",
+        "Implemented and maintained analytical tools and functionality to improve overall efficiency."
+      ],
+      "documents": [
+        {
+          "name": "Alan Park",
+          "address": "mailto:alan@fluentu.com"
+        },
+        {
+          "name": "Jason Shumann",
+          "address": "mailto:jason@fluentu.com"
+        },
+        {
+          "name": "Nicole Durham",
+          "address": "mailto:nicole@fluentu.com"
+        }
+      ],
+      "thumbnail": "img/fluentu-blue-on-white.png"
+    },
+    {
+      "title": "Technology Assistant",
+      "discipline": "Media Technology Department",
+      "organization": {
+        "name": "Carleton College",
+        "logo": "img/peps.jpg",
+        "website": "https://apps.carleton.edu/campus/peps/"
+      },
+      "duration": "2008 - 2012",
+      "location": "Northfield, Minnesota",
+      "highlights": [
+        "Helped customers with their technology needs.",
+        "Troubleshot technical problems with students and faculty.",
+        "Filmed, edited, and produced recordings of campus events."
+      ],
+      "documents": [
+        {
+          "name": "Tucker MacNiel",
+          "address": "mailto:tmacniel@carleton.edu"
+        },
+        {
+          "name": "Jim Pierret",
+          "address": "mailto:jpierret@carleton.edu"
+        }
+      ],
+      "thumbnail": "img/peps.jpg"
+    },
+    {
+      "title": "Language Assistant",
+      "discipline": "English",
+      "organization": {
+        "name": "Lycée Les-Côtes-de-Villebon",
+        "logo": "img/villebon-logo.jpg",
+        "website": "https://www.lyc-cotesdevillebon-meudon.ac-versailles.fr"
+      },
+      "duration": "2013-2014",
+      "location": "Meudon-la-forêt, France",
+      "highlights": [
+        "Led and designed oral/written activities, presentations, and tests.",
+        "Worked with students to improve their language and cultural knowledge.",
+        "Provided support to the English department faculty."
+      ],
+      "documents": [
+        {
+          "name": "Claudine Dumas",
+          "address": "mailto:tiny.d@orange.fr"
+        }
+      ],
+      "thumbnail": "img/villebon-logo.jpg"
+    },
+    {
+      "title": "Camp Counselor, French Instructor",
+      "discipline": "French Village",
+      "organization": {
+        "name": "Concordia Language Villages",
+        "logo": "img/cord3.jpg",
+        "website": "https://www.concordialanguagevillages.org"
+      },
+      "duration": "Jul - Aug 2013",
+      "location": "Bemidji, Minnesota",
+      "highlights": [
+        "Designed and taught four-week intermediate high-school-credit French course.",
+        "Provided a space for an immersive exploration of French language and francophone culture.",
+        "Developed projects designed to promote a complex awareness of culture and current events.",
+        "Led adult conversation course exploring current political, economic, and civil topics."
+      ],
+      "documents": [
+        {
+          "name": "Katherine Dutko",
+          "address": "mailto:kdutko@cord.edu"
+        }
+      ],
+      "thumbnail": "img/cord3.jpg"
+    }
+  ]
+}
