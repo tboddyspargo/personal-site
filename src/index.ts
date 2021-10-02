@@ -1,6 +1,5 @@
 import "./style/main.scss";
 
-import $ from "jquery";
 import "@popperjs/core";
 import "bootstrap";
 

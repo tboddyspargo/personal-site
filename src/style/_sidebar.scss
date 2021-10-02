@@ -24,9 +24,9 @@ tbs-sidebar {
   display: block;
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
-  @include transition(transform ease-in-out 0.2s);
+  transition: transform ease-in-out 0.2s;
   &:hover {
-    @include transform(scale(1.2, 1.2));
+    transform: scale(1.2, 1.2);
   }
 }
 .side-nav-link-icon {

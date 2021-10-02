@@ -1,7 +1,10 @@
 const { resolve } = require("path");
-const WebPack = require("webpack");
 const CopyPlugin = require("copy-webpack-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const postcssPresetEnv = require("postcss-preset-env");
+const WebPack = require("webpack");
 
 module.exports = {
   entry: {
@@ -35,20 +38,21 @@ module.exports = {
         },
       ],
     }),
+    new MiniCssExtractPlugin(),
   ],
   module: {
     rules: [
       { test: /\.tsx?$/, use: ["ts-loader"] },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
         test: /\.s[ac]ss$/,
         use: [
-          "style-loader",
+          MiniCssExtractPlugin.loader,
           {
-            loader: "css-loader", // translates CSS into CommonJS modules
+            loader: "css-loader",
             options: {
               url: {
                 filter: (url, cssPath) => !url.match(/\.(png|jpg|jpeg)$/),
@@ -56,7 +60,7 @@ module.exports = {
             },
           },
           {
-            loader: "postcss-loader", // Run post css actions
+            loader: "postcss-loader",
             options: {
               postcssOptions: {
                 plugins: ["postcss-preset-env"],
@@ -87,6 +91,7 @@ module.exports = {
     ],
   },
   optimization: {
+    minimizer: [`...`, new CssMinimizerPlugin()],
     runtimeChunk: "single",
     splitChunks: {
       cacheGroups: {

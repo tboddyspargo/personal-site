@@ -1,12 +1,3 @@
-@mixin touch_select($value) {
-  -webkit-touch-callout: $value;
-  @include css3-prefix("user-select", $value);
-}
-
-@mixin transform-origin($value) {
-  @include css3-prefix("transform-origin", $value);
-}
-
 @mixin clickable {
   cursor: pointer;
 }
@@ -46,7 +37,8 @@
 }
 
 @mixin no-drag-away-events {
-  @include touch_select(none);
+  -webkit-touch-callout: none;
+  user-select: none;
   cursor: default;
 }
 

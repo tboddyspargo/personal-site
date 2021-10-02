@@ -2,7 +2,7 @@
   float: right;
   max-width: 25%;
   min-width: 300px;
-  @include transform(rotateZ(-5deg));
+  transform: rotateZ(-5deg);
 }
 
 .event-heading {
