@@ -15,7 +15,7 @@
     img {
       height: 75vh;
       object-fit: cover;
-      @include media-breakpoint-down(sm) {
+      @media (max-width: 575.98px) {
         height: 325px;
       }
     }

@@ -1,0 +1,19 @@
+$fa-font-path: "@fortawesome/fontawesome-free/webfonts";
+@import "@fortawesome/fontawesome-free/scss/variables";
+@import "@fortawesome/fontawesome-free/scss/mixins";
+@import "@fortawesome/fontawesome-free/scss/core";
+
+@import "@fortawesome/fontawesome-free/scss/solid";
+
+// List icons in use here.
+$used-icons: (
+  "angle-double-up": $fa-var-angle-double-up,
+  "images": $fa-var-images,
+  "check-circle": $fa-var-check-circle,
+);
+
+@each $name, $content in $used-icons {
+  .#{$fa-css-prefix}-#{$name}:before {
+    content: fa-content($content);
+  }
+}
