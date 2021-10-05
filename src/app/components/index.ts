@@ -5,4 +5,4 @@ import "./progress-bar";
 import "./resume-list-entry";
 import "./resume-section";
 import "./sidebar";
-import "./image-viewer";
+import "./image-carousel";

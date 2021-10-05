@@ -1,8 +1,12 @@
-// bootstrap with font-awesome and Octicons icon fonts.
-@import "~bootstrap/scss/bootstrap";
-$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
-@import "~@fortawesome/fontawesome-free/scss/fontawesome";
-@import "~@fortawesome/fontawesome-free/scss/solid";
+// bootstrap with font-awesome icon fonts.
+$modal-fade-transform: scale(0.8);
+@import "bootstrap/scss/bootstrap";
 
-// angular-carousel styles
-@import url("~angular-carousel/dist/angular-carousel.min.css");
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+$fa-font-path: "@fortawesome/fontawesome-free/webfonts";
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+@import "@fortawesome/fontawesome-free/scss/solid";

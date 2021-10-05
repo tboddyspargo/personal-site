@@ -1,21 +1,13 @@
 <div class='card'>
   <div class='card-header d-flex justify-content-between align-items-center'>
     <h3>{{$ctrl.title}}</h3>
-    <span class='fa fa-images fa-2x toggle-image-slider' title='Hide/show images' ng-if='$ctrl.hasImages()'
-      ng-click='$ctrl.toggleImages()' ng-class='{ active: $ctrl.showImages() }'></span>
+    <button class="btn py-0 px-2 btn-outline-secondary" data-bs-toggle="button" ng-if='$ctrl.images.length'
+      ng-click='$ctrl.toggleImageVisibility()' ng-class='{ active: $ctrl.imagesVisible }' aria-pressed="{{$ctrl.imagesVisible }}" title='Hide/show images'>
+      <span class='fa fa-images'></span>
+    </button>
   </div>
-  <div class="card-img-top image-carousel text-dark inline-carousel enable_touchmove" ng-if='$ctrl.hasImages()'
-    ng-show='$ctrl.showImages()'>
-    <ul rn-carousel rn-carousel-controls rn-carousel-buffered rn-carousel-index='$ctrl.activeImage'
-      class='enable_touchmove'>
-      <li class='image-carousel-li enable_touchmove' ng-repeat="image in $ctrl.images">
-        <div class="image-container">
-          <img ng-src="{{image.path}}" alt="" class="image enable_touchmove" />
-          <span class='carousel-caption enable_touchmove'>{{image.caption}}</span>
-        </div>
-      </li>
-    </ul>
-  </div>
+  <tbs-image-carousel class="card-img-top" images="$ctrl.images" name="{{$ctrl.title}}" ng-if='$ctrl.images.length'
+    ng-show='$ctrl.imagesVisible'></tbs-image-carousel>
   <div class='card-body' ng-if='$ctrl.intro'>
     <p ng-repeat='pText in $ctrl.intro.splice("\n")' ng-bind-html='pText'></p>
   </div>

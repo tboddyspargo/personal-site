@@ -1,9 +1,6 @@
 import { module } from "angular";
-import "angular-animate";
-import "angular-carousel";
 import "angular-route";
 import "angular-sanitize";
-import "angular-touch";
 
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -24,7 +21,7 @@ const firebaseApp = initializeApp({
 // cspell: enable
 const analytics = getAnalytics();
 
-const dependencies = ["ngAnimate", "ngTouch", "angular-carousel", "ngSanitize", "ngRoute"];
+const dependencies = ["ngSanitize", "ngRoute"];
 
 // Initialize app with route config and route change handling. Inject app functionality.
 export default module("tyler-site", dependencies)
