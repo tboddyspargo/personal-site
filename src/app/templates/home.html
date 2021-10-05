@@ -16,7 +16,7 @@
         <div class='col p-3' ng-repeat='short in $ctrl.short_desc'>
           <div class='thumbnail-grid-item card hvr-grow'>
             <span class='thumbnail-tag badge'
-              ng-class='{"badge-info": short.label=="Project", "badge-success": short.label=="School", "badge-primary":short.label=="Job"}'>{{short.label}}</span>
+              ng-class='{"bg-info": short.label=="Project", "bg-success": short.label=="School", "bg-primary":short.label=="Job"}'>{{short.label}}</span>
             <img class='thumbnail-img card-img-top' ng-src="{{short.thumbnail}}" alt="" />
             <div class="card-body px-3 py-2">
               <h5 class='card-title'>{{short.name}}</h5>

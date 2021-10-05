@@ -2,14 +2,29 @@
   <tbs-progress indeterminate value="$ctrl.projectsReady" description='Projects'>
   </tbs-progress>
   <tbs-sidebar sections='$ctrl.sections'></tbs-sidebar>
-  <image-viewer images="$ctrl.currentImages"></image-viewer>
+  <div id="modal-image-viewer" class='modal fade' data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4>Project Images</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <tbs-image-carousel class='full-screen-modal' images="$ctrl.currentImages"></tbs-image-carousel>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class='card w-100' ng-if='$ctrl.projectsReady'>
     <ul class="list-group list-group-flush pt-2">
       <li ng-repeat='project in $ctrl.projects' id='project{{$index}}' class='list-group-item section-{{$index}} mb-2'>
         <div class="project-heading d-flex justify-content-between align-items-start">
           <h3>{{project.name}}</h3>
-          <button type="button" class='btn btn-light emphasize-interaction' ng-if='project.images.length'
-            ng-click='$ctrl.currentImages = project.images'  data-bs-toggle="modal" data-bs-target="#image-viewer"><span class="fa fa-images fa-2x"></span></button>
+          <button type="button" class='btn py-0 px-2 btn-outline-secondary' ng-if='project.images.length'
+            ng-click='$ctrl.currentImages = project.images'  data-bs-toggle="modal" data-bs-target="#modal-image-viewer">
+            <span class="fa fa-images"></span>
+          </button>
         </div>
         <p class='lead'><strong>Goal: </strong>{{project.goal}}</p>
         <div id='project{{$index}}-steps' class='accordion mx-lg-5 mx-md-0 my-5'>

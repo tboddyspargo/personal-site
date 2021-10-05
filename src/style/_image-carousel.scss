@@ -1,82 +1,32 @@
 /* Shared image carousel styles */
-.image-carousel {
-  position: relative; // helps appropriately place the carousel controls
-  @include size(100%);
-  ul[rn-carousel],
-  ul[rn-carousel] li {
-    @include size(100%);
+.carousel-dark {
+  .carousel-control-next {
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5) 40%, white 100%);
   }
-}
-
-.image-container {
-  @include size(calc(100% - 6em), 100%);
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  img {
-    object-fit: contain;
-    @include max-size(100%, 100%);
+  .carousel-control-prev {
+    background: linear-gradient(90deg, white, rgba(255, 255, 255, 0.5) 60%, transparent);
   }
-}
-
-.carousel-item {
-  img {
-    object-fit: contain;
-    @include max-size(100%, 100%);
-  }
-}
-
-.rn-carousel-control {
-  top: calc(50% - 1em); // helps better vertically center the carousel controls
 }
 
 /* Inline Image Carousel */
-
-.image-carousel.inline-carousel {
-  height: 325px;
-
-  .carousel-caption {
-    bottom: 0px;
-    text-shadow: 1px 1px 3px black;
+.carousel-item {
+  img {
+    height: 325px;
   }
 }
 
-.toggle-image-slider {
-  @include toggle-with-transparency;
-}
-
-.carousel-control-next {
-  background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.7));
-}
-.carousel-control-prev {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), transparent);
-}
 /* Full Screen Image Carousel */
-
-// #image-viewer {
-//   position: fixed;
-//   @include pos(0px, none, none, 0px);
-//   @include size(100vw, 100vh);
-//   z-index: 100;
-//   background-color: rgba(0, 0, 0, 0.9);
-
-//   .image-carousel {
-//     padding-top: 4em;
-//   }
-
-//   .carousel-caption {
-//     position: relative;
-//     bottom: revert;
-//     right: revert;
-//     left: revert;
-//   }
-// }
-
-#close-viewer {
-  @include abs-pos(0.5em, 0.5em);
-  @include button-with-transparency;
-  font-size: 2.25em;
-  z-index: 100;
+.full-screen-modal {
+  .carousel-item {
+    img {
+      object-fit: cover;
+      height: 75vh;
+      @include media-breakpoint-down(sm) {
+        height: 325px;
+      }
+    }
+  }
+  .carousel-indicators {
+    bottom: -35px;
+  }
 }

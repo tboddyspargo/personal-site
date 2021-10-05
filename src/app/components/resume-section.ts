@@ -1,18 +1,10 @@
 import { module } from "angular";
 class ResumeSectionController {
-  images = [];
-  activeImage = 0;
-  _showImages = true;
+  imagesVisible = true;
 
-  showImages() {
-    this._showImages;
-  }
-  toggleImages() {
-    this._showImages = !this._showImages;
-  }
-  hasImages() {
-    this.images && Array.isArray(this.images) && !!this.images.length;
-  }
+  toggleImageVisibility = () => {
+    this.imagesVisible = !this.imagesVisible;
+  };
 }
 export default class ResumeSectionComponent {
   bindings = {
