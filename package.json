@@ -2,7 +2,7 @@
   "scripts": {
     "build:watch": "webpack watch --mode development",
     "start": "firebase serve --only hosting",
-    "build": "webpack --mode production --bail --progress --profile"
+    "build": "webpack --mode production --bail --progress --profile --stats-children"
   },
   "name": "personal-site",
   "description": "This is an site written in AngularJS and acting as a portfolio, bio, and resume.",
@@ -16,15 +16,13 @@
   "dependencies": {
     "@babel/core": "^7.15",
     "@babel/preset-env": "^7.15",
-    "@fortawesome/fontawesome-free": "6.0.0-beta2",
+    "@fortawesome/fontawesome-free": "^5.0",
     "@popperjs/core": "^2.10",
     "@types/node": "^16.10",
     "angular": "~1.8",
-    "angular-animate": "~1.8",
-    "angular-carousel": "~1.1",
     "angular-route": "~1.8",
     "angular-sanitize": "~1.8",
-    "angular-touch": "~1.8",
+    "autoprefixer": "^10.3.7",
     "babel-loader": "^8.2",
     "bootstrap": "^5.1",
     "copy-webpack-plugin": "^9.0",
@@ -34,8 +32,7 @@
     "gsap": "^3.0",
     "html-webpack-plugin": "^5.3",
     "mini-css-extract-plugin": "^2.3.0",
-    "postcss-loader": "^6.1",
-    "postcss-preset-env": "^6.7",
+    "postcss-loader": "^6.0",
     "sass": "^1.42",
     "sass-loader": "^12.1",
     "style-loader": "^3.3",
