@@ -3,12 +3,13 @@ const CopyPlugin = require("copy-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const postcssPresetEnv = require("postcss-preset-env");
+const PostcssPresetEnv = require("autoprefixer");
 const WebPack = require("webpack");
 
 module.exports = (env, options) => {
   const isDevMode = options.mode === "development";
   return {
+    mode: isDevMode ? options.mode : "production",
     entry: {
       main: ["./src/index.ts"],
     },
@@ -48,12 +49,14 @@ module.exports = (env, options) => {
         { test: /\.tsx?$/, use: ["ts-loader"] },
         {
           test: /\.css$/,
-          use: [MiniCssExtractPlugin.loader, "css-loader"],
+          use: [isDevMode ? "style-loader" : MiniCssExtractPlugin.loader, "css-loader"],
         },
         {
           test: /\.s[ac]ss$/,
           use: [
-            MiniCssExtractPlugin.loader,
+            {
+              loader: isDevMode ? "style-loader" : MiniCssExtractPlugin.loader,
+            },
             {
               loader: "css-loader",
               options: {
@@ -66,7 +69,7 @@ module.exports = (env, options) => {
               loader: "postcss-loader",
               options: {
                 postcssOptions: {
-                  plugins: ["postcss-preset-env"],
+                  plugins: [require("autoprefixer")],
                 },
               },
             },
@@ -94,8 +97,8 @@ module.exports = (env, options) => {
       ],
     },
     optimization: {
-      minimizer: [`...`, new CssMinimizerPlugin()],
-      runtimeChunk: "single",
+      minimizer: isDevMode ? [`...`] : [`...`, new CssMinimizerPlugin()],
+      // runtimeChunk: "single",
       splitChunks: {
         cacheGroups: {
           vendor: {
