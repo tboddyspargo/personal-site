@@ -2,6 +2,7 @@
 const { resolve } = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const FontminPlugin = require("fontmin-webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const PostcssPresetEnv = require("autoprefixer");
@@ -12,15 +13,19 @@ module.exports = (env, options) => {
   return {
     mode: isDevMode ? options.mode : "production",
     entry: {
-      main: ["./src/index.ts"],
+      "main": ["./src/index.ts"],
+      "bootstrap": ["./src/bootstrap.ts"],
+      "bootstrap-style": ["./src/bootstrap-style.ts"],
+      "font-awesome": ["./src/font-awesome.ts"],
+      "style": ["./src/style.ts"],
+      "firebase": ["./src/firebase.ts"],
     },
     output: {
-      filename: "[name].js",
+      filename: "[name].[contenthash:8].js",
       path: resolve(__dirname, "public/dist"),
       clean: true,
     },
     resolve: {
-      modules: ["node_modules"],
       extensions: [".ts", ".tsx", ".js"],
     },
     devtool: isDevMode ? "eval-source-map" : false,
@@ -43,7 +48,9 @@ module.exports = (env, options) => {
           },
         ],
       }),
-      new MiniCssExtractPlugin(),
+      new MiniCssExtractPlugin({
+        filename: "[name].css",
+      }),
     ],
     module: {
       rules: [
@@ -92,7 +99,7 @@ module.exports = (env, options) => {
           test: /\.(svg|eot|woff|woff2|ttf)$/,
           type: "asset/resource",
           generator: {
-            filename: "fonts/[hash][ext][query]",
+            filename: "./fonts/[name][hash][ext][query]",
           },
         },
       ],
@@ -100,12 +107,22 @@ module.exports = (env, options) => {
     optimization: {
       minimizer: isDevMode ? [`...`] : [`...`, new CssMinimizerPlugin()],
       runtimeChunk: "single",
+      moduleIds: "deterministic",
       splitChunks: {
+        chunks: "all",
+        maxInitialRequests: Infinity,
+        minSize: 0,
         cacheGroups: {
           vendor: {
             test: /[\\/]node_modules[\\/]/,
-            name: "vendors",
-            chunks: "all",
+            name(module) {
+              // get the name. E.g. node_modules/packageName/not/this/part.js
+              // or node_modules/packageName
+              const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1];
+
+              // npm package names are URL-safe, but some servers don't like @ symbols
+              return `npm.${packageName.replace("@", "")}`;
+            },
           },
         },
       },
