@@ -1,3 +1,4 @@
+"use strict";
 import { module } from "angular";
 import "angular-route";
 import "angular-sanitize";
@@ -6,6 +7,10 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
 import { routeConfig, routeChangeHandler } from "./routes";
+import core from "./core";
+import layout from "./layout";
+import pages from "./pages";
+import resume from "./resume";
 
 // Initialize Firebase
 // cspell: disable
@@ -21,9 +26,9 @@ const firebaseApp = initializeApp({
 // cspell: enable
 const analytics = getAnalytics();
 
-const dependencies = ["ngSanitize", "ngRoute"];
+// Additional functionality is provided in feature-specific angular modules.
+const AppDependencies = ["ngSanitize", "ngRoute", core.name, layout.name, resume.name, pages.name];
 
-// Initialize app with route config and route change handling. Inject app functionality.
-export default module("tyler-site", dependencies)
-  .config(routeConfig)
-  .run(["$rootScope", "$location", "$anchorScroll", "$timeout", routeChangeHandler]);
+// Initialize app with route config and route change handling.
+console.debug("Loading tyler-site module...");
+export default module("tbs", AppDependencies).config(routeConfig).run(routeChangeHandler);

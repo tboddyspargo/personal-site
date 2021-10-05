@@ -1,3 +1,4 @@
+"use strict";
 const { resolve } = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
@@ -98,7 +99,7 @@ module.exports = (env, options) => {
     },
     optimization: {
       minimizer: isDevMode ? [`...`] : [`...`, new CssMinimizerPlugin()],
-      // runtimeChunk: "single",
+      runtimeChunk: "single",
       splitChunks: {
         cacheGroups: {
           vendor: {

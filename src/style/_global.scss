@@ -1,3 +1,12 @@
+// Vendor overrides
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+// Other
+
 .no-select,
 img {
   @include no-cursor-events;

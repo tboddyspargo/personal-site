@@ -1,26 +1,20 @@
-/* Shared image carousel styles */
-.carousel-dark {
-  .carousel-control-next {
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5) 40%, white 100%);
-  }
-  .carousel-control-prev {
-    background: linear-gradient(90deg, white, rgba(255, 255, 255, 0.5) 60%, transparent);
-  }
-}
-
 /* Inline Image Carousel */
 .carousel-item {
   img {
     height: 325px;
+    object-fit: cover;
   }
+}
+.carousel-indicators {
+  bottom: -10px;
 }
 
 /* Full Screen Image Carousel */
 .full-screen-modal {
   .carousel-item {
     img {
-      object-fit: cover;
       height: 75vh;
+      object-fit: cover;
       @include media-breakpoint-down(sm) {
         height: 325px;
       }

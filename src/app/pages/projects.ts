@@ -1,10 +1,15 @@
-import { module } from "angular";
-export default class ProjectController {
+"use strict";
+console.debug("Loading projects component...");
+
+export class ProjectsController {
   sections = [];
   projects;
   projectsReady = false;
   currentImages = [];
 
+  static get $inject() {
+    return ["$sce", "$timeout", "DataService"];
+  }
   constructor($sce, $timeout, DataService) {
     DataService.getProjects().then((data) => {
       $timeout(() => {
@@ -17,4 +22,11 @@ export default class ProjectController {
     });
   }
 }
-module("tyler-site").controller("ProjectsCtrl", ProjectController);
+
+const ProjectsComponent = {
+  selector: "tbsProjectsPage",
+  controller: ProjectsController,
+  templateUrl: require("./projects.html"),
+};
+
+export default ProjectsComponent;

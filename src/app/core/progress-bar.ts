@@ -1,9 +1,14 @@
-import { module } from "angular";
+"use strict";
+console.debug("Loading progress-bar component...");
+
 class ProgressController {
   isIndeterminate;
   value;
   max;
 
+  static get $inject() {
+    return ["$scope", "$element", "$attrs", "$timeout"];
+  }
   // Component directive that updates progress bar based on given scope value to watch.
   constructor($scope, $element, $attrs, $timeout) {
     // determine if this progress bar is intended to be indeterminate based on attributes.
@@ -41,14 +46,16 @@ class ProgressController {
     }
   }
 }
-export default class ProgressComponent {
-  bindings = {
+const ProgressComponent = {
+  selector: "tbsProgress",
+  bindings: {
     value: "<",
     max: "<",
     description: "@?",
     indeterminate: "@?",
-  };
-  templateUrl = require("./progress-bar.html");
-  controller = ProgressController;
-}
-module("tyler-site").component("tbsProgress", new ProgressComponent());
+  },
+  templateUrl: require("./progress-bar.html"),
+  controller: ProgressController,
+};
+
+export default ProgressComponent;

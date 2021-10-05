@@ -12,8 +12,8 @@
     <p ng-repeat='pText in $ctrl.intro.splice("\n")' ng-bind-html='pText'></p>
   </div>
   <div class='events list-group list-group-flush'>
-    <tbs-resume-list-entry class='list-group-item' ng-repeat='entry in $ctrl.entries' entry='entry'>
-    </tbs-resume-list-entry>
+    <tbs-resume-entry class='list-group-item' ng-repeat='entry in $ctrl.entries' entry='entry'>
+    </tbs-resume-entry>
   </div>
   <div class='card-footer' ng-if='$ctrl.footer'>
     <div ng-bind-html='$ctrl.footer'></div>
