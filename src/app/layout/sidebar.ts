@@ -1,4 +1,5 @@
-import { module } from "angular";
+"use strict";
+console.debug("Loading sidebar component...");
 
 class SidebarController {
   sections;
@@ -6,6 +7,9 @@ class SidebarController {
   sidebarTweens: Array<any>;
   allReady: boolean;
 
+  static get $inject() {
+    return ["$scope", "$element", "$attrs", "ScrollService"];
+  }
   // configuring targets and scroll behavior for the sidebar navigator links.
   constructor($scope, $element, private $attrs, private ScrollService) {
     const ctrl = this;
@@ -105,13 +109,14 @@ class SidebarController {
   };
 }
 
-export default class SidebarComponent {
-  bindings = {
+const SidebarComponent = {
+  selector: "tbsSidebar",
+  bindings: {
     sections: "<",
     ids: "<",
-  };
-  templateUrl = require("./sidebar.html");
-  controller = SidebarController;
-}
+  },
+  templateUrl: require("./sidebar.html"),
+  controller: SidebarController,
+};
 
-module("tyler-site").component("tbsSidebar", new SidebarComponent());
+export default SidebarComponent;

@@ -1,6 +1,10 @@
-import { module } from "angular";
+"use strict";
+console.debug("Loading navbar component...");
 
 class NavbarController {
+  static get $inject() {
+    return ["$scope", "$element", "$attrs", "$route", "ScrollService"];
+  }
   constructor($scope, $element, $attrs, $route, private ScrollService) {
     // Indicate active tab on tab changes.
     $scope.$watch(
@@ -57,9 +61,10 @@ class NavbarController {
   }
 }
 
-export default class NavbarComponent {
-  templateUrl = require("./navbar.html");
-  controller = NavbarController;
-}
+const NavbarComponent = {
+  selector: "tbsNavbar",
+  templateUrl: require("./navbar.html"),
+  controller: NavbarController,
+};
 
-module("tyler-site").component("tbsNavbar", new NavbarComponent());
+export default NavbarComponent;

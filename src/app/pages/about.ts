@@ -1,5 +1,7 @@
-import { module } from "angular";
-export default class AboutController {
+"use strict";
+console.debug("Loading about controller...");
+
+export class AboutController {
   sections = [
     { id: "bio", name: "Biography" },
     { id: "education", name: "Education" },
@@ -14,6 +16,9 @@ export default class AboutController {
   employment;
   employmentReady = false;
 
+  static get $inject() {
+    return ["DataService", "$timeout", "UtilityService"];
+  }
   constructor(private DataService, private $timeout, private UtilityService) {
     DataService.getBio().then((data) => {
       $timeout(() => {
@@ -44,4 +49,11 @@ export default class AboutController {
     });
   }
 }
-module("tyler-site").controller("AboutCtrl", AboutController);
+
+const AboutComponent = {
+  selector: "tbsAboutPage",
+  controller: AboutController,
+  templateUrl: require("./about.html"),
+};
+
+export default AboutComponent;

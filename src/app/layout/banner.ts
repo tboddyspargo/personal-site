@@ -1,7 +1,12 @@
-import { module } from "angular";
+"use strict";
+console.debug("Loading banner component...");
+
 class BannerController {
-  ScrollService;
-  constructor(ScrollService) {
+  static get $inject() {
+    return ["ScrollService"];
+  }
+
+  constructor(private ScrollService) {
     this.ScrollService = ScrollService;
   }
   /*
@@ -32,9 +37,13 @@ class BannerController {
   }
 }
 
-export default class BannerComponent {
-  templateUrl = require("./banner.html");
-  controller = BannerController;
-}
+/*
+ ** @summary An object representing the primary attributes of the Banner Angular component.
+ */
+const BannerComponent = {
+  selector: "tbsBanner",
+  templateUrl: require("./banner.html"),
+  controller: BannerController,
+};
 
-module("tyler-site").component("tbsBanner", new BannerComponent());
+export default BannerComponent;
