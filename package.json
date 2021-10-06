@@ -1,12 +1,13 @@
 {
   "scripts": {
     "build:watch": "webpack watch --mode development",
-    "start": "firebase serve --only hosting",
+    "build:dev": "webpack --mode development --bail",
+    "start": "firebase serve --only hosting & open http://localhost:5000",
     "build": "webpack --mode production --bail --progress --profile"
   },
   "name": "personal-site",
-  "description": "This is an site written in AngularJS and acting as a portfolio, bio, and resume.",
-  "version": "2.0.0",
+  "description": "This is a personal website written by BoddySpargos.",
+  "version": "1.3.0",
   "main": "index.js",
   "browserList": [
     "defaults",
@@ -29,7 +30,6 @@
     "css-loader": "^6.3",
     "css-minimizer-webpack-plugin": "^3.0.2",
     "firebase": "^9.0",
-    "fontmin-webpack": "^3.1.0",
     "gsap": "^3.0",
     "html-webpack-plugin": "^5.3",
     "mini-css-extract-plugin": "^2.3.0",
