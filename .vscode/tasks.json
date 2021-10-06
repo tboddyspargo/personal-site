@@ -1,0 +1,55 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "npm: build:watch",
+      "detail": "webpack watch --mode development",
+      "type": "npm",
+      "script": "build:watch",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "never",
+        "panel": "dedicated",
+        "showReuseMessage": false,
+        "group": "build"
+      },
+      "group": "build"
+    },
+    {
+      "label": "npm: build:dev",
+      "detail": "webpack --mode development --bail --progress",
+      "type": "npm",
+      "script": "build:dev",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "never",
+        "panel": "dedicated",
+        "showReuseMessage": false,
+        "group": "build"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "npm: start",
+      "detail": "firebase serve --only hosting",
+      "type": "npm",
+      "script": "start",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "never",
+        "panel": "dedicated",
+        "showReuseMessage": false,
+        "group": "build",
+        "clear": true
+      },
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "dependsOn": "npm: build:dev"
+    }
+  ]
+}

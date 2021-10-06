@@ -2,7 +2,7 @@
   position: relative;
 }
 
-.banner {
+#banner {
   @include size(100%, 240px);
   overflow: hidden;
 }
