@@ -17,17 +17,20 @@
     </div>
   </div>
   <div class='card w-100' ng-if='$ctrl.projectsReady'>
-    <ul class="list-group list-group-flush pt-2">
-      <li ng-repeat='project in $ctrl.projects' id='project{{$index}}' class='list-group-item section-{{$index}} mb-2'>
+    <ul class="list-group list-group-flush">
+      <li ng-repeat="project in $ctrl.projects | orderBy:'-date'" id='project{{$index}}' class='list-group-item section-{{$index}} mb-2'>
         <div class="project-heading d-flex justify-content-between align-items-start">
           <h3>{{project.name}}</h3>
-          <button type="button" class='btn py-0 px-2 btn-outline-secondary' ng-if='project.images.length'
-            ng-click='$ctrl.currentImages = project.images'  data-bs-toggle="modal" data-bs-target="#modal-image-viewer">
-            <span class="fa fa-images"></span>
-          </button>
+          <div>
+            <button type="button" class='btn py-0 px-2 btn-outline-secondary' ng-if='project.images.length'
+              ng-click='$ctrl.currentImages = project.images' data-bs-toggle="modal" data-bs-target="#modal-image-viewer">
+              <span class="fa fa-images"></span>
+            </button>
+          </div>
         </div>
+        <span class="badge bg-light text-secondary">{{project.date}}</span>
         <p class='lead'><strong>Goal: </strong>{{project.goal}}</p>
-        <div id='project{{$index}}-steps' class='accordion mx-lg-5 mx-md-0 my-5'>
+        <div id='project{{$index}}-steps' class='accordion mx-lg-5 my-4'>
           <div ng-repeat='step in project.steps' class='accordion-item'>
             <h5 id='project{{$parent.$index}}-step{{$index}}-heading' class='accordion-header'>
               <button class="accordion-button"
