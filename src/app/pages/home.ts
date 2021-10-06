@@ -27,7 +27,6 @@ export class HomeController {
             desc: data[x].goal,
             thumbnail: data[x].thumbnail,
             label: "Project",
-            page: 3,
             pageLoc: "/projects",
             loc: `#project${x}`,
           });
