@@ -1,0 +1,31 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Build",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "args": ["run", "build:watch"],
+      "serverReadyAction": {
+        "pattern": "webpack [0-9\\.]+ compiled successfully",
+        "action": "startDebugging",
+        "name": "Serve:Open"
+      }
+    },
+    {
+      "name": "Serve:Open",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "args": ["start"],
+      "outputCapture": "std",
+      "serverReadyAction": {
+        "pattern": "(https?://\\S+:[0-9]+)",
+        "uriFormat": "%s",
+        "action": "debugWithChrome",
+        "webRoot": "${workspaceFolder}/public"
+      }
+    }
+  ]
+}

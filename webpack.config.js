@@ -2,7 +2,6 @@
 const { resolve } = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const FontminPlugin = require("fontmin-webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const PostcssPresetEnv = require("autoprefixer");
@@ -94,7 +93,6 @@ module.exports = (env, options) => {
           exclude: /node_modules/,
           loader: "babel-loader",
         },
-        // helps to load bootstrap's css.
         {
           test: /\.(svg|eot|woff|woff2|ttf)$/,
           type: "asset/resource",
@@ -116,8 +114,8 @@ module.exports = (env, options) => {
           vendor: {
             test: /[\\/]node_modules[\\/]/,
             name(module) {
-              // get the name. E.g. node_modules/packageName/not/this/part.js
-              // or node_modules/packageName
+              // @summary Create individual bundles for each vendor package.
+              // Extract the package name from the module path.
               const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1];
 
               // npm package names are URL-safe, but some servers don't like @ symbols
